@@ -1,0 +1,68 @@
+:root {
+  --bg: #0d1117;
+  --bg-card: #161b22;
+  --bg-input: #1c2128;
+  --border: #30363d;
+  --text-main: #e6edf3;
+  --text-muted: #7d8590;
+  --primary: #4493f8;
+  --radius: 10px;
+  --c-low: #e05252;
+  --c-market: #38a169;
+  --c-premium: #4493f8;
+}
+
+[data-theme="light"] {
+  --bg: #f6f8fa;
+  --bg-card: #ffffff;
+  --bg-input: #f0f2f5;
+  --border: #d0d7de;
+  --text-main: #1f2328;
+  --text-muted: #656d76;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text-main); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 15px; line-height: 1.6; padding: 1.5rem 1rem 3rem; }
+.tool-wrapper { max-width: 720px; margin: 0 auto; }
+
+.tool-header { text-align: center; margin-bottom: 2rem; }
+.tool-header__badge { display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(68,147,248,0.1); border: 1px solid rgba(68,147,248,0.3); color: var(--primary); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.3rem 0.8rem; border-radius: 20px; margin-bottom: 1rem; }
+.tool-header h1 { font-size: 1.6rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.5rem; }
+.tool-header p { color: var(--text-muted); max-width: 560px; margin: 0 auto; font-size: 0.9rem; }
+
+.bench-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin-bottom: 1.5rem; }
+.region-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+.region-label { font-size: 0.85rem; color: var(--text-muted); white-space: nowrap; }
+.input-field { background: var(--bg-input); border: 1px solid var(--border); border-radius: 8px; color: var(--text-main); font-size: 0.9rem; padding: 0.5rem 0.7rem; transition: border-color 0.15s; }
+.input-field:focus { outline: none; border-color: var(--primary); }
+.input-field--sm { width: 220px; }
+
+.services-grid { display: flex; flex-direction: column; gap: 0.65rem; margin-bottom: 1.5rem; }
+.service-row { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1rem; background: var(--bg-input); border: 1px solid var(--border); border-radius: 8px; padding: 0.65rem 1rem; }
+.service-name { font-size: 0.88rem; color: var(--text-main); }
+.service-sub { font-size: 0.75rem; color: var(--text-muted); }
+.price-input-wrap { display: flex; align-items: center; gap: 0.4rem; }
+.price-prefix { font-size: 0.9rem; color: var(--text-muted); }
+.price-input { background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; color: var(--text-main); font-size: 0.9rem; padding: 0.4rem 0.6rem; width: 80px; text-align: right; }
+.price-input:focus { outline: none; border-color: var(--primary); }
+
+.primary-btn { background: var(--primary); color: #fff; border: none; border-radius: 8px; padding: 0.65rem 2rem; font-size: 0.9rem; font-weight: 700; cursor: pointer; transition: opacity 0.15s; }
+.primary-btn:hover { opacity: 0.88; }
+
+.results-title { font-size: 1rem; font-weight: 700; color: var(--text-main); margin-bottom: 1rem; }
+.results-grid { display: flex; flex-direction: column; gap: 0.65rem; margin-bottom: 1rem; }
+.result-row { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.85rem 1.15rem; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1rem; }
+.result-service { font-size: 0.88rem; color: var(--text-main); }
+.result-range { font-size: 0.75rem; color: var(--text-muted); }
+.result-badge { font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.65rem; border-radius: 12px; white-space: nowrap; }
+.result-badge.low     { background: rgba(224,82,82,0.15);   color: var(--c-low); }
+.result-badge.market  { background: rgba(56,161,105,0.15);  color: var(--c-market); }
+.result-badge.premium { background: rgba(68,147,248,0.15);  color: var(--c-premium); }
+.result-badge.blank   { background: transparent; color: var(--text-muted); }
+
+.bench-note { font-size: 0.78rem; color: var(--text-muted); background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.85rem 1rem; line-height: 1.6; margin-top: 1rem; }
+
+@media (max-width: 540px) {
+  .service-row { grid-template-columns: 1fr; gap: 0.5rem; }
+  .input-field--sm { width: 100%; }
+}
