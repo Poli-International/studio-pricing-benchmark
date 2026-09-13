@@ -1,0 +1,64 @@
+/* Poli Standard — Clean Single-Page Print Stylesheet */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm 10mm 12mm;
+  }
+
+  *, *:before, *:after {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html, body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    font-size: 10pt !important;
+    line-height: 1.3 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .tool-tabs,
+  .site-header,
+  header,
+  nav,
+  button,
+  .print\:hidden,
+  .tool-tab,
+  #tab-benchmark,
+  #tab-docs,
+  #tab-embed,
+  .accent-bar,
+  .powered-by-footer,
+  .no-print {
+    display: none !important;
+  }
+
+  #tab-tool,
+  .tool-main-content,
+  #root {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Printable Rate Card: single A4 / US Letter page */
+  #printable-rate-card {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    page-break-inside: avoid !important;
+    page-break-after: avoid !important;
+  }
+
+  .screen-only {
+    display: none !important;
+  }
+}
