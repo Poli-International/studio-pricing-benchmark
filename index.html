@@ -1,56 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" data-theme="dark">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
+  <title>Studio Pricing Benchmark | Poli International</title>
+  <meta name="description" content="Professional tattoo and piercing studio pricing benchmark reference tool. Compare studio rates against industry reference ranges across nine global markets." />
+  <meta property="og:title" content="Studio Pricing Benchmark | Poli International" />
+  <meta property="og:description" content="Professional tattoo and piercing studio pricing benchmark reference tool. Compare studio rates against industry reference ranges across nine global markets." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0d1117">
+
   <script>
+    // Sync to the site's theme when embedded (ToolFrame posts `poli-theme`).
     if (window.self !== window.top) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      window.addEventListener('message', function(e) {
-        if (e.data && e.data.type === 'poli-theme') {
-          document.documentElement.setAttribute('data-theme', e.data.light ? 'light' : 'dark');
+      var poliRoot = document.documentElement;
+      var POLI_LS_KEY = 'poli-dark-mode';
+      var poliSeed = function (light) {
+        try { localStorage.setItem(POLI_LS_KEY, light ? 'light' : 'dark'); } catch (e) {}
+      };
+      var poliApplyChrome = function (light) {
+        poliRoot.setAttribute('data-theme', light ? 'light' : 'dark');
+        poliRoot.classList.toggle('dark', !light);
+        var b = document.body;
+        if (b) {
+          b.classList.toggle('dark-mode', !light);
+          b.classList.toggle('light-mode', !!light);
+        }
+      };
+      var initialLight = false;
+      try {
+        initialLight = window.top.document.documentElement.classList.contains('light-mode');
+      } catch (e) {}
+      poliSeed(initialLight);
+      poliApplyChrome(initialLight);
+      document.addEventListener('DOMContentLoaded', function () {
+        poliApplyChrome(poliRoot.getAttribute('data-theme') === 'light');
+      });
+      window.addEventListener('message', function (e) {
+        if (!e.data || e.data.type !== 'poli-theme') return;
+        var light = !!e.data.light;
+        var wantsDark = !light;
+        var prev = null;
+        try { prev = localStorage.getItem(POLI_LS_KEY); } catch (err) {}
+        var currentlyDark = (prev === null) ? true : (prev === 'dark');
+        poliSeed(light);
+        poliApplyChrome(light);
+        if (currentlyDark !== wantsDark) {
+          window.location.reload();
         }
       });
     }
   </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Compare your tattoo and piercing studio prices against UK industry benchmarks. See whether you are priced below market, at market rate, or at a premium level.">
-  <title>Studio Pricing Benchmark | Poli International</title>
-  <link rel="stylesheet" href="/tools/studio-pricing-benchmark/css/style.css">
+
+  <link rel="stylesheet" href="/tools/studio-pricing-benchmark/css/tailwind.css">
+  <link rel="stylesheet" href="/tools/studio-pricing-benchmark/css/poli-standard.css">
+  <link rel="stylesheet" href="/tools/studio-pricing-benchmark/css/benchmark-style.css">
+  <link rel="stylesheet" href="/tools/studio-pricing-benchmark/css/print.css" media="print">
+
+
+  <style>
+    /* Layout styling for iframe and standalone */
+    html, body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      min-width: 100% !important;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      overflow-x: hidden;
+    }
+    #root {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      display: block !important;
+      min-height: 100vh;
+    }
+  </style>
+  <script type="module" crossorigin src="/tools/studio-pricing-benchmark/assets/index-DsNWzgcZ.js"></script>
+  <link rel="modulepreload" crossorigin href="/tools/studio-pricing-benchmark/assets/react-DGj8QgOs.js">
+  <link rel="modulepreload" crossorigin href="/tools/studio-pricing-benchmark/assets/vendor-DGtxC7bf.js">
+  <link rel="stylesheet" crossorigin href="/tools/studio-pricing-benchmark/assets/index-DZig5v02.css">
 </head>
-<body>
-<div class="tool-wrapper">
-
-  <header class="tool-header">
-    <div class="tool-header__badge">💷 Pricing</div>
-    <h1>Studio Pricing Benchmark</h1>
-    <p>Enter your prices for common services to see how you compare to UK industry reference ranges. Useful for annual pricing reviews.</p>
-  </header>
-
-  <div class="bench-card">
-    <div class="region-row">
-      <label class="region-label">Reference region:</label>
-      <select id="region-select" class="input-field input-field--sm">
-        <option value="uk">UK (national average)</option>
-        <option value="london">London / SE England</option>
-        <option value="us">US (national average)</option>
-        <option value="eu">EU (Western Europe)</option>
-        <option value="au">Australia</option>
-      </select>
-    </div>
-    <div id="services-grid" class="services-grid"></div>
-    <button id="compare-btn" class="primary-btn">Compare My Prices</button>
-  </div>
-
-  <div id="results" style="display:none">
-    <h2 class="results-title">Your Pricing Position</h2>
-    <div id="results-grid" class="results-grid"></div>
-    <div class="bench-note">
-      Reference ranges are compiled from publicly listed studio prices, industry surveys, and artist forums. They represent approximate mid-market ranges — premium specialists and fine-line artists routinely price above the high end.
-    </div>
-  </div>
-
-</div>
-<script src="/tools/studio-pricing-benchmark/js/app.js"></script>
+<body class="dark-mode">
+  <div id="root"></div>
 </body>
 </html>
