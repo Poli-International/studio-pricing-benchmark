@@ -1,0 +1,2047 @@
+import{r as u,j as e,c as Y}from"./react-DGj8QgOs.js";import{S as Q,P as X,C as ee,a as ae,b as ie}from"./vendor-DGtxC7bf.js";(function(){const l=document.createElement("link").relList;if(l&&l.supports&&l.supports("modulepreload"))return;for(const c of document.querySelectorAll('link[rel="modulepreload"]'))n(c);new MutationObserver(c=>{for(const m of c)if(m.type==="childList")for(const p of m.addedNodes)p.tagName==="LINK"&&p.rel==="modulepreload"&&n(p)}).observe(document,{childList:!0,subtree:!0});function t(c){const m={};return c.integrity&&(m.integrity=c.integrity),c.referrerPolicy&&(m.referrerPolicy=c.referrerPolicy),c.crossOrigin==="use-credentials"?m.credentials="include":c.crossOrigin==="anonymous"?m.credentials="omit":m.credentials="same-origin",m}function n(c){if(c.ep)return;c.ep=!0;const m=t(c);fetch(c.href,m)}})();const H={uk:{id:"uk",nameKey:"region.uk.name",currency:"£",currencyCode:"GBP",symbol:"£",coverageNoteKey:"region.uk.coverage",jewelleryPolicyKey:"jewellery.uk.policy"},london:{id:"london",nameKey:"region.london.name",currency:"£",currencyCode:"GBP",symbol:"£",coverageNoteKey:"region.london.coverage",jewelleryPolicyKey:"jewellery.london.policy"},us:{id:"us",nameKey:"region.us.name",currency:"$",currencyCode:"USD",symbol:"$",coverageNoteKey:"region.us.coverage",jewelleryPolicyKey:"jewellery.us.policy"},eu:{id:"eu",nameKey:"region.eu.name",currency:"€",currencyCode:"EUR",symbol:"€",coverageNoteKey:"region.eu.coverage",jewelleryPolicyKey:"jewellery.eu.policy"},au:{id:"au",nameKey:"region.au.name",currency:"A$",currencyCode:"AUD",symbol:"A$",coverageNoteKey:"region.au.coverage",jewelleryPolicyKey:"jewellery.au.policy"},cee:{id:"cee",nameKey:"region.cee.name",currency:"€",currencyCode:"EUR",symbol:"€",coverageNoteKey:"region.cee.coverage",jewelleryPolicyKey:"jewellery.cee.policy"},ca:{id:"ca",nameKey:"region.ca.name",currency:"C$",currencyCode:"CAD",symbol:"C$",coverageNoteKey:"region.ca.coverage",jewelleryPolicyKey:"jewellery.ca.policy"},sa:{id:"sa",nameKey:"region.sa.name",currency:"R$",currencyCode:"BRL",symbol:"R$",coverageNoteKey:"region.sa.coverage",jewelleryPolicyKey:"jewellery.sa.policy"},sea:{id:"sea",nameKey:"region.sea.name",currency:"฿",currencyCode:"THB",symbol:"฿",coverageNoteKey:"region.sea.coverage",jewelleryPolicyKey:"jewellery.sea.policy"}},W={uk:[{id:"tattoo_small",nameKey:"service.tattoo_small.name",subKey:"service.tattoo_small.sub",category:"tattoo",currency:"£",min:80,max:200,confidence:"INDICATIVE",basisKey:"basis.uk.tattoo_small"},{id:"tattoo_half_day",nameKey:"service.tattoo_half_day.name",subKey:"service.tattoo_half_day.sub",category:"tattoo",currency:"£",min:300,max:600,confidence:"INDICATIVE",basisKey:"basis.uk.tattoo_half_day"},{id:"tattoo_full_day",nameKey:"service.tattoo_full_day.name",subKey:"service.tattoo_full_day.sub",category:"tattoo",currency:"£",min:550,max:1100,confidence:"INDICATIVE",basisKey:"basis.uk.tattoo_full_day"},{id:"tattoo_hourly",nameKey:"service.tattoo_hourly.name",subKey:"service.tattoo_hourly.sub",category:"tattoo",currency:"£",min:80,max:180,confidence:"INDICATIVE",basisKey:"basis.uk.tattoo_hourly"},{id:"tattoo_minimum",nameKey:"service.tattoo_minimum.name",subKey:"service.tattoo_minimum.sub",category:"tattoo",currency:"£",min:50,max:100,confidence:"INDICATIVE",basisKey:"basis.uk.tattoo_minimum"},{id:"piercing_earlobe",nameKey:"service.piercing_earlobe.name",subKey:"service.piercing_earlobe.sub",category:"piercing",currency:"£",min:30,max:70,confidence:"INDICATIVE",basisKey:"basis.uk.piercing_earlobe",jewelleryNoteKey:"jewellery.included.titanium"},{id:"piercing_nostril",nameKey:"service.piercing_nostril.name",subKey:"service.piercing_nostril.sub",category:"piercing",currency:"£",min:35,max:65,confidence:"INDICATIVE",basisKey:"basis.uk.piercing_nostril",jewelleryNoteKey:"jewellery.included.titanium"},{id:"piercing_helix",nameKey:"service.piercing_helix.name",subKey:"service.piercing_helix.sub",category:"piercing",currency:"£",min:30,max:65,confidence:"INDICATIVE",basisKey:"basis.uk.piercing_helix",jewelleryNoteKey:"jewellery.included.titanium"},{id:"piercing_navel",nameKey:"service.piercing_navel.name",subKey:"service.piercing_navel.sub",category:"piercing",currency:"£",min:35,max:75,confidence:"INDICATIVE",basisKey:"basis.uk.piercing_navel",jewelleryNoteKey:"jewellery.included.titanium"},{id:"piercing_septum",nameKey:"service.piercing_septum.name",subKey:"service.piercing_septum.sub",category:"piercing",currency:"£",min:40,max:80,confidence:"INDICATIVE",basisKey:"basis.uk.piercing_septum",jewelleryNoteKey:"jewellery.included.titanium"}],london:[{id:"tattoo_small",nameKey:"service.tattoo_small.name",subKey:"service.tattoo_small.sub",category:"tattoo",currency:"£",min:100,max:280,confidence:"INDICATIVE",basisKey:"basis.london.tattoo_small"},{id:"tattoo_half_day",nameKey:"service.tattoo_half_day.name",subKey:"service.tattoo_half_day.sub",category:"tattoo",currency:"£",min:400,max:800,confidence:"INDICATIVE",basisKey:"basis.london.tattoo_half_day"},{id:"tattoo_full_day",nameKey:"service.tattoo_full_day.name",subKey:"service.tattoo_full_day.sub",category:"tattoo",currency:"£",min:750,max:1500,confidence:"INDICATIVE",basisKey:"basis.london.tattoo_full_day"},{id:"tattoo_hourly",nameKey:"service.tattoo_hourly.name",subKey:"service.tattoo_hourly.sub",category:"tattoo",currency:"£",min:120,max:250,confidence:"INDICATIVE",basisKey:"basis.london.tattoo_hourly"},{id:"tattoo_minimum",nameKey:"service.tattoo_minimum.name",subKey:"service.tattoo_minimum.sub",category:"tattoo",currency:"£",min:80,max:150,confidence:"INDICATIVE",basisKey:"basis.london.tattoo_minimum"},{id:"piercing_earlobe",nameKey:"service.piercing_earlobe.name",subKey:"service.piercing_earlobe.sub",category:"piercing",currency:"£",min:40,max:90,confidence:"INDICATIVE",basisKey:"basis.london.piercing_earlobe",jewelleryNoteKey:"jewellery.included.titanium"},{id:"piercing_nostril",nameKey:"service.piercing_nostril.name",subKey:"service.piercing_nostril.sub",category:"piercing",currency:"£",min:50,max:90,confidence:"INDICATIVE",basisKey:"basis.london.piercing_nostril",jewelleryNoteKey:"jewellery.included.titanium"},{id:"piercing_helix",nameKey:"service.piercing_helix.name",subKey:"service.piercing_helix.sub",category:"piercing",currency:"£",min:40,max:85,confidence:"INDICATIVE",basisKey:"basis.london.piercing_helix",jewelleryNoteKey:"jewellery.included.titanium"},{id:"piercing_navel",nameKey:"service.piercing_navel.name",subKey:"service.piercing_navel.sub",category:"piercing",currency:"£",min:50,max:100,confidence:"INDICATIVE",basisKey:"basis.london.piercing_navel",jewelleryNoteKey:"jewellery.included.titanium"},{id:"piercing_septum",nameKey:"service.piercing_septum.name",subKey:"service.piercing_septum.sub",category:"piercing",currency:"£",min:55,max:110,confidence:"INDICATIVE",basisKey:"basis.london.piercing_septum",jewelleryNoteKey:"jewellery.included.titanium"}],us:[{id:"tattoo_small",nameKey:"service.tattoo_small.name",subKey:"service.tattoo_small.sub",category:"tattoo",currency:"$",min:100,max:250,confidence:"INDICATIVE",basisKey:"basis.us.tattoo_small"},{id:"tattoo_half_day",nameKey:"service.tattoo_half_day.name",subKey:"service.tattoo_half_day.sub",category:"tattoo",currency:"$",min:400,max:900,confidence:"INDICATIVE",basisKey:"basis.us.tattoo_half_day"},{id:"tattoo_full_day",nameKey:"service.tattoo_full_day.name",subKey:"service.tattoo_full_day.sub",category:"tattoo",currency:"$",min:700,max:1600,confidence:"INDICATIVE",basisKey:"basis.us.tattoo_full_day"},{id:"tattoo_hourly",nameKey:"service.tattoo_hourly.name",subKey:"service.tattoo_hourly.sub",category:"tattoo",currency:"$",min:100,max:250,confidence:"INDICATIVE",basisKey:"basis.us.tattoo_hourly"},{id:"tattoo_minimum",nameKey:"service.tattoo_minimum.name",subKey:"service.tattoo_minimum.sub",category:"tattoo",currency:"$",min:50,max:100,confidence:"INDICATIVE",basisKey:"basis.us.tattoo_minimum"},{id:"piercing_earlobe",nameKey:"service.piercing_earlobe.name",subKey:"service.piercing_earlobe.sub",category:"piercing",currency:"$",min:40,max:80,confidence:"INDICATIVE",basisKey:"basis.us.piercing_earlobe",jewelleryNoteKey:"jewellery.excluded.fee_only"},{id:"piercing_nostril",nameKey:"service.piercing_nostril.name",subKey:"service.piercing_nostril.sub",category:"piercing",currency:"$",min:40,max:80,confidence:"INDICATIVE",basisKey:"basis.us.piercing_nostril",jewelleryNoteKey:"jewellery.excluded.fee_only"},{id:"piercing_helix",nameKey:"service.piercing_helix.name",subKey:"service.piercing_helix.sub",category:"piercing",currency:"$",min:40,max:80,confidence:"INDICATIVE",basisKey:"basis.us.piercing_helix",jewelleryNoteKey:"jewellery.excluded.fee_only"},{id:"piercing_navel",nameKey:"service.piercing_navel.name",subKey:"service.piercing_navel.sub",category:"piercing",currency:"$",min:40,max:85,confidence:"INDICATIVE",basisKey:"basis.us.piercing_navel",jewelleryNoteKey:"jewellery.excluded.fee_only"},{id:"piercing_septum",nameKey:"service.piercing_septum.name",subKey:"service.piercing_septum.sub",category:"piercing",currency:"$",min:45,max:90,confidence:"INDICATIVE",basisKey:"basis.us.piercing_septum",jewelleryNoteKey:"jewellery.excluded.fee_only"}],eu:[{id:"tattoo_small",nameKey:"service.tattoo_small.name",subKey:"service.tattoo_small.sub",category:"tattoo",currency:"€",min:80,max:200,confidence:"INDICATIVE",basisKey:"basis.eu.tattoo_small"},{id:"tattoo_half_day",nameKey:"service.tattoo_half_day.name",subKey:"service.tattoo_half_day.sub",category:"tattoo",currency:"€",min:300,max:650,confidence:"INDICATIVE",basisKey:"basis.eu.tattoo_half_day"},{id:"tattoo_full_day",nameKey:"service.tattoo_full_day.name",subKey:"service.tattoo_full_day.sub",category:"tattoo",currency:"€",min:500,max:1200,confidence:"INDICATIVE",basisKey:"basis.eu.tattoo_full_day"},{id:"tattoo_hourly",nameKey:"service.tattoo_hourly.name",subKey:"service.tattoo_hourly.sub",category:"tattoo",currency:"€",min:80,max:180,confidence:"INDICATIVE",basisKey:"basis.eu.tattoo_hourly"},{id:"tattoo_minimum",nameKey:"service.tattoo_minimum.name",subKey:"service.tattoo_minimum.sub",category:"tattoo",currency:"€",min:40,max:80,confidence:"INDICATIVE",basisKey:"basis.eu.tattoo_minimum"},{id:"piercing_earlobe",nameKey:"service.piercing_earlobe.name",subKey:"service.piercing_earlobe.sub",category:"piercing",currency:"€",min:30,max:70,confidence:"INDICATIVE",basisKey:"basis.eu.piercing_earlobe",jewelleryNoteKey:"jewellery.included.standard"},{id:"piercing_nostril",nameKey:"service.piercing_nostril.name",subKey:"service.piercing_nostril.sub",category:"piercing",currency:"€",min:30,max:65,confidence:"INDICATIVE",basisKey:"basis.eu.piercing_nostril",jewelleryNoteKey:"jewellery.included.standard"},{id:"piercing_helix",nameKey:"service.piercing_helix.name",subKey:"service.piercing_helix.sub",category:"piercing",currency:"€",min:30,max:65,confidence:"INDICATIVE",basisKey:"basis.eu.piercing_helix",jewelleryNoteKey:"jewellery.included.standard"},{id:"piercing_navel",nameKey:"service.piercing_navel.name",subKey:"service.piercing_navel.sub",category:"piercing",currency:"€",min:35,max:70,confidence:"INDICATIVE",basisKey:"basis.eu.piercing_navel",jewelleryNoteKey:"jewellery.included.standard"},{id:"piercing_septum",nameKey:"service.piercing_septum.name",subKey:"service.piercing_septum.sub",category:"piercing",currency:"€",min:35,max:75,confidence:"INDICATIVE",basisKey:"basis.eu.piercing_septum",jewelleryNoteKey:"jewellery.included.standard"}],au:[{id:"tattoo_small",nameKey:"service.tattoo_small.name",subKey:"service.tattoo_small.sub",category:"tattoo",currency:"A$",min:150,max:350,confidence:"INDICATIVE",basisKey:"basis.au.tattoo_small"},{id:"tattoo_half_day",nameKey:"service.tattoo_half_day.name",subKey:"service.tattoo_half_day.sub",category:"tattoo",currency:"A$",min:500,max:900,confidence:"INDICATIVE",basisKey:"basis.au.tattoo_half_day"},{id:"tattoo_full_day",nameKey:"service.tattoo_full_day.name",subKey:"service.tattoo_full_day.sub",category:"tattoo",currency:"A$",min:900,max:1600,confidence:"INDICATIVE",basisKey:"basis.au.tattoo_full_day"},{id:"tattoo_hourly",nameKey:"service.tattoo_hourly.name",subKey:"service.tattoo_hourly.sub",category:"tattoo",currency:"A$",min:150,max:300,confidence:"INDICATIVE",basisKey:"basis.au.tattoo_hourly"},{id:"tattoo_minimum",nameKey:"service.tattoo_minimum.name",subKey:"service.tattoo_minimum.sub",category:"tattoo",currency:"A$",min:100,max:150,confidence:"INDICATIVE",basisKey:"basis.au.tattoo_minimum"},{id:"piercing_earlobe",nameKey:"service.piercing_earlobe.name",subKey:"service.piercing_earlobe.sub",category:"piercing",currency:"A$",min:60,max:110,confidence:"INDICATIVE",basisKey:"basis.au.piercing_earlobe",jewelleryNoteKey:"jewellery.included.titanium"},{id:"piercing_nostril",nameKey:"service.piercing_nostril.name",subKey:"service.piercing_nostril.sub",category:"piercing",currency:"A$",min:60,max:110,confidence:"INDICATIVE",basisKey:"basis.au.piercing_nostril",jewelleryNoteKey:"jewellery.included.titanium"},{id:"piercing_helix",nameKey:"service.piercing_helix.name",subKey:"service.piercing_helix.sub",category:"piercing",currency:"A$",min:60,max:110,confidence:"INDICATIVE",basisKey:"basis.au.piercing_helix",jewelleryNoteKey:"jewellery.included.titanium"},{id:"piercing_navel",nameKey:"service.piercing_navel.name",subKey:"service.piercing_navel.sub",category:"piercing",currency:"A$",min:70,max:130,confidence:"INDICATIVE",basisKey:"basis.au.piercing_navel",jewelleryNoteKey:"jewellery.included.titanium"},{id:"piercing_septum",nameKey:"service.piercing_septum.name",subKey:"service.piercing_septum.sub",category:"piercing",currency:"A$",min:70,max:140,confidence:"INDICATIVE",basisKey:"basis.au.piercing_septum",jewelleryNoteKey:"jewellery.included.titanium"}],cee:[{id:"tattoo_small",nameKey:"service.tattoo_small.name",subKey:"service.tattoo_small.sub",category:"tattoo",currency:"€",min:50,max:140,confidence:"INDICATIVE",basisKey:"basis.cee.tattoo_small"},{id:"tattoo_half_day",nameKey:"service.tattoo_half_day.name",subKey:"service.tattoo_half_day.sub",category:"tattoo",currency:"€",min:180,max:420,confidence:"INDICATIVE",basisKey:"basis.cee.tattoo_half_day"},{id:"tattoo_full_day",nameKey:"service.tattoo_full_day.name",subKey:"service.tattoo_full_day.sub",category:"tattoo",currency:"€",min:350,max:750,confidence:"INDICATIVE",basisKey:"basis.cee.tattoo_full_day"},{id:"tattoo_hourly",nameKey:"service.tattoo_hourly.name",subKey:"service.tattoo_hourly.sub",category:"tattoo",currency:"€",min:50,max:110,confidence:"INDICATIVE",basisKey:"basis.cee.tattoo_hourly"},{id:"tattoo_minimum",nameKey:"service.tattoo_minimum.name",subKey:"service.tattoo_minimum.sub",category:"tattoo",currency:"€",min:30,max:60,confidence:"INDICATIVE",basisKey:"basis.cee.tattoo_minimum"},{id:"piercing_earlobe",nameKey:"service.piercing_earlobe.name",subKey:"service.piercing_earlobe.sub",category:"piercing",currency:"€",min:20,max:45,confidence:"INDICATIVE",basisKey:"basis.cee.piercing_earlobe",jewelleryNoteKey:"jewellery.included.standard"},{id:"piercing_nostril",nameKey:"service.piercing_nostril.name",subKey:"service.piercing_nostril.sub",category:"piercing",currency:"€",min:20,max:45,confidence:"INDICATIVE",basisKey:"basis.cee.piercing_nostril",jewelleryNoteKey:"jewellery.included.standard"},{id:"piercing_helix",nameKey:"service.piercing_helix.name",subKey:"service.piercing_helix.sub",category:"piercing",currency:"€",min:22,max:45,confidence:"INDICATIVE",basisKey:"basis.cee.piercing_helix",jewelleryNoteKey:"jewellery.included.standard"},{id:"piercing_navel",nameKey:"service.piercing_navel.name",subKey:"service.piercing_navel.sub",category:"piercing",currency:"€",min:25,max:55,confidence:"INDICATIVE",basisKey:"basis.cee.piercing_navel",jewelleryNoteKey:"jewellery.included.standard"},{id:"piercing_septum",nameKey:"service.piercing_septum.name",subKey:"service.piercing_septum.sub",category:"piercing",currency:"€",min:25,max:55,confidence:"INDICATIVE",basisKey:"basis.cee.piercing_septum",jewelleryNoteKey:"jewellery.included.standard"}],ca:[{id:"tattoo_small",nameKey:"service.tattoo_small.name",subKey:"service.tattoo_small.sub",category:"tattoo",currency:"C$",min:120,max:280,confidence:"INDICATIVE",basisKey:"basis.ca.tattoo_small"},{id:"tattoo_half_day",nameKey:"service.tattoo_half_day.name",subKey:"service.tattoo_half_day.sub",category:"tattoo",currency:"C$",min:450,max:950,confidence:"INDICATIVE",basisKey:"basis.ca.tattoo_half_day"},{id:"tattoo_full_day",nameKey:"service.tattoo_full_day.name",subKey:"service.tattoo_full_day.sub",category:"tattoo",currency:"C$",min:800,max:1800,confidence:"INDICATIVE",basisKey:"basis.ca.tattoo_full_day"},{id:"tattoo_hourly",nameKey:"service.tattoo_hourly.name",subKey:"service.tattoo_hourly.sub",category:"tattoo",currency:"C$",min:120,max:260,confidence:"INDICATIVE",basisKey:"basis.ca.tattoo_hourly"},{id:"tattoo_minimum",nameKey:"service.tattoo_minimum.name",subKey:"service.tattoo_minimum.sub",category:"tattoo",currency:"C$",min:80,max:120,confidence:"INDICATIVE",basisKey:"basis.ca.tattoo_minimum"},{id:"piercing_earlobe",nameKey:"service.piercing_earlobe.name",subKey:"service.piercing_earlobe.sub",category:"piercing",currency:"C$",min:45,max:90,confidence:"INDICATIVE",basisKey:"basis.ca.piercing_earlobe",jewelleryNoteKey:"jewellery.excluded.fee_only"},{id:"piercing_nostril",nameKey:"service.piercing_nostril.name",subKey:"service.piercing_nostril.sub",category:"piercing",currency:"C$",min:45,max:90,confidence:"INDICATIVE",basisKey:"basis.ca.piercing_nostril",jewelleryNoteKey:"jewellery.excluded.fee_only"},{id:"piercing_helix",nameKey:"service.piercing_helix.name",subKey:"service.piercing_helix.sub",category:"piercing",currency:"C$",min:45,max:90,confidence:"INDICATIVE",basisKey:"basis.ca.piercing_helix",jewelleryNoteKey:"jewellery.excluded.fee_only"},{id:"piercing_navel",nameKey:"service.piercing_navel.name",subKey:"service.piercing_navel.sub",category:"piercing",currency:"C$",min:50,max:95,confidence:"INDICATIVE",basisKey:"basis.ca.piercing_navel",jewelleryNoteKey:"jewellery.excluded.fee_only"},{id:"piercing_septum",nameKey:"service.piercing_septum.name",subKey:"service.piercing_septum.sub",category:"piercing",currency:"C$",min:55,max:105,confidence:"INDICATIVE",basisKey:"basis.ca.piercing_septum",jewelleryNoteKey:"jewellery.excluded.fee_only"}],sa:[{id:"tattoo_small",nameKey:"service.tattoo_small.name",subKey:"service.tattoo_small.sub",category:"tattoo",currency:"R$",min:150,max:400,confidence:"INDICATIVE",basisKey:"basis.sa.tattoo_small"},{id:"tattoo_half_day",nameKey:"service.tattoo_half_day.name",subKey:"service.tattoo_half_day.sub",category:"tattoo",currency:"R$",min:600,max:1400,confidence:"INDICATIVE",basisKey:"basis.sa.tattoo_half_day"},{id:"tattoo_full_day",nameKey:"service.tattoo_full_day.name",subKey:"service.tattoo_full_day.sub",category:"tattoo",currency:"R$",min:1100,max:2600,confidence:"INDICATIVE",basisKey:"basis.sa.tattoo_full_day"},{id:"tattoo_hourly",nameKey:"service.tattoo_hourly.name",subKey:"service.tattoo_hourly.sub",category:"tattoo",currency:"R$",min:150,max:350,confidence:"INDICATIVE",basisKey:"basis.sa.tattoo_hourly"},{id:"tattoo_minimum",nameKey:"service.tattoo_minimum.name",subKey:"service.tattoo_minimum.sub",category:"tattoo",currency:"R$",min:100,max:200,confidence:"INDICATIVE",basisKey:"basis.sa.tattoo_minimum"},{id:"piercing_earlobe",nameKey:"service.piercing_earlobe.name",subKey:"service.piercing_earlobe.sub",category:"piercing",currency:"R$",min:80,max:160,confidence:"INDICATIVE",basisKey:"basis.sa.piercing_earlobe",jewelleryNoteKey:"jewellery.included.standard"},{id:"piercing_nostril",nameKey:"service.piercing_nostril.name",subKey:"service.piercing_nostril.sub",category:"piercing",currency:"R$",min:80,max:150,confidence:"INDICATIVE",basisKey:"basis.sa.piercing_nostril",jewelleryNoteKey:"jewellery.included.standard"},{id:"piercing_helix",nameKey:"service.piercing_helix.name",subKey:"service.piercing_helix.sub",category:"piercing",currency:"R$",min:90,max:160,confidence:"INDICATIVE",basisKey:"basis.sa.piercing_helix",jewelleryNoteKey:"jewellery.included.standard"},{id:"piercing_navel",nameKey:"service.piercing_navel.name",subKey:"service.piercing_navel.sub",category:"piercing",currency:"R$",min:100,max:180,confidence:"INDICATIVE",basisKey:"basis.sa.piercing_navel",jewelleryNoteKey:"jewellery.included.standard"},{id:"piercing_septum",nameKey:"service.piercing_septum.name",subKey:"service.piercing_septum.sub",category:"piercing",currency:"R$",min:null,max:null,confidence:"GAP",basisKey:"basis.gap.septum"}],sea:[{id:"tattoo_small",nameKey:"service.tattoo_small.name",subKey:"service.tattoo_small.sub",category:"tattoo",currency:"฿",min:1500,max:4e3,confidence:"INDICATIVE",basisKey:"basis.sea.tattoo_small"},{id:"tattoo_half_day",nameKey:"service.tattoo_half_day.name",subKey:"service.tattoo_half_day.sub",category:"tattoo",currency:"฿",min:6e3,max:12e3,confidence:"INDICATIVE",basisKey:"basis.sea.tattoo_half_day"},{id:"tattoo_full_day",nameKey:"service.tattoo_full_day.name",subKey:"service.tattoo_full_day.sub",category:"tattoo",currency:"฿",min:1e4,max:22e3,confidence:"INDICATIVE",basisKey:"basis.sea.tattoo_full_day"},{id:"tattoo_hourly",nameKey:"service.tattoo_hourly.name",subKey:"service.tattoo_hourly.sub",category:"tattoo",currency:"฿",min:1500,max:3e3,confidence:"INDICATIVE",basisKey:"basis.sea.tattoo_hourly"},{id:"tattoo_minimum",nameKey:"service.tattoo_minimum.name",subKey:"service.tattoo_minimum.sub",category:"tattoo",currency:"฿",min:800,max:1500,confidence:"INDICATIVE",basisKey:"basis.sea.tattoo_minimum"},{id:"piercing_earlobe",nameKey:"service.piercing_earlobe.name",subKey:"service.piercing_earlobe.sub",category:"piercing",currency:"฿",min:500,max:1200,confidence:"INDICATIVE",basisKey:"basis.sea.piercing_earlobe",jewelleryNoteKey:"jewellery.included.basic"},{id:"piercing_nostril",nameKey:"service.piercing_nostril.name",subKey:"service.piercing_nostril.sub",category:"piercing",currency:"฿",min:600,max:1200,confidence:"INDICATIVE",basisKey:"basis.sea.piercing_nostril",jewelleryNoteKey:"jewellery.included.basic"},{id:"piercing_helix",nameKey:"service.piercing_helix.name",subKey:"service.piercing_helix.sub",category:"piercing",currency:"฿",min:600,max:1400,confidence:"INDICATIVE",basisKey:"basis.sea.piercing_helix",jewelleryNoteKey:"jewellery.included.basic"},{id:"piercing_navel",nameKey:"service.piercing_navel.name",subKey:"service.piercing_navel.sub",category:"piercing",currency:"฿",min:800,max:1800,confidence:"INDICATIVE",basisKey:"basis.sea.piercing_navel",jewelleryNoteKey:"jewellery.included.basic"},{id:"piercing_septum",nameKey:"service.piercing_septum.name",subKey:"service.piercing_septum.sub",category:"piercing",currency:"฿",min:null,max:null,confidence:"GAP",basisKey:"basis.gap.septum"}]},B={en:{"app.title":"Studio Pricing Benchmark","app.subtitle":"Enter your studio rates to compare against regional industry reference ranges across nine global markets. Useful for annual pricing reviews and market positioning.","app.badge":"Studio Operations Reference","app.nav_benchmark":"Benchmark Table","app.nav_calculator":"Compare My Prices","app.nav_docs":"Documentation","app.nav_embed":"Embed Code","app.footnote":"These ranges are editorial estimates compiled from publicly listed prices. They are not survey data and have not been independently verified. Premium specialists routinely price above them.","app.open_standalone":"Open Standalone Benchmark View →","app.print":"Print Benchmark","lang.switcher_label":"Language","lang.en":"English","lang.de":"Deutsch","lang.fr":"Français","lang.es":"Español","lang.it":"Italiano","lang.pt":"Português","lang.nl":"Nederlands","common.currency":"Currency","common.copy":"Copy","common.copied":"Copied!","common.download":"Download","common.close":"Close","common.all":"All","common.back":"Back","region.label":"Reference region:","region.all_regions":"Nine Global Regions","region.coverage_scope":"Coverage Scope:","region.uk.name":"UK (national average)","region.uk.coverage":"National UK average across independent studios in England, Scotland, and Wales (excluding Greater London).","region.london.name":"London / SE England","region.london.coverage":"Greater London metropolitan area and South East England commercial studios.","region.us.name":"US (national average)","region.us.coverage":"United States national average across suburban and metropolitan commercial studios.","region.eu.name":"Western Europe","region.eu.coverage":"Metropolitan studios across Germany, France, Netherlands, Belgium, and Austria, quoted in EUR (€).","region.au.name":"Australia","region.au.coverage":"Capital city and major regional studios across New South Wales, Victoria, and Queensland, quoted in AUD (A$).","region.cee.name":"Central & Eastern Europe","region.cee.coverage":"Urban studio markets in Poland, Czechia, Hungary, and Romania, indexed and quoted in EUR (€).","region.ca.name":"Canada","region.ca.coverage":"Urban studios across Ontario, British Columbia, and Quebec, quoted in Canadian Dollars (CAD / C$).","region.sa.name":"South America","region.sa.coverage":"Figures lean on custom studios in São Paulo and Rio de Janeiro (Brazil) and Buenos Aires (Argentina), quoted in Brazilian Reais (BRL / R$).","region.sea.name":"South East Asia","region.sea.coverage":"Figures lean on professional studio hubs in Thailand (Bangkok, Phuket, Chiang Mai) and Bali (Indonesia), quoted in Thai Baht (THB / ฿).","jewellery.policy_label":"Jewellery Inclusions:","jewellery.standards_badge":"Sterile Consumables & Jewellery Standards","jewellery.policy_desc":"Implant-grade materials conforming to standard specifications (e.g., ASTM F-136 titanium, ASTM F-138 stainless steel).","jewellery.uk.policy":"Piercing prices in the UK generally include basic implant-grade titanium starter jewellery.","jewellery.london.policy":"London studios generally include basic implant-grade titanium starter jewellery.","jewellery.us.policy":"US studios typically charge a piercing service fee with jewellery purchased separately ($30–$60+).","jewellery.eu.policy":"Western European studios commonly include basic initial titanium or surgical steel starter jewellery.","jewellery.au.policy":"Australian studios commonly include basic implant-grade initial titanium jewellery.","jewellery.cee.policy":"Central & Eastern Europe studios typically include standard starter jewellery.","jewellery.ca.policy":"Canadian studios commonly charge service fees separately from starter jewellery.","jewellery.sa.policy":"South American studios generally include basic initial jewellery in standard service packages.","jewellery.sea.policy":"South East Asian studios catering to local and international clients generally include basic starter jewellery.","jewellery.included.titanium":"Includes implant-grade titanium starter jewellery","jewellery.included.standard":"Includes standard initial starter jewellery","jewellery.included.basic":"Includes basic initial starter jewellery","jewellery.excluded.fee_only":"Piercing fee only: jewellery charged separately","service.tattoo_small.name":"Small tattoo (1–2 hrs)","service.tattoo_small.sub":"Simple design, single colour, palm-size or smaller","service.tattoo_half_day.name":"Half-day session (4–5 hrs)","service.tattoo_half_day.sub":"Medium-large piece or detailed single placement","service.tattoo_full_day.name":"Full-day session (7–8 hrs)","service.tattoo_full_day.sub":"Large / complex work, sleeve progression, back piece","service.tattoo_hourly.name":"Hourly rate","service.tattoo_hourly.sub":"Standard per-hour billing for custom or ongoing work","service.tattoo_minimum.name":"Minimum charge","service.tattoo_minimum.sub":"Walk-in base rate / sterile setup fee / tiny flash","service.piercing_earlobe.name":"Earlobe piercing (pair)","service.piercing_earlobe.sub":"Standard lobe placement for both ears","service.piercing_nostril.name":"Nostril piercing","service.piercing_nostril.sub":"Standard nostril placement with stud or ring","service.piercing_helix.name":"Helix / cartilage","service.piercing_helix.sub":"Upper ear cartilage placement","service.piercing_navel.name":"Navel piercing","service.piercing_navel.sub":"Upper navel placement with curved barbell","service.piercing_septum.name":"Septum piercing","service.piercing_septum.sub":"Nasal septum sweet-spot placement","conf.indicative":"INDICATIVE","conf.no_data":"no reliable data yet","conf.indicative_desc":"An editorial estimate compiled by Poli International from publicly listed prices. Not a survey and not independently verified.","conf.gap_desc":"No reliable figure, so it is left blank rather than guessed.","basis.uk.tattoo_small":"Typical listed price for a small palm-sized flash or custom tattoo.","basis.uk.tattoo_half_day":"Typical listed rate for a multi-hour half-day sitting.","basis.uk.tattoo_full_day":"Typical listed rate for a full-day custom sitting.","basis.uk.tattoo_hourly":"Typical hourly billing rate for custom tattoo work.","basis.uk.tattoo_minimum":"Typical shop minimum covering sterile consumables and single-use setup.","basis.uk.piercing_earlobe":"Typical listed price for a lobe pair including basic titanium studs.","basis.uk.piercing_nostril":"Typical listed price for nostril piercing including basic titanium labret.","basis.uk.piercing_helix":"Typical listed price for helix cartilage including basic titanium labret.","basis.uk.piercing_navel":"Typical listed price for navel piercing including basic titanium curved barbell.","basis.uk.piercing_septum":"Typical listed price for septum piercing including basic circular barbell.","basis.london.tattoo_small":"Typical listed price for small custom work reflecting central studio overheads.","basis.london.tattoo_half_day":"Typical listed rate for a half-day session reflecting commercial overheads.","basis.london.tattoo_full_day":"Typical listed rate for a full-day session in metropolitan studios.","basis.london.tattoo_hourly":"Typical hourly bench rate for resident artists in prime commercial locations.","basis.london.tattoo_minimum":"Typical shop minimum reflecting commercial overheads and sterile setup.","basis.london.piercing_earlobe":"Typical listed price for a lobe pair including starter titanium studs.","basis.london.piercing_nostril":"Typical listed price for nostril placement including starter titanium labret.","basis.london.piercing_helix":"Typical listed price for helix cartilage including starter titanium labret.","basis.london.piercing_navel":"Typical listed price for navel placement including starter titanium barbell.","basis.london.piercing_septum":"Typical listed price for septum placement including starter titanium circular barbell.","basis.us.tattoo_small":"Typical listed price for small palm-sized flash or custom design.","basis.us.tattoo_half_day":"Typical listed multi-hour rate across commercial custom studios.","basis.us.tattoo_full_day":"Typical listed full-day sitting rate for custom tattooing.","basis.us.tattoo_hourly":"Typical hourly billing rate for custom tattoo work.","basis.us.tattoo_minimum":"Typical shop minimum covering single-use sterile disposables and tray setup.","basis.us.piercing_earlobe":"Typical procedure fee for lobe pair; starter jewellery purchased separately.","basis.us.piercing_nostril":"Typical procedure fee for nostril placement; starter jewellery purchased separately.","basis.us.piercing_helix":"Typical procedure fee for helix cartilage; starter jewellery purchased separately.","basis.us.piercing_navel":"Typical procedure fee for navel placement; starter jewellery purchased separately.","basis.us.piercing_septum":"Typical procedure fee for septum placement; starter jewellery purchased separately.","basis.eu.tattoo_small":"Typical listed price for small flash or custom design.","basis.eu.tattoo_half_day":"Typical listed rate for a multi-hour half-day sitting.","basis.eu.tattoo_full_day":"Typical listed rate for a full-day custom sitting.","basis.eu.tattoo_hourly":"Typical hourly billing rate across commercial custom studios.","basis.eu.tattoo_minimum":"Typical shop minimum covering sterile disposables and workstation setup.","basis.eu.piercing_earlobe":"Typical listed price for a lobe pair including basic starter studs.","basis.eu.piercing_nostril":"Typical listed price for nostril piercing including basic starter labret.","basis.eu.piercing_helix":"Typical listed price for helix cartilage including sterile initial labret.","basis.eu.piercing_navel":"Typical listed price for navel piercing including starter curved barbell.","basis.eu.piercing_septum":"Typical listed price for septum placement including starter circular barbell.","basis.au.tattoo_small":"Typical listed price for small palm-sized flash or custom design.","basis.au.tattoo_half_day":"Typical listed half-day rate across metropolitan studios.","basis.au.tattoo_full_day":"Typical listed full-day session rate for custom work.","basis.au.tattoo_hourly":"Typical hourly billing rate across commercial custom studios.","basis.au.tattoo_minimum":"Typical shop minimum covering single-use needle and tray setup.","basis.au.piercing_earlobe":"Typical listed price for a lobe pair including initial titanium studs.","basis.au.piercing_nostril":"Typical listed price for nostril piercing including initial titanium labret.","basis.au.piercing_helix":"Typical listed price for helix cartilage including initial titanium labret.","basis.au.piercing_navel":"Typical listed price for navel piercing including initial titanium curved barbell.","basis.au.piercing_septum":"Typical listed price for septum placement including starter circular barbell.","basis.cee.tattoo_small":"Typical listed price for small custom design indexed in EUR.","basis.cee.tattoo_half_day":"Typical listed rate for a multi-hour half-day sitting.","basis.cee.tattoo_full_day":"Typical listed rate for a full-day custom sitting.","basis.cee.tattoo_hourly":"Typical hourly billing rate for resident artists in urban studios.","basis.cee.tattoo_minimum":"Typical studio minimum covering sterile consumables and single-use setup.","basis.cee.piercing_earlobe":"Typical listed price for a lobe pair including starter jewellery.","basis.cee.piercing_nostril":"Typical listed price for nostril placement including standard starter jewellery.","basis.cee.piercing_helix":"Typical listed price for helix cartilage including standard starter labret.","basis.cee.piercing_navel":"Typical listed price for navel placement including starter curved barbell.","basis.cee.piercing_septum":"Typical listed price for septum placement including starter circular barbell.","basis.ca.tattoo_small":"Typical listed price for small custom work in urban studios.","basis.ca.tattoo_half_day":"Typical listed half-day session rate reflecting urban studio overheads.","basis.ca.tattoo_full_day":"Typical listed full-day sitting rate in urban custom studios.","basis.ca.tattoo_hourly":"Typical hourly bench rate across custom tattoo studios.","basis.ca.tattoo_minimum":"Typical shop minimum covering sterile disposables and setup.","basis.ca.piercing_earlobe":"Typical procedure fee for lobe pair; starter jewellery purchased separately.","basis.ca.piercing_nostril":"Typical procedure fee for nostril placement; starter jewellery purchased separately.","basis.ca.piercing_helix":"Typical procedure fee for helix cartilage; starter jewellery purchased separately.","basis.ca.piercing_navel":"Typical procedure fee for navel placement; starter jewellery purchased separately.","basis.ca.piercing_septum":"No reliable figure, so it is left blank rather than guessed.","basis.sa.tattoo_small":"Typical listed price for small custom designs in commercial studios.","basis.sa.tattoo_half_day":"Typical listed multi-hour sitting rate in urban centers.","basis.sa.tattoo_full_day":"Typical listed full-day session rate for custom work.","basis.sa.tattoo_hourly":"Typical hourly billing rate for custom work in commercial studios.","basis.sa.tattoo_minimum":"Typical studio minimum covering disposable sterile kit and setup.","basis.sa.piercing_earlobe":"Typical listed price for a lobe pair including basic starter studs.","basis.sa.piercing_nostril":"Typical listed price for nostril placement including basic starter jewellery.","basis.sa.piercing_helix":"Typical listed price for helix cartilage including basic starter jewellery.","basis.sa.piercing_navel":"Typical listed price for navel placement including basic curved barbell.","basis.sea.tattoo_small":"Typical listed price for small custom designs in studio hubs.","basis.sea.tattoo_half_day":"Typical listed half-day rate in international studio hubs.","basis.sea.tattoo_full_day":"Typical listed full-day session rate for custom tattoo work.","basis.sea.tattoo_hourly":"Typical hourly billing rate for custom work in studio hubs.","basis.sea.tattoo_minimum":"Typical shop minimum covering imported single-use needles and sterile setup.","basis.sea.piercing_earlobe":"Typical listed price for a lobe pair including basic starter jewellery.","basis.sea.piercing_nostril":"Typical listed price for nostril placement including basic starter jewellery.","basis.sea.piercing_helix":"Typical listed price for helix cartilage including basic starter jewellery.","basis.sea.piercing_navel":"Typical listed price for navel placement including basic starter barbell.","basis.gap.septum":"No reliable figure, so it is left blank rather than guessed.","table.service":"Service / Item","table.service_procedure":"Service / Procedure","table.range":"Benchmark Range","table.benchmark_range":"Benchmark Range","table.currency":"Currency","table.confidence":"Confidence","table.basis":"Basis & Methodology","table.basis_scope":"Basis & Market Scope","table.your_price":"Your Rate","table.your_rate":"Your Rate","table.position":"Position","table.category_tattoo":"Tattoo Services","table.category_piercing":"Piercing Services","table.notes_header":"Regional Details & Jewellery Standards","calc.title":"Compare Studio Rates","calc.subtitle":"Enter what your studio charges to compare against the selected regional market.","calc.btn_evaluate":"Compare My Prices","calc.btn_clear":"Clear All Rates","calc.results_heading":"Your Pricing Position","calc.results_sub":"Here is how your studio rates align with the mid-market benchmark.","calc.eval_summary":"Evaluation Summary","calc.summary_count":"{count} of {total} services evaluated","calc.interactive_heading":"Interactive Comparison Calculator","calc.interactive_desc":"Enter your studio rates into the table above, then click Evaluate Pricing Position to analyze how your pricing model compares across the mid-market range.","pos.below":"Below Market","pos.market":"Market Rate","pos.premium":"Premium","pos.none":"Not entered","pos.no_data":"Data Gap","docs.title":"Studio Pricing Benchmark: Technical Documentation","docs.subtitle":"Specification, data models, methodology, and integration guide for the Poli International Studio Pricing Benchmark.","docs.badge":"Technical Specification","docs.file_selector":"Document File:","docs.file_tech":"Technical Documentation (TECHNICAL-DOCS.md)","docs.file_user":"Studio User Guide (USER-GUIDE.md)","docs.file_readme":"Project Overview (README.md)","docs.file_contrib":"Contributing Guide (CONTRIBUTING.md)","docs.view_markdown":"View Raw Markdown","docs.view_rendered":"View Formatted Guide","docs.download_file":"Download Markdown File","docs.copied_md":"Markdown copied to clipboard!","docs.sec_overview":"Architecture Overview","docs.sec_overview_body":"The Studio Pricing Benchmark is an offline-capable, zero-external-dependency utility engineered for tattoo artists, body piercers, and studio owners. It enables studio management to systematically evaluate their price schedule against regional reference benchmarks.","docs.feature_zero_net":"Zero Network Requests: Operates entirely client-side with no remote fonts, analytics trackers, or third-party content hosts.","docs.feature_theme":"Tokenized Theme System: Standardized CSS custom properties conforming to WCAG AA contrast (≥ 4.5:1) in both light and dark themes.","docs.feature_a11y":"Greyscale Accessibility: Confidence markers utilize distinct textual tags and border geometries so color is never the sole carrier of meaning.","docs.sec_methodology":"Data Integrity & Methodology","docs.sec_methodology_body":"Benchmark figures represent mid-market reference ranges compiled from publicly listed studio rates. Every line item is classified under one of two data confidence tiers:","docs.conf_ind_desc":"Reasoned from regional cost of living, neighbouring studio markets, and published trade reports.","docs.conf_gap_desc":"Insufficient published pricing data to establish a reliable range. Intentionally left blank.","docs.sec_regions":"Regional Scope","docs.sec_regions_body":"The tool supports nine distinct market zones: UK National, London & SE England, United States, Western Europe, Australia, Central & Eastern Europe, Canada, South America (leaning on Brazil and Argentina), and South East Asia (leaning on Thailand and Bali). Rates are quoted in the local primary currency.","docs.th_region_code":"Region Code","docs.th_territory":"Territory Name","docs.th_currency":"Currency","docs.th_scope_basis":"Scope Basis","docs.scope_uk":"National average outside Greater London","docs.scope_london":"High-overhead metropolitan studios","docs.scope_us":"National average across urban/suburban studios","docs.scope_eu":"Western European metropolitan collectives","docs.scope_au":"Major state capitals and regional hubs","docs.scope_cee":"Indexed urban rate cards in CEE capitals","docs.scope_ca":"Urban studios in ON, BC, and QC","docs.scope_sa":"Custom studios in São Paulo, Rio, and Buenos Aires","docs.scope_sea":"Tourist and resident studio hubs in Bangkok, Phuket, Bali","docs.sec_jewellery":"Piercing Jewellery Inclusions","docs.sec_jewellery_body":"Commercial practices diverge by territory: UK, Western Europe, Australian, and South East Asian studios generally include basic starter jewellery in the procedure price. Conversely, US and Canadian studios typically quote a procedure-only service fee with jewellery billed separately.","docs.th_jewellery_policy":"Starter Jewellery Policy","docs.th_material_standard":"Standard Material Included","docs.jewellery_inc_proc":"Included in procedure price","docs.jewellery_mat_titanium":"Implant-grade titanium (ASTM F-136)","docs.jewellery_sep_charged":"Separately charged ($30–$60+)","docs.jewellery_mat_client":"Client purchase (titanium / 14k gold)","docs.jewellery_std_included":"Standard starter jewellery included","docs.jewellery_mat_eu":"Basic titanium or surgical steel","docs.jewellery_mat_au_inc":"Implant-grade titanium starter included","docs.jewellery_mat_au_std":"Implant-grade titanium (ASTM F-136 / ASTM F-138)","docs.jewellery_mat_cee_inc":"Standard starter jewellery included","docs.jewellery_mat_cee_std":"Standard initial jewellery","docs.jewellery_mat_ca_sep":"Separately charged (C$35–C$70+)","docs.jewellery_mat_ca_std":"Client purchase (implant-grade titanium)","docs.jewellery_mat_sa_inc":"Basic initial jewellery included","docs.jewellery_mat_sa_std":"Surgical steel (ASTM F-138) or titanium","docs.jewellery_mat_sea_inc":"Basic starter jewellery included","docs.jewellery_mat_sea_std":"Basic initial titanium / steel","docs.sec_embed_title":"Integration & Embedding","docs.sec_embed_body":"The benchmark is available as a responsive, self-contained iframe widget for studio websites, artist booking pages, and apprentice training portals.","docs.sec_embed_note":"The iframe automatically detects theme changes from the parent container via postMessage (poli-theme) and localStorage.","docs.sec_standards_title":"Standards & Material Specifications","docs.sec_standards_body":"All starter jewellery references adhere strictly to established biomedical specifications: ASTM F-136 implant-grade titanium, ASTM F-138 implant-grade stainless steel, EN 1811 nickel release limits, and ISO 10993 biological evaluation standards. Jewellery policies explicitly state whether initial jewellery is included in the procedure fee or purchased separately.","docs.std_astm_f136":"ASTM F-136: Standard Specification for Wrought Titanium-6Aluminum-4Vanadium ELI for Surgical Implant Applications.","docs.std_astm_f138":"ASTM F-138: Standard Specification for Wrought 18Chromium-14Nickel-2.5Molybdenum Stainless Steel Bar and Wire for Surgical Implants.","docs.std_iso_10993":"ISO 10993: Biological evaluation of medical devices (cytotoxicity, irritation, and delayed hypersensitivity testing).","docs.std_en_1811":"EN 1811: Reference test method for release of nickel from all post assemblies inserted into pierced parts of the human body.","docs.std_eu_reach":"EU REACH Annex XVII: Nickel release restrictions for items intended to come into direct and prolonged contact with skin.","docs.sec_sovereignty_title":"Data Sovereignty & Privacy","docs.sec_sovereignty_body":"The Studio Pricing Benchmark executes entirely in memory within the client browser. No rates, studio identifiers, or usage telemetry are transmitted to remote servers. The tool operates under established studio privacy principles and complies with applicable regulations such as GDPR, UK GDPR, LGPD, and PDPA.","embed.title":"Embed Studio Pricing Benchmark","embed.subtitle":"Integrate the responsive pricing benchmark into your artist portal, studio website, or internal management dashboard.","embed.badge":"Integration Guide","embed.instructions":"Copy the code snippet below and paste it into any HTML page. The iframe automatically synchronizes with parent dark/light mode themes and operates with zero external network requests.","embed.copy_btn":"Copy Embed Code","embed.copied":"Copied to Clipboard!","embed.notes_title":"Integration Notes:","embed.note_1":"• The embedded iframe automatically inherits the host website's dark or light theme via standard postMessage events or data-theme attributes.","embed.note_2":"• Requires zero third-party scripts or API keys to function.","calc.alert_enter_rate":"Please enter at least one rate to compare against benchmark ranges.","csv.btn_export":"Export CSV","csv.export_success":"Benchmark CSV exported successfully.","csv.col_region":"Region","csv.col_category":"Category","csv.col_service":"Service / Procedure","csv.col_scope":"Scope / Details","csv.col_currency":"Currency","csv.col_min":"Mid-Market Min","csv.col_max":"Mid-Market Max","csv.col_confidence":"Confidence Status","csv.col_basis":"Basis / Methodology","csv.col_jewellery":"Starter Jewellery Policy","csv.col_your_price":"Your Studio Rate","csv.col_position":"Pricing Position","chart.title":"Visual Benchmark Comparison","chart.subtitle":"Comparing mid-market low and high ranges against your studio rates.","chart.filter_all":"All Procedures","chart.filter_tattoo":"Tattoo Only","chart.filter_piercing":"Piercing Only","chart.legend_low":"Mid-Market Low","chart.legend_high":"Mid-Market High","chart.legend_your_price":"Your Studio Rate","chart.empty_notice":"Enter your rates in the table above to plot your studio prices alongside market ranges.","chart.not_entered":"Not entered","tooltip.range_title":"Benchmark Pricing Criteria","tooltip.mid_market_label":"Mid-Market Range","tooltip.mid_market_desc":"Prevailing standard fee spectrum charged by established commercial studios for standard professional execution, single-use sterile disposables, standard implant-grade starter jewellery (or procedure fee), and standard artist commission/booth fees.","tooltip.premium_label":"Premium Specialist Pricing","tooltip.premium_desc":"Rates exceeding standard mid-market levels, charged by high-demand custom tattoo specialists, guest artists, private appointment suites, bespoke luxury body jewellery, or studios in prime high-rent urban locations.","tooltip.confidence_title":"Data Confidence Grading","tooltip.confidence_desc":"INDICATIVE: An editorial estimate compiled by Poli International from publicly listed prices. Not a survey and not independently verified. GAP: No reliable figure, so it is left blank rather than guessed.","tooltip.position_title":"Pricing Alignment Position","tooltip.position_desc":"Compares your entered rates against the mid-market band: Below Market (under baseline), Market Rate (within band), or Premium (above ceiling).","calc.saved_notice":"Rates saved automatically to local storage.","region.last_reviewed":"Figures last reviewed: September 2026.","conf.gap":"GAP","rates.title":"Your Rates","rates.subtitle":"Enter your studio baseline numbers to compare against the regional reference range.","rates.hourly":"Hourly Rate","rates.min_charge":"Minimum Charge","rates.shop_min":"Shop Minimum","rates.deposit":"Deposit Percentage","rates.tier_label":"Studio Tier","rates.tier_apprentice":"Apprentice","rates.tier_resident":"Resident Artist","rates.tier_established":"Established Artist","rates.tier_specialist":"Specialist / Guest Artist","rates.tier_desc_apprentice":"Apprentice: Building speed and portfolio; often lower hourly rates or fixed model fees.","rates.tier_desc_resident":"Resident Artist: Standard commercial studio artist with regular client bookings.","rates.tier_desc_established":"Established Artist: Multi-year track record, high demand, consistent bookings.","rates.tier_desc_specialist":"Specialist / Guest Artist: Recognised signature style or travelling guest artist; premium pricing independent of regional baseline.","rates.hourly_vs_region":"Regional reference range: {min} – {max}/hr","rates.min_vs_region":"Regional shop minimum reference range: {min} – {max}","rates.status_below":"Below regional reference range","rates.status_within":"Within regional reference range","rates.status_above":"Above regional reference range","whatif.title":"What-If Rate Calculator","whatif.subtitle":"Adjust your hourly rate to project booking totals and deposit amounts.","whatif.rate_adjustment":"Hourly Rate Adjustment","whatif.booking_hours":"Booking Duration (Hours)","whatif.projected_hourly":"Projected Hourly Rate","whatif.booking_total":"Booking Total ({hours} hrs)","whatif.deposit_due":"Deposit Due ({percent}%)","whatif.disclaimer":"Arithmetic on your input only.","whatif.prompt_hourly":"Enter an hourly rate in Your Rates above to run calculations.","handoff.title":"Your numbers","handoff.decision_notice":"Your decision, not a recommendation from this tool.","handoff.copy_btn":"Copy Numbers","handoff.copied":"Copied!","card.title":"Printable Rate Card","card.print_btn":"Print Rate Card","card.subtitle":"Single-page A4 / US Letter rate card generated from your own numbers. Contains no regional reference ranges.","card.studio_card_header":"Studio Rate Card","card.baseline_rates":"Studio Baseline Rates","card.service_rates":"Service Rates","card.price_on_consultation":"Price on consultation","card.footer_notice":"Rates set independently by studio. All procedures follow established professional practice.","card.date":"Date"},de:{"app.title":"Studio-Preise Benchmark","app.subtitle":"Geben Sie Ihre Studio-Preise ein, um sie mit regionalen Branchenrichtwerten in neun globalen Märkten zu vergleichen. Nützlich für jährliche Preisüberprüfungen und Marktpositionierung.","app.badge":"Referenz für Studio-Betrieb","app.nav_benchmark":"Benchmark-Tabelle","app.nav_calculator":"Preise Vergleichen","app.nav_docs":"Dokumentation","app.nav_embed":"Embed-Code","app.footnote":"Diese Spannen sind redaktionelle Schätzungen anhand öffentlich angegebener Preise. Sie sind keine Umfragedaten und wurden nicht unabhängig geprüft. Premium-Spezialisten verlangen routinemäßig höhere Preise.","app.open_standalone":"Eigenständige Benchmark-Ansicht öffnen →","app.print":"Benchmark Drucken","lang.switcher_label":"Sprache","lang.en":"English","lang.de":"Deutsch","lang.fr":"Français","lang.es":"Español","lang.it":"Italiano","lang.pt":"Português","lang.nl":"Nederlands","common.currency":"Währung","common.copy":"Kopieren","common.copied":"Kopiert!","common.download":"Herunterladen","common.close":"Schließen","common.all":"Alle","common.back":"Zurück","region.label":"Referenzregion:","region.all_regions":"Neun Globale Regionen","region.coverage_scope":"Geltungsbereich:","region.uk.name":"UK (Nationaler Durchschnitt)","region.uk.coverage":"Nationaler britischer Durchschnitt unabhängiger Studios in England, Schottland und Wales (ohne Greater London).","region.london.name":"London / Südostengland","region.london.coverage":"Metropolregion Greater London und gewerbliche Studios in Südostengland.","region.us.name":"USA (Nationaler Durchschnitt)","region.us.coverage":"Nationaler US-Durchschnitt über vorstädtische und großstädtische Studios.","region.eu.name":"Westeuropa","region.eu.coverage":"Großstadtstudios in Deutschland, Frankreich, den Niederlanden, Belgien und Österreich, angegeben in EUR (€).","region.au.name":"Australien","region.au.coverage":"Hauptstadt- und Regionalstudios in New South Wales, Victoria und Queensland, angegeben in AUD (A$).","region.cee.name":"Mittel- und Osteuropa","region.cee.coverage":"Urbane Studiomärkte in Polen, Tschechien, Ungarn und Rumänien, indexiert in EUR (€).","region.ca.name":"Kanada","region.ca.coverage":"Urbane Studios in Ontario, British Columbia und Québec, angegeben in Kanadischen Dollar (CAD / C$).","region.sa.name":"Südamerika","region.sa.coverage":"Werte stützen sich auf Custom-Studios in São Paulo, Rio de Janeiro (Brasilien) und Buenos Aires (Argentinien), angegeben in BRL (R$).","region.sea.name":"Südostasien","region.sea.coverage":"Werte stützen sich auf professionelle Studiozentren in Thailand (Bangkok, Phuket, Chiang Mai) und Bali (Indonesien), in THB (฿).","jewellery.policy_label":"Schmuck-Einschlüsse:","jewellery.standards_badge":"Sterile Verbrauchsmaterialien & Schmucknormen","jewellery.policy_desc":"Implantat-Werkstoffe nach Standardspezifikationen (z. B. ASTM F-136 Titan, ASTM F-138 Edelstahl).","jewellery.uk.policy":"Piercing-Preise in Großbritannien enthalten in der Regel Basis-Erstschmuck aus Implantat-Titan.","jewellery.london.policy":"Londoner Studios enthalten in der Regel Basis-Erstschmuck aus Implantat-Titan.","jewellery.us.policy":"US-Studios berechnen typischerweise eine reine Stechgebühr; Schmuck wird separat erworben ($30–$60+).","jewellery.eu.policy":"Westeuropäische Studios beinhalten standardmäßig Basis-Erstschmuck aus Titan oder chirurgischem Stahl.","jewellery.au.policy":"Australische Studios beinhalten standardmäßig Basis-Erstschmuck aus Implantat-Titan.","jewellery.cee.policy":"Studios in Mittel- und Osteuropa beinhalten in der Regel Standard-Erstschmuck.","jewellery.ca.policy":"Kanadische Studios berechnen die Stechgebühr üblicherweise separat vom Erstschmuck.","jewellery.sa.policy":"Südamerikanische Studios beinhalten Basis-Erstschmuck im Regelfall im Standardpaket.","jewellery.sea.policy":"Südostasiatische Studios für einheimische und internationale Kunden beinhalten üblicherweise Basis-Erstschmuck.","jewellery.included.titanium":"Inklusive Erstschmuck aus Implantat-Titan","jewellery.included.standard":"Inklusive Standard-Erstschmuck","jewellery.included.basic":"Inklusive Basis-Erstschmuck","jewellery.excluded.fee_only":"Nur Stechgebühr: Schmuck separat berechnet","service.tattoo_small.name":"Kleines Tattoo (1–2 Std.)","service.tattoo_small.sub":"Einfaches Motiv, einfarbig, handtellergroß oder kleiner","service.tattoo_half_day.name":"Halbtagessitzung (4–5 Std.)","service.tattoo_half_day.sub":"Mittelgroßes bis großes Motiv oder detaillierte Platzierung","service.tattoo_full_day.name":"Ganztagessitzung (7–8 Std.)","service.tattoo_full_day.sub":"Große/komplexe Arbeiten, Sleeve-Fortschritt, Rückenmotiv","service.tattoo_hourly.name":"Stundensatz","service.tattoo_hourly.sub":"Standard-Stundenabrechnung für Custom-Arbeiten","service.tattoo_minimum.name":"Mindestpreis","service.tattoo_minimum.sub":"Walk-in-Basispreis / Steril-Setup / Mini-Flash","service.piercing_earlobe.name":"Ohrläppchen (Paar)","service.piercing_earlobe.sub":"Standard-Lobe-Platzierung an beiden Ohren","service.piercing_nostril.name":"Nostril-Piercing","service.piercing_nostril.sub":"Standard-Nasenflügel mit Stecker oder Ring","service.piercing_helix.name":"Helix / Knorpel","service.piercing_helix.sub":"Oberer Ohrknorpelbereich","service.piercing_navel.name":"Bauchnabel-Piercing","service.piercing_navel.sub":"Oberer Nabelbereich mit Curved Barbell","service.piercing_septum.name":"Septum-Piercing","service.piercing_septum.sub":"Nasenscheidewand (Sweet Spot)","conf.indicative":"INDIKATIV","conf.no_data":"noch keine verlässlichen Daten","conf.indicative_desc":"Eine redaktionelle Schätzung von Poli International anhand öffentlich angegebener Preise. Keine Umfragedaten und nicht unabhängig geprüft.","conf.gap_desc":"Kein verlässlicher Wert verfügbar, daher offengelassen statt geschätzt.","basis.uk.tattoo_small":"Typischer Listenpreis für ein kleines handtellergroßes Flash- oder Custom-Tattoo.","basis.uk.tattoo_half_day":"Typischer Listenpreis für eine mehrstündige Halbtagessitzung.","basis.uk.tattoo_full_day":"Typischer Listenpreis für eine Ganztages-Sitzung.","basis.uk.tattoo_hourly":"Typischer Stundensatz für individuelle Tätowierarbeiten.","basis.uk.tattoo_minimum":"Typisches Studio-Minimum für sterile Verbrauchsmaterialien und Einweg-Setup.","basis.uk.piercing_earlobe":"Typischer Listenpreis für ein Paar Ohrläppchen inklusive einfacher Titanstecker.","basis.uk.piercing_nostril":"Typischer Listenpreis für Nostril-Piercing inklusive einfachem Titan-Labret.","basis.uk.piercing_helix":"Typischer Listenpreis für Helix-Knorpel inklusive einfachem Titan-Labret.","basis.uk.piercing_navel":"Typischer Listenpreis für Bauchnabelpiercing inklusive einfacher gebogener Titan-Barbell.","basis.uk.piercing_septum":"Typischer Listenpreis für Septum-Piercing inklusive einfacher Hufeisen-Barbell.","basis.london.tattoo_small":"Typischer Listenpreis für kleine Custom-Arbeiten unter Berücksichtigung zentraler Studiokosten.","basis.london.tattoo_half_day":"Typischer Listenpreis für eine Halbtagessitzung mit Einbezug gewerblicher Fixkosten.","basis.london.tattoo_full_day":"Typischer Listenpreis für eine Ganztagessitzung in städtischen Studios.","basis.london.tattoo_hourly":"Typischer Stundenpreis für feste Tätowierer in erstklassigen Innenstadtlagen.","basis.london.tattoo_minimum":"Typisches Studio-Minimum unter Berücksichtigung der Fixkosten und des sterilen Setups.","basis.london.piercing_earlobe":"Typischer Listenpreis für ein Paar Ohrläppchen inklusive Titan-Erststeckern.","basis.london.piercing_nostril":"Typischer Listenpreis für Nostril inklusive Titan-Erstlabret.","basis.london.piercing_helix":"Typischer Listenpreis für Helix-Knorpel inklusive Titan-Erstlabret.","basis.london.piercing_navel":"Typischer Listenpreis für Bauchnabel inklusive Titan-Erstbarbell.","basis.london.piercing_septum":"Typischer Listenpreis für Septum inklusive Titan-Ersthufeisen.","basis.us.tattoo_small":"Typischer Listenpreis für kleines handtellergroßes Flash oder Custom-Design.","basis.us.tattoo_half_day":"Typischer mehrstündiger Listenpreis in kommerziellen Tattoo-Studios.","basis.us.tattoo_full_day":"Typischer Listenpreis für eine Ganztagessitzung bei individuellen Tattoos.","basis.us.tattoo_hourly":"Typischer Stundensatz für individuelle Tätowierungen.","basis.us.tattoo_minimum":"Typisches Studio-Minimum zur Abdeckung steriler Einwegmaterialien und Tray-Rüstung.","basis.us.piercing_earlobe":"Typische Stechgebühr für Ohrläppchen-Paar; Erstschmuck separat erhältlich.","basis.us.piercing_nostril":"Typische Stechgebühr für Nostril; Erstschmuck separat erhältlich.","basis.us.piercing_helix":"Typische Stechgebühr für Helix-Knorpel; Erstschmuck separat erhältlich.","basis.us.piercing_navel":"Typische Stechgebühr für Bauchnabel; Erstschmuck separat erhältlich.","basis.us.piercing_septum":"Typische Stechgebühr für Septum; Erstschmuck separat erhältlich.","basis.eu.tattoo_small":"Typischer Listenpreis für kleines Flash oder individuelles Design.","basis.eu.tattoo_half_day":"Typischer Listenpreis für eine mehrstündige Halbtagessitzung.","basis.eu.tattoo_full_day":"Typischer Listenpreis für eine Ganztages-Sitzung.","basis.eu.tattoo_hourly":"Typischer Stundensatz in kommerziellen Tattoo-Studios.","basis.eu.tattoo_minimum":"Typisches Studio-Minimum für sterile Einwegartikel und Arbeitsplatzrüstung.","basis.eu.piercing_earlobe":"Typischer Listenpreis für ein Paar Ohrläppchen inklusive einfacher Erststecker.","basis.eu.piercing_nostril":"Typischer Listenpreis für Nostril inklusive einfachem Erstlabret.","basis.eu.piercing_helix":"Typischer Listenpreis für Helix-Knorpel inklusive sterilem Erstlabret.","basis.eu.piercing_navel":"Typischer Listenpreis für Bauchnabel inklusive gebogener Erstbarbell.","basis.eu.piercing_septum":"Typischer Listenpreis für Septum inklusive Ersthufeisen.","basis.au.tattoo_small":"Typischer Listenpreis für kleines handtellergroßes Flash oder Custom-Design.","basis.au.tattoo_half_day":"Typischer Halbtagessatz in städtischen Studios.","basis.au.tattoo_full_day":"Typischer Ganztagespreis für individuelle Tattoos.","basis.au.tattoo_hourly":"Typischer Stundensatz in kommerziellen Studios.","basis.au.tattoo_minimum":"Typisches Studio-Minimum für Einwegnadeln und Tray-Rüstung.","basis.au.piercing_earlobe":"Typischer Listenpreis für ein Paar Ohrläppchen inklusive Titan-Erststeckern.","basis.au.piercing_nostril":"Typischer Listenpreis für Nostril inklusive Titan-Erstlabret.","basis.au.piercing_helix":"Typischer Listenpreis für Helix-Knorpel inklusive Titan-Erstlabret.","basis.au.piercing_navel":"Typischer Listenpreis für Bauchnabel inklusive gebogener Titan-Erstbarbell.","basis.au.piercing_septum":"Typischer Listenpreis für Septum inklusive Ersthufeisen.","basis.cee.tattoo_small":"Typischer Listenpreis für kleine Custom-Designs in EUR.","basis.cee.tattoo_half_day":"Typischer Listenpreis für eine mehrstündige Halbtagessitzung.","basis.cee.tattoo_full_day":"Typischer Listenpreis für eine Ganztages-Sitzung.","basis.cee.tattoo_hourly":"Typischer Stundensatz für feste Tätowierer in städtischen Studios.","basis.cee.tattoo_minimum":"Typisches Studio-Minimum für sterile Verbrauchsmaterialien und Einweg-Setup.","basis.cee.piercing_earlobe":"Typischer Listenpreis für ein Paar Ohrläppchen inklusive Erstschmuck.","basis.cee.piercing_nostril":"Typischer Listenpreis für Nostril inklusive Standard-Erstschmuck.","basis.cee.piercing_helix":"Typischer Listenpreis für Helix-Knorpel inklusive Standard-Erstlabret.","basis.cee.piercing_navel":"Typischer Listenpreis für Bauchnabel inklusive gebogener Erstbarbell.","basis.cee.piercing_septum":"Typischer Listenpreis für Septum inklusive Ersthufeisen.","basis.ca.tattoo_small":"Typischer Listenpreis für kleine Custom-Tätowierungen in städtischen Studios.","basis.ca.tattoo_half_day":"Typischer Halbtagespreis unter Berücksichtigung städtischer Studiokosten.","basis.ca.tattoo_full_day":"Typischer Ganztagessatz in städtischen Custom-Tattoo-Studios.","basis.ca.tattoo_hourly":"Typischer Stundensatz in Studios für individuelle Tattoos.","basis.ca.tattoo_minimum":"Typisches Studio-Minimum zur Deckung steriler Einwegartikel und Rüstung.","basis.ca.piercing_earlobe":"Typische Stechgebühr für Ohrläppchen-Paar; Erstschmuck separat erhältlich.","basis.ca.piercing_nostril":"Typische Stechgebühr für Nostril; Erstschmuck separat erhältlich.","basis.ca.piercing_helix":"Typische Stechgebühr für Helix-Knorpel; Erstschmuck separat erhältlich.","basis.ca.piercing_navel":"Typische Stechgebühr für Bauchnabel; Erstschmuck separat erhältlich.","basis.ca.piercing_septum":"Kein verlässlicher Wert verfügbar, daher offengelassen statt geschätzt.","basis.sa.tattoo_small":"Typischer Listenpreis für kleine Custom-Designs in kommerziellen Studios.","basis.sa.tattoo_half_day":"Typischer mehrstündiger Sitzungspreis in Ballungszentren.","basis.sa.tattoo_full_day":"Typischer Ganztagessatz für individuelle Arbeiten.","basis.sa.tattoo_hourly":"Typischer Stundensatz für Custom-Arbeiten in kommerziellen Studios.","basis.sa.tattoo_minimum":"Typisches Studio-Minimum zur Abdeckung von sterilem Einwegset und Rüstung.","basis.sa.piercing_earlobe":"Typischer Listenpreis für ein Paar Ohrläppchen inklusive einfacher Erststecker.","basis.sa.piercing_nostril":"Typischer Listenpreis für Nostril inklusive einfachem Erstschmuck.","basis.sa.piercing_helix":"Typischer Listenpreis für Helix-Knorpel inklusive einfachem Erstschmuck.","basis.sa.piercing_navel":"Typischer Listenpreis für Bauchnabel inklusive einfacher gebogener Barbell.","basis.sea.tattoo_small":"Typischer Listenpreis für kleine Custom-Designs in Studio-Zentren.","basis.sea.tattoo_half_day":"Typischer Halbtagespreis in internationalen Studio-Zentren.","basis.sea.tattoo_full_day":"Typischer Ganztagessatz für individuelle Tattoo-Arbeiten.","basis.sea.tattoo_hourly":"Typischer Stundensatz für Custom-Arbeiten in Studio-Zentren.","basis.sea.tattoo_minimum":"Typisches Studio-Minimum für importierte Einwegnadeln und steriles Setup.","basis.sea.piercing_earlobe":"Typischer Listenpreis für ein Paar Ohrläppchen inklusive einfachem Erstschmuck.","basis.sea.piercing_nostril":"Typischer Listenpreis für Nostril inklusive einfachem Erstschmuck.","basis.sea.piercing_helix":"Typischer Listenpreis für Helix-Knorpel inklusive einfachem Erstschmuck.","basis.sea.piercing_navel":"Typischer Listenpreis für Bauchnabel inklusive einfacher Erstbarbell.","basis.gap.septum":"Kein verlässlicher Wert verfügbar, daher offengelassen statt geschätzt.","table.service":"Leistung / Artikel","table.service_procedure":"Leistung / Prozedur","table.range":"Benchmark-Spanne","table.benchmark_range":"Benchmark-Spanne","table.currency":"Währung","table.confidence":"Konfidenz","table.basis":"Grundlage & Methodik","table.basis_scope":"Grundlage & Marktumfeld","table.your_price":"Ihr Tarif","table.your_rate":"Ihr Tarif","table.position":"Positionierung","table.category_tattoo":"Tattoo-Dienstleistungen","table.category_piercing":"Piercing-Dienstleistungen","table.notes_header":"Regionale Details & Schmuckstandards","calc.title":"Studio-Tarife Vergleichen","calc.subtitle":"Geben Sie Ihre Preise ein, um sie mit dem ausgewählten regionalen Markt zu vergleichen.","calc.btn_evaluate":"Preise Vergleichen","calc.btn_clear":"Alle Tarife Löschen","calc.results_heading":"Ihre Preispositionierung","calc.results_sub":"So ordnen sich Ihre Studiotarife im Vergleich zum Marktmittel ein.","calc.eval_summary":"Auswertungsübersicht","calc.summary_count":"{count} von {total} Leistungen bewertet","calc.interactive_heading":"Interaktiver Tarif-Vergleichsrechner","calc.interactive_desc":"Geben Sie Ihre Studiopreise in die obige Tabelle ein und klicken Sie auf Preise Vergleichen, um Ihr Preismodell zu analysieren.","pos.below":"Unter Marktwert","pos.market":"Marktüblich","pos.premium":"Premium","pos.none":"Nicht erfasst","pos.no_data":"Datenlücke","docs.title":"Studio-Preise Benchmark: Technische Dokumentation","docs.subtitle":"Spezifikation, Datenmodelle, Methodik und Integrationsanleitung für den Poli International Benchmark.","docs.badge":"Technische Spezifikation","docs.file_selector":"Dokumentdatei:","docs.file_tech":"Technische Dokumentation (TECHNICAL-DOCS.md)","docs.file_user":"Studio-Leitfaden (USER-GUIDE.md)","docs.file_readme":"Projektübersicht (README.md)","docs.file_contrib":"Leitfaden für Mitwirkende (CONTRIBUTING.md)","docs.view_markdown":"Rohes Markdown Anzeigen","docs.view_rendered":"Formatierte Ansicht Anzeigen","docs.download_file":"Markdown-Datei Herunterladen","docs.copied_md":"Markdown in die Zwischenablage kopiert!","docs.sec_overview":"Architektur-Übersicht","docs.sec_overview_body":"Der Studio Pricing Benchmark ist ein offlinefähiges Hilfsmittel ohne externe Abhängigkeiten für Tätowierer, Piercer und Studiobetreiber, um Preistabellen strukturiert zu bewerten.","docs.feature_zero_net":"Keine Netzwerkanfragen: Läuft vollständig im Browser ohne Remote-Schriftarten, Analyse-Tracker oder externe Server.","docs.feature_theme":"Tokenisiertes Theme-System: Standardisierte CSS-Variablen mit WCAG AA-Kontrast (≥ 4.5:1) in Hell- und Dunkelmodi.","docs.feature_a11y":"Graustufen-Barrierefreiheit: Konfidenzmarker nutzen unterscheidbare Text-Tags und Rahmengeometrien.","docs.sec_methodology":"Datenintegrität & Methodik","docs.sec_methodology_body":"Benchmark-Zahlen stellen mittlere Marktspannen dar, die anhand öffentlich gelisteter Studio-Tarife erstellt wurden. Jede Zeile ist in eine von zwei Vertrauensstufen eingeteilt:","docs.conf_ind_desc":"Abgeleitet aus regionalen Lebenshaltungskosten, benachbarten Studiomärkten und veröffentlichten Branchenberichten.","docs.conf_gap_desc":"Unzureichende veröffentlichte Preisdaten für eine verlässliche Spanne. Bewusst offengelassen.","docs.sec_regions":"Regionaler Geltungsbereich","docs.sec_regions_body":"Das Tool unterstützt neun Zonen: UK National, London & SE, USA, Westeuropa, Australien, Mittel- und Osteuropa, Kanada, Südamerika und Südostasien. Preise in Landeswährung.","docs.th_region_code":"Regionscode","docs.th_territory":"Gebietsbezeichnung","docs.th_currency":"Währung","docs.th_scope_basis":"Erfassungsgrundlage","docs.scope_uk":"Nationaler Durchschnitt außerhalb Greater London","docs.scope_london":"Kostenintensive Metropolstudios in London","docs.scope_us":"Nationaler Durchschnitt über Stadt- und Vorstadtstudios","docs.scope_eu":"Westeuropäische urbane Studiokollektive","docs.scope_au":"Hauptstadt- und Regionalzentren Australiens","docs.scope_cee":"Indexierte urbane Tarife in MOE-Hauptstädten","docs.scope_ca":"Urbane Studios in ON, BC und QC","docs.scope_sa":"Custom-Studios in São Paulo, Rio und Buenos Aires","docs.scope_sea":"Touristen- und Resident-Hubs in Bangkok, Phuket, Bali","docs.sec_jewellery":"Schmuckeinschlüsse beim Piercing","docs.sec_jewellery_body":"Praktiken variieren nach Region: Studios in UK, Westeuropa, Australien und Südostasien schließen Erstschmuck meist ein. US- und kanadische Studios berechnen üblicherweise nur das Stechen und Schmuck separat.","docs.th_jewellery_policy":"Erstschmuck-Richtlinie","docs.th_material_standard":"Standard-Material","docs.jewellery_inc_proc":"Im Stechpreis enthalten","docs.jewellery_mat_titanium":"Implantat-Titan (ASTM F-136)","docs.jewellery_sep_charged":"Separat berechnet ($30–$60+)","docs.jewellery_mat_client":"Kundenkauf (Titan / 14k Gold)","docs.jewellery_std_included":"Standard-Erstschmuck enthalten","docs.jewellery_mat_eu":"Basistitan oder chirurgischer Stahl","docs.jewellery_mat_au_inc":"Implantat-Titan-Erstschmuck enthalten","docs.jewellery_mat_au_std":"Implantat-Titan (ASTM F-136 / ASTM F-138)","docs.jewellery_mat_cee_inc":"Standard-Erstschmuck enthalten","docs.jewellery_mat_cee_std":"Standardmäßiger Erstschmuck","docs.jewellery_mat_ca_sep":"Separat berechnet (C$35–C$70+)","docs.jewellery_mat_ca_std":"Kundenkauf (Implantat-Titan)","docs.jewellery_mat_sa_inc":"Basis-Erstschmuck enthalten","docs.jewellery_mat_sa_std":"Chirurgischer Stahl (ASTM F-138) oder Titan","docs.jewellery_mat_sea_inc":"Basis-Erstschmuck enthalten","docs.jewellery_mat_sea_std":"Basis-Erstschmuck Titan / Stahl","docs.sec_embed_title":"Integration & Einbettung","docs.sec_embed_body":"Der Benchmark steht als responsives, eigenständiges iFrame-Widget für Studio-Websites und Buchungsseiten zur Verfügung.","docs.sec_embed_note":"Das iFrame erkennt Theme-Änderungen der übergeordneten Seite automatisch via postMessage (poli-theme) und localStorage.","docs.sec_standards_title":"Normen & Werkstoffspezifikationen","docs.sec_standards_body":"Alle Erstschmuck-Referenzen entsprechen etablierten biomedizinischen Spezifikationen: ASTM F-136 Implantat-Titan, ASTM F-138 Implantat-Edelstahl, EN 1811 Nickelabgabe-Grenzwerte und ISO 10993 Normen zur biologischen Beurteilung. Die Schmuckrichtlinien geben ausdrücklich an, ob der Erstschmuck in der Stechgebühr enthalten ist oder separat berechnet wird.","docs.std_astm_f136":"ASTM F-136: Standardspezifikation für Titan-6Aluminium-4Vanadium ELI für chirurgische Implantatanwendungen.","docs.std_astm_f138":"ASTM F-138: Standardspezifikation für 18Chrom-14Nickel-2.5Molybdän Edelstahlstangen und -drähte für chirurgische Implantate.","docs.std_iso_10993":"ISO 10993: Biologische Beurteilung von Medizinprodukten (Zytotoxizität, Reizung und Sensibilisierung).","docs.std_en_1811":"EN 1811: Referenzprüfverfahren für die Nickellässigkeit von Erststeckern und Gegenständen mit Hautkontakt.","docs.std_eu_reach":"EU REACH Anhang XVII: Grenzwerte für die Nickellässigkeit von Produkten mit direktem und längerem Hautkontakt.","docs.sec_sovereignty_title":"Datensouveränität & Datenschutz","docs.sec_sovereignty_body":"Der Benchmark läuft ausschließlich im Arbeitsspeicher des Browsers. Keine Preise oder Betriebsdaten werden an externe Server übertragen. Das Tool steht im Einklang mit Bestimmungen wie DSGVO (GDPR), UK GDPR, LGPD und PDPA.","embed.title":"Studio-Preise Benchmark Einbetten","embed.subtitle":"Integrieren Sie den Benchmark in Ihr Studio-Portal oder Website.","embed.badge":"Integrationsleitfaden","embed.instructions":"Kopieren Sie das Snippet unten in Ihre HTML-Seite. Das iFrame synchronisiert sich automatisch mit Hell-/Dunkel-Themes.","embed.copy_btn":"Embed-Code Kopieren","embed.copied":"In die Zwischenablage kopiert!","embed.notes_title":"Integrationshinweise:","embed.note_1":"• Das eingebettete iFrame übernimmt automatisch Hell-/Dunkel-Themes der Host-Website via postMessage oder data-theme.","embed.note_2":"• Benötigt keinerlei externe Skripte oder API-Schlüssel.","calc.alert_enter_rate":"Bitte geben Sie mindestens einen Preis ein, um ihn mit den Benchmark-Bereichen zu vergleichen.","csv.btn_export":"CSV exportieren","csv.export_success":"Benchmark-CSV erfolgreich exportiert.","csv.col_region":"Region","csv.col_category":"Kategorie","csv.col_service":"Leistung / Verfahren","csv.col_scope":"Umfang / Details","csv.col_currency":"Währung","csv.col_min":"Mittelmarkt Min","csv.col_max":"Mittelmarkt Max","csv.col_confidence":"Konfidenzstatus","csv.col_basis":"Basis / Methodik","csv.col_jewellery":"Erstschmuck-Richtlinie","csv.col_your_price":"Ihr Studiopreis","csv.col_position":"Preisposition","chart.title":"Visueller Benchmark-Vergleich","chart.subtitle":"Vergleich der Mittelmarkt-Tief- und -Höchstwerte mit Ihren Studiopreisen.","chart.filter_all":"Alle Verfahren","chart.filter_tattoo":"Nur Tattoo","chart.filter_piercing":"Nur Piercing","chart.legend_low":"Mittelmarkt Tief","chart.legend_high":"Mittelmarkt Hoch","chart.legend_your_price":"Ihr Studiopreis","chart.empty_notice":"Geben Sie Ihre Preise in die obige Tabelle ein, um Ihre Studiopreise neben den Marktbereichen darzustellen.","chart.not_entered":"Nicht angegeben","tooltip.range_title":"Benchmark-Preiskriterien","tooltip.mid_market_label":"Mittelmarkt-Bereich","tooltip.mid_market_desc":"Übliches Standard-Gebührenspektrum etablierter gewerblicher Studios für fachgerechte Ausführung, sterile Einwegmaterialien, Standard-Erstschmuck in Implantatqualität (oder Stechgebühr) und übliche Künstlerprovisionen.","tooltip.premium_label":"Premium-Spezialistenpreise","tooltip.premium_desc":"Preise über dem Standard-Mittelmarkt, erhoben von stark nachgefragten Custom-Tätowierern, Gastkünstlern, privaten Terminstudios, maßgefertigtem Luxusschmuck oder Studios in erstklassigen Innenstadtlagen.","tooltip.confidence_title":"Datenkonfidenz-Einstufung","tooltip.confidence_desc":"INDIKATIV: Eine redaktionelle Schätzung von Poli International anhand öffentlich angegebener Preise. Keine Umfragedaten und nicht unabhängig geprüft. LÜCKE: Kein verlässlicher Wert verfügbar, daher offengelassen statt geschätzt.","tooltip.position_title":"Preisausrichtungs-Position","tooltip.position_desc":"Vergleicht Ihre eingegebenen Preise mit der Mittelmarkt-Spanne: Unter Markt (unter Basiswert), Marktpreis (innerhalb) oder Premium (über Höchstwert).","calc.saved_notice":"Preise automatisch im lokalen Speicher gespeichert.","region.last_reviewed":"Zahlen zuletzt überprüft: September 2026.","conf.gap":"LÜCKE","rates.title":"Ihre Tarife","rates.subtitle":"Geben Sie Ihre Studio-Basiswerte ein, um sie mit der regionalen Referenzspanne zu vergleichen.","rates.hourly":"Stundensatz","rates.min_charge":"Mindestgebühr","rates.shop_min":"Studio-Minimum","rates.deposit":"Anzahlungs-Prozentsatz","rates.tier_label":"Künstlerstufe","rates.tier_apprentice":"Lehrling","rates.tier_resident":"Fester Künstler","rates.tier_established":"Etablierter Künstler","rates.tier_specialist":"Spezialist / Gastkünstler","rates.tier_desc_apprentice":"Lehrling: Baut Geschwindigkeit und Portfolio auf; oft niedrigere Stundensätze oder feste Modellgebühren.","rates.tier_desc_resident":"Fester Künstler: Regulärer Studio-Tätowierer mit festem Kundenstamm und regelmäßigen Buchungen.","rates.tier_desc_established":"Etablierter Künstler: Mehrjährige Erfahrung, hohe Nachfrage und durchgehende Auslastung.","rates.tier_desc_specialist":"Spezialist / Gastkünstler: Anerkannter Signature-Stil oder reisender Gasttätowierer; Premiumpreise unabhängig von der regionalen Basis.","rates.hourly_vs_region":"Regionale Referenzspanne: {min} – {max}/Std.","rates.min_vs_region":"Regionale Studio-Minimum Referenzspanne: {min} – {max}","rates.status_below":"Unter der regionalen Referenzspanne","rates.status_within":"Innerhalb der regionalen Referenzspanne","rates.status_above":"Über der regionalen Referenzspanne","whatif.title":"Was-wäre-wenn Rechner","whatif.subtitle":"Passen Sie Ihren Stundensatz an, um Buchungssummen und Anzahlungen zu berechnen.","whatif.rate_adjustment":"Stundensatz-Anpassung","whatif.booking_hours":"Buchungsdauer (Stunden)","whatif.projected_hourly":"Projizierter Stundensatz","whatif.booking_total":"Buchungssumme ({hours} Std.)","whatif.deposit_due":"Fällige Anzahlung ({percent}%)","whatif.disclaimer":"Reine Berechnung basierend auf Ihren Eingaben.","whatif.prompt_hourly":"Geben Sie oben unter Ihre Tarife einen Stundensatz ein, um Berechnungen durchzuführen.","handoff.title":"Ihre Werte","handoff.decision_notice":"Ihre Entscheidung, keine Empfehlung dieses Tools.","handoff.copy_btn":"Werte kopieren","handoff.copied":"Kopiert!","card.title":"Druckbare Tarifkarte","card.print_btn":"Tarifkarte drucken","card.subtitle":"Einseitige Tarifkarte (A4 / US Letter) basierend auf Ihren eigenen Werten. Enthält keine regionalen Referenzspannen.","card.studio_card_header":"Studio-Tarifkarte","card.baseline_rates":"Studio-Basispreise","card.service_rates":"Dienstleistungspreise","card.price_on_consultation":"Preis auf Anfrage","card.footer_notice":"Tarife werden unabhängig vom Studio festgelegt. Alle Verfahren folgen etablierter professioneller Praxis.","card.date":"Datum"},fr:{"app.title":"Baromètre des Tarifs de Studio","app.subtitle":"Indiquez vos tarifs pour les comparer aux repères sectoriels régionaux à travers neuf marchés mondiaux. Idéal pour vos révisions tarifaires et votre positionnement.","app.badge":"Référence Opérationnelle Studio","app.nav_benchmark":"Grille de Référence","app.nav_calculator":"Comparer Mes Tarifs","app.nav_docs":"Documentation","app.nav_embed":"Code d'Intégration","app.footnote":"Ces fourchettes sont des estimations éditoriales compilées à partir de prix publics. Il ne s'agit pas de données d'enquête et elles n'ont pas fait l'objet d'une vérification indépendante. Les spécialistes haut de gamme appliquent couramment des tarifs supérieurs.","app.open_standalone":"Ouvrir en Vue Autonome →","app.print":"Imprimer le Baromètre","lang.switcher_label":"Langue","lang.en":"English","lang.de":"Deutsch","lang.fr":"Français","lang.es":"Español","lang.it":"Italiano","lang.pt":"Português","lang.nl":"Nederlands","common.currency":"Devise","common.copy":"Copier","common.copied":"Copié !","common.download":"Télécharger","common.close":"Fermer","common.all":"Tous","common.back":"Retour","region.label":"Région de référence :","region.all_regions":"Neuf Régions Mondiales","region.coverage_scope":"Périmètre Couvert :","region.uk.name":"Royaume-Uni (Moyenne Nationale)","region.uk.coverage":"Moyenne nationale britannique des studios indépendants en Angleterre, Écosse et Pays de Galles (hors Grand Londres).","region.london.name":"Londres / Sud-Est","region.london.coverage":"Zone métropolitaine du Grand Londres et studios commerciaux du Sud-Est de l'Angleterre.","region.us.name":"États-Unis (Moyenne Nationale)","region.us.coverage":"Moyenne nationale américaine au sein des studios urbains et périurbains.","region.eu.name":"Europe de l'Ouest","region.eu.coverage":"Studios métropolitains en France, Allemagne, Pays-Bas, Belgique et Autriche, cotés en EUR (€).","region.au.name":"Australie","region.au.coverage":"Studios des capitales d'États et pôles régionaux (NSW, Victoria, Queensland), en AUD (A$).","region.cee.name":"Europe Centrale et Orientale","region.cee.coverage":"Marchés urbains en Pologne, Tchéquie, Hongrie et Roumanie, indexés en EUR (€).","region.ca.name":"Canada","region.ca.coverage":"Studios urbains en Ontario, Colombie-Britannique et Québec, cotés en dollars canadiens (CAD / C$).","region.sa.name":"Amérique du Sud","region.sa.coverage":"Données basées sur les studios custom de São Paulo, Rio de Janeiro (Brésil) et Buenos Aires (Argentine), en BRL (R$).","region.sea.name":"Asie du Sud-Est","region.sea.coverage":"Données basées sur les pôles de studios en Thaïlande (Bangkok, Phuket, Chiang Mai) et Bali (Indonésie), en THB (฿).","jewellery.policy_label":"Politique des Bijoux :","jewellery.standards_badge":"Consommables Stériles & Normes Bijouterie","jewellery.policy_desc":"Matériaux de grade implant conforme aux spécifications standard (ex. titane ASTM F-136, acier chirurgical ASTM F-138).","jewellery.uk.policy":"Au Royaume-Uni, les tarifs de piercing incluent généralement un bijou de pose en titane de grade implant.","jewellery.london.policy":"À Londres, les tarifs incluent généralement un bijou de pose en titane de grade implant.","jewellery.us.policy":"Les studios américains facturent généralement l'acte seul ; le bijou est acheté séparément (30 $ à 60 $+).","jewellery.eu.policy":"En Europe de l'Ouest, les studios incluent couramment un bijou initial en titane ou en acier chirurgical.","jewellery.au.policy":"Les studios australiens incluent couramment un bijou de pose de base en titane de grade implant.","jewellery.cee.policy":"Les studios d'Europe centrale et orientale incluent généralement le bijou de pose standard.","jewellery.ca.policy":"Les studios canadiens facturent généralement l'acte de perçage séparément du bijou de pose.","jewellery.sa.policy":"En Amérique du Sud, les forfaits standards incluent généralement un bijou initial de base.","jewellery.sea.policy":"En Asie du Sud-Est, les studios professionnels incluent généralement un bijou de pose standard.","jewellery.included.titanium":"Bijou initial en titane de grade implant inclus","jewellery.included.standard":"Bijou de pose standard inclus","jewellery.included.basic":"Bijou initial basique inclus","jewellery.excluded.fee_only":"Acte seul : bijou facturé séparément","service.tattoo_small.name":"Tatouage petit format (1–2 h)","service.tattoo_small.sub":"Motif simple, monochrome, taille paume ou inférieure","service.tattoo_half_day.name":"Demi-journée (4–5 h)","service.tattoo_half_day.sub":"Pièce moyenne à grande ou emplacement détaillé","service.tattoo_full_day.name":"Journée complète (7–8 h)","service.tattoo_full_day.sub":"Projet complexe, progression de manchette, dos complet","service.tattoo_hourly.name":"Tarif horaire","service.tattoo_hourly.sub":"Facturation horaire standard pour projet sur-mesure","service.tattoo_minimum.name":"Tarif minimum d'ouverture","service.tattoo_minimum.sub":"Forfait de base / set stérile / micro flash","service.piercing_earlobe.name":"Lobes d'oreille (la paire)","service.piercing_earlobe.sub":"Emplacement standard sur les deux lobes","service.piercing_nostril.name":"Narine (Nostril)","service.piercing_nostril.sub":"Emplacement classique narine avec stud ou anneau","service.piercing_helix.name":"Hélix / cartilage","service.piercing_helix.sub":"Cartilage supérieur de l'oreille","service.piercing_navel.name":"Nombril","service.piercing_navel.sub":"Nombril supérieur avec banane courbée","service.piercing_septum.name":"Septum","service.piercing_septum.sub":"Emplacement sweet spot de la cloison nasale","conf.indicative":"INDICATIF","conf.no_data":"pas de données fiables","conf.indicative_desc":"Une estimation éditoriale compilée par Poli International à partir de prix publics. Pas des données d'enquête et non vérifiées de manière indépendante.","conf.gap_desc":"Aucun chiffre fiable, laissé vide plutôt que deviné.","basis.uk.tattoo_small":"Tarif moyen affiché pour un petit flash ou motif personnalisé.","basis.uk.tattoo_half_day":"Tarif moyen affiché pour une séance de demi-journée de plusieurs heures.","basis.uk.tattoo_full_day":"Tarif moyen affiché pour une séance journée complète.","basis.uk.tattoo_hourly":"Tarif horaire moyen pour le travail de tatouage personnalisé.","basis.uk.tattoo_minimum":"Minimum studio moyen couvrant le matériel stérile et l'installation à usage unique.","basis.uk.piercing_earlobe":"Tarif moyen affiché pour une paire de lobes, studs basiques en titane inclus.","basis.uk.piercing_nostril":"Tarif moyen affiché pour narine avec labret basique en titane inclus.","basis.uk.piercing_helix":"Tarif moyen affiché pour cartilage hélix, labret basique en titane inclus.","basis.uk.piercing_navel":"Tarif moyen affiché pour nombril avec banane basique en titane incluse.","basis.uk.piercing_septum":"Tarif moyen affiché pour septum avec fer à cheval basique inclus.","basis.london.tattoo_small":"Tarif moyen affiché pour petit motif reflétant les frais généraux des studios du centre.","basis.london.tattoo_half_day":"Tarif moyen affiché pour demi-journée reflétant les charges commerciales.","basis.london.tattoo_full_day":"Tarif moyen affiché pour une séance journée complète en studio métropolitain.","basis.london.tattoo_hourly":"Tarif horaire moyen pour artistes résidents en emplacements commerciaux de premier ordre.","basis.london.tattoo_minimum":"Minimum studio moyen reflétant les charges d'exploitation et la préparation stérile.","basis.london.piercing_earlobe":"Tarif moyen affiché pour une paire de lobes avec studs initiaux en titane.","basis.london.piercing_nostril":"Tarif moyen affiché pour narine avec labret initial en titane.","basis.london.piercing_helix":"Tarif moyen affiché pour cartilage hélix avec labret initial en titane.","basis.london.piercing_navel":"Tarif moyen affiché pour nombril avec banane initiale en titane.","basis.london.piercing_septum":"Tarif moyen affiché pour septum avec fer à cheval initial en titane.","basis.us.tattoo_small":"Tarif moyen affiché pour un petit flash ou motif sur mesure.","basis.us.tattoo_half_day":"Tarif moyen affiché pour séance de plusieurs heures en studio commercial.","basis.us.tattoo_full_day":"Tarif moyen affiché pour une séance de journée complète de tatouage personnalisé.","basis.us.tattoo_hourly":"Tarif horaire moyen pour le travail de tatouage sur mesure.","basis.us.tattoo_minimum":"Minimum studio moyen couvrant les consommables stériles et le plateau à usage unique.","basis.us.piercing_earlobe":"Frais d'acte moyens pour paire de lobes ; bijou initial vendu séparément.","basis.us.piercing_nostril":"Frais d'acte moyens pour narine ; bijou initial vendu séparément.","basis.us.piercing_helix":"Frais d'acte moyens pour cartilage hélix ; bijou initial vendu séparément.","basis.us.piercing_navel":"Frais d'acte moyens pour nombril ; bijou initial vendu séparément.","basis.us.piercing_septum":"Frais d'acte moyens pour septum ; bijou initial vendu séparément.","basis.eu.tattoo_small":"Tarif moyen affiché pour petit flash ou motif personnalisé.","basis.eu.tattoo_half_day":"Tarif moyen affiché pour une séance de demi-journée de plusieurs heures.","basis.eu.tattoo_full_day":"Tarif moyen affiché pour une séance de journée complète.","basis.eu.tattoo_hourly":"Tarif horaire moyen pratiqué dans les studios commerciaux.","basis.eu.tattoo_minimum":"Minimum studio moyen couvrant le matériel stérile et la préparation du poste.","basis.eu.piercing_earlobe":"Tarif moyen affiché pour une paire de lobes, studs basiques inclus.","basis.eu.piercing_nostril":"Tarif moyen affiché pour narine avec labret initial basique.","basis.eu.piercing_helix":"Tarif moyen affiché pour cartilage hélix avec labret initial stérile.","basis.eu.piercing_navel":"Tarif moyen affiché pour nombril avec banane initiale incluse.","basis.eu.piercing_septum":"Tarif moyen affiché pour septum avec fer à cheval initial.","basis.au.tattoo_small":"Tarif moyen affiché pour un petit flash ou motif personnalisé.","basis.au.tattoo_half_day":"Tarif moyen affiché pour demi-journée en studio métropolitain.","basis.au.tattoo_full_day":"Tarif moyen affiché pour séance de journée complète sur mesure.","basis.au.tattoo_hourly":"Tarif horaire moyen en studio de tatouage commercial.","basis.au.tattoo_minimum":"Minimum studio moyen couvrant les aiguilles à usage unique et le plateau.","basis.au.piercing_earlobe":"Tarif moyen affiché pour une paire de lobes avec studs initiaux en titane.","basis.au.piercing_nostril":"Tarif moyen affiché pour narine avec labret initial en titane.","basis.au.piercing_helix":"Tarif moyen affiché pour cartilage hélix avec labret initial en titane.","basis.au.piercing_navel":"Tarif moyen affiché pour nombril avec banane initiale en titane.","basis.au.piercing_septum":"Tarif moyen affiché pour septum avec fer à cheval initial inclus.","basis.cee.tattoo_small":"Tarif moyen affiché pour petit motif personnalisé indexé en EUR.","basis.cee.tattoo_half_day":"Tarif moyen affiché pour une séance de demi-journée de plusieurs heures.","basis.cee.tattoo_full_day":"Tarif moyen affiché pour une séance de journée complète.","basis.cee.tattoo_hourly":"Tarif horaire moyen pour artistes résidents en studio urbain.","basis.cee.tattoo_minimum":"Minimum studio moyen couvrant le matériel stérile et l'installation à usage unique.","basis.cee.piercing_earlobe":"Tarif moyen affiché pour une paire de lobes, bijou initial inclus.","basis.cee.piercing_nostril":"Tarif moyen affiché pour narine avec bijou initial standard inclus.","basis.cee.piercing_helix":"Tarif moyen affiché pour cartilage hélix avec labret initial standard.","basis.cee.piercing_navel":"Tarif moyen affiché pour nombril avec banane initiale incluse.","basis.cee.piercing_septum":"Tarif moyen affiché pour septum avec fer à cheval initial.","basis.ca.tattoo_small":"Tarif moyen affiché pour petits motifs en studio urbain.","basis.ca.tattoo_half_day":"Tarif moyen affiché pour demi-journée reflétant les frais des studios urbains.","basis.ca.tattoo_full_day":"Tarif moyen affiché pour journée complète en studio urbain.","basis.ca.tattoo_hourly":"Tarif horaire moyen appliqué en studio de tatouage sur mesure.","basis.ca.tattoo_minimum":"Minimum studio moyen couvrant le matériel stérile et l'installation.","basis.ca.piercing_earlobe":"Frais d'acte moyens pour paire de lobes ; bijou initial vendu séparément.","basis.ca.piercing_nostril":"Frais d'acte moyens pour narine ; bijou initial vendu séparément.","basis.ca.piercing_helix":"Frais d'acte moyens pour cartilage hélix ; bijou initial vendu séparément.","basis.ca.piercing_navel":"Frais d'acte moyens pour nombril ; bijou initial vendu séparément.","basis.ca.piercing_septum":"Aucun chiffre fiable, laissé vide plutôt que deviné.","basis.sa.tattoo_small":"Tarif moyen affiché pour petits motifs sur mesure en studio commercial.","basis.sa.tattoo_half_day":"Tarif moyen affiché pour séance de plusieurs heures dans les centres urbains.","basis.sa.tattoo_full_day":"Tarif moyen affiché pour une séance d'une journée complète.","basis.sa.tattoo_hourly":"Tarif horaire moyen pour travaux personnalisés en studio commercial.","basis.sa.tattoo_minimum":"Minimum studio moyen couvrant le kit stérile jetable et la préparation.","basis.sa.piercing_earlobe":"Tarif moyen affiché pour une paire de lobes, studs basiques inclus.","basis.sa.piercing_nostril":"Tarif moyen affiché pour narine avec bijou initial basique inclus.","basis.sa.piercing_helix":"Tarif moyen affiché pour cartilage hélix avec bijou initial basique.","basis.sa.piercing_navel":"Tarif moyen affiché pour nombril avec banane basique incluse.","basis.sea.tattoo_small":"Tarif moyen affiché pour petits motifs sur mesure dans les pôles de studios.","basis.sea.tattoo_half_day":"Tarif moyen affiché pour demi-journée dans les studios internationaux.","basis.sea.tattoo_full_day":"Tarif moyen affiché pour une séance journée complète sur mesure.","basis.sea.tattoo_hourly":"Tarif horaire moyen pour travaux sur mesure dans les pôles de studios.","basis.sea.tattoo_minimum":"Minimum studio moyen couvrant les aiguilles jetables importées et l'installation stérile.","basis.sea.piercing_earlobe":"Tarif moyen affiché pour une paire de lobes avec bijou initial basique.","basis.sea.piercing_nostril":"Tarif moyen affiché pour narine avec bijou initial basique inclus.","basis.sea.piercing_helix":"Tarif moyen affiché pour cartilage hélix avec bijou initial basique.","basis.sea.piercing_navel":"Tarif moyen affiché pour nombril avec banane initiale basique.","basis.gap.septum":"Aucun chiffre fiable, laissé vide plutôt que deviné.","table.service":"Prestation / Article","table.service_procedure":"Prestation / Acte","table.range":"Fourchette de Référence","table.benchmark_range":"Fourchette de Référence","table.currency":"Devise","table.confidence":"Confiance","table.basis":"Base & Méthodologie","table.basis_scope":"Base & Périmètre de Marché","table.your_price":"Votre Tarif","table.your_rate":"Votre Tarif","table.position":"Positionnement","table.category_tattoo":"Prestations Tatouage","table.category_piercing":"Prestations Piercing","table.notes_header":"Détails Régionaux & Normes Bijouterie","calc.title":"Comparer Vos Tarifs de Studio","calc.subtitle":"Indiquez vos prix pour les comparer au marché régional sélectionné.","calc.btn_evaluate":"Comparer Mes Tarifs","calc.btn_clear":"Effacer Tous les Tarifs","calc.results_heading":"Votre Positionnement Tarifaire","calc.results_sub":"Voici comment vos tarifs se situent par rapport aux repères du marché.","calc.eval_summary":"Synthèse de l'Évaluation","calc.summary_count":"{count} sur {total} prestations évaluées","calc.interactive_heading":"Calculateur Interactif de Comparaison","calc.interactive_desc":"Saisissez vos tarifs dans le tableau ci-dessus, puis cliquez sur Comparer Mes Tarifs pour analyser votre modèle de prix.","pos.below":"Inférieur au Marché","pos.market":"Tarif Marché","pos.premium":"Haut de Gamme","pos.none":"Non renseigné","pos.no_data":"Manque de Données","docs.title":"Baromètre des Tarifs de Studio : Spécification Technique","docs.subtitle":"Spécification, modèles de données, méthodologie et guide d'intégration pour le Baromètre Poli International.","docs.badge":"Spécification Technique","docs.file_selector":"Fichier de Documentation :","docs.file_tech":"Documentation Technique (TECHNICAL-DOCS.md)","docs.file_user":"Guide Utilisateur Studio (USER-GUIDE.md)","docs.file_readme":"Vue d'Ensemble du Projet (README.md)","docs.file_contrib":"Guide de Contribution (CONTRIBUTING.md)","docs.view_markdown":"Afficher le Markdown Brut","docs.view_rendered":"Afficher le Guide Formaté","docs.download_file":"Télécharger le Fichier Markdown","docs.copied_md":"Markdown copié dans le presse-papiers !","docs.sec_overview":"Vue d'Ensemble de l'Architecture","docs.sec_overview_body":"Le Baromètre des Tarifs de Studio est un outil sans dépendance réseau externe conçu pour les tatoueurs, pierceurs et gérants de studio afin d'évaluer méthodiquement leur grille tarifaire.","docs.feature_zero_net":"Zéro Requête Réseau : Fonctionne intégralement côté client, sans police distante, traqueur analytique ni serveur externe.","docs.feature_theme":"Système de Thème Typé : Variables CSS standardisées garantissant un contraste WCAG AA (≥ 4.5:1) en modes clair et sombre.","docs.feature_a11y":"Accessibilité en Niveaux de Gris : Les indicateurs de confiance combinent libellés textuels et géométries de bordures distinctes.","docs.sec_methodology":"Intégrité des Données & Méthodologie","docs.sec_methodology_body":"Les chiffres de référence représentent des fourchettes médianes compilées à partir de tarifs publics de studios. Chaque prestation relève de l'un des deux niveaux de confiance :","docs.conf_ind_desc":"Déduit du coût de la vie régional, des marchés voisins et des rapports professionnels publiés.","docs.conf_gap_desc":"Données tarifaires publiées insuffisantes pour établir une fourchette fiable. Volontairement laissé vide.","docs.sec_regions":"Périmètre Régional","docs.sec_regions_body":"L'outil prend en charge neuf zones : Royaume-Uni National, Londres & Sud-Est, États-Unis, Europe de l'Ouest, Australie, Europe Centrale et Orientale, Canada, Amérique du Sud et Asie du Sud-Est. Prix dans la devise locale.","docs.th_region_code":"Code Région","docs.th_territory":"Nom du Territoire","docs.th_currency":"Devise","docs.th_scope_basis":"Base d'Échantillonnage","docs.scope_uk":"Moyenne nationale hors Grand Londres","docs.scope_london":"Studios londoniens à fortes charges d'exploitation","docs.scope_us":"Moyenne nationale des studios urbains et périurbains","docs.scope_eu":"Collectifs de studios métropolitains d'Europe de l'Ouest","docs.scope_au":"Grandes métropoles et pôles régionaux australiens","docs.scope_cee":"Tarifs urbains indexés des capitales d'Europe centrale","docs.scope_ca":"Studios urbains en Ontario, Colombie-Britannique et Québec","docs.scope_sa":"Studios custom à São Paulo, Rio et Buenos Aires","docs.scope_sea":"Pôles de studios à Bangkok, Phuket et Bali","docs.sec_jewellery":"Politique des Bijoux de Perçage","docs.sec_jewellery_body":"Les usages diffèrent par région : les studios au Royaume-Uni, en Europe de l'Ouest, en Australie et en Asie du Sud-Est incluent généralement le bijou de pose standard dans l'acte. Aux États-Unis et au Canada, l'acte est facturé seul et le bijou en supplément.","docs.th_jewellery_policy":"Politique du Bijou Initial","docs.th_material_standard":"Matériau Standard Inclus","docs.jewellery_inc_proc":"Inclus dans le prix du perçage","docs.jewellery_mat_titanium":"Titane de grade implant (ASTM F-136)","docs.jewellery_sep_charged":"Facturé séparément (30 $ à 60 $+)","docs.jewellery_mat_client":"Achat client (titane / or 14k)","docs.jewellery_std_included":"Bijou de pose standard inclus","docs.jewellery_mat_eu":"Titane basique ou acier chirurgical","docs.jewellery_mat_au_inc":"Bijou en titane implantable inclus","docs.jewellery_mat_au_std":"Titane de grade implant (ASTM F-136 / ASTM F-138)","docs.jewellery_mat_cee_inc":"Bijou de pose standard inclus","docs.jewellery_mat_cee_std":"Bijou initial standard","docs.jewellery_mat_ca_sep":"Facturé séparément (35 C$ à 70 C$+)","docs.jewellery_mat_ca_std":"Achat client (titane de grade implant)","docs.jewellery_mat_sa_inc":"Bijou de pose basique inclus","docs.jewellery_mat_sa_std":"Acier chirurgical (ASTM F-138) ou titane","docs.jewellery_mat_sea_inc":"Bijou de pose basique inclus","docs.jewellery_mat_sea_std":"Bijou de pose titane / acier","docs.sec_embed_title":"Intégration & Widget Iframe","docs.sec_embed_body":"Le baromètre est disponible sous forme de widget iframe autonome et réactif pour sites web de studios et portails de formation.","docs.sec_embed_note":"L'iframe détecte automatiquement les changements de thème du conteneur parent via postMessage (poli-theme) et localStorage.","docs.sec_standards_title":"Normes & Spécifications des Matériaux","docs.sec_standards_body":"Toutes les références de bijoux de pose respectent scrupuleusement les spécifications biomédicales établies : titane pour implants ASTM F-136, acier inoxydable pour implants ASTM F-138, limites de libération de nickel EN 1811 et normes d'évaluation biologique ISO 10993. Les règles de tarification indiquent explicitement si le bijou initial est inclus dans l'acte ou facturé séparément.","docs.std_astm_f136":"ASTM F-136 : Spécification standard pour alliage de titane forgé 6Al-4V ELI pour applications d'implants chirurgicaux.","docs.std_astm_f138":"ASTM F-138 : Spécification standard pour barres et fils en acier inoxydable 18Cr-14Ni-2.5Mo pour implants chirurgicaux.","docs.std_iso_10993":"ISO 10993 : Évaluation biologique des dispositifs médicaux (cytotoxicité, irritation cutanée et hypersensibilité).","docs.std_en_1811":"EN 1811 : Méthode d'essai de référence pour la libération du nickel des tiges insérées dans les parties percées du corps.","docs.std_eu_reach":"Règlement REACH de l'UE Annexe XVII : Restrictions relatives à la libération de nickel pour les articles en contact prolongé avec la peau.","docs.sec_sovereignty_title":"Souveraineté des Données & Confidentialité","docs.sec_sovereignty_body":"Le Baromètre s'exécute exclusivement dans la mémoire du navigateur client. Aucun tarif, nom de studio ni télémétrie n'est transmis à des serveurs externes. L'outil est en conformité avec les réglementations telles que le RGPD (GDPR), le UK GDPR, la LGPD et le PDPA.","embed.title":"Intégrer le Baromètre des Tarifs","embed.subtitle":"Ajoutez ce baromètre de prix à votre site de studio ou portail interne.","embed.badge":"Guide d'Intégration","embed.instructions":"Copiez le code ci-dessous et insérez-le dans votre page HTML. L'iframe s'adapte automatiquement aux thèmes clair et sombre.","embed.copy_btn":"Copier le Code d'Intégration","embed.copied":"Copié dans le presse-papiers !","embed.notes_title":"Notes d'Intégration :","embed.note_1":"• L'iframe intégré hérite automatiquement du thème de la page hôte via postMessage ou l'attribut data-theme.","embed.note_2":"• Ne nécessite aucun script tiers ni clé d'API pour fonctionner.","calc.alert_enter_rate":"Veuillez saisir au moins un tarif pour le comparer aux fourchettes de référence.","csv.btn_export":"Exporter en CSV","csv.export_success":"CSV de référence exporté avec succès.","csv.col_region":"Région","csv.col_category":"Catégorie","csv.col_service":"Prestation / Procédure","csv.col_scope":"Portée / Détails","csv.col_currency":"Devise","csv.col_min":"Milieu de gamme Min","csv.col_max":"Milieu de gamme Max","csv.col_confidence":"Statut de confiance","csv.col_basis":"Base / Méthodologie","csv.col_jewellery":"Politique de bijou de pose","csv.col_your_price":"Tarif de votre studio","csv.col_position":"Positionnement tarifaire","chart.title":"Comparaison visuelle des références","chart.subtitle":"Comparaison des fourchettes basse et haute avec les tarifs de votre studio.","chart.filter_all":"Toutes les procédures","chart.filter_tattoo":"Tatouage uniquement","chart.filter_piercing":"Piercing uniquement","chart.legend_low":"Plage basse (milieu de gamme)","chart.legend_high":"Plage haute (milieu de gamme)","chart.legend_your_price":"Tarif de votre studio","chart.empty_notice":"Saisissez vos tarifs dans le tableau ci-dessus pour afficher vos prix aux côtés des fourchettes du marché.","chart.not_entered":"Non renseigné","tooltip.range_title":"Critères de tarification de référence","tooltip.mid_market_label":"Fourchette milieu de gamme","tooltip.mid_market_desc":"Barème tarifaire standard pratiqué par les studios commerciaux établis pour une réalisation professionnelle soignée, consommables stériles à usage unique, bijou de pose de qualité implantable standard (ou tarif d'acte seul) et commissions d'artistes usuelles.","tooltip.premium_label":"Tarification spécialiste haut de gamme","tooltip.premium_desc":"Tarifs supérieurs au milieu de gamme, appliqués par des tatoueurs personnalisés très demandés, artistes invités, salons privés sur rendez-vous, bijoux de corps de luxe sur mesure ou emplacements urbains prestigieux.","tooltip.confidence_title":"Gradation de confiance des données","tooltip.confidence_desc":"INDICATIF : Une estimation éditoriale compilée par Poli International à partir de prix publics. Pas des données d'enquête et non vérifiées de manière indépendante. LACUNE : Aucun chiffre fiable, laissé vide plutôt que deviné.","tooltip.position_title":"Positionnement de conformité tarifaire","tooltip.position_desc":"Compare vos tarifs avec la fourchette du milieu de gamme : Sous le marché (en dessous du plancher), Prix du marché (dans la fourchette) ou Premium (au-dessus du plafond).","calc.saved_notice":"Tarifs enregistrés automatiquement dans le stockage local.","region.last_reviewed":"Chiffres révisés pour la dernière fois : septembre 2026.","conf.gap":"LACUNE","rates.title":"Vos Tarifs","rates.subtitle":"Saisissez les chiffres de base de votre studio pour les comparer à la fourchette de référence régionale.","rates.hourly":"Tarif horaire","rates.min_charge":"Frais minimum","rates.shop_min":"Minimum du studio","rates.deposit":"Pourcentage d'acompte","rates.tier_label":"Niveau du studio","rates.tier_apprentice":"Apprenti","rates.tier_resident":"Artiste résident","rates.tier_established":"Artiste établi","rates.tier_specialist":"Spécialiste / Artiste invité","rates.tier_desc_apprentice":"Apprenti : Développe sa rapidité et son portfolio ; souvent des tarifs horaires réduits ou des forfaits modèles.","rates.tier_desc_resident":"Artiste résident : Artiste régulier en studio commercial avec réservations régulières de clients.","rates.tier_desc_established":"Artiste établi : Plusieurs années d'expérience, forte demande et réservations continues.","rates.tier_desc_specialist":"Spécialiste / Artiste invité : Style signature reconnu ou artiste invité en tournée ; tarification premium indépendante de la référence régionale.","rates.hourly_vs_region":"Fourchette de référence régionale : {min} – {max}/h","rates.min_vs_region":"Fourchette de référence du minimum studio : {min} – {max}","rates.status_below":"En dessous de la fourchette de référence régionale","rates.status_within":"Dans la fourchette de référence régionale","rates.status_above":"Au-dessus de la fourchette de référence régionale","whatif.title":"Simulateur Tarifaire","whatif.subtitle":"Ajustez votre tarif horaire pour projeter les totaux de réservation et les acomptes.","whatif.rate_adjustment":"Ajustement du tarif horaire","whatif.booking_hours":"Durée de réservation (heures)","whatif.projected_hourly":"Tarif horaire projeté","whatif.booking_total":"Total réservation ({hours} h)","whatif.deposit_due":"Acompte dû ({percent} %)","whatif.disclaimer":"Arithmétique basée uniquement sur vos données.","whatif.prompt_hourly":"Saisissez un tarif horaire dans Vos Tarifs ci-dessus pour lancer les calculs.","handoff.title":"Vos chiffres","handoff.decision_notice":"Votre décision, et non une recommandation de cet outil.","handoff.copy_btn":"Copier les chiffres","handoff.copied":"Copié !","card.title":"Carte de Tarifs Imprimable","card.print_btn":"Imprimer la carte des tarifs","card.subtitle":"Carte de tarifs sur une seule page A4 / US Letter générée à partir de vos propres chiffres. Ne contient aucune fourchette régionale.","card.studio_card_header":"Carte des Tarifs du Studio","card.baseline_rates":"Tarifs de base du studio","card.service_rates":"Tarifs des prestations","card.price_on_consultation":"Prix sur consultation","card.footer_notice":"Tarifs fixés de manière indépendante par le studio. Toutes les procédures respectent les pratiques professionnelles établies.","card.date":"Date"},es:{"app.title":"Punto de Referencia de Precios de Estudio","app.subtitle":"Introduzca sus tarifas para compararlas con los rangos de referencia del sector en nueve mercados globales. Útil para revisiones anuales y posicionamiento comercial.","app.badge":"Referencia Operativa de Estudios","app.nav_benchmark":"Tabla de Referencia","app.nav_calculator":"Comparar Mis Precios","app.nav_docs":"Documentación","app.nav_embed":"Código de Integración","app.footnote":"Estos rangos son estimaciones editoriales recopiladas a partir de precios públicos. No son datos de encuestas y no han sido verificados de forma independiente. Los especialistas de gama alta suelen cobrar por encima de ellos.","app.open_standalone":"Abrir Vista Independiente →","app.print":"Imprimir Referencia","lang.switcher_label":"Idioma","lang.en":"English","lang.de":"Deutsch","lang.fr":"Français","lang.es":"Español","lang.it":"Italiano","lang.pt":"Português","lang.nl":"Nederlands","common.currency":"Moneda","common.copy":"Copiar","common.copied":"¡Copiado!","common.download":"Descargar","common.close":"Cerrar","common.all":"Todos","common.back":"Volver","region.label":"Región de referencia:","region.all_regions":"Nueve Regiones Globales","region.coverage_scope":"Ámbito de Cobertura:","region.uk.name":"Reino Unido (Media Nacional)","region.uk.coverage":"Media nacional británica en estudios independientes de Inglaterra, Escocia y Gales (excluyendo Gran Londres).","region.london.name":"Londres / Sureste de Inglaterra","region.london.coverage":"Área metropolitana del Gran Londres y estudios comerciales del sureste de Inglaterra.","region.us.name":"Estados Unidos (Media Nacional)","region.us.coverage":"Media nacional estadounidense en estudios urbanos y suburbanos.","region.eu.name":"Europa Occidental","region.eu.coverage":"Estudios metropolitanos en Alemania, Francia, Países Bajos, Bélgica y Austria, cotizados en EUR (€).","region.au.name":"Australia","region.au.coverage":"Estudios en capitales estatales y centros regionales (NSW, Victoria, Queensland), en AUD (A$).","region.cee.name":"Europa Central y Oriental","region.cee.coverage":"Mercados urbanos en Polonia, Chequia, Hungría y Rumanía, indexados en EUR (€).","region.ca.name":"Canadá","region.ca.coverage":"Estudios urbanos en Ontario, Columbia Británica y Quebec, cotizados en dólares canadienses (CAD / C$).","region.sa.name":"América del Sur","region.sa.coverage":"Cifras apoyadas en estudios custom de São Paulo, Río de Janeiro (Brasil) y Buenos Aires (Argentina), en BRL (R$).","region.sea.name":"Sudeste Asiático","region.sea.coverage":"Cifras apoyadas en núcleos de estudios en Tailandia (Bangkok, Phuket, Chiang Mai) y Bali (Indonesia), en THB (฿).","jewellery.policy_label":"Inclusión de Joyería:","jewellery.standards_badge":"Consumibles Estériles y Normas de Joyería","jewellery.policy_desc":"Materiales de grado implante conforme a especificaciones normalizadas (ej. titanio ASTM F-136, acero quirúrgico ASTM F-138).","jewellery.uk.policy":"En el Reino Unido, los precios de perforación suelen incluir joyería inicial básica de titanio de grado implante.","jewellery.london.policy":"Los estudios de Londres generalmente incluyen joyería inicial básica de titanio de grado implante.","jewellery.us.policy":"Los estudios de EE. UU. suelen cobrar la perforación por separado; la joyería se adquiere aparte ($30–$60+).","jewellery.eu.policy":"En Europa Occidental, los estudios suelen incluir joyería inicial básica de titanio o acero quirúrgico.","jewellery.au.policy":"Los estudios australianos suelen incluir joyería inicial básica de titanio de grado implante.","jewellery.cee.policy":"Los estudios de Europa Central y Oriental suelen incluir joyería de primera puesta estándar.","jewellery.ca.policy":"Los estudios canadienses suelen cobrar la perforación por separado de la pieza de joyería inicial.","jewellery.sa.policy":"Los estudios sudamericanos generalmente incluyen joyería básica en sus tarifas estándar.","jewellery.sea.policy":"Los estudios del Sudeste Asiático que atienden a clientes locales e internacionales suelen incluir joyería básica.","jewellery.included.titanium":"Incluye joyería inicial de titanio de grado implante","jewellery.included.standard":"Incluye joyería inicial estándar","jewellery.included.basic":"Incluye joyería inicial básica","jewellery.excluded.fee_only":"Solo perforación: joyería cobrada por separado","service.tattoo_small.name":"Tatuaje pequeño (1–2 h)","service.tattoo_small.sub":"Diseño simple, un solo color, tamaño palma o menor","service.tattoo_half_day.name":"Sesión de media jornada (4–5 h)","service.tattoo_half_day.sub":"Pieza mediana a grande o ubicación detallada","service.tattoo_full_day.name":"Sesión de jornada completa (7–8 h)","service.tattoo_full_day.sub":"Trabajo complejo, progreso de manga, espalda completa","service.tattoo_hourly.name":"Tarifa por hora","service.tattoo_hourly.sub":"Tarifa estándar por hora para proyectos a medida","service.tattoo_minimum.name":"Tarifa mínima de apertura","service.tattoo_minimum.sub":"Tarifa base de estudio / preparación estéril / micro flash","service.piercing_earlobe.name":"Lóbulo de la oreja (par)","service.piercing_earlobe.sub":"Colocación estándar en ambos lóbulos","service.piercing_nostril.name":"Perforación de fosa nasal (Nostril)","service.piercing_nostril.sub":"Colocación clásica en aleta nasal con stud o aro","service.piercing_helix.name":"Hélix / cartílago","service.piercing_helix.sub":"Cartílago superior de la oreja","service.piercing_navel.name":"Perforación de ombligo","service.piercing_navel.sub":"Ombligo superior con banana curva","service.piercing_septum.name":"Perforación de septum","service.piercing_septum.sub":"Punto dulce del tabique nasal","conf.indicative":"INDICATIVO","conf.no_data":"sin datos fiables aún","conf.indicative_desc":"Una estimación editorial recopilada por Poli International a partir de precios públicos. No son datos de encuestas ni verificados de forma independiente.","conf.gap_desc":"Sin cifra fiable, por lo que se deja en blanco en lugar de adivinar.","basis.uk.tattoo_small":"Precio medio habitual para flash de tamaño palma o diseño personalizado.","basis.uk.tattoo_half_day":"Tarifa media habitual para sesión de media jornada de varias horas.","basis.uk.tattoo_full_day":"Tarifa media habitual para sesión de jornada completa.","basis.uk.tattoo_hourly":"Tarifa horaria habitual para tatuaje personalizado.","basis.uk.tattoo_minimum":"Mínimo de tienda habitual que cubre consumibles estériles e instalación desechable.","basis.uk.piercing_earlobe":"Precio medio habitual para par de lóbulos con pendientes básicos de titanio incluidos.","basis.uk.piercing_nostril":"Precio medio habitual para aleta nasal con labret básico de titanio incluido.","basis.uk.piercing_helix":"Precio medio habitual para cartílago hélix con labret básico de titanio incluido.","basis.uk.piercing_navel":"Precio medio habitual para ombligo con banana básica de titanio incluida.","basis.uk.piercing_septum":"Precio medio habitual para tabique con herradura básica incluida.","basis.london.tattoo_small":"Precio medio habitual para trabajo pequeño reflejando costes operativos de estudios céntricos.","basis.london.tattoo_half_day":"Tarifa media habitual para media jornada reflejando gastos comerciales.","basis.london.tattoo_full_day":"Tarifa media habitual para sesión de día completo en estudios metropolitanos.","basis.london.tattoo_hourly":"Tarifa horaria media para artistas residentes en ubicaciones comerciales céntricas.","basis.london.tattoo_minimum":"Mínimo de tienda medio reflejando gastos generales y preparación estéril.","basis.london.piercing_earlobe":"Precio medio habitual para par de lóbulos con pendientes iniciales de titanio.","basis.london.piercing_nostril":"Precio medio habitual para aleta nasal con labret inicial de titanio.","basis.london.piercing_helix":"Precio medio habitual para cartílago hélix con labret inicial de titanio.","basis.london.piercing_navel":"Precio medio habitual para ombligo con barra curva inicial de titanio.","basis.london.piercing_septum":"Precio medio habitual para tabique con herradura inicial de titanio.","basis.us.tattoo_small":"Precio medio habitual para flash de tamaño palma o diseño a medida.","basis.us.tattoo_half_day":"Tarifa media habitual de varias horas en estudios comerciales.","basis.us.tattoo_full_day":"Tarifa media habitual de sesión de día completo para tatuajes personalizados.","basis.us.tattoo_hourly":"Tarifa por hora habitual para trabajos de tatuaje a medida.","basis.us.tattoo_minimum":"Mínimo de tienda habitual que cubre material estéril desechable y bandeja.","basis.us.piercing_earlobe":"Tarifa de procedimiento habitual para par de lóbulos; joyería inicial por separado.","basis.us.piercing_nostril":"Tarifa de procedimiento habitual para aleta nasal; joyería inicial por separado.","basis.us.piercing_helix":"Tarifa de procedimiento habitual para cartílago hélix; joyería inicial por separado.","basis.us.piercing_navel":"Tarifa de procedimiento habitual para ombligo; joyería inicial por separado.","basis.us.piercing_septum":"Tarifa de procedimiento habitual para tabique; joyería inicial por separado.","basis.eu.tattoo_small":"Precio medio habitual para pequeño flash o diseño personalizado.","basis.eu.tattoo_half_day":"Tarifa media habitual para sesión de media jornada de varias horas.","basis.eu.tattoo_full_day":"Tarifa media habitual para sesión de jornada completa.","basis.eu.tattoo_hourly":"Tarifa por hora habitual en estudios comerciales de tatuajes.","basis.eu.tattoo_minimum":"Mínimo de tienda habitual para material desechable y puesto de trabajo.","basis.eu.piercing_earlobe":"Precio medio habitual para par de lóbulos con pendientes básicos incluidos.","basis.eu.piercing_nostril":"Precio medio habitual para aleta nasal con labret inicial básico.","basis.eu.piercing_helix":"Precio medio habitual para cartílago hélix con labret inicial estéril.","basis.eu.piercing_navel":"Precio medio habitual para ombligo con barra curva inicial incluida.","basis.eu.piercing_septum":"Precio medio habitual para tabique con herradura inicial incluida.","basis.au.tattoo_small":"Precio medio habitual para flash de tamaño palma o diseño personalizado.","basis.au.tattoo_half_day":"Tarifa media habitual de media jornada en estudios metropolitanos.","basis.au.tattoo_full_day":"Tarifa media habitual para sesión de día completo personalizado.","basis.au.tattoo_hourly":"Tarifa horaria habitual en estudios de tatuajes comerciales.","basis.au.tattoo_minimum":"Mínimo de tienda habitual para agujas desechables y bandeja.","basis.au.piercing_earlobe":"Precio medio habitual para par de lóbulos con pendientes iniciales de titanio.","basis.au.piercing_nostril":"Precio medio habitual para aleta nasal con labret inicial de titanio.","basis.au.piercing_helix":"Precio medio habitual para cartílago hélix con labret inicial de titanio.","basis.au.piercing_navel":"Precio medio habitual para ombligo con barra curva inicial de titanio.","basis.au.piercing_septum":"Precio medio habitual para tabique con herradura inicial incluida.","basis.cee.tattoo_small":"Precio medio habitual para pequeño diseño personalizado en EUR.","basis.cee.tattoo_half_day":"Tarifa media habitual para sesión de media jornada de varias horas.","basis.cee.tattoo_full_day":"Tarifa media habitual para sesión de jornada completa.","basis.cee.tattoo_hourly":"Tarifa horaria habitual para artistas residentes en estudios urbanos.","basis.cee.tattoo_minimum":"Mínimo de tienda habitual para consumibles estériles y montaje desechable.","basis.cee.piercing_earlobe":"Precio medio habitual para par de lóbulos con joyería inicial incluida.","basis.cee.piercing_nostril":"Precio medio habitual para aleta nasal con joyería inicial estándar incluida.","basis.cee.piercing_helix":"Precio medio habitual para cartílago hélix con labret inicial estándar.","basis.cee.piercing_navel":"Precio medio habitual para ombligo con barra curva inicial incluida.","basis.cee.piercing_septum":"Precio medio habitual para tabique con herradura inicial incluida.","basis.ca.tattoo_small":"Precio medio habitual para trabajos pequeños en estudios urbanos.","basis.ca.tattoo_half_day":"Tarifa media habitual de media jornada considerando costes de estudios urbanos.","basis.ca.tattoo_full_day":"Tarifa media habitual para día completo en estudios urbanos personalizados.","basis.ca.tattoo_hourly":"Tarifa horaria habitual en estudios de tatuajes personalizados.","basis.ca.tattoo_minimum":"Mínimo de tienda habitual para material desechable y preparación.","basis.ca.piercing_earlobe":"Tarifa de procedimiento habitual para par de lóbulos; joyería inicial por separado.","basis.ca.piercing_nostril":"Tarifa de procedimiento habitual para aleta nasal; joyería inicial por separado.","basis.ca.piercing_helix":"Tarifa de procedimiento habitual para cartílago hélix; joyería inicial por separado.","basis.ca.piercing_navel":"Tarifa de procedimiento habitual para ombligo; joyería inicial por separado.","basis.ca.piercing_septum":"Sin cifra fiable, por lo que se deja en blanco en lugar de adivinar.","basis.sa.tattoo_small":"Precio medio habitual para pequeños diseños personalizados en estudios comerciales.","basis.sa.tattoo_half_day":"Tarifa media habitual de varias horas en centros urbanos.","basis.sa.tattoo_full_day":"Tarifa media habitual para sesión de jornada completa.","basis.sa.tattoo_hourly":"Tarifa por hora habitual para trabajos a medida en estudios comerciales.","basis.sa.tattoo_minimum":"Mínimo de tienda habitual para kit estéril desechable y preparación.","basis.sa.piercing_earlobe":"Precio medio habitual para par de lóbulos con pendientes básicos incluidos.","basis.sa.piercing_nostril":"Precio medio habitual para aleta nasal con joyería inicial básica incluida.","basis.sa.piercing_helix":"Precio medio habitual para cartílago hélix con joyería inicial básica.","basis.sa.piercing_navel":"Precio medio habitual para ombligo con barra curva básica incluida.","basis.sea.tattoo_small":"Precio medio habitual para pequeños diseños en centros de estudios.","basis.sea.tattoo_half_day":"Tarifa media habitual de media jornada en centros internacionales.","basis.sea.tattoo_full_day":"Tarifa media habitual para sesión de jornada completa de tatuaje personalizado.","basis.sea.tattoo_hourly":"Tarifa por hora habitual para trabajos personalizados en centros de estudios.","basis.sea.tattoo_minimum":"Mínimo de tienda habitual para agujas desechables importadas y preparación estéril.","basis.sea.piercing_earlobe":"Precio medio habitual para par de lóbulos con joyería inicial básica incluida.","basis.sea.piercing_nostril":"Precio medio habitual para aleta nasal con joyería inicial básica incluida.","basis.sea.piercing_helix":"Precio medio habitual para cartílago hélix con joyería inicial básica incluida.","basis.sea.piercing_navel":"Precio medio habitual para ombligo con barra inicial básica incluida.","basis.gap.septum":"Sin cifra fiable, por lo que se deja en blanco en lugar de adivinar.","table.service":"Servicio / Artículo","table.service_procedure":"Servicio / Procedimiento","table.range":"Rango de Referencia","table.benchmark_range":"Rango de Referencia","table.currency":"Moneda","table.confidence":"Confianza","table.basis":"Base y Metodología","table.basis_scope":"Base y Ámbito de Mercado","table.your_price":"Su Tarifa","table.your_rate":"Su Tarifa","table.position":"Posición","table.category_tattoo":"Servicios de Tatuaje","table.category_piercing":"Servicios de Perforación","table.notes_header":"Detalles Regionales y Normas de Joyería","calc.title":"Comparar Tarifas de Estudio","calc.subtitle":"Introduzca sus precios para compararlos con el mercado regional seleccionado.","calc.btn_evaluate":"Comparar Mis Precios","calc.btn_clear":"Borrar Todas las Tarifas","calc.results_heading":"Su Posicionamiento de Precios","calc.results_sub":"Así se alinean sus tarifas frente al promedio del sector.","calc.eval_summary":"Resumen de Evaluación","calc.summary_count":"{count} de {total} servicios evaluados","calc.interactive_heading":"Calculadora Interactiva de Tarifas","calc.interactive_desc":"Introduzca sus precios en la tabla anterior y haga clic en Comparar Mis Precios para analizar su modelo tarifario.","pos.below":"Por Debajo del Mercado","pos.market":"Precio de Mercado","pos.premium":"Gama Alta","pos.none":"No introducido","pos.no_data":"Sin Datos","docs.title":"Punto de Referencia de Precios: Documentación Técnica","docs.subtitle":"Especificación, modelos de datos, metodología y guía de integración para el benchmark de Poli International.","docs.badge":"Especificación Técnica","docs.file_selector":"Archivo de Documentación:","docs.file_tech":"Documentación Técnica (TECHNICAL-DOCS.md)","docs.file_user":"Guía de Usuario para Estudios (USER-GUIDE.md)","docs.file_readme":"Visión General del Proyecto (README.md)","docs.file_contrib":"Guía para Contribuidores (CONTRIBUTING.md)","docs.view_markdown":"Ver Markdown en Bruto","docs.view_rendered":"Ver Guía Formateada","docs.download_file":"Descargar Archivo Markdown","docs.copied_md":"¡Markdown copiado al portapapeles!","docs.sec_overview":"Visión General de la Arquitectura","docs.sec_overview_body":"El Punto de Referencia de Precios de Estudio es una utilidad sin dependencias externas diseñada para tatuadores, anilladores y gestores de estudios con el fin de evaluar sistemáticamente sus tarifas.","docs.feature_zero_net":"Cero Peticiones de Red: Opera íntegramente en el navegador sin fuentes remotas, analítica ni servidores externos.","docs.feature_theme":"Sistema de Temas Tokenizado: Propiedades CSS estandarizadas conformes al contraste WCAG AA (≥ 4.5:1) en modos claro y oscuro.","docs.feature_a11y":"Accesibilidad en Escala de Grises: Los marcadores de confianza combinan etiquetas de texto y geometrías de borde independientes.","docs.sec_methodology":"Integridad de los Datos y Metodología","docs.sec_methodology_body":"Las cifras de referencia representan rangos medios de mercado compilados a partir de tarifas públicas de estudios. Cada servicio se clasifica en uno de dos niveles de confianza:","docs.conf_ind_desc":"Razonado a partir del coste de vida regional, mercados vecinos e informes comerciales publicados.","docs.conf_gap_desc":"Datos de precios publicados insuficientes para establecer un rango fiable. Intencionadamente en blanco.","docs.sec_regions":"Ámbito Regional","docs.sec_regions_body":"La herramienta cubre nueve zonas: Reino Unido Nacional, Londres y Sureste, Estados Unidos, Europa Occidental, Australia, Europa Central y Oriental, Canadá, América del Sur y Sudeste Asiático. Precios en moneda local.","docs.th_region_code":"Código Regional","docs.th_territory":"Nombre del Territorio","docs.th_currency":"Moneda","docs.th_scope_basis":"Base de Cobertura","docs.scope_uk":"Media nacional fuera del Gran Londres","docs.scope_london":"Estudios metropolitanos de Londres con altos costes fijos","docs.scope_us":"Media nacional en estudios urbanos y suburbanos","docs.scope_eu":"Colectivos metropolitanos de Europa Occidental","docs.scope_au":"Capitales de estado y centros regionales australianos","docs.scope_cee":"Tarifas urbanas indexadas en capitales de Europa Central","docs.scope_ca":"Estudios urbanos en Ontario, Columbia Británica y Quebec","docs.scope_sa":"Estudios a medida en São Paulo, Río y Buenos Aires","docs.scope_sea":"Puntos de encuentro de estudios en Bangkok, Phuket y Bali","docs.sec_jewellery":"Políticas de Joyería de Perforación","docs.sec_jewellery_body":"Las prácticas difieren según la región: en Reino Unido, Europa Occidental, Australia y Sudeste Asiático se suele incluir la joyería básica de puesta en el precio. En EE. UU. y Canadá se factura el acto por separado y la joya aparte.","docs.th_jewellery_policy":"Política de Joyería Inicial","docs.th_material_standard":"Material Estándar Incluido","docs.jewellery_inc_proc":"Incluida en el precio de la perforación","docs.jewellery_mat_titanium":"Titanio de grado implante (ASTM F-136)","docs.jewellery_sep_charged":"Cobrada por separado ($30–$60+)","docs.jewellery_mat_client":"Compra del cliente (titanio / oro 14k)","docs.jewellery_std_included":"Joyería inicial estándar incluida","docs.jewellery_mat_eu":"Titanio básico o acero quirúrgico","docs.jewellery_mat_au_inc":"Joyería inicial de titanio incluida","docs.jewellery_mat_au_std":"Titanio de grado implante (ASTM F-136 / ASTM F-138)","docs.jewellery_mat_cee_inc":"Joyería inicial estándar incluida","docs.jewellery_mat_cee_std":"Joyería de primera puesta estándar","docs.jewellery_mat_ca_sep":"Cobrada por separado (C$35–C$70+)","docs.jewellery_mat_ca_std":"Compra del cliente (titanio de grado implante)","docs.jewellery_mat_sa_inc":"Joyería inicial básica incluida","docs.jewellery_mat_sa_std":"Acero quirúrgico (ASTM F-138) o titanio","docs.jewellery_mat_sea_inc":"Joyería inicial básica incluida","docs.jewellery_mat_sea_std":"Joyería inicial de titanio / acero","docs.sec_embed_title":"Integración y Widget","docs.sec_embed_body":"El benchmark está disponible como un widget iframe responsivo y autónomo para páginas de estudios y portales formativos.","docs.sec_embed_note":"El iframe detecta automáticamente los cambios de tema del sitio contenedor mediante postMessage (poli-theme) y localStorage.","docs.sec_standards_title":"Normas y Especificaciones de Materiales","docs.sec_standards_body":"Todas las referencias de joyería inicial cumplen estrictamente las especificaciones biomédicas establecidas: titanio para implantes ASTM F-136, acero inoxidable para implantes ASTM F-138, límites de liberación de níquel EN 1811 y normas de evaluación biológica ISO 10993. Las políticas de joyería detallan explícitamente si la pieza inicial está incluida o se abona aparte.","docs.std_astm_f136":"ASTM F-136: Especificación estándar de aleación de titanio 6Al-4V ELI forjado para aplicaciones de implantes quirúrgicos.","docs.std_astm_f138":"ASTM F-138: Especificación estándar de barras y alambres de acero inoxidable 18Cr-14Ni-2.5Mo para implantes quirúrgicos.","docs.std_iso_10993":"ISO 10993: Evaluación biológica de productos sanitarios (citotoxicidad, irritación y sensibilización retardada).","docs.std_en_1811":"EN 1811: Método de ensayo de referencia para la liberación de níquel en vástagos introducidos en partes perforadas del cuerpo humano.","docs.std_eu_reach":"Reglamento REACH de la UE Anexo XVII: Restricciones a la liberación de níquel en artículos en contacto directo y prolongado con la piel.","docs.sec_sovereignty_title":"Soberanía de Datos y Privacidad","docs.sec_sovereignty_body":"La herramienta se ejecuta en la memoria del navegador. No se transmiten tarifas, datos de estudio ni telemetría a servidores remotos. Opera conforme a normativas de protección de datos como RGPD (GDPR), UK GDPR, LGPD y PDPA.","embed.title":"Integrar el Punto de Referencia de Precios","embed.subtitle":"Añada este benchmark de tarifas a la web de su estudio o portal interno.","embed.badge":"Guía de Integración","embed.instructions":"Copie el siguiente fragmento de código y péguelo en su página HTML. El iframe se adapta a los modos claro y oscuro sin dependencias externas.","embed.copy_btn":"Copiar Código de Integración","embed.copied":"¡Copiado al Portapapeles!","embed.notes_title":"Notas de Integración:","embed.note_1":"• El iframe hereda automáticamente el modo visual de la web contenedora mediante eventos postMessage o data-theme.","embed.note_2":"• Funciona sin necesidad de scripts de terceros ni claves de API.","calc.alert_enter_rate":"Por favor, introduzca al menos una tarifa para compararla con los rangos de referencia.","csv.btn_export":"Exportar CSV","csv.export_success":"CSV de referencia exportado con éxito.","csv.col_region":"Región","csv.col_category":"Categoría","csv.col_service":"Servicio / Procedimiento","csv.col_scope":"Alcance / Detalles","csv.col_currency":"Moneda","csv.col_min":"Mínimo mercado medio","csv.col_max":"Máximo mercado medio","csv.col_confidence":"Estado de confianza","csv.col_basis":"Base / Metodología","csv.col_jewellery":"Política de joyería inicial","csv.col_your_price":"Tarifa de su estudio","csv.col_position":"Posición de precios","chart.title":"Comparación visual de referencia","chart.subtitle":"Comparación de rangos bajo y alto del mercado medio con las tarifas de su estudio.","chart.filter_all":"Todos los procedimientos","chart.filter_tattoo":"Solo tatuaje","chart.filter_piercing":"Solo piercing","chart.legend_low":"Mínimo mercado medio","chart.legend_high":"Máximo mercado medio","chart.legend_your_price":"Tarifa de su estudio","chart.empty_notice":"Ingrese sus tarifas en la tabla anterior para comparar los precios de su estudio con los rangos del mercado.","chart.not_entered":"No ingresado","tooltip.range_title":"Criterios de precios de referencia","tooltip.mid_market_label":"Rango de mercado medio","tooltip.mid_market_desc":"Espectro tarifario estándar cobrado por estudios comerciales establecidos para una ejecución profesional adecuada, desechables estériles de un solo uso, joyería inicial de grado implante (o tarifa de perforación) y comisiones habituales.","tooltip.premium_label":"Tarificación especialista premium","tooltip.premium_desc":"Tarifas que superan el mercado medio estándar, aplicadas por especialistas en tatuajes personalizados de alta demanda, artistas invitados, suites privadas, joyería de lujo a medida o ubicaciones de alto coste.","tooltip.confidence_title":"Graduación de confianza de datos","tooltip.confidence_desc":"INDICATIVO: Una estimación editorial recopilada por Poli International a partir de precios públicos. No son datos de encuestas ni verificados de forma independiente. SIN DATOS: Sin cifra fiable, por lo que se deja en blanco en lugar de adivinar.","tooltip.position_title":"Posición de alineación de precios","tooltip.position_desc":"Compara sus tarifas con la banda de mercado medio: Por debajo del mercado, Precio de mercado o Premium.","calc.saved_notice":"Tarifas guardadas automáticamente en el almacenamiento local.","region.last_reviewed":"Cifras revisadas por última vez: septiembre de 2026.","conf.gap":"SIN DATOS","rates.title":"Sus Tarifas","rates.subtitle":"Introduzca las cifras base de su estudio para compararlas con el rango de referencia regional.","rates.hourly":"Tarifa por hora","rates.min_charge":"Cargo mínimo","rates.shop_min":"Mínimo de tienda","rates.deposit":"Porcentaje de depósito","rates.tier_label":"Nivel de artista","rates.tier_apprentice":"Aprendiz","rates.tier_resident":"Artista residente","rates.tier_established":"Artista consolidado","rates.tier_specialist":"Especialista / Artista invitado","rates.tier_desc_apprentice":"Aprendiz: Desarrollando rapidez y portafolio; a menudo tarifas horarias más bajas o tarifas de modelo fijas.","rates.tier_desc_resident":"Artista residente: Artista habitual de estudio comercial con reservas periódicas de clientes.","rates.tier_desc_established":"Artista consolidado: Varios años de trayectoria, alta demanda y agenda completa.","rates.tier_desc_specialist":"Especialista / Artista invitado: Estilo distintivo reconocido o artista invitado itinerante; precios premium independientes del promedio regional.","rates.hourly_vs_region":"Rango de referencia regional: {min} – {max}/h","rates.min_vs_region":"Rango de referencia del mínimo de tienda: {min} – {max}","rates.status_below":"Por debajo del rango de referencia regional","rates.status_within":"Dentro del rango de referencia regional","rates.status_above":"Por encima del rango de referencia regional","whatif.title":"Calculadora de Supuestos","whatif.subtitle":"Ajuste su tarifa horaria para proyectar totales de reserva e importes de depósito.","whatif.rate_adjustment":"Ajuste de tarifa horaria","whatif.booking_hours":"Duración de la reserva (horas)","whatif.projected_hourly":"Tarifa horaria proyectada","whatif.booking_total":"Total de reserva ({hours} h)","whatif.deposit_due":"Depósito debido ({percent}%)","whatif.disclaimer":"Aritmética basada únicamente en sus datos introducidos.","whatif.prompt_hourly":"Introduzca una tarifa por hora en Sus Tarifas arriba para realizar los cálculos.","handoff.title":"Sus cifras","handoff.decision_notice":"Su decisión, no una recomendación de esta herramienta.","handoff.copy_btn":"Copiar cifras","handoff.copied":"¡Copiado!","card.title":"Tarifario Imprimible","card.print_btn":"Imprimir tarifario","card.subtitle":"Tarifario de una página en A4 / US Letter generado a partir de sus propias cifras. No contiene rangos de referencia regional.","card.studio_card_header":"Tarifario del Estudio","card.baseline_rates":"Tarifas base del estudio","card.service_rates":"Tarifas de servicios","card.price_on_consultation":"Precio previa consulta","card.footer_notice":"Tarifas fijadas de forma independiente por el estudio. Todos los procedimientos siguen la práctica profesional establecida.","card.date":"Fecha"},it:{"app.title":"Parametro di Riferimento Prezzi Studio","app.subtitle":"Inserisci le tariffe del tuo studio per confrontarle con gli intervalli di riferimento in nove mercati globali. Utile per revisioni tariffarie e posizionamento di mercato.","app.badge":"Riferimento Operativo per Studi","app.nav_benchmark":"Tabella di Riferimento","app.nav_calculator":"Confronta i Miei Prezzi","app.nav_docs":"Documentazione","app.nav_embed":"Codice di Incorporamento","app.footnote":"Questi intervalli sono stime editoriali compilate sulla base di prezzi pubblici. Non sono dati di sondaggio e non sono stati verificati in modo indipendente. Gli specialisti di alto livello applicano regolarmente tariffe superiori.","app.open_standalone":"Apri Vista Autonoma →","app.print":"Stampa Riferimento","lang.switcher_label":"Lingua","lang.en":"English","lang.de":"Deutsch","lang.fr":"Français","lang.es":"Español","lang.it":"Italiano","lang.pt":"Português","lang.nl":"Nederlands","common.currency":"Valuta","common.copy":"Copia","common.copied":"Copiato!","common.download":"Scarica","common.close":"Chiudi","common.all":"Tutti","common.back":"Indietro","region.label":"Regione di riferimento:","region.all_regions":"Nove Regioni Globali","region.coverage_scope":"Ambito di Copertura:","region.uk.name":"Regno Unito (Media Nazionale)","region.uk.coverage":"Media nazionale britannica degli studi indipendenti in Inghilterra, Scozia e Galles (esclusa la Grande Londra).","region.london.name":"Londra / Sud-Est Inghilterra","region.london.coverage":"Area metropolitana della Grande Londra e studi commerciali del Sud-Est dell'Inghilterra.","region.us.name":"Stati Uniti (Media Nazionale)","region.us.coverage":"Media nazionale statunitense tra studi urbani e suburbani.","region.eu.name":"Europa Occidentale","region.eu.coverage":"Studi metropolitani in Germania, Francia, Paesi Bassi, Belgio e Austria, espressi in EUR (€).","region.au.name":"Australia","region.au.coverage":"Studi delle capitali statali e dei principali poli regionali (NSW, Victoria, Queensland), in AUD (A$).","region.cee.name":"Europa Centrale e Orientale","region.cee.coverage":"Mercati urbani in Polonia, Cechia, Ungheria e Romania, indicizzati in EUR (€).","region.ca.name":"Canada","region.ca.coverage":"Studi urbani in Ontario, Columbia Britannica e Quebec, espressi in dollari canadesi (CAD / C$).","region.sa.name":"Sud America","region.sa.coverage":"Dati basati su studi custom a San Paolo, Rio de Janeiro (Brasile) e Buenos Aires (Argentina), in BRL (R$).","region.sea.name":"Sud-Est Asiatico","region.sea.coverage":"Dati basati su poli di studi professionali in Thailandia (Bangkok, Phuket, Chiang Mai) e Bali (Indonesia), in THB (฿).","jewellery.policy_label":"Politica Gioielleria:","jewellery.standards_badge":"Materiale Sterile e Standard di Gioielleria","jewellery.policy_desc":"Materiali di grado impianto conformi alle specifiche standard (es. titanio ASTM F-136, acciaio chirurgico ASTM F-138).","jewellery.uk.policy":"Nel Regno Unito i prezzi per il piercing includono generalmente gioielleria iniziale di base in titanio di grado impianto.","jewellery.london.policy":"Gli studi londinesi includono generalmente gioielleria iniziale di base in titanio di grado impianto.","jewellery.us.policy":"Gli studi statunitensi addebitano solitamente il solo costo di foratura; il gioiello è acquistato a parte ($30–$60+).","jewellery.eu.policy":"In Europa occidentale gli studi includono abitualmente gioielleria iniziale di base in titanio o acciaio chirurgico.","jewellery.au.policy":"Gli studi australiani includono abitualmente gioielleria iniziale di base in titanio di grado impianto.","jewellery.cee.policy":"Gli studi dell'Europa centrale e orientale includono solitamente la gioielleria iniziale standard.","jewellery.ca.policy":"Gli studi canadesi addebitano solitamente il costo di foratura separatamente dalla gioielleria iniziale.","jewellery.sa.policy":"Gli studi sudamericani includono generalmente gioielleria di base nei pacchetti standard.","jewellery.sea.policy":"Gli studi del Sud-Est asiatico per clientela locale e internazionale includono generalmente gioielleria iniziale di base.","jewellery.included.titanium":"Include gioielleria iniziale in titanio di grado impianto","jewellery.included.standard":"Include gioielleria iniziale standard","jewellery.included.basic":"Include gioielleria iniziale di base","jewellery.excluded.fee_only":"Solo foratura: gioiello addebitato a parte","service.tattoo_small.name":"Tatuaggio piccolo (1–2 ore)","service.tattoo_small.sub":"Disegno semplice, monocolore, dimensione palmo o inferiore","service.tattoo_half_day.name":"Sessione mezza giornata (4–5 ore)","service.tattoo_half_day.sub":"Pezzo di medie-grandi dimensioni o posizionamento dettagliato","service.tattoo_full_day.name":"Sessione giornata intera (7–8 ore)","service.tattoo_full_day.sub":"Lavoro complesso, avanzamento manica, schiena completa","service.tattoo_hourly.name":"Tariffa oraria","service.tattoo_hourly.sub":"Fatturazione oraria standard per lavori personalizzati","service.tattoo_minimum.name":"Tariffa minima di apertura","service.tattoo_minimum.sub":"Quota base di studio / postazione sterile / micro flash","service.piercing_earlobe.name":"Lobi delle orecchie (coppia)","service.piercing_earlobe.sub":"Posizionamento standard su entrambi i lobi","service.piercing_nostril.name":"Nostril (narice)","service.piercing_nostril.sub":"Posizionamento standard sulla narice con stud o anellino","service.piercing_helix.name":"Helix / cartilagine","service.piercing_helix.sub":"Cartilagine superiore dell'orecchio","service.piercing_navel.name":"Piercing ombelico","service.piercing_navel.sub":"Parte superiore dell'ombelico con banana curva","service.piercing_septum.name":"Piercing septum","service.piercing_septum.sub":"Punto morbido del setto nasale","conf.indicative":"INDICATIVO","conf.no_data":"dati non ancora disponibili","conf.indicative_desc":"Una stima editoriale compilata da Poli International sulla base di prezzi pubblici. Non dati di sondaggio e non verificati in modo indipendente.","conf.gap_desc":"Nessun dato affidabile, quindi lasciato vuoto anziché ipotizzato.","basis.uk.tattoo_small":"Prezzo medio di listino per flash formato palmo o disegno personalizzato.","basis.uk.tattoo_half_day":"Tariffa media di listino per una sessione di mezza giornata di più ore.","basis.uk.tattoo_full_day":"Tariffa media di listino per una sessione di un'intera giornata.","basis.uk.tattoo_hourly":"Tariffa oraria media di fatturazione per tatuaggi personalizzati.","basis.uk.tattoo_minimum":"Minimo di bottega medio a copertura dei materiali sterili monouso.","basis.uk.piercing_earlobe":"Prezzo medio di listino per coppia di lobi inclusi orecchini base in titanio.","basis.uk.piercing_nostril":"Prezzo medio di listino per narice con labret base in titanio incluso.","basis.uk.piercing_helix":"Prezzo medio di listino per cartilagine elice con labret base in titanio incluso.","basis.uk.piercing_navel":"Prezzo medio di listino per ombelico con barra curva base in titanio inclusa.","basis.uk.piercing_septum":"Prezzo medio di listino per setto con ferro di cavallo base incluso.","basis.london.tattoo_small":"Prezzo medio per piccoli lavori con costi di gestione dei locali centrali.","basis.london.tattoo_half_day":"Tariffa media di mezza giornata tenendo conto dei costi operativi commerciali.","basis.london.tattoo_full_day":"Tariffa media di giornata intera negli studi metropolitani.","basis.london.tattoo_hourly":"Tariffa oraria media per artisti residenti in sedi commerciali centrali.","basis.london.tattoo_minimum":"Minimo di bottega medio che tiene conto di costi fissi e allestimento sterile.","basis.london.piercing_earlobe":"Prezzo medio per coppia di lobi inclusi orecchini iniziali in titanio.","basis.london.piercing_nostril":"Prezzo medio per narice con labret iniziale in titanio.","basis.london.piercing_helix":"Prezzo medio per cartilagine elice con labret iniziale in titanio.","basis.london.piercing_navel":"Prezzo medio per ombelico con barra curva iniziale in titanio.","basis.london.piercing_septum":"Prezzo medio per setto con ferro di cavallo iniziale in titanio.","basis.us.tattoo_small":"Prezzo medio di listino per flash formato palmo o disegno su misura.","basis.us.tattoo_half_day":"Tariffa media per sessioni di più ore negli studi commerciali.","basis.us.tattoo_full_day":"Tariffa media per sessione di giornata intera per tatuaggi su misura.","basis.us.tattoo_hourly":"Tariffa oraria media per lavori di tatuaggio personalizzati.","basis.us.tattoo_minimum":"Minimo di bottega tipico a copertura di materiali sterili monouso e vassoio.","basis.us.piercing_earlobe":"Costo della procedura per coppia di lobi; gioielleria iniziale venduta a parte.","basis.us.piercing_nostril":"Costo della procedura per narice; gioielleria iniziale venduta a parte.","basis.us.piercing_helix":"Costo della procedura per cartilagine elice; gioielleria iniziale venduta a parte.","basis.us.piercing_navel":"Costo della procedura per ombelico; gioielleria iniziale venduta a parte.","basis.us.piercing_septum":"Costo della procedura per setto; gioielleria iniziale venduta a parte.","basis.eu.tattoo_small":"Prezzo medio di listino per piccoli flash o disegni personalizzati.","basis.eu.tattoo_half_day":"Tariffa media di listino per una sessione di mezza giornata di più ore.","basis.eu.tattoo_full_day":"Tariffa media di listino per una sessione di un'intera giornata.","basis.eu.tattoo_hourly":"Tariffa oraria media negli studi commerciali su misura.","basis.eu.tattoo_minimum":"Minimo di bottega tipico per monouso sterili e preparazione della postazione.","basis.eu.piercing_earlobe":"Prezzo medio per coppia di lobi inclusi orecchini base di partenza.","basis.eu.piercing_nostril":"Prezzo medio per narice con labret iniziale base incluso.","basis.eu.piercing_helix":"Prezzo medio per cartilagine elice con labret sterile di partenza.","basis.eu.piercing_navel":"Prezzo medio per ombelico con barra curva iniziale inclusa.","basis.eu.piercing_septum":"Prezzo medio per setto con ferro di cavallo iniziale incluso.","basis.au.tattoo_small":"Prezzo medio di listino per flash formato palmo o disegno su misura.","basis.au.tattoo_half_day":"Tariffa media per mezza giornata negli studi metropolitani.","basis.au.tattoo_full_day":"Tariffa media di giornata intera per lavori su misura.","basis.au.tattoo_hourly":"Tariffa oraria media negli studi commerciali su misura.","basis.au.tattoo_minimum":"Minimo di bottega tipico per aghi monouso e vassoio sterile.","basis.au.piercing_earlobe":"Prezzo medio per coppia di lobi con orecchini iniziali in titanio.","basis.au.piercing_nostril":"Prezzo medio per narice con labret iniziale in titanio.","basis.au.piercing_helix":"Prezzo medio per cartilagine elice con labret iniziale in titanio.","basis.au.piercing_navel":"Prezzo medio per ombelico con barra curva iniziale in titanio.","basis.au.piercing_septum":"Prezzo medio per setto con ferro di cavallo iniziale incluso.","basis.cee.tattoo_small":"Prezzo medio per piccolo disegno personalizzato parametrato in EUR.","basis.cee.tattoo_half_day":"Tariffa media per una sessione di mezza giornata di più ore.","basis.cee.tattoo_full_day":"Tariffa media per una sessione di un'intera giornata.","basis.cee.tattoo_hourly":"Tariffa oraria media per artisti residenti negli studi urbani.","basis.cee.tattoo_minimum":"Minimo di bottega tipico per materiali sterili e allestimento monouso.","basis.cee.piercing_earlobe":"Prezzo medio per coppia di lobi con gioielleria iniziale inclusa.","basis.cee.piercing_nostril":"Prezzo medio per narice con gioielleria iniziale standard inclusa.","basis.cee.piercing_helix":"Prezzo medio per cartilagine elice con labret iniziale standard.","basis.cee.piercing_navel":"Prezzo medio per ombelico con barra curva iniziale inclusa.","basis.cee.piercing_septum":"Prezzo medio per setto con ferro di cavallo iniziale incluso.","basis.ca.tattoo_small":"Prezzo medio per piccoli lavori su misura negli studi cittadini.","basis.ca.tattoo_half_day":"Tariffa media per mezza giornata calcolata sui costi dei locali urbani.","basis.ca.tattoo_full_day":"Tariffa media per giornata intera negli studi urbani personalizzati.","basis.ca.tattoo_hourly":"Tariffa oraria media negli studi di tatuaggio su misura.","basis.ca.tattoo_minimum":"Minimo di bottega tipico per materiale sterile monouso e allestimento.","basis.ca.piercing_earlobe":"Costo della procedura per coppia di lobi; gioielleria iniziale venduta a parte.","basis.ca.piercing_nostril":"Costo della procedura per narice; gioielleria iniziale venduta a parte.","basis.ca.piercing_helix":"Costo della procedura per cartilagine elice; gioielleria iniziale venduta a parte.","basis.ca.piercing_navel":"Costo della procedura per ombelico; gioielleria iniziale venduta a parte.","basis.ca.piercing_septum":"Nessun dato affidabile, quindi lasciato vuoto anziché ipotizzato.","basis.sa.tattoo_small":"Prezzo medio per piccoli disegni personalizzati negli studi commerciali.","basis.sa.tattoo_half_day":"Tariffa media per sessioni di più ore nei centri urbani.","basis.sa.tattoo_full_day":"Tariffa media per una sessione di un'intera giornata su misura.","basis.sa.tattoo_hourly":"Tariffa oraria media per lavori personalizzati negli studi commerciali.","basis.sa.tattoo_minimum":"Minimo di bottega tipico a copertura del kit sterile monouso e allestimento.","basis.sa.piercing_earlobe":"Prezzo medio per coppia di lobi inclusi orecchini base di partenza.","basis.sa.piercing_nostril":"Prezzo medio per narice con gioielleria iniziale base inclusa.","basis.sa.piercing_helix":"Prezzo medio per cartilagine elice con gioielleria iniziale base inclusa.","basis.sa.piercing_navel":"Prezzo medio per ombelico con barra curva base inclusa.","basis.sea.tattoo_small":"Prezzo medio per piccoli disegni nei principali centri di studi.","basis.sea.tattoo_half_day":"Tariffa media per mezza giornata nei poli internazionali.","basis.sea.tattoo_full_day":"Tariffa media per una sessione di giornata intera su misura.","basis.sea.tattoo_hourly":"Tariffa oraria media per lavori su misura nei poli di studi.","basis.sea.tattoo_minimum":"Minimo di bottega tipico per aghi monouso importati e allestimento sterile.","basis.sea.piercing_earlobe":"Prezzo medio per coppia di lobi con gioielleria iniziale base inclusa.","basis.sea.piercing_nostril":"Prezzo medio per narice con gioielleria iniziale base inclusa.","basis.sea.piercing_helix":"Prezzo medio per cartilagine elice con gioielleria iniziale base inclusa.","basis.sea.piercing_navel":"Prezzo medio per ombelico con barra iniziale base inclusa.","basis.gap.septum":"Nessun dato affidabile, quindi lasciato vuoto anziché ipotizzato.","table.service":"Servizio / Articolo","table.service_procedure":"Servizio / Procedura","table.range":"Intervallo di Riferimento","table.benchmark_range":"Intervallo di Riferimento","table.currency":"Valuta","table.confidence":"Affidabilità","table.basis":"Base e Metodologia","table.basis_scope":"Base e Ambito di Mercato","table.your_price":"Tua Tariffa","table.your_rate":"Tua Tariffa","table.position":"Posizione","table.category_tattoo":"Servizi Tatuaggio","table.category_piercing":"Servizi Piercing","table.notes_header":"Dettagli Regionali e Standard Gioielleria","calc.title":"Confronta le Tariffe dello Studio","calc.subtitle":"Inserisci i tuoi prezzi per confrontarli con il mercato regionale selezionato.","calc.btn_evaluate":"Confronta i Miei Prezzi","calc.btn_clear":"Azzera Tutte le Tariffe","calc.results_heading":"Il Tuo Posizionamento Tariffario","calc.results_sub":"Ecco come si collocano le tariffe del tuo studio rispetto al benchmark di settore.","calc.eval_summary":"Riepilogo Valutazione","calc.summary_count":"{count} su {total} servizi valutati","calc.interactive_heading":"Calcolatore Interattivo di Confronto","calc.interactive_desc":"Inserisci i prezzi del tuo studio nella tabella e clicca su Confronta i Miei Prezzi per analizzare il tuo modello tariffario.","pos.below":"Sotto Mercato","pos.market":"In Linea col Mercato","pos.premium":"Fascia Alta","pos.none":"Non inserito","pos.no_data":"Mancanza Dati","docs.title":"Parametro di Riferimento Prezzi: Documentazione Tecnica","docs.subtitle":"Specifiche, modelli di dati, metodologia e guida all'integrazione per il benchmark Poli International.","docs.badge":"Specifica Tecnica","docs.file_selector":"File di Documentazione:","docs.file_tech":"Documentazione Tecnica (TECHNICAL-DOCS.md)","docs.file_user":"Guida Utente per Studi (USER-GUIDE.md)","docs.file_readme":"Panoramica del Progetto (README.md)","docs.file_contrib":"Guida ai Contributi (CONTRIBUTING.md)","docs.view_markdown":"Visualizza Markdown Grezzo","docs.view_rendered":"Visualizza Guida Formattata","docs.download_file":"Scarica File Markdown","docs.copied_md":"Markdown copiato negli appunti!","docs.sec_overview":"Panoramica dell'Architettura","docs.sec_overview_body":"Il Parametro di Riferimento Prezzi di Studio è uno strumento senza dipendenze di rete esterne progettato per tatuatori, piercer e gestori di studi per valutare i propri listini.","docs.feature_zero_net":"Zero Richieste di Rete: Funziona interamente nel browser senza font remoti, strumenti di analisi o server esterni.","docs.feature_theme":"Sistema di Temi con Variabili: Proprietà CSS standardizzate che rispettano il contrasto WCAG AA (≥ 4.5:1) in modalità chiara e scura.","docs.feature_a11y":"Accessibilità in Scala di Grigi: Gli indicatori combinano etichette testuali e bordi geometrici distinti.","docs.sec_methodology":"Integrità dei Dati e Metodologia","docs.sec_methodology_body":"Le cifre di riferimento rappresentano intervalli medi di mercato ricavati da listini pubblici. Ciascuna voce è classificata in uno dei due livelli di confidenza dei dati:","docs.conf_ind_desc":"Deducibile dal costo della vita regionale, mercati limitrofi e report di settore pubblicati.","docs.conf_gap_desc":"Dati di prezzo pubblicati insufficienti per stabilire un intervallo affidabile. Intenzionalmente vuoto.","docs.sec_regions":"Ambito Regionale","docs.sec_regions_body":"Lo strumento supporta nove zone: Regno Unito Nazionale, Londra e Sud-Est, Stati Uniti, Europa Occidentale, Australia, Europa Centrale e Orientale, Canada, Sud America e Sud-Est Asiatico. Tariffe nella valuta locale.","docs.th_region_code":"Codice Regione","docs.th_territory":"Nome Territorio","docs.th_currency":"Valuta","docs.th_scope_basis":"Base di Campionamento","docs.scope_uk":"Media nazionale al di fuori della Grande Londra","docs.scope_london":"Studi metropolitani di Londra con elevati costi fissi","docs.scope_us":"Media nazionale in studi urbani e suburbani","docs.scope_eu":"Collettivi di studi metropolitani dell'Europa occidentale","docs.scope_au":"Capitali statali e poli regionali australiani","docs.scope_cee":"Tariffari urbani indicizzati nelle capitali dell'Europa centrale","docs.scope_ca":"Studi urbani in Ontario, Columbia Britannica e Quebec","docs.scope_sa":"Studi custom a San Paolo, Rio e Buenos Aires","docs.scope_sea":"Poli di studi a Bangkok, Phuket e Bali","docs.sec_jewellery":"Inclusione Gioielleria per Piercing","docs.sec_jewellery_body":"Gli usi variano a seconda della regione: nel Regno Unito, in Europa occidentale, in Australia e nel Sud-Est asiatico il gioiello iniziale è di norma incluso nel prezzo. Negli Stati Uniti e in Canada la foratura e il gioiello vengono fatturati separatamente.","docs.th_jewellery_policy":"Politica Gioiello Iniziale","docs.th_material_standard":"Materiale Standard Incluso","docs.jewellery_inc_proc":"Incluso nel prezzo di foratura","docs.jewellery_mat_titanium":"Titanio di grado impianto (ASTM F-136)","docs.jewellery_sep_charged":"Addebitato a parte ($30–$60+)","docs.jewellery_mat_client":"Acquistato dal cliente (titanio / oro 14k)","docs.jewellery_std_included":"Gioielleria iniziale standard inclusa","docs.jewellery_mat_eu":"Titanio di base o acciaio chirurgico","docs.jewellery_mat_au_inc":"Gioiello iniziale in titanio incluso","docs.jewellery_mat_au_std":"Titanio di grado impianto (ASTM F-136 / ASTM F-138)","docs.jewellery_mat_cee_inc":"Gioielleria iniziale standard inclusa","docs.jewellery_mat_cee_std":"Gioielleria di prima applicazione standard","docs.jewellery_mat_ca_sep":"Addebitato a parte (C$35–C$70+)","docs.jewellery_mat_ca_std":"Acquistato dal cliente (titanio di grado impianto)","docs.jewellery_mat_sa_inc":"Gioielleria iniziale di base inclusa","docs.jewellery_mat_sa_std":"Acciaio chirurgico (ASTM F-138) o titanio","docs.jewellery_mat_sea_inc":"Gioielleria iniziale di base inclusa","docs.jewellery_mat_sea_std":"Gioiello iniziale titanio / acciaio","docs.sec_embed_title":"Integrazione e Widget","docs.sec_embed_body":"Il benchmark è disponibile come widget iframe reattivo e autonomo per siti web di studi e portali di formazione.","docs.sec_embed_note":"L'iframe rileva automaticamente i cambi di tema del sito genitore tramite eventi postMessage (poli-theme) e localStorage.","docs.sec_standards_title":"Norme e Specifiche dei Materiali","docs.sec_standards_body":"Tutti i riferimenti alla gioielleria di partenza aderiscono alle specifiche biomedicali consolidate: titanio per impianti ASTM F-136, acciaio inossidabile per impianti ASTM F-138, limiti di rilascio del nichel EN 1811 e norme ISO 10993 di valutazione biologica. Le condizioni indicano espressamente se il gioiello iniziale è compreso nella procedura o acquistato a parte.","docs.std_astm_f136":"ASTM F-136: Specifica standard per lega di titanio 6Al-4V ELI lavorato per impianti chirurgici.","docs.std_astm_f138":"ASTM F-138: Specifica standard per barre e fili in acciaio inossidabile 18Cr-14Ni-2.5Mo per impianti chirurgici.","docs.std_iso_10993":"ISO 10993: Valutazione biologica dei dispositivi medici (citotossicità, irritazione e sensibilizzazione ritardata).","docs.std_en_1811":"EN 1811: Metodo di prova di riferimento per il rilascio di nichel da componenti inseriti in parti perforate del corpo umano.","docs.std_eu_reach":"Regolamento REACH UE Allegato XVII: Restrizioni al rilascio di nichel per articoli a contatto diretto e prolungato con la pelle.","docs.sec_sovereignty_title":"Sovranità dei Dati e Privacy","docs.sec_sovereignty_body":"Lo strumento opera interamente nella memoria del browser. Nessuna tariffa o informazione di studio viene inviata a server esterni. Conforme a normative come GDPR, UK GDPR, LGPD e PDPA.","embed.title":"Incorpora il Benchmark Prezzi di Studio","embed.subtitle":"Integra questo parametro di confronto prezzi nel sito del tuo studio o nel gestionale interno.","embed.badge":"Guida all'Integrazione","embed.instructions":"Copia lo snippet qui sotto e incollalo nella tua pagina HTML. L'iframe si adatta automaticamente alle modalità chiara e scura.","embed.copy_btn":"Copia Codice Incorporamento","embed.copied":"Copiato negli Appunti!","embed.notes_title":"Note di Integrazione:","embed.note_1":"• L'iframe eredita automaticamente il tema chiaro o scuro del sito ospitante via postMessage o attributo data-theme.","embed.note_2":"• Funziona senza la necessità di script di terze parti o chiavi API.","calc.alert_enter_rate":"Inserisci almeno una tariffa da confrontare con gli intervalli di riferimento.","csv.btn_export":"Esporta CSV","csv.export_success":"CSV di riferimento esportato con successo.","csv.col_region":"Regione","csv.col_category":"Categoria","csv.col_service":"Servizio / Procedura","csv.col_scope":"Ambito / Dettagli","csv.col_currency":"Valuta","csv.col_min":"Minimo mercato medio","csv.col_max":"Massimo mercato medio","csv.col_confidence":"Stato di confidenza","csv.col_basis":"Base / Metodologia","csv.col_jewellery":"Politica gioiello iniziale","csv.col_your_price":"Tariffa del tuo studio","csv.col_position":"Posizione di prezzo","chart.title":"Confronto visivo dei parametri","chart.subtitle":"Confronto delle fasce minima e massima di mercato medio con le tariffe del tuo studio.","chart.filter_all":"Tutte le procedure","chart.filter_tattoo":"Solo tatuaggi","chart.filter_piercing":"Solo piercing","chart.legend_low":"Minimo mercato medio","chart.legend_high":"Massimo mercato medio","chart.legend_your_price":"Tariffa del tuo studio","chart.empty_notice":"Inserisci le tue tariffe nella tabella sopra per tracciare i prezzi del tuo studio accanto alle fasce di mercato.","chart.not_entered":"Non inserito","tooltip.range_title":"Criteri di determinazione dei prezzi di riferimento","tooltip.mid_market_label":"Fascia di mercato medio","tooltip.mid_market_desc":"Tariffario standard applicato da studi commerciali affermati per un'esecuzione professionale standard, monouso sterili, gioielleria iniziale di grado implantare standard (o costo della sola procedura) e commissioni standard.","tooltip.premium_label":"Tariffazione specialistica premium","tooltip.premium_desc":"Tariffe superiori al mercato medio, applicate da tatuatori personalizzati molto richiesti, guest artist, studi privati su appuntamento, gioielleria di lusso su misura o location urbane di pregio.","tooltip.confidence_title":"Gradazione di confidenza dei dati","tooltip.confidence_desc":"INDICATIVO: Una stima editoriale compilata da Poli International sulla base di prezzi pubblici. Non dati di sondaggio e non verificati in modo indipendente. DATO ASSENTE: Nessun dato affidabile, quindi lasciato vuoto anziché ipotizzato.","tooltip.position_title":"Posizione di allineamento prezzi","tooltip.position_desc":"Confronta le tue tariffe con la fascia di mercato medio: Sotto mercato, Tariffa di mercato o Premium.","calc.saved_notice":"Tariffe salvate automaticamente nella memoria locale.","region.last_reviewed":"Cifre revisionate per l'ultima volta: settembre 2026.","conf.gap":"DATO ASSENTE","rates.title":"Le Tue Tariffe","rates.subtitle":"Inserisci i valori di base del tuo studio per confrontarli con l'intervallo di riferimento regionale.","rates.hourly":"Tariffa oraria","rates.min_charge":"Costo minimo","rates.shop_min":"Minimo di bottega","rates.deposit":"Percentuale di acconto","rates.tier_label":"Livello artista","rates.tier_apprentice":"Apprendista","rates.tier_resident":"Artista residente","rates.tier_established":"Artista affermato","rates.tier_specialist":"Specialista / Artista ospite","rates.tier_desc_apprentice":"Apprendista: Sta sviluppando velocità e portfolio; spesso tariffe orarie più basse o tariffe modello fisse.","rates.tier_desc_resident":"Artista residente: Artista standard di studio commerciale con appuntamenti regolari.","rates.tier_desc_established":"Artista affermato: Esperienza pluriennale, forte richiesta e calendario consolidato.","rates.tier_desc_specialist":"Specialista / Artista ospite: Stile distintivo riconosciuto o artista ospite itinerante; prezzi premium indipendenti dalla base regionale.","rates.hourly_vs_region":"Intervallo di riferimento regionale: {min} – {max}/ora","rates.min_vs_region":"Intervallo di riferimento per il minimo di studio: {min} – {max}","rates.status_below":"Sotto l'intervallo di riferimento regionale","rates.status_within":"Entro l'intervallo di riferimento regionale","rates.status_above":"Sopra l'intervallo di riferimento regionale","whatif.title":"Calcolatore di Ipotesi","whatif.subtitle":"Modifica la tua tariffa oraria per stimare i totali di prenotazione e gli acconti.","whatif.rate_adjustment":"Aggiustamento tariffa oraria","whatif.booking_hours":"Durata prenotazione (ore)","whatif.projected_hourly":"Tariffa oraria stimata","whatif.booking_total":"Totale prenotazione ({hours} ore)","whatif.deposit_due":"Acconto dovuto ({percent}%)","whatif.disclaimer":"Semplice calcolo aritmetico basato sui tuoi dati inseriti.","whatif.prompt_hourly":"Inserisci una tariffa oraria in Le Tue Tariffe sopra per eseguire i calcoli.","handoff.title":"I tuoi numeri","handoff.decision_notice":"Una tua decisione, non una raccomandazione di questo strumento.","handoff.copy_btn":"Copia numeri","handoff.copied":"Copiato!","card.title":"Listino Prezzi Stampabile","card.print_btn":"Stampa listino prezzi","card.subtitle":"Listino prezzi di una pagina A4 / US Letter generato dai tuoi numeri. Non contiene intervalli di riferimento regionali.","card.studio_card_header":"Listino Prezzi dello Studio","card.baseline_rates":"Tariffe di base dello studio","card.service_rates":"Tariffe dei servizi","card.price_on_consultation":"Prezzo su consultazione","card.footer_notice":"Tariffe stabilite autonomamente dallo studio. Tutte le procedure seguono la prassi professionale consolidata.","card.date":"Data"},pt:{"app.title":"Parâmetro de Preços de Estúdio","app.subtitle":"Insira os preços do seu estúdio para comparar com as faixas de referência do setor em nove mercados globais. Ideal para revisões anuais de preços e posicionamento comercial.","app.badge":"Referência Operacional para Estúdios","app.nav_benchmark":"Tabela de Referência","app.nav_calculator":"Comparar Meus Preços","app.nav_docs":"Documentação","app.nav_embed":"Código de Incorporação","app.footnote":"Essas faixas são estimativas editoriais compiladas a partir de preços públicos. Não são dados de pesquisa e não foram verificadas de forma independente. Especialistas de alto padrão costumam cobrar valores acima.","app.open_standalone":"Abrir Vista Independente →","app.print":"Imprimir Referência","lang.switcher_label":"Idioma","lang.en":"English","lang.de":"Deutsch","lang.fr":"Français","lang.es":"Español","lang.it":"Italiano","lang.pt":"Português","lang.nl":"Nederlands","common.currency":"Moeda","common.copy":"Copiar","common.copied":"Copiado!","common.download":"Baixar","common.close":"Fechar","common.all":"Todos","common.back":"Voltar","region.label":"Região de referência:","region.all_regions":"Nove Regiões Globais","region.coverage_scope":"Escopo de Cobertura:","region.uk.name":"Reino Unido (Média Nacional)","region.uk.coverage":"Média nacional britânica de estúdios independentes na Inglaterra, Escócia e País de Gales (exceto Grande Londres).","region.london.name":"Londres / Sudeste da Inglaterra","region.london.coverage":"Área metropolitana da Grande Londres e estúdios comerciais do Sudeste da Inglaterra.","region.us.name":"Estados Unidos (Média Nacional)","region.us.coverage":"Média nacional norte-americana entre estúdios urbanos e suburbanos.","region.eu.name":"Europa Ocidental","region.eu.coverage":"Estúdios metropolitanos na Alemanha, França, Países Baixos, Bélgica e Áustria, cotados em EUR (€).","region.au.name":"Austrália","region.au.coverage":"Estúdios nas capitais estaduais e centros regionais (NSW, Victoria, Queensland), em AUD (A$).","region.cee.name":"Europa Central e Oriental","region.cee.coverage":"Mercados urbanos na Polônia, Chéquia, Hungria e Romênia, indexados em EUR (€).","region.ca.name":"Canadá","region.ca.coverage":"Estúdios urbanos em Ontário, Colúmbia Britânica e Quebec, cotados em dólares canadenses (CAD / C$).","region.sa.name":"América do Sul","region.sa.coverage":"Dados baseados em estúdios custom em São Paulo, Rio de Janeiro (Brasil) e Buenos Aires (Argentina), em BRL (R$).","region.sea.name":"Sudeste Asiático","region.sea.coverage":"Dados baseados em centros de estúdios na Tailândia (Bangkok, Phuket, Chiang Mai) e Bali (Indonésia), em THB (฿).","jewellery.policy_label":"Política de Joalheria:","jewellery.standards_badge":"Descartáveis Estéreis e Normas de Joalheria","jewellery.policy_desc":"Materiais de grau de implante em conformidade com especificações padrão (ex.: titânio ASTM F-136, aço cirúrgico ASTM F-138).","jewellery.uk.policy":"No Reino Unido, os preços de piercing costumam incluir a joia inicial básica em titânio de grau de implante.","jewellery.london.policy":"Os estúdios em Londres geralmente incluem joia inicial básica em titânio de grau de implante.","jewellery.us.policy":"Os estúdios nos EUA normalmente cobram a perfuração avulsa; a joia é comprada à parte ($30–$60+).","jewellery.eu.policy":"Na Europa Ocidental, os estúdios costumam incluir joia inicial básica em titânio ou aço cirúrgico.","jewellery.au.policy":"Os estúdios australianos costumam incluir joia inicial básica em titânio de grau de implante.","jewellery.cee.policy":"Os estúdios da Europa Central e Oriental geralmente incluem a joia de perfuração padrão.","jewellery.ca.policy":"Os estúdios canadenses normalmente cobram a taxa de perfuração separadamente da joia inicial.","jewellery.sa.policy":"Os estúdios sul-americanos geralmente incluem joia inicial básica nos pacotes convencionais.","jewellery.sea.policy":"Os estúdios no Sudeste Asiático voltados a clientes locais e internacionais geralmente incluem joia básica.","jewellery.included.titanium":"Inclui joia inicial em titânio de grau de implante","jewellery.included.standard":"Inclui joia inicial padrão","jewellery.included.basic":"Inclui joia inicial básica","jewellery.excluded.fee_only":"Apenas perfuração: joia cobrada à parte","service.tattoo_small.name":"Tatuagem pequena (1–2 h)","service.tattoo_small.sub":"Desenho simples, cor única, tamanho da palma ou menor","service.tattoo_half_day.name":"Sessão de meio período (4–5 h)","service.tattoo_half_day.sub":"Peça média a grande ou posicionamento detalhado","service.tattoo_full_day.name":"Sessão de dia inteiro (7–8 h)","service.tattoo_full_day.sub":"Trabalho complexo, fechamento de braço, costas inteiras","service.tattoo_hourly.name":"Valor por hora","service.tattoo_hourly.sub":"Cobrança padrão por hora para projetos personalizados","service.tattoo_minimum.name":"Valor mínimo de abertura","service.tattoo_minimum.sub":"Taxa base do estúdio / bancada estéril / micro flash","service.piercing_earlobe.name":"Lóbulo da orelha (par)","service.piercing_earlobe.sub":"Posicionamento padrão nos dois lóbulos","service.piercing_nostril.name":"Nostril (aba nasal)","service.piercing_nostril.sub":"Perfuração clássica na aba nasal com stud ou argola","service.piercing_helix.name":"Hélix / cartilagem","service.piercing_helix.sub":"Cartilagem superior da orelha","service.piercing_navel.name":"Piercing no umbigo","service.piercing_navel.sub":"Parte superior do umbigo com banana curva","service.piercing_septum.name":"Piercing no septo","service.piercing_septum.sub":"Sweet spot do septo nasal","conf.indicative":"INDICATIVO","conf.no_data":"sem dados confiáveis","conf.indicative_desc":"Uma estimativa editorial compilada pela Poli International a partir de preços públicos. Não são dados de pesquisa nem verificados de forma independente.","conf.gap_desc":"Nenhum valor confiável, portanto deixado em branco em vez de adivinhado.","basis.uk.tattoo_small":"Preço médio de tabela para flash do tamanho da palma ou desenho exclusivo.","basis.uk.tattoo_half_day":"Taxa média de tabela para sessão de meio período de várias horas.","basis.uk.tattoo_full_day":"Taxa média de tabela para sessão de dia inteiro.","basis.uk.tattoo_hourly":"Taxa horária média para trabalhos personalizados de tatuagem.","basis.uk.tattoo_minimum":"Mínimo de estúdio habitual para consumíveis estéreis e montagem descartável.","basis.uk.piercing_earlobe":"Preço médio de tabela para par de lóbulos com brincos básicos de titânio inclusos.","basis.uk.piercing_nostril":"Preço médio de tabela para aba nasal com labret básico de titânio incluso.","basis.uk.piercing_helix":"Preço médio de tabela para cartilagem hélix com labret básico de titânio incluso.","basis.uk.piercing_navel":"Preço médio de tabela para umbigo com barra curva básica de titânio inclusa.","basis.uk.piercing_septum":"Preço médio de tabela para septo com ferradura básica inclusa.","basis.london.tattoo_small":"Preço médio de tabela para trabalho pequeno refletindo custos de estúdios centrais.","basis.london.tattoo_half_day":"Taxa média de tabela para meio período considerando despesas comerciais.","basis.london.tattoo_full_day":"Taxa média de tabela para dia inteiro em estúdios metropolitanos.","basis.london.tattoo_hourly":"Taxa horária média para tatuadores residentes em áreas comerciais centrais.","basis.london.tattoo_minimum":"Mínimo de estúdio médio refletindo despesas fixas e montagem estéril.","basis.london.piercing_earlobe":"Preço médio de tabela para par de lóbulos com brincos iniciais de titânio.","basis.london.piercing_nostril":"Preço médio de tabela para aba nasal com labret inicial de titânio.","basis.london.piercing_helix":"Preço médio de tabela para cartilagem hélix com labret inicial de titânio.","basis.london.piercing_navel":"Preço médio de tabela para umbigo com barra inicial de titânio.","basis.london.piercing_septum":"Preço médio de tabela para septo com ferradura inicial de titânio.","basis.us.tattoo_small":"Preço médio de tabela para flash do tamanho da palma ou design sob medida.","basis.us.tattoo_half_day":"Taxa média de várias horas praticada em estúdios comerciais.","basis.us.tattoo_full_day":"Taxa média de tabela para sessão de dia inteiro em tatuagens sob medida.","basis.us.tattoo_hourly":"Taxa horária média para trabalhos de tatuagem sob medida.","basis.us.tattoo_minimum":"Mínimo de estúdio habitual cobrindo descartáveis estéreis e montagem de bandeja.","basis.us.piercing_earlobe":"Taxa de procedimento habitual para par de lóbulos; joia inicial comprada à parte.","basis.us.piercing_nostril":"Taxa de procedimento habitual para aba nasal; joia inicial comprada à parte.","basis.us.piercing_helix":"Taxa de procedimento habitual para cartilagem hélix; joia inicial comprada à parte.","basis.us.piercing_navel":"Taxa de procedimento habitual para umbigo; joia inicial comprada à parte.","basis.us.piercing_septum":"Taxa de procedimento habitual para septo; joia inicial comprada à parte.","basis.eu.tattoo_small":"Preço médio de tabela para pequenos flashes ou desenhos exclusivos.","basis.eu.tattoo_half_day":"Taxa média de tabela para sessão de meio período de várias horas.","basis.eu.tattoo_full_day":"Taxa média de tabela para sessão de dia inteiro.","basis.eu.tattoo_hourly":"Taxa horária média praticada em estúdios comerciais de tatuagem.","basis.eu.tattoo_minimum":"Mínimo de estúdio habitual para descartáveis estéreis e estação de trabalho.","basis.eu.piercing_earlobe":"Preço médio de tabela para par de lóbulos com brincos iniciais básicos inclusos.","basis.eu.piercing_nostril":"Preço médio de tabela para aba nasal com labret inicial básico incluso.","basis.eu.piercing_helix":"Preço médio de tabela para cartilagem hélix com labret inicial estéril.","basis.eu.piercing_navel":"Preço médio de tabela para umbigo com barra curva inicial inclusa.","basis.eu.piercing_septum":"Preço médio de tabela para septo com ferradura inicial inclusa.","basis.au.tattoo_small":"Preço médio de tabela para flash do tamanho da palma ou desenho exclusivo.","basis.au.tattoo_half_day":"Taxa média de tabela para meio período em estúdios metropolitanos.","basis.au.tattoo_full_day":"Taxa média de tabela para sessão de dia inteiro sob medida.","basis.au.tattoo_hourly":"Taxa horária média praticada em estúdios comerciais de tatuagem.","basis.au.tattoo_minimum":"Mínimo de estúdio habitual para agulhas descartáveis e bandeja.","basis.au.piercing_earlobe":"Preço médio de tabela para par de lóbulos com brincos iniciais de titânio.","basis.au.piercing_nostril":"Preço médio de tabela para aba nasal com labret inicial de titânio.","basis.au.piercing_helix":"Preço médio de tabela para cartilagem hélix com labret inicial de titânio.","basis.au.piercing_navel":"Preço médio de tabela para umbigo com barra inicial de titânio.","basis.au.piercing_septum":"Preço médio de tabela para septo com ferradura inicial inclusa.","basis.cee.tattoo_small":"Preço médio de tabela para pequeno desenho exclusivo indexado em EUR.","basis.cee.tattoo_half_day":"Taxa média de tabela para sessão de meio período de várias horas.","basis.cee.tattoo_full_day":"Taxa média de tabela para sessão de dia inteiro.","basis.cee.tattoo_hourly":"Taxa horária média para tatuadores residentes em estúdios urbanos.","basis.cee.tattoo_minimum":"Mínimo de estúdio habitual para consumíveis estéreis e montagem descartável.","basis.cee.piercing_earlobe":"Preço médio de tabela para par de lóbulos com joia inicial inclusa.","basis.cee.piercing_nostril":"Preço médio de tabela para aba nasal com joia inicial padrão inclusa.","basis.cee.piercing_helix":"Preço médio de tabela para cartilagem hélix com labret inicial padrão.","basis.cee.piercing_navel":"Preço médio de tabela para umbigo com barra inicial curva inclusa.","basis.cee.piercing_septum":"Preço médio de tabela para septo com ferradura inicial inclusa.","basis.ca.tattoo_small":"Preço médio de tabela para pequenas tatuagens sob medida em estúdios urbanos.","basis.ca.tattoo_half_day":"Taxa média de tabela para meio período considerando despesas em estúdios urbanos.","basis.ca.tattoo_full_day":"Taxa média de tabela para dia inteiro em estúdios urbanos de tatuagem.","basis.ca.tattoo_hourly":"Taxa horária média praticada em estúdios de tatuagem sob medida.","basis.ca.tattoo_minimum":"Mínimo de estúdio habitual para descartáveis estéreis e preparação.","basis.ca.piercing_earlobe":"Taxa de procedimento habitual para par de lóbulos; joia inicial comprada à parte.","basis.ca.piercing_nostril":"Taxa de procedimento habitual para aba nasal; joia inicial comprada à parte.","basis.ca.piercing_helix":"Taxa de procedimento habitual para cartilagem hélix; joia inicial comprada à parte.","basis.ca.piercing_navel":"Taxa de procedimento habitual para umbigo; joia inicial comprada à parte.","basis.ca.piercing_septum":"Nenhum valor confiável, portanto deixado em branco em vez de adivinhado.","basis.sa.tattoo_small":"Preço médio de tabela para pequenos desenhos exclusivos em estúdios comerciais.","basis.sa.tattoo_half_day":"Taxa média de tabela para sessões de várias horas em centros urbanos.","basis.sa.tattoo_full_day":"Taxa média de tabela para sessão de dia inteiro sob medida.","basis.sa.tattoo_hourly":"Taxa horária média para trabalhos personalizados em estúdios comerciais.","basis.sa.tattoo_minimum":"Mínimo de estúdio habitual para kit estéril descartável e preparação.","basis.sa.piercing_earlobe":"Preço médio de tabela para par de lóbulos com brincos iniciais básicos inclusos.","basis.sa.piercing_nostril":"Preço médio de tabela para aba nasal com joia inicial básica inclusa.","basis.sa.piercing_helix":"Preço médio de tabela para cartilagem hélix com joia inicial básica inclusa.","basis.sa.piercing_navel":"Preço médio de tabela para umbigo com barra inicial curva básica inclusa.","basis.sea.tattoo_small":"Preço médio de tabela para pequenos desenhos em polos de estúdios.","basis.sea.tattoo_half_day":"Taxa média de tabela para meio período em estúdios internacionais.","basis.sea.tattoo_full_day":"Taxa média de tabela para sessão de dia inteiro de tatuagem sob medida.","basis.sea.tattoo_hourly":"Taxa horária média para trabalhos sob medida em centros de estúdios.","basis.sea.tattoo_minimum":"Mínimo de estúdio habitual cobrindo agulhas descartáveis importadas e montagem estéril.","basis.sea.piercing_earlobe":"Preço médio de tabela para par de lóbulos com joia inicial básica inclusa.","basis.sea.piercing_nostril":"Preço médio de tabela para aba nasal com joia inicial básica inclusa.","basis.sea.piercing_helix":"Preço médio de tabela para cartilagem hélix com joia inicial básica inclusa.","basis.sea.piercing_navel":"Preço médio de tabela para umbigo com barra inicial básica inclusa.","basis.gap.septum":"Nenhum valor confiável, portanto deixado em branco em vez de adivinhado.","table.service":"Serviço / Item","table.service_procedure":"Serviço / Procedimento","table.range":"Faixa de Referência","table.benchmark_range":"Faixa de Referência","table.currency":"Moeda","table.confidence":"Confiabilidade","table.basis":"Base e Metodologia","table.basis_scope":"Base e Escopo de Mercado","table.your_price":"Seu Preço","table.your_rate":"Seu Preço","table.position":"Posição","table.category_tattoo":"Serviços de Tatuagem","table.category_piercing":"Serviços de Piercing","table.notes_header":"Detalhes Regionais e Normas de Joalheria","calc.title":"Comparar Preços de Estúdio","calc.subtitle":"Insira os preços cobrados pelo seu estúdio para compará-los com o mercado regional selecionado.","calc.btn_evaluate":"Comparar Meus Preços","calc.btn_clear":"Limpar Todos os Preços","calc.results_heading":"Seu Posicionamento de Preços","calc.results_sub":"Veja como os preços do seu estúdio se alinham à média do setor.","calc.eval_summary":"Resumo da Avaliação","calc.summary_count":"{count} de {total} serviços avaliados","calc.interactive_heading":"Calculadora Interativa de Comparação","calc.interactive_desc":"Insira os preços do seu estúdio na tabela acima e clique em Comparar Meus Preços para analisar seu posicionamento.","pos.below":"Abaixo do Mercado","pos.market":"Preço de Mercado","pos.premium":"Faixa Alta","pos.none":"Não informado","pos.no_data":"Sem Dados","docs.title":"Parâmetro de Preços de Estúdio: Documentação Técnica","docs.subtitle":"Especificação, modelos de dados, metodologia e guia de integração para o benchmark Poli International.","docs.badge":"Especificação Técnica","docs.file_selector":"Arquivo de Documentação:","docs.file_tech":"Documentação Técnica (TECHNICAL-DOCS.md)","docs.file_user":"Guia do Usuário para Estúdios (USER-GUIDE.md)","docs.file_readme":"Visão Geral do Projeto (README.md)","docs.file_contrib":"Guia para Contribuidores (CONTRIBUTING.md)","docs.view_markdown":"Ver Markdown Puro","docs.view_rendered":"Ver Guia Formatado","docs.download_file":"Baixar Arquivo Markdown","docs.copied_md":"Markdown copiado para a área de transferência!","docs.sec_overview":"Visão Geral da Arquitetura","docs.sec_overview_body":"O Parâmetro de Preços de Estúdio é uma ferramenta autônoma, sem dependências de rede externas, desenvolvida para tatuadores, body piercers e proprietários de estúdios avaliarem suas tabelas de forma estruturada.","docs.feature_zero_net":"Zero Chamadas de Rede: Funciona inteiramente no navegador, sem fontes remotas, ferramentas de rastreamento ou servidores externos.","docs.feature_theme":"Sistema de Temas Tokenizado: Variáveis CSS padronizadas em conformidade com o contraste WCAG AA (≥ 4.5:1) nos modos claro e escuro.","docs.feature_a11y":"Acessibilidade em Escala de Cinza: Marcadores de confiabilidade combinam rótulos textuais e bordas geométricas distintas.","docs.sec_methodology":"Integridade dos Dados e Metodologia","docs.sec_methodology_body":"Os valores de referência representam faixas médias de mercado compiladas a partir de preços públicos de estúdios. Cada item é classificado em um de dois níveis de confiança:","docs.conf_ind_desc":"Calculado a partir do custo de vida regional, mercados vizinhos e relatórios comerciais publicados.","docs.conf_gap_desc":"Dados de preços publicados insuficientes para estabelecer uma faixa confiável. Intencionalmente em branco.","docs.sec_regions":"Escopo Regional","docs.sec_regions_body":"A ferramenta atende a nove regiões: Reino Unido Nacional, Londres e Sudeste, Estados Unidos, Europa Ocidental, Austrália, Europa Central e Oriental, Canadá, América do Sul e Sudeste Asiático. Valores na moeda local.","docs.th_region_code":"Código da Região","docs.th_territory":"Nome do Território","docs.th_currency":"Moeda","docs.th_scope_basis":"Base de Amostragem","docs.scope_uk":"Média nacional fora da Grande Londres","docs.scope_london":"Estúdios metropolitanos de Londres com altos custos fixos","docs.scope_us":"Média nacional em estúdios urbanos e suburbanos","docs.scope_eu":"Coletivos de estúdios metropolitanos da Europa Ocidental","docs.scope_au":"Capitais estaduais e polos regionais australianos","docs.scope_cee":"Tabelas urbanas indexadas nas capitais da Europa Central","docs.scope_ca":"Estúdios urbanos em Ontário, Colúmbia Britânica e Quebec","docs.scope_sa":"Estúdios personalizados em São Paulo, Rio e Buenos Aires","docs.scope_sea":"Polos de estúdios em Bangkok, Phuket e Bali","docs.sec_jewellery":"Políticas de Joias para Piercing","docs.sec_jewellery_body":"As práticas variam por região: no Reino Unido, Europa Ocidental, Austrália e Sudeste Asiático a joia inicial básica geralmente está inclusa no valor. Nos EUA e Canadá, a taxa de perfuração é cobrada separadamente da joia.","docs.th_jewellery_policy":"Política de Joia Inicial","docs.th_material_standard":"Material Padrão Incluso","docs.jewellery_inc_proc":"Inclusa no valor da perfuração","docs.jewellery_mat_titanium":"Titânio de grau de implante (ASTM F-136)","docs.jewellery_sep_charged":"Cobrada separadamente ($30–$60+)","docs.jewellery_mat_client":"Comprada pelo cliente (titânio / ouro 14k)","docs.jewellery_std_included":"Joia inicial padrão inclusa","docs.jewellery_mat_eu":"Titânio básico ou aço cirúrgico","docs.jewellery_mat_au_inc":"Joia inicial em titânio inclusa","docs.jewellery_mat_au_std":"Titânio de grau de implante (ASTM F-136 / ASTM F-138)","docs.jewellery_mat_cee_inc":"Joia inicial padrão inclusa","docs.jewellery_mat_cee_std":"Joia inicial de perfuração padrão","docs.jewellery_mat_ca_sep":"Cobrada separadamente (C$35–C$70+)","docs.jewellery_mat_ca_std":"Comprada pelo cliente (titânio de grau de implante)","docs.jewellery_mat_sa_inc":"Joia inicial básica inclusa","docs.jewellery_mat_sa_std":"Aço cirúrgico (ASTM F-138) ou titânio","docs.jewellery_mat_sea_inc":"Joia inicial básica inclusa","docs.jewellery_mat_sea_std":"Joia inicial em titânio / aço","docs.sec_embed_title":"Integração e Widget","docs.sec_embed_body":"O benchmark está disponível como um widget iframe autônomo e responsivo para sites de estúdios e portais de treinamento.","docs.sec_embed_note":"O iframe detecta automaticamente alterações no tema do contêiner pai por meio de postMessage (poli-theme) e localStorage.","docs.sec_standards_title":"Normas e Especificações de Materiais","docs.sec_standards_body":"Todas as referências a joias iniciais cumprem rigorosamente especificações biomédicas estabelecidas: titânio para implantes ASTM F-136, aço inoxidável para implantes ASTM F-138, limites de liberação de níquel EN 1811 e normas de avaliação biológica ISO 10993. As políticas de estúdio indicam expressamente se a joia inicial está incluída na taxa ou adquirida à parte.","docs.std_astm_f136":"ASTM F-136: Especificação padrão para liga de titânio forjado 6Al-4V ELI para implantes cirúrgicos.","docs.std_astm_f138":"ASTM F-138: Especificação padrão para barras e fios de aço inoxidável 18Cr-14Ni-2.5Mo para implantes cirúrgicos.","docs.std_iso_10993":"ISO 10993: Avaliação biológica de dispositivos médicos (citotoxicidade, irritação e sensibilização dérmica).","docs.std_en_1811":"EN 1811: Método de ensaio de referência para liberação de níquel em hastes inseridas em partes perfuradas do corpo humano.","docs.std_eu_reach":"Regulamento REACH da UE Anexo XVII: Restrições à liberação de níquel em produtos com contato direto e prolongado com a pele.","docs.sec_sovereignty_title":"Soberania de Dados e Privacidade","docs.sec_sovereignty_body":"O Parâmetro opera exclusivamente na memória do navegador. Nenhum valor de serviço ou dado de estúdio é enviado a servidores externos. A ferramenta está em conformidade com legislações de privacidade como LGPD, GDPR, UK GDPR e PDPA.","embed.title":"Incorporar o Parâmetro de Preços de Estúdio","embed.subtitle":"Integre este comparador de preços no site do seu estúdio ou painel interno.","embed.badge":"Guia de Integração","embed.instructions":"Copie o código abaixo e cole na sua página HTML. O iframe se adapta aos modos claro e escuro sem nenhuma dependência externa.","embed.copy_btn":"Copiar Código de Incorporação","embed.copied":"Copiado para a Área de Transferência!","embed.notes_title":"Notas de Integração:","embed.note_1":"• O iframe herda automaticamente o tema claro ou escuro do site anfitrião via eventos postMessage ou atributo data-theme.","embed.note_2":"• Não necessita de scripts de terceiros nem de chaves de API para funcionar.","calc.alert_enter_rate":"Insira pelo menos um valor para comparar com as faixas de referência.","csv.btn_export":"Exportar CSV","csv.export_success":"CSV de referência exportado com sucesso.","csv.col_region":"Região","csv.col_category":"Categoria","csv.col_service":"Serviço / Procedimento","csv.col_scope":"Escopo / Detalhes","csv.col_currency":"Moeda","csv.col_min":"Mínimo mercado médio","csv.col_max":"Máximo mercado médio","csv.col_confidence":"Status de confiança","csv.col_basis":"Base / Metodologia","csv.col_jewellery":"Política de joia inicial","csv.col_your_price":"Tarifa do seu estúdio","csv.col_position":"Posição de preço","chart.title":"Comparação visual de referência","chart.subtitle":"Comparação das faixas mínima e máxima do mercado médio com as tarifas do seu estúdio.","chart.filter_all":"Todos os procedimentos","chart.filter_tattoo":"Apenas tatuagem","chart.filter_piercing":"Apenas piercing","chart.legend_low":"Mínimo mercado médio","chart.legend_high":"Máximo mercado médio","chart.legend_your_price":"Tarifa do seu estúdio","chart.empty_notice":"Insira suas tarifas na tabela acima para comparar os preços do seu estúdio com as faixas de mercado.","chart.not_entered":"Não informado","tooltip.range_title":"Critérios de preços de referência","tooltip.mid_market_label":"Faixa de mercado médio","tooltip.mid_market_desc":"Espectro tarifário padrão praticado por estúdios comerciais estabelecidos para execução profissional de qualidade, descartáveis estéreis de uso único, joias iniciais de grau de implante padrão (ou taxa de perfuração) e comissões habituais.","tooltip.premium_label":"Preços de especialistas premium","tooltip.premium_desc":"Tarifas acima do mercado médio padrão, praticadas por tatuadores personalizados de alta demanda, artistas convidados, estúdios privados, joias corporais de luxo sob medida ou localizações nobres.","tooltip.confidence_title":"Classificação de confiança dos dados","tooltip.confidence_desc":"INDICATIVO: Uma estimativa editorial compilada pela Poli International a partir de preços públicos. Não são dados de pesquisa nem verificados de forma independente. LACUNA: Nenhum valor confiável, portanto deixado em branco em vez de adivinhado.","tooltip.position_title":"Posição de alinhamento de preços","tooltip.position_desc":"Compara suas tarifas com a faixa de mercado médio: Abaixo do mercado, Preço de mercado ou Premium.","calc.saved_notice":"Tarifas salvas automaticamente no armazenamento local.","region.last_reviewed":"Valores revisados pela última vez: setembro de 2026.","conf.gap":"LACUNA","rates.title":"Suas Tarifas","rates.subtitle":"Insira os valores base do seu estúdio para comparar com a faixa de referência regional.","rates.hourly":"Taxa horária","rates.min_charge":"Taxa mínima","rates.shop_min":"Mínimo de estúdio","rates.deposit":"Porcentagem de depósito","rates.tier_label":"Nível de estúdio","rates.tier_apprentice":"Aprendiz","rates.tier_resident":"Artista residente","rates.tier_established":"Artista estabelecido","rates.tier_specialist":"Especialista / Artista convidado","rates.tier_desc_apprentice":"Aprendiz: Desenvolvendo agilidade e portfólio; geralmente taxas horárias menores ou taxas fixas de modelo.","rates.tier_desc_resident":"Artista residente: Artista regular de estúdio comercial com agendamentos frequentes de clientes.","rates.tier_desc_established":"Artista estabelecido: Vários anos de experiência, alta demanda e agenda consistente.","rates.tier_desc_specialist":"Especialista / Artista convidado: Estilo autoral reconhecido ou artista convidado itinerante; preços premium independentes da referência regional.","rates.hourly_vs_region":"Faixa de referência regional: {min} – {max}/h","rates.min_vs_region":"Faixa de referência do mínimo de estúdio: {min} – {max}","rates.status_below":"Abaixo da faixa de referência regional","rates.status_within":"Dentro da faixa de referência regional","rates.status_above":"Acima da faixa de referência regional","whatif.title":"Calculadora de Cenários","whatif.subtitle":"Ajuste sua taxa horária para projetar totais de agendamento e valores de depósito.","whatif.rate_adjustment":"Ajuste da taxa horária","whatif.booking_hours":"Duração do agendamento (horas)","whatif.projected_hourly":"Taxa horária projetada","whatif.booking_total":"Total do agendamento ({hours} h)","whatif.deposit_due":"Depósito devido ({percent}%)","whatif.disclaimer":"Aritmética baseada apenas nas suas entradas.","whatif.prompt_hourly":"Insira uma taxa horária em Suas Tarifas acima para realizar os cálculos.","handoff.title":"Seus valores","handoff.decision_notice":"Sua decisão, não uma recomendação desta ferramenta.","handoff.copy_btn":"Copiar valores","handoff.copied":"Copiado!","card.title":"Tabela de Preços Imprimível","card.print_btn":"Imprimir tabela de preços","card.subtitle":"Tabela de preços de uma página A4 / US Letter gerada a partir dos seus próprios valores. Não contém faixas de referência regional.","card.studio_card_header":"Tabela de Preços do Estúdio","card.baseline_rates":"Tarifas base do estúdio","card.service_rates":"Tarifas de serviços","card.price_on_consultation":"Preço sob consulta","card.footer_notice":"Tarifas definidas de forma independente pelo estúdio. Todos os procedimentos seguem práticas profissionais estabelecidas.","card.date":"Data"},nl:{"app.title":"Studio Prijsbenchmark","app.subtitle":"Voer uw studiotarieven in om ze te vergelijken met regionale industriële referentiebereiken in negen wereldwijde markten. Handig voor jaarlijkse tariefherzieningen en marktpositionering.","app.badge":"Operationele Referentie voor Studio's","app.nav_benchmark":"Benchmark Tabel","app.nav_calculator":"Mijn Tarieven Vergelijken","app.nav_docs":"Documentatie","app.nav_embed":"Insluitcode","app.footnote":"Deze marges zijn redactionele schattingen samengesteld op basis van openbare prijzen. Het zijn geen enquêtegegevens en ze zijn niet onafhankelijk geverifieerd. Premiumspecialisten rekenen doorgaans hogere tarieven.","app.open_standalone":"Zelfstandige Weergave Openen →","app.print":"Benchmark Afdrukken","lang.switcher_label":"Taal","lang.en":"English","lang.de":"Deutsch","lang.fr":"Français","lang.es":"Español","lang.it":"Italiano","lang.pt":"Português","lang.nl":"Nederlands","common.currency":"Valuta","common.copy":"Kopiëren","common.copied":"Gekopieerd!","common.download":"Downloaden","common.close":"Sluiten","common.all":"Alles","common.back":"Terug","region.label":"Referentieregio:","region.all_regions":"Negen Wereldwijde Regio's","region.coverage_scope":"Dekkingsgebied:","region.uk.name":"VK (Nationaal Gemiddelde)","region.uk.coverage":"Nationaal Brits gemiddelde van onafhankelijke studio's in Engeland, Schotland en Wales (exclusief Groot-Londen).","region.london.name":"Londen / Zuidoost-Engeland","region.london.coverage":"Metropoolregio Groot-Londen en commerciële studio's in Zuidoost-Engeland.","region.us.name":"VS (Nationaal Gemiddelde)","region.us.coverage":"Nationaal Amerikaans gemiddelde over stedelijke en voorstedelijke studio's.","region.eu.name":"West-Europa","region.eu.coverage":"Metropolitane studio's in Duitsland, Frankrijk, Nederland, België en Oostenrijk, genoteerd in EUR (€).","region.au.name":"Australië","region.au.coverage":"Studio's in de hoofdsteden en regionale centra (NSW, Victoria, Queensland), genoteerd in AUD (A$).","region.cee.name":"Centraal- & Oost-Europa","region.cee.coverage":"Stedelijke studiomarkten in Polen, Tsjechië, Hongarije en Roemenië, geïndexeerd in EUR (€).","region.ca.name":"Canada","region.ca.coverage":"Stedelijke studio's in Ontario, Brits-Columbia en Quebec, genoteerd in Canadese dollars (CAD / C$).","region.sa.name":"Zuid-Amerika","region.sa.coverage":"Cijfers gebaseerd op custom studio's in São Paulo, Rio de Janeiro (Brazilië) en Buenos Aires (Argentinië), in BRL (R$).","region.sea.name":"Zuidoost-Azië","region.sea.coverage":"Cijfers gebaseerd op studiohubs in Thailand (Bangkok, Phuket, Chiang Mai) en Bali (Indonesië), in THB (฿).","jewellery.policy_label":"Sieradenbeleid:","jewellery.standards_badge":"Steriele Verbruiksartikelen & Sieradennormen","jewellery.policy_desc":"Implantaatwaardige materialen conform standaardspecificaties (bijv. ASTM F-136 titanium, ASTM F-138 chirurgisch staal).","jewellery.uk.policy":"In het VK zijn piercingprijzen over het algemeen inclusief basis startsieraden van implantaatwaardig titanium.","jewellery.london.policy":"Studio's in Londen zijn over het algemeen inclusief basis startsieraden van implantaatwaardig titanium.","jewellery.us.policy":"Studio's in de VS rekenen doorgaans enkel de plaatsingskosten; sieraden worden apart aangeschaft ($30–$60+).","jewellery.eu.policy":"West-Europese studio's hanteren doorgaans prijzen inclusief standaard startsieraad van titanium of chirurgisch staal.","jewellery.au.policy":"Australische studio's zijn gewoonlijk inclusief basis startsieraad van implantaatwaardig titanium.","jewellery.cee.policy":"Studio's in Centraal- en Oost-Europa zijn doorgaans inclusief standaard startsieraad.","jewellery.ca.policy":"Canadese studio's brengen gewoonlijk plaatsingskosten apart in rekening van het startsieraad.","jewellery.sa.policy":"Zuid-Amerikaanse studio's hanteren over het algemeen prijzen inclusief basis startsieraad.","jewellery.sea.policy":"Studio's in Zuidoost-Azië voor lokale en internationale klanten zijn gewoonlijk inclusief basis startsieraad.","jewellery.included.titanium":"Inclusief implantaatwaardig titanium startsieraad","jewellery.included.standard":"Inclusief standaard startsieraad","jewellery.included.basic":"Inclusief basis startsieraad","jewellery.excluded.fee_only":"Alleen plaatsingskosten: sieraad apart berekend","service.tattoo_small.name":"Kleine tatoeage (1–2 uur)","service.tattoo_small.sub":"Eenvoudig ontwerp, één kleur, handpalmgrootte of kleiner","service.tattoo_half_day.name":"Halve dagsessie (4–5 uur)","service.tattoo_half_day.sub":"Middelgroot tot groot werk of gedetailleerde plaatsing","service.tattoo_full_day.name":"Hele dagsessie (7–8 uur)","service.tattoo_full_day.sub":"Groot/complex project, sleeve-voortgang, volledige rug","service.tattoo_hourly.name":"Uurtarief","service.tattoo_hourly.sub":"Standaard facturering per uur voor maatwerk","service.tattoo_minimum.name":"Minimumtarief","service.tattoo_minimum.sub":"Basis starttarief / steriele opstelling / micro flash","service.piercing_earlobe.name":"Oorlellen (paar)","service.piercing_earlobe.sub":"Standaard plaatsing in beide oorlellen","service.piercing_nostril.name":"Neusvleugel (Nostril)","service.piercing_nostril.sub":"Klassieke neusvleugelplaatsing met stud of ringetje","service.piercing_helix.name":"Helix / kraakbeen","service.piercing_helix.sub":"Bovenste oorkraakbeen","service.piercing_navel.name":"Navelpiercing","service.piercing_navel.sub":"Bovenste navelrand met gebogen barbell","service.piercing_septum.name":"Septumpiercing","service.piercing_septum.sub":"Sweet spot in het neustussenschot","conf.indicative":"INDICATIEF","conf.no_data":"nog geen betrouwbare gegevens","conf.indicative_desc":"Een redactionele schatting samengesteld door Poli International op basis van openbare prijzen. Geen enquêtegegevens en niet onafhankelijk geverifieerd.","conf.gap_desc":"Geen betrouwbaar cijfer, daarom leeg gelaten in plaats van gegokt.","basis.uk.tattoo_small":"Typische catalogusprijs voor een kleine handpalmgrote flash of maatwerktatoeage.","basis.uk.tattoo_half_day":"Typisch uurtarief voor een dagdeelsessie van meerdere uren.","basis.uk.tattoo_full_day":"Typisch tarief voor een volledige dagsessie op maat.","basis.uk.tattoo_hourly":"Typisch uurtarief voor maatwerktatoeages.","basis.uk.tattoo_minimum":"Typisch shopminimum ter dekking van steriele verbruiksartikelen en eenmalige opstelling.","basis.uk.piercing_earlobe":"Typische catalogusprijs voor een lobbenpaar inclusief eenvoudige titanium studs.","basis.uk.piercing_nostril":"Typische catalogusprijs voor neusvleugelpiercing inclusief basis titanium labret.","basis.uk.piercing_helix":"Typische catalogusprijs voor helixkraakbeen inclusief basis titanium labret.","basis.uk.piercing_navel":"Typische catalogusprijs voor navelpiercing inclusief gebogen titanium staafje.","basis.uk.piercing_septum":"Typische catalogusprijs voor septumpiercing inclusief basis hoefijzerstaafje.","basis.london.tattoo_small":"Typische catalogusprijs voor klein maatwerk met inachtneming van centrale studiokosten.","basis.london.tattoo_half_day":"Typisch tarief voor een halve dag waarin commerciële overhead is verwerkt.","basis.london.tattoo_full_day":"Typisch dagtarief in grootstedelijke studio's.","basis.london.tattoo_hourly":"Typisch uurtarief voor vaste artiesten op centrale commerciële locaties.","basis.london.tattoo_minimum":"Typisch shopminimum dat vaste lasten en steriele opbouw dekt.","basis.london.piercing_earlobe":"Typische catalogusprijs voor een lobbenpaar inclusief titanium startstuds.","basis.london.piercing_nostril":"Typische catalogusprijs voor neusvleugel inclusief titanium startlabret.","basis.london.piercing_helix":"Typische catalogusprijs voor helixkraakbeen inclusief startlabret van titanium.","basis.london.piercing_navel":"Typische catalogusprijs voor navelpiercing inclusief titanium startstaafje.","basis.london.piercing_septum":"Typische catalogusprijs voor septum inclusief titanium starthoefijzer.","basis.us.tattoo_small":"Typische catalogusprijs voor een kleine handpalmgrote flash of ontwerp op maat.","basis.us.tattoo_half_day":"Typisch tarief voor meerdere uren in commerciële maatwerkstudio's.","basis.us.tattoo_full_day":"Typisch dagtarief voor maatwerktatoeages.","basis.us.tattoo_hourly":"Typisch uurtarief voor maatwerktatoeages.","basis.us.tattoo_minimum":"Typisch shopminimum voor steriele wegwerpartikelen en tray-opstelling.","basis.us.piercing_earlobe":"Typische plaatsingskosten voor lobbenpaar; startsieraad apart aangeschaft.","basis.us.piercing_nostril":"Typische plaatsingskosten voor neusvleugel; startsieraad apart aangeschaft.","basis.us.piercing_helix":"Typische plaatsingskosten voor helixkraakbeen; startsieraad apart aangeschaft.","basis.us.piercing_navel":"Typische plaatsingskosten voor navel; startsieraad apart aangeschaft.","basis.us.piercing_septum":"Typische plaatsingskosten voor septum; startsieraad apart aangeschaft.","basis.eu.tattoo_small":"Typische catalogusprijs voor kleine flash of maatwerkontwerp.","basis.eu.tattoo_half_day":"Typisch tarief voor een dagdeelsessie van meerdere uren.","basis.eu.tattoo_full_day":"Typisch tarief voor een volledige dagsessie op maat.","basis.eu.tattoo_hourly":"Typisch uurtarief in commerciële maatwerkstudio's.","basis.eu.tattoo_minimum":"Typisch shopminimum voor steriele wegwerpartikelen en werkplekvoorbereiding.","basis.eu.piercing_earlobe":"Typische catalogusprijs voor een lobbenpaar inclusief basis startstuds.","basis.eu.piercing_nostril":"Typische catalogusprijs voor neusvleugel inclusief basis startlabret.","basis.eu.piercing_helix":"Typische catalogusprijs voor helixkraakbeen inclusief steriel startlabret.","basis.eu.piercing_navel":"Typische catalogusprijs voor navelpiercing inclusief gebogen startstaafje.","basis.eu.piercing_septum":"Typische catalogusprijs voor septum inclusief starthoefijzer.","basis.au.tattoo_small":"Typische catalogusprijs voor kleine handpalmgrote flash of ontwerp op maat.","basis.au.tattoo_half_day":"Typisch tarief voor een halve dag in grootstedelijke studio's.","basis.au.tattoo_full_day":"Typisch dagtarief voor maatwerk.","basis.au.tattoo_hourly":"Typisch uurtarief in commerciële maatwerkstudio's.","basis.au.tattoo_minimum":"Typisch shopminimum voor steriele wegwerpnaalden en tray-opstelling.","basis.au.piercing_earlobe":"Typische catalogusprijs voor een lobbenpaar inclusief titanium startstuds.","basis.au.piercing_nostril":"Typische catalogusprijs voor neusvleugel inclusief titanium startlabret.","basis.au.piercing_helix":"Typische catalogusprijs voor helixkraakbeen inclusief titanium startlabret.","basis.au.piercing_navel":"Typische catalogusprijs voor navelpiercing inclusief gebogen titanium startstaafje.","basis.au.piercing_septum":"Typische catalogusprijs voor septum inclusief starthoefijzer.","basis.cee.tattoo_small":"Typische catalogusprijs voor klein maatwerkontwerp in EUR.","basis.cee.tattoo_half_day":"Typisch tarief voor een dagdeelsessie van meerdere uren.","basis.cee.tattoo_full_day":"Typisch tarief voor een volledige dagsessie op maat.","basis.cee.tattoo_hourly":"Typisch uurtarief voor vaste artiesten in stedelijke studio's.","basis.cee.tattoo_minimum":"Typisch shopminimum ter dekking van steriele verbruiksartikelen en eenmalige opstelling.","basis.cee.piercing_earlobe":"Typische catalogusprijs voor een lobbenpaar inclusief startsieraad.","basis.cee.piercing_nostril":"Typische catalogusprijs voor neusvleugel inclusief standaard startsieraad.","basis.cee.piercing_helix":"Typische catalogusprijs voor helixkraakbeen inclusief standaard startlabret.","basis.cee.piercing_navel":"Typische catalogusprijs voor navelpiercing inclusief gebogen startstaafje.","basis.cee.piercing_septum":"Typische catalogusprijs voor septum inclusief starthoefijzer.","basis.ca.tattoo_small":"Typische catalogusprijs voor klein maatwerk in stedelijke studio's.","basis.ca.tattoo_half_day":"Typisch tarief voor een halve dag afgestemd op stedelijke overhead.","basis.ca.tattoo_full_day":"Typisch dagtarief in stedelijke maatwerkstudio's.","basis.ca.tattoo_hourly":"Typisch uurtarief in maatwerkstudio's.","basis.ca.tattoo_minimum":"Typisch shopminimum ter dekking van steriel wegwerpmateriaal en opstelling.","basis.ca.piercing_earlobe":"Typische plaatsingskosten voor lobbenpaar; startsieraad apart aangeschaft.","basis.ca.piercing_nostril":"Typische plaatsingskosten voor neusvleugel; startsieraad apart aangeschaft.","basis.ca.piercing_helix":"Typische plaatsingskosten voor helixkraakbeen; startsieraad apart aangeschaft.","basis.ca.piercing_navel":"Typische plaatsingskosten voor navel; startsieraad apart aangeschaft.","basis.ca.piercing_septum":"Geen betrouwbaar cijfer, daarom leeg gelaten in plaats van gegokt.","basis.sa.tattoo_small":"Typische catalogusprijs voor klein maatwerk in commerciële studio's.","basis.sa.tattoo_half_day":"Typisch tarief voor meerurige sessies in stedelijke centra.","basis.sa.tattoo_full_day":"Typisch tarief voor een volledige dagsessie op maat.","basis.sa.tattoo_hourly":"Typisch uurtarief voor maatwerk in commerciële studio's.","basis.sa.tattoo_minimum":"Typisch shopminimum ter dekking van steriele wegwerpkit en opstelling.","basis.sa.piercing_earlobe":"Typische catalogusprijs voor een lobbenpaar inclusief basis startstuds.","basis.sa.piercing_nostril":"Typische catalogusprijs voor neusvleugel inclusief basis startsieraad.","basis.sa.piercing_helix":"Typische catalogusprijs voor helixkraakbeen inclusief basis startsieraad.","basis.sa.piercing_navel":"Typische catalogusprijs voor navelpiercing inclusief gebogen basisstaafje.","basis.sea.tattoo_small":"Typische catalogusprijs voor klein maatwerk in centrale studiohubs.","basis.sea.tattoo_half_day":"Typisch tarief voor een halve dag in internationale studiohubs.","basis.sea.tattoo_full_day":"Typisch tarief voor een volledige dagsessie van maatwerk.","basis.sea.tattoo_hourly":"Typisch uurtarief voor maatwerk in studiohubs.","basis.sea.tattoo_minimum":"Typisch shopminimum ter dekking van geïmporteerde wegwerpnaalden en steriele opbouw.","basis.sea.piercing_earlobe":"Typische catalogusprijs voor een lobbenpaar inclusief basis startsieraad.","basis.sea.piercing_nostril":"Typische catalogusprijs voor neusvleugel inclusief basis startsieraad.","basis.sea.piercing_helix":"Typische catalogusprijs voor helixkraakbeen inclusief basis startsieraad.","basis.sea.piercing_navel":"Typische catalogusprijs voor navelpiercing inclusief basis startstaafje.","basis.gap.septum":"Geen betrouwbaar cijfer, daarom leeg gelaten in plaats van gegokt.","table.service":"Dienst / Item","table.service_procedure":"Dienst / Handeling","table.range":"Benchmark Bereik","table.benchmark_range":"Benchmark Bereik","table.currency":"Valuta","table.confidence":"Betrouwbaarheid","table.basis":"Grondslag & Methodologie","table.basis_scope":"Grondslag & Marktomvang","table.your_price":"Uw Tarief","table.your_rate":"Uw Tarief","table.position":"Positie","table.category_tattoo":"Tatoeagediensten","table.category_piercing":"Piercingdiensten","table.notes_header":"Regionale Details & Sieradennormen","calc.title":"Studiotarieven Vergelijken","calc.subtitle":"Voer uw tarieven in om ze te vergelijken met de geselecteerde regionale markt.","calc.btn_evaluate":"Mijn Tarieven Vergelijken","calc.btn_clear":"Alle Tarieven Wissen","calc.results_heading":"Uw Prijsverhouding","calc.results_sub":"Dit is hoe uw studiotarieven zich verhouden tot het sectorgemiddelde.","calc.eval_summary":"Evaluatieoverzicht","calc.summary_count":"{count} van {total} diensten geëvalueerd","calc.interactive_heading":"Interactieve Vergelijkingscalculator","calc.interactive_desc":"Voer uw studioprijzen in de bovenstaande tabel in en klik op Mijn Tarieven Vergelijken om uw prijsmodel te analyseren.","pos.below":"Onder Gemiddelde","pos.market":"Marktconform","pos.premium":"Hoger Segment","pos.none":"Niet ingevoerd","pos.no_data":"Gegevensleemte","docs.title":"Studio Prijsbenchmark: Technische Documentatie","docs.subtitle":"Specificatie, datamodellen, methodologie en integratiegids voor de Poli International Benchmark.","docs.badge":"Technische Specificatie","docs.file_selector":"Documentbestand:","docs.file_tech":"Technische Documentatie (TECHNICAL-DOCS.md)","docs.file_user":"Studiogebruikershandleiding (USER-GUIDE.md)","docs.file_readme":"Projectoverzicht (README.md)","docs.file_contrib":"Bijdragersgids (CONTRIBUTING.md)","docs.view_markdown":"Ruwe Markdown Weergeven","docs.view_rendered":"Opgemaakte Gids Weergeven","docs.download_file":"Markdown-bestand Downloaden","docs.copied_md":"Markdown naar klembord gekopieerd!","docs.sec_overview":"Architectuuroverzicht","docs.sec_overview_body":"De Studio Prijsbenchmark is een offline bruikbaar hulpmiddel zonder externe netwerkafhankelijkheden, ontworpen voor tatoeëerders, piercers en studio-eigenaren om prijsstructuren gestructureerd te evalueren.","docs.feature_zero_net":"Geen Netwerkverzoeken: Werkt volledig lokaal in de browser zonder externe fonts, analytische trackers of externe netwerken.","docs.feature_theme":"Themasysteem met Variabelen: Gestandaardiseerde CSS-variabelen die voldoen aan WCAG AA-contrast (≥ 4.5:1) in lichte en donkere modi.","docs.feature_a11y":"Grijswaarden Toegankelijkheid: Betrouwbaarheidsmarkeringen combineren tekstlabels en geometrische randen.","docs.sec_methodology":"Gegevensintegriteit & Methodologie","docs.sec_methodology_body":"Benchmarkcijfers vertegenwoordigen het middensegment samengesteld op basis van openbare studiotarieven. Elk item valt onder een van twee betrouwbaarheidsniveaus:","docs.conf_ind_desc":"Beredeneerd op basis van regionale kosten voor levensonderhoud, naburige markten en gepubliceerde brancherapporten.","docs.conf_gap_desc":"Onvoldoende gepubliceerde prijsgegevens voor een betrouwbare marge. Bewust leeg gelaten.","docs.sec_regions":"Regionale Omvang","docs.sec_regions_body":"De tool ondersteunt negen zones: VK Nationaal, Londen & Zuidoost, Verenigde Staten, West-Europa, Australië, Centraal- en Oost-Europa, Canada, Zuid-Amerika en Zuidoost-Azië. Prijzen in lokale valuta.","docs.th_region_code":"Regiocode","docs.th_territory":"Gebiedsnaam","docs.th_currency":"Valuta","docs.th_scope_basis":"Steekproefbasis","docs.scope_uk":"Nationaal gemiddelde buiten Groot-Londen","docs.scope_london":"Stedelijke studio's in Londen met hoge vaste lasten","docs.scope_us":"Nationaal gemiddelde over stedelijke en voorstedelijke studio's","docs.scope_eu":"West-Europese stedelijke studiocollectieven","docs.scope_au":"Australische hoofdsteden en regionale knooppunten","docs.scope_cee":"Geïndexeerde stedelijke tarieven in Midden-Europese hoofdsteden","docs.scope_ca":"Stedelijke studio's in Ontario, Brits-Columbia en Quebec","docs.scope_sa":"Maatwerkstudio's in São Paulo, Rio en Buenos Aires","docs.scope_sea":"Studiohubs in Bangkok, Phuket en Bali","docs.sec_jewellery":"Piercingsieradenbeleid","docs.sec_jewellery_body":"Gewoonten verschillen per regio: studio's in het VK, West-Europa, Australië en Zuidoost-Azië nemen basissieraden doorgaans op in de prijs. In de VS en Canada wordt de plaatsing los gefactureerd van het sieraad.","docs.th_jewellery_policy":"Startsieradenbeleid","docs.th_material_standard":"Inbegrepen Standaardmateriaal","docs.jewellery_inc_proc":"Inbegrepen in de plaatsingsprijs","docs.jewellery_mat_titanium":"Implantaatwaardig titanium (ASTM F-136)","docs.jewellery_sep_charged":"Apart in rekening gebracht ($30–$60+)","docs.jewellery_mat_client":"Aankoop door klant (titanium / 14k goud)","docs.jewellery_std_included":"Standaard startsieraad inbegrepen","docs.jewellery_mat_eu":"Basistitanium of chirurgisch staal","docs.jewellery_mat_au_inc":"Titanium startsieraad inbegrepen","docs.jewellery_mat_au_std":"Implantaatwaardig titanium (ASTM F-136 / ASTM F-138)","docs.jewellery_mat_cee_inc":"Standaard startsieraad inbegrepen","docs.jewellery_mat_cee_std":"Standaard initiële piercing sieraad","docs.jewellery_mat_ca_sep":"Apart in rekening gebracht (C$35–C$70+)","docs.jewellery_mat_ca_std":"Aankoop door klant (implantaatwaardig titanium)","docs.jewellery_mat_sa_inc":"Basis startsieraad inbegrepen","docs.jewellery_mat_sa_std":"Chirurgisch staal (ASTM F-138) of titanium","docs.jewellery_mat_sea_inc":"Basis startsieraad inbegrepen","docs.jewellery_mat_sea_std":"Basis startsieraad titanium / staal","docs.sec_embed_title":"Integratie & Widget","docs.sec_embed_body":"De benchmark is beschikbaar als een responsieve, zelfstandige iframe-widget voor websites van studio's en opleidingsportalen.","docs.sec_embed_note":"Het iframe detecteert automatisch themawijzigingen van de hostpagina via postMessage (poli-theme) en localStorage.","docs.sec_standards_title":"Normen & Materiaalspecificaties","docs.sec_standards_body":"Alle referenties aan startsieraden voldoen strikt aan gevestigde biomedische specificaties: ASTM F-136 implantaat-titanium, ASTM F-138 implantaat-roestvrij staal, EN 1811 nikkelafgiftelimieten en ISO 10993 biologische beoordelingsnormen. Het sieradenbeleid vermeldt expliciet of het startsieraad bij de procedure is inbegrepen of apart wordt aangeschaft.","docs.std_astm_f136":"ASTM F-136: Standaardspecificatie voor gesmeed titanium-6aluminium-4vanadium ELI voor chirurgische implantaattoepassingen.","docs.std_astm_f138":"ASTM F-138: Standaardspecificatie voor roestvrijstalen staven en draden van 18chroom-14nikkel-2.5molybdeen voor chirurgische implantaten.","docs.std_iso_10993":"ISO 10993: Biologische evaluatie van medische hulpmiddelen (cytotoxiciteit, irritatie en huidovergevoeligheid).","docs.std_en_1811":"EN 1811: Referentietestmethode voor de afgifte van nikkel uit staven ingebracht in doorboorde delen van het menselijk lichaam.","docs.std_eu_reach":"EU REACH-verordening Bijlage XVII: Beperkingen op nikkelafgifte voor voorwerpen in direct en langdurig contact met de huid.","docs.sec_sovereignty_title":"Gegevenssoevereiniteit & Privacy","docs.sec_sovereignty_body":"De benchmark draait uitsluitend in het geheugen van de browser. Er worden geen tarieven of studiogegevens verzonden naar externe servers. Conform privacywetgeving zoals AVG (GDPR), UK GDPR, LGPD en PDPA.","embed.title":"Studio Prijsbenchmark Insluiten","embed.subtitle":"Integreer deze vergelijkende benchmark op uw website of intern dashboard.","embed.badge":"Integratiegids","embed.instructions":"Kopieer het onderstaande fragment en plak het in uw HTML-pagina. Het iframe past zich automatisch aan lichte en donkere thema's aan.","embed.copy_btn":"Insluitcode Kopiëren","embed.copied":"Gekopieerd naar Klembord!","embed.notes_title":"Integratieopmerkingen:","embed.note_1":"• Het ingesloten iframe neemt automatisch het lichte of donkere thema van de hostwebsite over via postMessage of data-theme.","embed.note_2":"• Vereist geen externe scripts of API-sleutels om te functioneren.","calc.alert_enter_rate":"Voer minimaal één tarief in om te vergelijken met de benchmarkbereiken.","csv.btn_export":"Exporteer CSV","csv.export_success":"Benchmark-CSV succesvol geëxporteerd.","csv.col_region":"Regio","csv.col_category":"Categorie","csv.col_service":"Dienst / Procedure","csv.col_scope":"Omvang / Details","csv.col_currency":"Valuta","csv.col_min":"Middenmarkt Min","csv.col_max":"Middenmarkt Max","csv.col_confidence":"Betrouwbaarheidsstatus","csv.col_basis":"Basis / Methodologie","csv.col_jewellery":"Beleid startsieraden","csv.col_your_price":"Uw studiotarief","csv.col_position":"Prijspositionering","chart.title":"Visuele benchmarkvergelijking","chart.subtitle":"Vergelijking van lage en hoge middenmarktbereiken met uw studiotarieven.","chart.filter_all":"Alle procedures","chart.filter_tattoo":"Alleen tatoeage","chart.filter_piercing":"Alleen piercing","chart.legend_low":"Middenmarkt Laag","chart.legend_high":"Middenmarkt Hoog","chart.legend_your_price":"Uw studiotarief","chart.empty_notice":"Voer uw tarieven in de bovenstaande tabel in om uw studioprijzen naast de marktfrequenties weer te geven.","chart.not_entered":"Niet ingevuld","tooltip.range_title":"Benchmark-prijscriteria","tooltip.mid_market_label":"Middenmarktbereik","tooltip.mid_market_desc":"Gangbaar standaardspectrum van tarieven van gevestigde commerciële studio's voor standaard professionele uitvoering, steriele wegwerpverbruiksartikelen, standaard startsieraden van implantaatkwaliteit (of proceduretarief) en standaard commissies.","tooltip.premium_label":"Premium specialistische prijzen","tooltip.premium_desc":"Tarieven boven het standaard middenmarktniveau, gerekend door veelgevraagde custom tatoeëerders, gastartiesten, privésuites op afspraak, op maat gemaakte luxe lichaamssieraden of toplocaties.","tooltip.confidence_title":"Gradatie gegevensbetrouwbaarheid","tooltip.confidence_desc":"INDICATIEF: Een redactionele schatting samengesteld door Poli International op basis van openbare prijzen. Geen enquêtegegevens en niet onafhankelijk geverifieerd. LEEGTE: Geen betrouwbaar cijfer, daarom leeg gelaten in plaats van gegokt.","tooltip.position_title":"Prijspositionering","tooltip.position_desc":"Vergelijkt uw ingevoerde tarieven met de middenmarktbandbreedte: Onder de markt (onder minimum), Markttarief (binnen bandbreedte) of Premium (boven plafond).","calc.saved_notice":"Tarieven automatisch opgeslagen in lokale opslag.","region.last_reviewed":"Cijfers laatst herzien: september 2026.","conf.gap":"LEEGTE","rates.title":"Uw Tarieven","rates.subtitle":"Voer uw studio-basistarieven in om te vergelijken met de regionale referentiemarge.","rates.hourly":"Uurtarief","rates.min_charge":"Minimumtarief","rates.shop_min":"Shop minimum","rates.deposit":"Aanbetalingspercentage","rates.tier_label":"Studioniveau","rates.tier_apprentice":"Leerling","rates.tier_resident":"Vaste artiest","rates.tier_established":"Gevestigde artiest","rates.tier_specialist":"Specialist / Gastartiest","rates.tier_desc_apprentice":"Leerling: Bouwt aan snelheid en portfolio; vaak lagere uurtarieven of vaste modelkosten.","rates.tier_desc_resident":"Vaste artiest: Reguliere commerciële studio-artiest met regelmatige boekingen.","rates.tier_desc_established":"Gevestigde artiest: Jarenlange ervaring, grote vraag en constante boekingen.","rates.tier_desc_specialist":"Specialist / Gastartiest: Erkende eigen stijl of reizende gastartiest; premiumprijzen los van het regionale uitgangspunt.","rates.hourly_vs_region":"Regionale referentiemarge: {min} – {max}/uur","rates.min_vs_region":"Regionale referentiemarge voor shop minimum: {min} – {max}","rates.status_below":"Onder de regionale referentiemarge","rates.status_within":"Binnen de regionale referentiemarge","rates.status_above":"Boven de regionale referentiemarge","whatif.title":"Wat-als Calculator","whatif.subtitle":"Pas uw uurtarief aan om boekingstotalen en aanbetalingen te berekenen.","whatif.rate_adjustment":"Aanpassing uurtarief","whatif.booking_hours":"Boekingsduur (uren)","whatif.projected_hourly":"Geprojecteerd uurtarief","whatif.booking_total":"Boekingstotaal ({hours} uur)","whatif.deposit_due":"Verschuldigde aanbetaling ({percent}%)","whatif.disclaimer":"Rekenkundige berekening uitsluitend op basis van uw invoer.","whatif.prompt_hourly":"Voer hierboven een uurtarief in bij Uw Tarieven om berekeningen uit te voeren.","handoff.title":"Uw cijfers","handoff.decision_notice":"Uw beslissing, geen aanbeveling van deze tool.","handoff.copy_btn":"Kopieer cijfers","handoff.copied":"Gekopieerd!","card.title":"Afdrukbare Tarievenkaart","card.print_btn":"Tarievenkaart afdrukken","card.subtitle":"Tarievenkaart op één pagina A4 / US Letter gegenereerd op basis van uw eigen cijfers. Bevat geen regionale referentiemarges.","card.studio_card_header":"Studio Tarievenkaart","card.baseline_rates":"Studio-basistarieven","card.service_rates":"Dienstentarieven","card.price_on_consultation":"Prijs op aanvraag","card.footer_notice":"Tarieven onafhankelijk vastgesteld door de studio. Alle procedures volgen gevestigde professionele praktijk.","card.date":"Datum"}},te=[{code:"en",label:"English",flag:"🇬🇧"},{code:"de",label:"Deutsch",flag:"🇩🇪"},{code:"fr",label:"Français",flag:"🇫🇷"},{code:"es",label:"Español",flag:"🇪🇸"},{code:"it",label:"Italiano",flag:"🇮🇹"},{code:"pt",label:"Português",flag:"🇵🇹"},{code:"nl",label:"Nederlands",flag:"🇳🇱"}];let J="en";function K(){if(typeof window<"u")try{const i=localStorage.getItem("poli_benchmark_lang");if(i&&["en","de","fr","es","it","pt","nl"].includes(i))return i;const l=navigator.language.slice(0,2);if(["en","de","fr","es","it","pt","nl"].includes(l))return l}catch{}return J}function re(i){if(J=i,typeof window<"u")try{localStorage.setItem("poli_benchmark_lang",i),document.documentElement.setAttribute("lang",i)}catch{}}function a(i,l){const t=l||K(),n=B[t]||B.en;return n&&n[i]!==void 0?n[i]:B.en&&B.en[i]!==void 0?B.en[i]:i}function F(i){const l=i||K();typeof document<"u"&&(document.documentElement.setAttribute("lang",l),document.querySelectorAll("[data-i18n]").forEach(n=>{const c=n.getAttribute("data-i18n");if(c){const m=a(c,l);n.tagName==="INPUT"||n.tagName==="TEXTAREA"?n.placeholder=m:n.textContent=m}}))}const V=({id:i,title:l,children:t})=>{const[n,c]=u.useState(!1),m=u.useRef(null);return u.useEffect(()=>{const p=r=>{m.current&&!m.current.contains(r.target)&&c(!1)},w=r=>{r.key==="Escape"&&c(!1)};return n&&(document.addEventListener("mousedown",p),document.addEventListener("keydown",w)),()=>{document.removeEventListener("mousedown",p),document.removeEventListener("keydown",w)}},[n]),e.jsxs("div",{ref:m,className:"relative inline-flex items-center text-left normal-case tracking-normal",children:[e.jsx("button",{type:"button",id:`btn-tooltip-${i}`,"aria-label":l,"aria-expanded":n,"aria-describedby":n?`tooltip-content-${i}`:void 0,onClick:p=>{p.stopPropagation(),c(!n)},onMouseEnter:()=>c(!0),className:"inline-flex items-center justify-center w-4 h-4 rounded-full bg-[var(--surface)] text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--surface-elevated)] border border-[var(--border)] text-[10px] font-bold transition-colors cursor-pointer focus:outline-none focus:ring-1 focus:ring-[var(--primary)]",children:"ℹ️"}),n&&e.jsxs("div",{id:`tooltip-content-${i}`,role:"tooltip",className:"absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50 w-72 sm:w-80 p-3.5 bg-[var(--surface-elevated)] border border-[var(--border)] rounded-xl shadow-2xl text-xs text-[var(--text)] animate-in fade-in zoom-in-95 duration-100",children:[e.jsxs("div",{className:"flex items-center justify-between pb-2 mb-2 border-b border-[var(--border)]",children:[e.jsxs("h4",{className:"font-bold text-[var(--text-heading)] text-xs flex items-center gap-1.5",children:[e.jsx("span",{children:"📋"}),e.jsx("span",{children:l})]}),e.jsx("button",{type:"button",onClick:()=>c(!1),className:"text-[var(--muted)] hover:text-[var(--text)] text-xs p-1 rounded hover:bg-[var(--surface)] cursor-pointer","aria-label":"Close tooltip",children:"✕"})]}),e.jsx("div",{className:"space-y-2 text-[11px] leading-relaxed text-[var(--muted)]",children:t})]})]})},ne=({rows:i,userPrices:l,currency:t})=>{const[n,c]=u.useState("all"),p=i.filter(r=>n==="all"?!0:r.category===n).map(r=>{const S=r.confidence==="GAP"||r.min===null||r.max===null,g=l[r.id],T=g&&!isNaN(Number(g))&&Number(g)>0?Number(g):null;let h=a("pos.none"),x="none";return T!==null&&(S||r.min===null||r.max===null?h=a("pos.no_data"):T<r.min?(x="below",h=a("pos.below")):T>r.max?(x="premium",h=a("pos.premium")):(x="market",h=a("pos.market"))),{id:r.id,name:a(r.nameKey),category:r.category,min:S?null:r.min,max:S?null:r.max,userPrice:T,isGap:S,positionLabel:h,positionType:x}}),w=Object.values(l).some(r=>Number(r)>0);return e.jsxs("div",{id:"benchmark-visual-chart-card",className:"bg-[var(--surface-elevated)] border border-[var(--border)] rounded-xl p-3.5 sm:p-5 shadow-xs",children:[e.jsxs("div",{className:"flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[var(--border)] mb-4",children:[e.jsxs("div",{children:[e.jsxs("h4",{className:"text-sm font-bold text-[var(--text-heading)] flex items-center gap-2",children:[e.jsx("span",{children:"📈"}),e.jsx("span",{children:a("chart.title")})]}),e.jsx("p",{className:"text-xs text-[var(--muted)] mt-0.5",children:a("chart.subtitle")})]}),e.jsxs("div",{className:"inline-flex items-center p-1 bg-[var(--surface)] rounded-lg border border-[var(--border)] self-start sm:self-auto",role:"tablist","aria-label":"Procedure Category",children:[e.jsx("button",{type:"button",id:"btn-filter-category-all",role:"tab","aria-selected":n==="all",onClick:()=>c("all"),className:`px-3 py-1 rounded-md text-xs font-semibold transition-colors cursor-pointer ${n==="all"?"bg-blue-600 text-white shadow-xs":"text-[var(--muted)] hover:text-[var(--text)]"}`,children:a("chart.filter_all")}),e.jsx("button",{type:"button",id:"btn-filter-category-tattoo",role:"tab","aria-selected":n==="tattoo",onClick:()=>c("tattoo"),className:`px-3 py-1 rounded-md text-xs font-semibold transition-colors cursor-pointer ${n==="tattoo"?"bg-blue-600 text-white shadow-xs":"text-[var(--muted)] hover:text-[var(--text)]"}`,children:a("chart.filter_tattoo")}),e.jsx("button",{type:"button",id:"btn-filter-category-piercing",role:"tab","aria-selected":n==="piercing",onClick:()=>c("piercing"),className:`px-3 py-1 rounded-md text-xs font-semibold transition-colors cursor-pointer ${n==="piercing"?"bg-blue-600 text-white shadow-xs":"text-[var(--muted)] hover:text-[var(--text)]"}`,children:a("chart.filter_piercing")})]})]}),e.jsxs("div",{className:"mb-4 bg-[var(--surface)] border border-[var(--border)] rounded-lg p-3 text-xs text-[var(--muted)] flex flex-wrap items-center justify-between gap-3",children:[e.jsxs("div",{className:"flex flex-wrap items-center gap-4 text-[11px]",children:[e.jsxs("div",{className:"flex items-center gap-1.5",children:[e.jsx("span",{className:"w-6 h-3 rounded-xs bg-[var(--c-market)]/20 border border-[var(--c-market)] inline-block"}),e.jsxs("span",{className:"text-[var(--text)] font-medium",children:[a("chart.legend_low")," – ",a("chart.legend_high")]})]}),e.jsxs("div",{className:"flex items-center gap-1.5",children:[e.jsx("span",{className:"font-mono text-[var(--c-low)] font-bold text-xs",children:"▼"}),e.jsx("span",{children:a("pos.below")})]}),e.jsxs("div",{className:"flex items-center gap-1.5",children:[e.jsx("span",{className:"font-mono text-[var(--c-market)] font-bold text-xs",children:"●"}),e.jsx("span",{children:a("pos.market")})]}),e.jsxs("div",{className:"flex items-center gap-1.5",children:[e.jsx("span",{className:"font-mono text-[var(--c-premium)] font-bold text-xs",children:"▲"}),e.jsx("span",{children:a("pos.premium")})]}),e.jsxs("div",{className:"flex items-center gap-1.5",children:[e.jsx("span",{className:"w-5 h-2 rounded-xs border border-dashed border-[var(--border)] inline-block"}),e.jsx("span",{children:a("pos.no_data")})]})]}),e.jsxs("div",{className:"text-[11px] text-[var(--muted)] font-mono",children:[a("chart.legend_your_price"),": ",e.jsx("span",{className:"font-bold text-[var(--text-heading)]",children:"▼ ● ▲"})]})]}),!w&&e.jsxs("div",{className:"mb-4 bg-[var(--surface)] border border-[var(--border)] rounded-lg p-3 text-xs text-[var(--muted)] flex items-center gap-2",children:[e.jsx("span",{className:"text-base",role:"img","aria-label":"info",children:"💡"}),e.jsx("span",{children:a("chart.empty_notice")})]}),e.jsx("div",{id:"benchmark-visual-chart",className:"space-y-3",role:"region","aria-label":a("chart.title"),children:p.map(r=>{const S=r.isGap||r.min===null||r.max===null,g=r.userPrice;let T=32,h=568,x=h-T,y=0,f=0,b=0,C=!1,P=!1,z=!1;if(!S&&r.min!==null&&r.max!==null){const d=r.min,E=r.max,s=E-d||10;let _=s*.35,v=s*.35;g!==null&&(g<d?_=Math.max(_,(d-g)*1.3):g>E&&(v=Math.max(v,(g-E)*1.3)));const k=Math.max(0,d-_),A=E+v,D=A-k||1,I=j=>{const o=Math.max(k,Math.min(A,j));return T+(o-k)/D*x};y=I(d),f=I(E),g!==null&&(b=I(g),C=g<d,P=g>E,z=!C&&!P)}return e.jsxs("div",{className:"bg-[var(--surface)] border border-[var(--border)] rounded-lg p-3 sm:p-3.5 space-y-2 transition-colors hover:border-[var(--primary)]/40",children:[e.jsxs("div",{className:"flex flex-col sm:flex-row sm:items-center justify-between gap-2",children:[e.jsxs("div",{className:"flex items-center gap-2 flex-wrap",children:[e.jsx("span",{className:"font-bold text-xs sm:text-sm text-[var(--text-heading)]",children:r.name}),e.jsx("span",{className:"text-[10px] font-mono px-1.5 py-0.5 rounded bg-[var(--surface-elevated)] text-[var(--primary)] border border-[var(--border)] uppercase tracking-wider",children:r.category==="tattoo"?a("table.category_tattoo"):a("table.category_piercing")})]}),e.jsxs("div",{className:"flex items-center gap-2.5 sm:gap-3 flex-wrap text-xs",children:[e.jsx("div",{className:"text-[var(--muted)] font-mono text-[11px]",children:!S&&r.min!==null&&r.max!==null?e.jsxs("span",{children:[e.jsxs("span",{className:"text-[10px] uppercase tracking-wide text-[var(--muted)] mr-1",children:[a("chart.legend_low"),":"]}),e.jsxs("strong",{className:"text-[var(--text-heading)]",children:[t,r.min.toLocaleString()]}),e.jsx("span",{className:"mx-1 text-[var(--muted)]",children:"–"}),e.jsxs("span",{className:"text-[10px] uppercase tracking-wide text-[var(--muted)] mr-1",children:[a("chart.legend_high"),":"]}),e.jsxs("strong",{className:"text-[var(--text-heading)]",children:[t,r.max.toLocaleString()]})]}):e.jsx("span",{className:"italic text-[var(--muted)]",children:a("pos.no_data")})}),e.jsxs("div",{className:"text-[11px] font-mono",children:[e.jsxs("span",{className:"text-[10px] uppercase tracking-wide text-[var(--muted)] mr-1",children:[a("chart.legend_your_price"),":"]}),g!==null?e.jsxs("strong",{className:"text-[var(--text-heading)]",children:[t,g.toLocaleString()]}):e.jsx("span",{className:"text-[var(--muted)] italic",children:a("chart.not_entered")})]}),e.jsx("div",{children:S?e.jsxs("span",{className:"px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase border border-dashed border-[var(--border)] text-[var(--muted)] bg-[var(--surface-elevated)]",children:["◌ ",a("pos.no_data")]}):g===null?e.jsx("span",{className:"px-2 py-0.5 rounded text-[10px] font-mono border border-[var(--border)] text-[var(--muted)] bg-[var(--surface-elevated)]",children:a("chart.not_entered")}):r.positionType==="below"?e.jsxs("span",{className:"px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase border border-dashed border-[var(--c-low)] text-[var(--c-low)] bg-[var(--surface-elevated)]",children:["▼ ",a("pos.below")]}):r.positionType==="market"?e.jsxs("span",{className:"px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase border border-solid border-[var(--c-market)] text-[var(--c-market)] bg-[var(--surface-elevated)]",children:["● ",a("pos.market")]}):e.jsxs("span",{className:"px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase border-2 border-double border-[var(--c-premium)] text-[var(--c-premium)] bg-[var(--surface-elevated)]",children:["▲ ",a("pos.premium")]})})]})]}),e.jsx("div",{className:"w-full pt-1",children:e.jsxs("svg",{viewBox:"0 0 600 46",className:"w-full h-10 sm:h-11 block overflow-visible select-none",role:"img","aria-label":`${r.name}: ${!S&&r.min!==null&&r.max!==null?`${t}${r.min} to ${t}${r.max}`:a("pos.no_data")}, ${g!==null?`${a("chart.legend_your_price")} ${t}${g}`:a("chart.not_entered")}`,children:[e.jsx("title",{children:`${r.name}: ${!S&&r.min!==null&&r.max!==null?`${t}${r.min.toLocaleString()} – ${t}${r.max.toLocaleString()}`:`${a("conf.gap")}: ${a("conf.no_data")}`} | ${g!==null?`${a("chart.legend_your_price")}: ${t}${g.toLocaleString()} (${r.positionLabel})`:a("chart.not_entered")}`}),S?e.jsxs("g",{children:[e.jsx("line",{x1:"20",y1:"22",x2:"580",y2:"22",stroke:"var(--border)",strokeWidth:"2",strokeDasharray:"6 4",strokeLinecap:"round"}),e.jsx("rect",{x:"160",y:"10",width:"280",height:"24",rx:"4",fill:"var(--surface-elevated)",stroke:"var(--border)",strokeDasharray:"3 3"}),e.jsxs("text",{x:"300",y:"26",textAnchor:"middle",fill:"var(--muted)",fontSize:"11",fontStyle:"italic",fontFamily:"sans-serif",children:[a("conf.gap"),": ",a("conf.no_data")]})]}):e.jsxs("g",{children:[e.jsx("line",{x1:T,y1:"22",x2:h,y2:"22",stroke:"var(--border)",strokeWidth:"2",strokeLinecap:"round"}),e.jsx("rect",{x:y,y:"12",width:Math.max(4,f-y),height:"20",rx:"4",fill:"var(--c-market)",fillOpacity:"0.18",stroke:"var(--c-market)",strokeWidth:"1.5"}),e.jsx("line",{x1:y,y1:"8",x2:y,y2:"36",stroke:"var(--chart-low)",strokeWidth:"2",strokeLinecap:"round"}),e.jsxs("text",{x:y,y:"7",textAnchor:"middle",fill:"var(--muted)",fontSize:"10",fontFamily:"monospace",fontWeight:"600",children:[t,r.min.toLocaleString()]}),e.jsx("line",{x1:f,y1:"8",x2:f,y2:"36",stroke:"var(--chart-high)",strokeWidth:"2",strokeLinecap:"round"}),e.jsxs("text",{x:f,y:"7",textAnchor:"middle",fill:"var(--muted)",fontSize:"10",fontFamily:"monospace",fontWeight:"600",children:[t,r.max.toLocaleString()]}),g!==null&&e.jsxs("g",{children:[C&&e.jsxs("g",{children:[e.jsx("line",{x1:b,y1:"6",x2:b,y2:"36",stroke:"var(--c-low)",strokeWidth:"2.5",strokeDasharray:"3 2"}),e.jsx("polygon",{points:`${b},14 ${b-5},6 ${b+5},6`,fill:"var(--c-low)"}),e.jsx("circle",{cx:b,cy:"22",r:"4.5",fill:"var(--surface-elevated)",stroke:"var(--c-low)",strokeWidth:"2"}),e.jsxs("text",{x:b,y:"45",textAnchor:"middle",fill:"var(--c-low)",fontSize:"11",fontFamily:"monospace",fontWeight:"700",children:[t,g.toLocaleString()]})]}),z&&e.jsxs("g",{children:[e.jsx("line",{x1:b,y1:"6",x2:b,y2:"36",stroke:"var(--c-market)",strokeWidth:"2.5"}),e.jsx("circle",{cx:b,cy:"22",r:"6",fill:"var(--c-market)",stroke:"var(--surface-elevated)",strokeWidth:"2"}),e.jsxs("text",{x:b,y:"45",textAnchor:"middle",fill:"var(--c-market)",fontSize:"11",fontFamily:"monospace",fontWeight:"700",children:[t,g.toLocaleString()]})]}),P&&e.jsxs("g",{children:[e.jsx("line",{x1:b,y1:"6",x2:b,y2:"36",stroke:"var(--c-premium)",strokeWidth:"2.5",strokeDasharray:"4 1.5"}),e.jsx("polygon",{points:`${b},28 ${b-5},36 ${b+5},36`,fill:"var(--c-premium)"}),e.jsx("circle",{cx:b,cy:"22",r:"4.5",fill:"var(--surface-elevated)",stroke:"var(--c-premium)",strokeWidth:"2"}),e.jsxs("text",{x:b,y:"45",textAnchor:"middle",fill:"var(--c-premium)",fontSize:"11",fontFamily:"monospace",fontWeight:"700",children:[t,g.toLocaleString()]})]})]})]})]})})]},`chart-row-${r.id}`)})}),e.jsx("div",{className:"sr-only",role:"region","aria-label":`${a("chart.title")} data summary`,children:e.jsxs("table",{children:[e.jsxs("caption",{children:[a("chart.title"),": ",a("chart.subtitle")," (",a(n==="all"?"chart.filter_all":n==="tattoo"?"chart.filter_tattoo":"chart.filter_piercing"),")"]}),e.jsx("thead",{children:e.jsxs("tr",{children:[e.jsx("th",{scope:"col",children:a("table.service")}),e.jsx("th",{scope:"col",children:a("chart.legend_low")}),e.jsx("th",{scope:"col",children:a("chart.legend_high")}),e.jsx("th",{scope:"col",children:a("chart.legend_your_price")}),e.jsx("th",{scope:"col",children:a("table.position")})]})}),e.jsx("tbody",{children:p.map(r=>e.jsxs("tr",{children:[e.jsx("th",{scope:"row",children:r.name}),e.jsx("td",{children:r.min!==null?`${t}${r.min.toLocaleString()}`:a("conf.no_data")}),e.jsx("td",{children:r.max!==null?`${t}${r.max.toLocaleString()}`:a("conf.no_data")}),e.jsx("td",{children:r.userPrice!==null?`${t}${r.userPrice.toLocaleString()}`:a("chart.not_entered")}),e.jsx("td",{children:r.positionLabel})]},`sr-row-${r.id}`))})]})})]})},L="poli_benchmark_user_prices_v1",O="poli_benchmark_studio_rates_v1",$={hourlyRate:"",minimumCharge:"",shopMinimum:"",depositPercent:"25",tier:"resident"};function G(i){if(!i)return"";let l=i.replace(/[^0-9.]/g,"");const t=l.split(".");return t.length>2&&(l=t[0]+"."+t.slice(1).join("")),l}function R(i){if(i==null)return null;const l=typeof i=="number"?i:Number(String(i).trim());return isNaN(l)||l<=0||!isFinite(l)?null:l}function Z(i,l,t,n){return i===null||i<=0?{position:"none",diffPercent:null}:l===null||t===null||n==="GAP"?{position:"none",diffPercent:null}:i<l?{position:"below",diffPercent:Math.round((i-l)/l*100)}:i>t?{position:"premium",diffPercent:Math.round((i-t)/t*100)}:{position:"market",diffPercent:0}}function se(i,l){let t=0,n=0,c=0,m=0;for(const p of i){const w=R(l[p.id]);if(w!==null){t++;const{position:r}=Z(w,p.min,p.max,p.confidence);r==="below"?n++:r==="market"?c++:r==="premium"&&m++}}return{evaluatedCount:t,belowCount:n,marketCount:c,premiumCount:m}}function oe(i){const l=H[i],t=W[i]||[],[n,c]=u.useState(()=>{try{const s=localStorage.getItem(L);if(s)return JSON.parse(s)[i]||{}}catch(s){console.error("Failed to load initial benchmark prices:",s)}return{}}),[m,p]=u.useState(()=>{try{const s=localStorage.getItem(L);if(s){const v=JSON.parse(s)[i]||{};return Object.values(v).some(k=>R(k)!==null)}}catch{}return!1}),[w,r]=u.useState(!1),[S,g]=u.useState(()=>{try{const s=localStorage.getItem(O);if(s)return{...$,...JSON.parse(s)}}catch(s){console.error("Failed to load studio rates:",s)}return $}),T=u.useCallback(s=>{g(s);try{localStorage.setItem(O,JSON.stringify(s))}catch(_){console.error("Failed to save studio rates:",_)}},[]);u.useEffect(()=>{try{const s=localStorage.getItem(L);if(s){const v=JSON.parse(s)[i]||{};c(v),Object.values(v).some(A=>R(A)!==null)&&p(!0)}else c({})}catch(s){console.error("Failed to load benchmark prices on region switch:",s)}},[i]);const h=u.useCallback(s=>{try{const _=localStorage.getItem(L),v=_?JSON.parse(_):{};v[i]=s,localStorage.setItem(L,JSON.stringify(v))}catch(_){console.error("Failed to save benchmark prices to localStorage:",_)}},[i]),x=u.useCallback((s,_)=>{const v=G(_);c(k=>{const A={...k,[s]:v};return h(A),A})},[h]),y=u.useCallback(()=>{c({}),p(!1),h({})},[h]),f=u.useCallback(()=>{p(!0),setTimeout(()=>{const s=document.getElementById("benchmark-results-view");s&&s.scrollIntoView({behavior:"smooth",block:"start"})},50)},[]),b=u.useCallback(s=>{const _=R(n[s.id]);if(_===null)return{position:"none",label:a("pos.none"),diffPercent:null};if(s.min===null||s.max===null||s.confidence==="GAP")return{position:"none",label:a("pos.no_data"),diffPercent:null};const{position:v,diffPercent:k}=Z(_,s.min,s.max,s.confidence);return v==="below"?{position:"below",label:a("pos.below"),diffPercent:k}:v==="premium"?{position:"premium",label:a("pos.premium"),diffPercent:k}:{position:"market",label:a("pos.market"),diffPercent:k}},[n]),{evaluatedCount:C,belowCount:P,marketCount:z,premiumCount:d}=u.useMemo(()=>se(t,n),[t,n]),E=u.useCallback(()=>{const s=j=>j==null?'""':`"${String(j).replace(/"/g,'""')}"`,v=[[a("csv.col_region"),a("csv.col_category"),a("csv.col_service"),a("csv.col_scope"),a("csv.col_currency"),a("csv.col_min"),a("csv.col_max"),a("csv.col_confidence"),a("csv.col_basis"),a("csv.col_jewellery"),a("csv.col_your_price"),a("csv.col_position")].map(s).join(",")];t.forEach(j=>{const o=b(j),N=j.confidence==="GAP"||j.min===null||j.max===null,M=j.jewelleryNoteKey?a(j.jewelleryNoteKey):a(l.jewelleryPolicyKey),U=[a(l.nameKey),j.category==="tattoo"?a("table.category_tattoo"):a("table.category_piercing"),a(j.nameKey),a(j.subKey),l.currencyCode,N?"N/A":String(j.min),N?"N/A":String(j.max),j.confidence,a(j.basisKey),M,n[j.id]?String(n[j.id]):"",o.label];v.push(U.map(s).join(","))});const k="\uFEFF"+v.join(`\r
+`),A=new Blob([k],{type:"text/csv;charset=utf-8;"}),D=URL.createObjectURL(A),I=document.createElement("a");I.setAttribute("href",D),I.setAttribute("download",`studio-pricing-benchmark-${i}-${new Date().toISOString().slice(0,10)}.csv`),document.body.appendChild(I),I.click(),document.body.removeChild(I),URL.revokeObjectURL(D),r(!0),setTimeout(()=>r(!1),4e3)},[t,i,n,l,b]);return{userPrices:n,studioRates:S,evaluated:m,exportSuccess:w,evaluatedCount:C,alignmentStats:{belowCount:P,marketCount:z,premiumCount:d},handlePriceChange:x,handleRatesChange:T,handleClear:y,handleEvaluate:f,handleExportCSV:E,getPosition:b}}const le=({rates:i,onRatesChange:l,regionMeta:t,rows:n,userPrices:c,onPriceChange:m})=>{const[p,w]=u.useState(0),[r,S]=u.useState(2),[g,T]=u.useState(!1),h=K(),x=u.useMemo(()=>n.find(o=>o.id==="tattoo_hourly"),[n]),y=u.useMemo(()=>n.find(o=>o.id==="tattoo_minimum"),[n]),f=(o,N)=>{const M={...i,[o]:N};l(M),o==="hourlyRate"&&m("tattoo_hourly",N),o==="shopMinimum"&&m("tattoo_minimum",N)},b=o=>{l({...i,tier:o})},C=u.useMemo(()=>{const o=R(i.hourlyRate);return!x||x.min===null||x.max===null||o===null?null:o<x.min?"below":o>x.max?"above":"within"},[i.hourlyRate,x]),P=u.useMemo(()=>{const o=R(i.shopMinimum);return!y||y.min===null||y.max===null||o===null?null:o<y.min?"below":o>y.max?"above":"within"},[i.shopMinimum,y]),z=u.useMemo(()=>{switch(i.tier){case"apprentice":return a("rates.tier_desc_apprentice");case"resident":return a("rates.tier_desc_resident");case"established":return a("rates.tier_desc_established");case"specialist":return a("rates.tier_desc_specialist");default:return a("rates.tier_desc_resident")}},[i.tier,h]),d=u.useMemo(()=>{switch(i.tier){case"apprentice":return a("rates.tier_apprentice");case"resident":return a("rates.tier_resident");case"established":return a("rates.tier_established");case"specialist":return a("rates.tier_specialist");default:return a("rates.tier_resident")}},[i.tier,h]),E=R(i.hourlyRate),s=String(i.depositPercent??"").trim(),_=s===""||isNaN(Number(s))?0:Math.max(0,Math.min(100,Number(s))),v=s===""?"—":`${_}%`,k=u.useMemo(()=>{if(E===null)return null;const o=1+p/100,N=Math.round(E*o*100)/100,M=Math.round(N*r*100)/100,U=Math.round(M*(_/100)*100)/100;return{projectedHourly:N,bookingTotal:M,depositDue:U}},[E,p,r,_]),A=u.useMemo(()=>[a("handoff.title"),a("handoff.decision_notice"),"",`${a("rates.hourly")}: ${i.hourlyRate?`${t.currency}${i.hourlyRate}/hr`:"—"}`,`${a("rates.min_charge")}: ${i.minimumCharge?`${t.currency}${i.minimumCharge}`:"—"}`,`${a("rates.shop_min")}: ${i.shopMinimum?`${t.currency}${i.shopMinimum}`:"—"}`,`${a("rates.deposit")}: ${v}`,`${a("rates.tier_label")}: ${d}`].join(`
+`),[i,t,d,v,h]),D=u.useCallback(()=>{navigator.clipboard&&navigator.clipboard.writeText(A).then(()=>{T(!0),setTimeout(()=>T(!1),2e3)}).catch(()=>{T(!0),setTimeout(()=>T(!1),2e3)})},[A]),I=u.useCallback(()=>{window.print()},[]),j=u.useMemo(()=>new Date().toLocaleDateString("en-CA"),[]);return e.jsxs("div",{className:"space-y-6",children:[e.jsxs("section",{className:"bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6 shadow-sm no-print",children:[e.jsxs("div",{className:"flex items-start justify-between flex-wrap gap-4 mb-6",children:[e.jsxs("div",{className:"flex items-center gap-2.5",children:[e.jsx("div",{className:"w-9 h-9 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center",children:e.jsx(Q,{className:"w-5 h-5","aria-hidden":"true"})}),e.jsxs("div",{children:[e.jsx("h2",{className:"text-base font-bold text-[var(--text-heading)]",children:a("rates.title")}),e.jsx("p",{className:"text-xs text-[var(--muted)]",children:a("rates.subtitle")})]})]}),e.jsxs("button",{type:"button",onClick:I,className:"inline-flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg bg-[var(--surface-elevated)] hover:bg-[var(--surface)] text-[var(--text-heading)] border border-[var(--border)] transition-colors cursor-pointer","aria-label":a("card.print_btn"),children:[e.jsx(X,{className:"w-4 h-4 text-[var(--primary)]","aria-hidden":"true"}),e.jsx("span",{children:a("card.print_btn")})]})]}),e.jsxs("div",{className:"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6",children:[e.jsxs("div",{className:"space-y-1.5",children:[e.jsxs("label",{htmlFor:"input-hourly-rate",className:"block text-xs font-semibold text-[var(--text-heading)]",children:[a("rates.hourly")," (",t.currency,"/hr)"]}),e.jsxs("div",{className:"relative",children:[e.jsx("span",{className:"absolute left-3 top-1/2 -translate-y-1/2 text-xs text-[var(--muted)] font-mono",children:t.currency}),e.jsx("input",{id:"input-hourly-rate",type:"text",inputMode:"decimal",value:i.hourlyRate,onChange:o=>f("hourlyRate",G(o.target.value)),placeholder:"100",className:"w-full pl-8 pr-3 py-2 text-sm font-semibold rounded-lg bg-[var(--surface-elevated)] border border-[var(--border)] text-[var(--text-heading)] focus:outline-none focus:border-[var(--primary)]"})]})]}),e.jsxs("div",{className:"space-y-1.5",children:[e.jsxs("label",{htmlFor:"input-min-charge",className:"block text-xs font-semibold text-[var(--text-heading)]",children:[a("rates.min_charge")," (",t.currency,")"]}),e.jsxs("div",{className:"relative",children:[e.jsx("span",{className:"absolute left-3 top-1/2 -translate-y-1/2 text-xs text-[var(--muted)] font-mono",children:t.currency}),e.jsx("input",{id:"input-min-charge",type:"text",inputMode:"decimal",value:i.minimumCharge,onChange:o=>f("minimumCharge",G(o.target.value)),placeholder:"60",className:"w-full pl-8 pr-3 py-2 text-sm font-semibold rounded-lg bg-[var(--surface-elevated)] border border-[var(--border)] text-[var(--text-heading)] focus:outline-none focus:border-[var(--primary)]"})]})]}),e.jsxs("div",{className:"space-y-1.5",children:[e.jsxs("label",{htmlFor:"input-shop-min",className:"block text-xs font-semibold text-[var(--text-heading)]",children:[a("rates.shop_min")," (",t.currency,")"]}),e.jsxs("div",{className:"relative",children:[e.jsx("span",{className:"absolute left-3 top-1/2 -translate-y-1/2 text-xs text-[var(--muted)] font-mono",children:t.currency}),e.jsx("input",{id:"input-shop-min",type:"text",inputMode:"decimal",value:i.shopMinimum,onChange:o=>f("shopMinimum",G(o.target.value)),placeholder:"50",className:"w-full pl-8 pr-3 py-2 text-sm font-semibold rounded-lg bg-[var(--surface-elevated)] border border-[var(--border)] text-[var(--text-heading)] focus:outline-none focus:border-[var(--primary)]"})]})]}),e.jsxs("div",{className:"space-y-1.5",children:[e.jsxs("label",{htmlFor:"input-deposit-pct",className:"block text-xs font-semibold text-[var(--text-heading)]",children:[a("rates.deposit")," (%)"]}),e.jsxs("div",{className:"relative",children:[e.jsx("input",{id:"input-deposit-pct",type:"number",min:"0",max:"100",value:i.depositPercent,onChange:o=>f("depositPercent",o.target.value),placeholder:"25",className:"w-full pl-3 pr-8 py-2 text-sm font-semibold rounded-lg bg-[var(--surface-elevated)] border border-[var(--border)] text-[var(--text-heading)] focus:outline-none focus:border-[var(--primary)]"}),e.jsx("span",{className:"absolute right-3 top-1/2 -translate-y-1/2 text-xs text-[var(--muted)] font-mono",children:"%"})]})]})]}),e.jsxs("div",{className:"border-t border-[var(--border)] pt-4 mb-5",children:[e.jsxs("div",{className:"flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-2.5",children:[e.jsx("label",{htmlFor:"studio-tier-select",className:"text-xs font-semibold text-[var(--text-heading)]",children:a("rates.tier_label")}),e.jsx("div",{className:"inline-flex rounded-lg border border-[var(--border)] p-1 bg-[var(--surface-elevated)]",children:["apprentice","resident","established","specialist"].map(o=>e.jsxs("button",{type:"button",onClick:()=>b(o),className:`px-3 py-1 text-xs font-medium rounded-md transition-colors cursor-pointer ${i.tier===o?"bg-[var(--surface)] text-[var(--text-heading)] shadow-xs font-semibold":"text-[var(--muted)] hover:text-[var(--text)]"}`,children:[o==="apprentice"&&a("rates.tier_apprentice"),o==="resident"&&a("rates.tier_resident"),o==="established"&&a("rates.tier_established"),o==="specialist"&&a("rates.tier_specialist")]},o))})]}),e.jsx("p",{className:"text-xs text-[var(--muted)] leading-relaxed bg-[var(--surface-elevated)] p-3 rounded-lg border border-[var(--border)]",children:z})]}),e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-3 pt-2",children:[e.jsxs("div",{className:"bg-[var(--surface-elevated)] border border-[var(--border)] rounded-lg p-3",children:[e.jsxs("div",{className:"flex items-center justify-between gap-2 mb-1",children:[e.jsx("span",{className:"text-xs font-semibold text-[var(--text-heading)]",children:a("rates.hourly")}),C==="below"&&e.jsx("span",{className:"inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-500/10 text-amber-500 border border-amber-500/30",children:a("rates.status_below")}),C==="within"&&e.jsx("span",{className:"inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/30",children:a("rates.status_within")}),C==="above"&&e.jsx("span",{className:"inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-blue-500/10 text-blue-400 border border-blue-500/30",children:a("rates.status_above")})]}),e.jsx("p",{className:"text-xs text-[var(--muted)]",children:x&&x.min!==null&&x.max!==null?a("rates.hourly_vs_region").replace("{min}",`${t.currency}${x.min}`).replace("{max}",`${t.currency}${x.max}`):a("conf.gap_desc")})]}),e.jsxs("div",{className:"bg-[var(--surface-elevated)] border border-[var(--border)] rounded-lg p-3",children:[e.jsxs("div",{className:"flex items-center justify-between gap-2 mb-1",children:[e.jsx("span",{className:"text-xs font-semibold text-[var(--text-heading)]",children:a("rates.shop_min")}),P==="below"&&e.jsx("span",{className:"inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-500/10 text-amber-500 border border-amber-500/30",children:a("rates.status_below")}),P==="within"&&e.jsx("span",{className:"inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/30",children:a("rates.status_within")}),P==="above"&&e.jsx("span",{className:"inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-blue-500/10 text-blue-400 border border-blue-500/30",children:a("rates.status_above")})]}),e.jsx("p",{className:"text-xs text-[var(--muted)]",children:y&&y.min!==null&&y.max!==null?a("rates.min_vs_region").replace("{min}",`${t.currency}${y.min}`).replace("{max}",`${t.currency}${y.max}`):a("conf.gap_desc")})]})]})]}),e.jsxs("section",{className:"bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6 shadow-sm no-print",children:[e.jsxs("div",{className:"flex items-center gap-2.5 mb-5",children:[e.jsx("div",{className:"w-9 h-9 rounded-lg bg-[var(--primary)]/10 text-[var(--primary)] flex items-center justify-center",children:e.jsx(ee,{className:"w-5 h-5","aria-hidden":"true"})}),e.jsxs("div",{children:[e.jsx("h2",{className:"text-base font-bold text-[var(--text-heading)]",children:a("whatif.title")}),e.jsx("p",{className:"text-xs text-[var(--muted)]",children:a("whatif.subtitle")})]})]}),E===null?e.jsx("div",{className:"p-4 rounded-lg bg-[var(--surface-elevated)] border border-[var(--border)] text-xs text-[var(--muted)]",children:a("whatif.prompt_hourly")}):e.jsxs("div",{className:"space-y-5",children:[e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-5",children:[e.jsxs("div",{className:"space-y-2",children:[e.jsxs("div",{className:"flex items-center justify-between",children:[e.jsx("label",{htmlFor:"whatif-range-slider",className:"text-xs font-semibold text-[var(--text-heading)]",children:a("whatif.rate_adjustment")}),e.jsx("span",{className:"text-xs font-mono font-bold text-[var(--primary)]",children:p>=0?`+${p}%`:`${p}%`})]}),e.jsx("input",{id:"whatif-range-slider",type:"range",min:"-20",max:"30",step:"1",value:p,onChange:o=>w(Number(o.target.value)),className:"w-full accent-[var(--primary)] cursor-pointer"}),e.jsx("div",{className:"flex items-center justify-between gap-1 pt-1",children:[-20,-10,0,10,20,30].map(o=>e.jsx("button",{type:"button",onClick:()=>w(o),className:`px-2 py-0.5 rounded text-[10px] font-mono font-semibold transition-colors cursor-pointer ${p===o?"bg-[var(--primary)] text-white":"bg-[var(--surface-elevated)] text-[var(--muted)] hover:text-[var(--text)] border border-[var(--border)]"}`,children:o>0?`+${o}%`:`${o}%`},o))})]}),e.jsxs("div",{className:"space-y-2",children:[e.jsxs("div",{className:"flex items-center justify-between",children:[e.jsx("label",{htmlFor:"whatif-booking-hours",className:"text-xs font-semibold text-[var(--text-heading)]",children:a("whatif.booking_hours")}),e.jsxs("span",{className:"text-xs font-mono font-bold text-[var(--text-heading)]",children:[r," hrs"]})]}),e.jsxs("div",{className:"flex items-center gap-2",children:[e.jsx("input",{id:"whatif-booking-hours",type:"number",min:"0.5",max:"24",step:"0.5",value:r,onChange:o=>S(Math.max(.5,Number(o.target.value)||1)),className:"w-full px-3 py-1.5 text-sm font-semibold rounded-lg bg-[var(--surface-elevated)] border border-[var(--border)] text-[var(--text-heading)] focus:outline-none focus:border-[var(--primary)]"}),e.jsx("div",{className:"flex gap-1",children:[1,2,3,4].map(o=>e.jsxs("button",{type:"button",onClick:()=>S(o),className:`px-2.5 py-1.5 rounded-lg text-xs font-mono font-semibold transition-colors cursor-pointer ${r===o?"bg-[var(--primary)] text-white":"bg-[var(--surface-elevated)] text-[var(--muted)] hover:text-[var(--text)] border border-[var(--border)]"}`,children:[o,"h"]},o))})]})]})]}),k&&e.jsxs("div",{className:"grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2",children:[e.jsxs("div",{className:"bg-[var(--surface-elevated)] border border-[var(--border)] rounded-lg p-3.5",children:[e.jsx("span",{className:"text-[11px] text-[var(--muted)] block mb-1",children:a("whatif.projected_hourly")}),e.jsxs("div",{className:"text-base font-bold text-[var(--text-heading)] font-mono",children:[t.currency,k.projectedHourly,"/hr"]})]}),e.jsxs("div",{className:"bg-[var(--surface-elevated)] border border-[var(--border)] rounded-lg p-3.5",children:[e.jsx("span",{className:"text-[11px] text-[var(--muted)] block mb-1",children:a("whatif.booking_total").replace("{hours}",String(r))}),e.jsxs("div",{className:"text-base font-bold text-[var(--text-heading)] font-mono",children:[t.currency,k.bookingTotal]})]}),e.jsxs("div",{className:"bg-[var(--surface-elevated)] border border-[var(--border)] rounded-lg p-3.5",children:[e.jsx("span",{className:"text-[11px] text-[var(--muted)] block mb-1",children:a("whatif.deposit_due").replace("{percent}",String(_))}),e.jsxs("div",{className:"text-base font-bold text-[var(--primary)] font-mono",children:[t.currency,k.depositDue]})]})]}),e.jsx("div",{className:"text-right",children:e.jsx("span",{className:"text-[11px] text-[var(--muted)] italic",children:a("whatif.disclaimer")})})]})]}),e.jsxs("section",{className:"bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6 shadow-sm no-print",children:[e.jsxs("div",{className:"flex items-center justify-between flex-wrap gap-3 mb-4",children:[e.jsxs("div",{children:[e.jsx("h2",{className:"text-base font-bold text-[var(--text-heading)]",children:a("handoff.title")}),e.jsx("p",{className:"text-xs text-[var(--muted)]",children:a("handoff.decision_notice")})]}),e.jsx("button",{type:"button",onClick:D,className:"inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--primary)] text-white hover:opacity-90 transition-opacity cursor-pointer","aria-label":a("handoff.copy_btn"),children:g?e.jsxs(e.Fragment,{children:[e.jsx(ae,{className:"w-3.5 h-3.5","aria-hidden":"true"}),e.jsx("span",{children:a("handoff.copied")})]}):e.jsxs(e.Fragment,{children:[e.jsx(ie,{className:"w-3.5 h-3.5","aria-hidden":"true"}),e.jsx("span",{children:a("handoff.copy_btn")})]})})]}),e.jsx("pre",{className:"bg-[var(--surface-elevated)] border border-[var(--border)] rounded-lg p-4 font-mono text-xs text-[var(--text)] whitespace-pre-wrap leading-relaxed select-all",children:A})]}),e.jsxs("section",{id:"printable-rate-card",className:"bg-white text-black p-6 md:p-8 rounded-xl border border-[var(--border)] shadow-xs print:border-0 print:p-0 print:m-0 print:shadow-none",children:[e.jsxs("div",{className:"flex items-start justify-between border-b pb-4 mb-5 border-gray-200",children:[e.jsxs("div",{children:[e.jsx("h2",{className:"text-xl font-bold tracking-tight text-gray-900",children:a("card.studio_card_header")}),e.jsxs("p",{className:"text-xs text-gray-500 mt-0.5",children:[d," • ",t.name]})]}),e.jsx("div",{className:"text-right",children:e.jsx("span",{className:"text-xs font-mono text-gray-400",children:j})})]}),e.jsxs("div",{className:"mb-6",children:[e.jsx("h3",{className:"text-xs font-bold uppercase tracking-wider text-gray-500 mb-2.5",children:a("card.baseline_rates")}),e.jsxs("div",{className:"grid grid-cols-2 sm:grid-cols-4 gap-3",children:[e.jsxs("div",{className:"p-2.5 rounded bg-gray-50 border border-gray-100",children:[e.jsx("span",{className:"text-[10px] text-gray-500 block",children:a("rates.hourly")}),e.jsx("span",{className:"text-sm font-bold font-mono text-gray-900",children:i.hourlyRate?`${t.currency}${i.hourlyRate}/hr`:"—"})]}),e.jsxs("div",{className:"p-2.5 rounded bg-gray-50 border border-gray-100",children:[e.jsx("span",{className:"text-[10px] text-gray-500 block",children:a("rates.min_charge")}),e.jsx("span",{className:"text-sm font-bold font-mono text-gray-900",children:i.minimumCharge?`${t.currency}${i.minimumCharge}`:"—"})]}),e.jsxs("div",{className:"p-2.5 rounded bg-gray-50 border border-gray-100",children:[e.jsx("span",{className:"text-[10px] text-gray-500 block",children:a("rates.shop_min")}),e.jsx("span",{className:"text-sm font-bold font-mono text-gray-900",children:i.shopMinimum?`${t.currency}${i.shopMinimum}`:"—"})]}),e.jsxs("div",{className:"p-2.5 rounded bg-gray-50 border border-gray-100",children:[e.jsx("span",{className:"text-[10px] text-gray-500 block",children:a("rates.deposit")}),e.jsx("span",{className:"text-sm font-bold font-mono text-gray-900",children:v})]})]})]}),e.jsxs("div",{className:"mb-6",children:[e.jsx("h3",{className:"text-xs font-bold uppercase tracking-wider text-gray-500 mb-2.5",children:a("card.service_rates")}),e.jsx("div",{className:"overflow-hidden border border-gray-200 rounded",children:e.jsxs("table",{className:"w-full text-left text-xs border-collapse",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-gray-50 border-b border-gray-200",children:[e.jsx("th",{className:"py-2 px-3 font-semibold text-gray-700",children:a("table.service")}),e.jsx("th",{className:"py-2 px-3 font-semibold text-gray-700 text-right",children:a("table.your_price")})]})}),e.jsx("tbody",{className:"divide-y divide-gray-200",children:n.map(o=>{const N=c[o.id];return e.jsxs("tr",{children:[e.jsx("td",{className:"py-2 px-3 text-gray-900 font-medium",children:a(o.nameKey)}),e.jsx("td",{className:"py-2 px-3 text-right font-mono text-gray-900",children:N?`${t.currency}${N}`:a("card.price_on_consultation")})]},o.id)})})]})})]}),e.jsx("div",{className:"pt-3 border-t border-gray-200 text-center",children:e.jsx("p",{className:"text-[10px] text-gray-400",children:a("card.footer_notice")})})]})]})},ce=({selectedRegion:i,onSelectRegion:l,currentLanguage:t})=>{const{userPrices:n,studioRates:c,evaluated:m,exportSuccess:p,evaluatedCount:w,alignmentStats:r,handlePriceChange:S,handleRatesChange:g,handleClear:T,handleEvaluate:h,handleExportCSV:x,getPosition:y}=oe(i);t||K();const f=H[i],b=W[i]||[],C=b.filter(d=>d.category==="tattoo"),P=b.filter(d=>d.category==="piercing");return e.jsxs("div",{className:"space-y-6",children:[e.jsxs("div",{className:"bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 md:p-6 shadow-md",role:"region","aria-label":a("region.label"),children:[e.jsxs("div",{className:"flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[var(--border)]",children:[e.jsxs("div",{children:[e.jsx("label",{htmlFor:"region-select",className:"text-xs font-bold uppercase tracking-wider text-[var(--muted)] block mb-1",children:a("region.label")}),e.jsx("div",{className:"relative inline-block",children:e.jsxs("select",{id:"region-select",value:i,onChange:d=>l(d.target.value),"aria-label":`${a("region.label")} (${f.currencyCode})`,className:"bg-[var(--surface-elevated)] border border-[var(--border)] text-[var(--text-heading)] rounded-lg px-3.5 py-2 text-sm font-semibold pr-8 focus:outline-none focus:border-[var(--primary)] transition-colors cursor-pointer",children:[e.jsxs("option",{value:"uk",children:[a("region.uk.name")," (£)"]}),e.jsxs("option",{value:"london",children:[a("region.london.name")," (£)"]}),e.jsxs("option",{value:"us",children:[a("region.us.name")," ($)"]}),e.jsxs("option",{value:"eu",children:[a("region.eu.name")," (€)"]}),e.jsxs("option",{value:"au",children:[a("region.au.name")," (A$)"]}),e.jsxs("option",{value:"cee",children:[a("region.cee.name")," (€)"]}),e.jsxs("option",{value:"ca",children:[a("region.ca.name")," (C$)"]}),e.jsxs("option",{value:"sa",children:[a("region.sa.name")," (R$)"]}),e.jsxs("option",{value:"sea",children:[a("region.sea.name")," (฿)"]})]})}),e.jsx("div",{className:"text-xs text-[var(--muted)] mt-1.5 flex items-center gap-1.5 font-medium",children:a("region.last_reviewed")})]}),e.jsx("div",{className:"flex items-center gap-2",children:e.jsxs("span",{className:"inline-flex items-center px-3 py-1 rounded-md text-xs font-mono font-semibold bg-[var(--surface-elevated)] text-[var(--text)] border border-[var(--border)]","aria-label":`${a("common.currency")}: ${f.currencyCode}`,children:[a("common.currency"),": ",f.currencyCode," (",f.currency,")"]})})]}),e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 text-xs",children:[e.jsxs("div",{className:"bg-[var(--surface-elevated)] rounded-lg p-3 border border-[var(--border)]",children:[e.jsx("span",{className:"font-bold text-[var(--text-heading)] block mb-1",children:a("region.coverage_scope")}),e.jsx("p",{className:"text-[var(--muted)] leading-relaxed",children:a(f.coverageNoteKey)})]}),e.jsxs("div",{className:"bg-[var(--surface-elevated)] rounded-lg p-3 border border-[var(--border)]",children:[e.jsx("span",{className:"font-bold text-[var(--text-heading)] block mb-1",children:a("jewellery.policy_label")}),e.jsx("p",{className:"text-[var(--muted)] leading-relaxed",children:a(f.jewelleryPolicyKey)})]})]})]}),e.jsx(le,{rates:c,onRatesChange:g,regionMeta:f,rows:b,userPrices:n,onPriceChange:S}),e.jsxs("div",{className:"bg-[var(--surface)] border border-[var(--border)] rounded-xl shadow-md overflow-hidden",role:"region","aria-label":a("app.title"),children:[e.jsxs("div",{className:"p-4 md:p-6 border-b border-[var(--border)] flex flex-col sm:flex-row sm:items-center justify-between gap-4",children:[e.jsxs("div",{children:[e.jsxs("h2",{className:"text-lg font-extrabold text-[var(--text-heading)]",children:[a(f.nameKey),": ",a("app.title")]}),e.jsx("p",{className:"text-xs text-[var(--muted)] mt-1",children:a("app.subtitle")}),w>0&&e.jsxs("div",{className:"text-[11px] text-emerald-400 font-medium flex items-center gap-1.5 mt-2","aria-live":"polite",children:[e.jsx("span",{"aria-hidden":"true",children:"💾"}),e.jsx("span",{children:a("calc.saved_notice")})]})]}),e.jsxs("div",{className:"flex flex-wrap items-center gap-2",children:[e.jsxs("button",{type:"button",id:"btn-export-csv",onClick:x,className:"bg-[var(--surface-elevated)] hover:bg-[var(--border)] text-[var(--text)] text-xs font-semibold px-3 py-2 rounded-lg transition-colors cursor-pointer border border-[var(--border)] inline-flex items-center gap-1.5 shadow-xs",title:a("csv.btn_export"),"aria-label":a("csv.btn_export"),children:[e.jsx("span",{"aria-hidden":"true",children:"📥"}),e.jsx("span",{children:a("csv.btn_export")})]}),e.jsx("button",{type:"button",id:"btn-evaluate-rates",onClick:h,className:"bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-4 py-2 rounded-lg transition-colors cursor-pointer shadow-sm","aria-label":a("calc.btn_evaluate"),children:a("calc.btn_evaluate")}),w>0&&e.jsx("button",{type:"button",id:"btn-clear-rates",onClick:T,className:"bg-[var(--surface-elevated)] hover:bg-[var(--border)] text-[var(--muted)] hover:text-[var(--text)] text-xs font-semibold px-3 py-2 rounded-lg transition-colors cursor-pointer border border-[var(--border)]","aria-label":a("calc.btn_clear"),children:a("calc.btn_clear")})]})]}),p&&e.jsxs("div",{className:"bg-emerald-500/15 border-b border-emerald-500/30 px-6 py-2.5 text-xs text-emerald-400 font-medium flex items-center gap-2",role:"status","aria-live":"polite",children:[e.jsx("span",{"aria-hidden":"true",children:"✅"}),e.jsx("span",{children:a("csv.export_success")})]}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"w-full text-left text-xs border-collapse",role:"table","aria-label":`${a(f.nameKey)} ${a("app.title")}`,children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-[var(--surface-elevated)] border-b border-[var(--border)] text-[var(--muted)] font-bold uppercase tracking-wider",children:[e.jsx("th",{scope:"col",className:"py-3 px-4 min-w-[200px]",children:a("table.service")}),e.jsx("th",{scope:"col",className:"py-3 px-4 min-w-[150px]",children:e.jsxs("div",{className:"flex items-center gap-1.5",children:[e.jsx("span",{children:a("table.range")}),e.jsxs(V,{id:"range",title:a("tooltip.range_title"),children:[e.jsxs("div",{children:[e.jsxs("strong",{className:"text-[var(--text-heading)] block font-semibold mb-0.5",children:[a("tooltip.mid_market_label"),":"]}),e.jsx("span",{children:a("tooltip.mid_market_desc")})]}),e.jsxs("div",{className:"pt-1.5 border-t border-[var(--border)]",children:[e.jsxs("strong",{className:"text-[var(--text-heading)] block font-semibold mb-0.5",children:[a("tooltip.premium_label"),":"]}),e.jsx("span",{children:a("tooltip.premium_desc")})]})]})]})}),e.jsx("th",{scope:"col",className:"py-3 px-4 min-w-[120px] text-center",children:e.jsxs("div",{className:"flex items-center justify-center gap-1.5",children:[e.jsx("span",{children:a("table.confidence")}),e.jsx(V,{id:"confidence",title:a("tooltip.confidence_title"),children:e.jsx("p",{children:a("tooltip.confidence_desc")})})]})}),e.jsx("th",{scope:"col",className:"py-3 px-4 min-w-[260px]",children:a("table.basis")}),e.jsx("th",{scope:"col",className:"py-3 px-4 min-w-[130px]",children:a("table.your_price")}),m&&e.jsx("th",{scope:"col",className:"py-3 px-4 min-w-[130px] text-center",children:e.jsxs("div",{className:"flex items-center justify-center gap-1.5",children:[e.jsx("span",{children:a("table.position")}),e.jsx(V,{id:"position",title:a("tooltip.position_title"),children:e.jsx("p",{children:a("tooltip.position_desc")})})]})})]})}),e.jsxs("tbody",{className:"divide-y divide-[var(--border)]",children:[e.jsx("tr",{className:"bg-[var(--surface-elevated)]/60 font-extrabold text-[var(--text-heading)]",children:e.jsx("td",{colSpan:m?6:5,className:"py-2 px-4 text-[11px] uppercase tracking-wider text-[var(--primary)] border-y border-[var(--border)]",children:a("table.category_tattoo")})}),C.map(d=>z(d)),e.jsx("tr",{className:"bg-[var(--surface-elevated)]/60 font-extrabold text-[var(--text-heading)]",children:e.jsx("td",{colSpan:m?6:5,className:"py-2 px-4 text-[11px] uppercase tracking-wider text-[var(--primary)] border-y border-[var(--border)]",children:a("table.category_piercing")})}),P.map(d=>z(d))]})]})})]}),m&&e.jsxs("div",{id:"benchmark-results-view",role:"region","aria-label":a("calc.results_heading"),"aria-live":"polite",className:"bg-[var(--surface)] border border-[var(--border)] rounded-xl p-5 md:p-6 shadow-md space-y-6",children:[e.jsxs("div",{className:"flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[var(--border)]",children:[e.jsxs("div",{children:[e.jsxs("h3",{className:"text-base font-extrabold text-[var(--text-heading)] flex items-center gap-2",children:[e.jsx("span",{"aria-hidden":"true",children:"📊"}),e.jsx("span",{children:a("calc.results_heading")})]}),e.jsx("p",{className:"text-xs text-[var(--muted)] mt-0.5 leading-relaxed",children:a("calc.results_sub")})]}),e.jsxs("div",{className:"inline-flex items-center gap-1.5 px-3 py-1.5 bg-[var(--surface-elevated)] border border-[var(--border)] rounded-lg text-xs font-mono text-[var(--text)]",children:[e.jsx("span",{className:"font-bold text-[var(--primary)]",children:w}),e.jsxs("span",{className:"text-[var(--muted)]",children:["/ ",b.length," ",a("table.service")]})]})]}),e.jsxs("div",{className:"grid grid-cols-1 sm:grid-cols-3 gap-3 text-center",children:[e.jsxs("div",{className:"bg-[var(--surface-elevated)] border border-[var(--border)] p-3.5 rounded-lg",children:[e.jsx("span",{className:"block text-2xl font-extrabold text-red-400 font-mono",children:r.belowCount}),e.jsx("span",{className:"text-xs text-[var(--muted)] font-medium mt-0.5 block",children:a("pos.below")})]}),e.jsxs("div",{className:"bg-[var(--surface-elevated)] border border-[var(--border)] p-3.5 rounded-lg",children:[e.jsx("span",{className:"block text-2xl font-extrabold text-emerald-400 font-mono",children:r.marketCount}),e.jsx("span",{className:"text-xs text-[var(--muted)] font-medium mt-0.5 block",children:a("pos.market")})]}),e.jsxs("div",{className:"bg-[var(--surface-elevated)] border border-[var(--border)] p-3.5 rounded-lg",children:[e.jsx("span",{className:"block text-2xl font-extrabold text-blue-400 font-mono",children:r.premiumCount}),e.jsx("span",{className:"text-xs text-[var(--muted)] font-medium mt-0.5 block",children:a("pos.premium")})]})]}),e.jsx(ne,{rows:b,userPrices:n,currency:f.currency,currencyCode:f.currencyCode})]}),e.jsxs("div",{className:"bg-[var(--surface-elevated)] border border-[var(--border)] rounded-lg p-4 text-xs text-[var(--muted)] leading-relaxed",children:[e.jsxs("strong",{className:"text-[var(--text-heading)]",children:[a("table.notes_header"),": "]}),a("app.footnote")]})]});function z(d){var v,k,A,D;const E=d.confidence==="GAP"||d.min===null||d.max===null,s=y(d),_=E?a("conf.no_data"):`${d.currency}${(v=d.min)==null?void 0:v.toLocaleString()} - ${d.currency}${(k=d.max)==null?void 0:k.toLocaleString()}`;return e.jsxs("tr",{className:"hover:bg-[var(--surface-elevated)]/40 transition-colors",children:[e.jsxs("td",{className:"py-3 px-4 align-top",children:[e.jsx("div",{className:"font-bold text-[var(--text-heading)]",children:a(d.nameKey)}),e.jsx("div",{className:"text-[11px] text-[var(--muted)] leading-snug mt-0.5",children:a(d.subKey)})]}),e.jsx("td",{className:"py-3 px-4 align-top font-mono",children:E?e.jsx("span",{className:"italic text-[var(--muted)] font-sans font-medium text-[11px]",children:a("conf.no_data")}):e.jsxs("span",{className:"font-bold text-[var(--text-heading)]",children:[d.currency,(A=d.min)==null?void 0:A.toLocaleString()," – ",d.currency,(D=d.max)==null?void 0:D.toLocaleString()]})}),e.jsxs("td",{className:"py-3 px-4 align-top text-center",children:[d.confidence==="INDICATIVE"&&e.jsxs("span",{title:a("conf.indicative_desc"),className:"inline-block px-2 py-0.5 rounded text-[10px] font-mono font-bold tracking-wider uppercase border border-dashed border-amber-500 text-amber-400 bg-amber-500/10 dark:text-amber-300",children:["[",a("conf.indicative"),"]"]}),d.confidence==="GAP"&&e.jsxs("span",{title:a("conf.gap_desc"),className:"inline-block px-2 py-0.5 rounded text-[10px] font-mono font-bold tracking-wider uppercase border border-dotted border-[var(--border)] text-[var(--muted)] bg-[var(--surface-elevated)]",children:["[",a("conf.gap"),"]"]})]}),e.jsxs("td",{className:"py-3 px-4 align-top text-[11px] leading-relaxed text-[var(--muted)]",children:[e.jsx("div",{children:a(d.basisKey)}),d.jewelleryNoteKey&&e.jsxs("div",{className:"mt-1 text-[10px] font-medium text-[var(--primary)] flex items-center gap-1",children:[e.jsx("span",{className:"font-bold",children:"•"})," ",a(d.jewelleryNoteKey)]})]}),e.jsx("td",{className:"py-3 px-4 align-top",children:e.jsxs("div",{className:"flex items-center gap-1",children:[e.jsx("span",{className:"text-xs text-[var(--muted)] font-mono","aria-hidden":"true",children:f.currency}),e.jsx("input",{type:"text",id:`input-rate-${d.id}`,inputMode:"decimal",autoComplete:"off",placeholder:"0","aria-label":`${a(d.nameKey)} (${a(d.subKey)}) - ${a("table.your_rate")} in ${f.currencyCode}`,"aria-describedby":`rate-range-desc-${d.id}`,value:n[d.id]||"",onChange:I=>S(d.id,I.target.value),className:"w-20 bg-[var(--surface-elevated)] border border-[var(--border)] rounded px-2 py-1 text-xs text-[var(--text)] font-mono focus:outline-none focus:border-[var(--primary)] transition-colors"}),e.jsxs("span",{id:`rate-range-desc-${d.id}`,className:"sr-only",children:[a("table.range"),": ",_]})]})}),m&&e.jsxs("td",{className:"py-3 px-4 align-top text-center",children:[s.position==="below"&&e.jsx("span",{className:"inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-red-500/10 text-red-400 border border-red-500/30","aria-label":`${a("table.position")}: ${s.label}${s.diffPercent!==null?` (${s.diffPercent}%)`:""}`,children:s.label}),s.position==="market"&&e.jsx("span",{className:"inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/30","aria-label":`${a("table.position")}: ${s.label}`,children:s.label}),s.position==="premium"&&e.jsx("span",{className:"inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-blue-500/10 text-blue-400 border border-blue-500/30","aria-label":`${a("table.position")}: ${s.label}${s.diffPercent!==null?` (+${s.diffPercent}%)`:""}`,children:s.label}),s.position==="none"&&e.jsx("span",{className:"text-[10px] text-[var(--muted)]","aria-label":`${a("table.position")}: ${a("pos.none")}`,children:"N/A"})]})]},d.id)}},q={en:{"README.md":`# Studio Pricing Benchmark (English)
+
+> Professional reference utility published by **Poli International** for tattoo artists, body piercers, and studio owners. Available in 7 languages.
+
+**[Languages: EN | DE | FR | ES | IT | PT | NL]** &bull; **[Network: Zero External Requests]** &bull; **[License: MIT]**
+
+---
+
+## Language Editions / Traductions / Übersetzungen / Traducciones / Traduzioni / Vertalingen
+
+- [English (en)](docs/en/README.md)
+- [Deutsch (de)](docs/de/README.md)
+- [Français (fr)](docs/fr/README.md)
+- [Español (es)](docs/es/README.md)
+- [Italiano (it)](docs/it/README.md)
+- [Português (pt)](docs/pt/README.md)
+- [Nederlands (nl)](docs/nl/README.md)
+
+---
+
+## Overview
+
+The **Studio Pricing Benchmark** is a zero-network-request, offline-capable reference tool engineered for commercial tattoo and body piercing studios. It allows studio owners and artists to systematically benchmark their rate cards across **nine global geographic markets**:
+
+1. **UK (National Average)**: Rates outside Greater London across England, Scotland, and Wales.
+2. **London / SE England**: Metropolitan commercial studios reflecting higher fixed operating overheads.
+3. **United States (National Average)**: Average across urban and suburban commercial studios.
+4. **Western Europe**: Metropolitan studios across France, Germany, Netherlands, Belgium, and Austria in EUR (€).
+5. **Australia**: State capital cities (Sydney, Melbourne, Brisbane) and regional studios in AUD (A$).
+6. **Central & Eastern Europe**: Urban studios in Poland, Czechia, Hungary, and Romania indexed in EUR (€).
+7. **Canada** : Urban studios in Ontario, British Columbia, and Quebec in CAD (C$).
+8. **South America**: Data rooted in custom studios in São Paulo, Rio de Janeiro (Brazil), and Buenos Aires (Argentina) in BRL (R$).
+9. **South East Asia**: Professional studio hubs in Thailand (Bangkok, Phuket, Chiang Mai) and Bali (Indonesia) in THB (฿).
+
+---
+
+## Key Features
+
+- **10 Core Industry Procedures**: 5 tattoo categories (Small, Half-Day, Full-Day, Hourly, Minimum) and 5 piercing categories (Lobe Pair, Nostril, Helix, Navel, Septum).
+- **Explicit Confidence Indicators**:
+  - \`[INDICATIVE]\`: Drawn directly from publicly listed studio price menus.
+  - \`[INDICATIVE]\`: Derived from regional cost of living and published trade reports.
+  - \`[GAP / NO DATA]\`: Intentionally left blank where reliable standardized listings do not exist.
+- **Starter Jewellery Policies**: Clear documentation of regional norms (e.g. UK/EU/AU/SEA inclusion vs. US/Canada separate charging).
+- **Interactive Price Evaluator**: Enter your studio's rates to analyze alignment (Below Market, Market Rate, Premium).
+- **Offline-First & Zero Network Requests**: Zero external scripts, remote fonts, or telemetry. Operates entirely in client memory.
+- **7 Fully Localized Languages**: EN, DE, FR, ES, IT, PT, NL with 100% key parity.
+
+---
+
+## Embedding in Studio Websites
+
+Embed the self-contained widget into your studio website or booking portal:
+
+\`\`\`html
+<iframe
+  src="/tools/studio-pricing-benchmark/index.html"
+  width="100%"
+  height="850"
+  frameborder="0"
+  style="border-radius:12px; border:1px solid var(--border); overflow:hidden;"
+  title="Studio Pricing Benchmark">
+</iframe>
+\`\`\`
+
+The iframe automatically detects dark/light theme changes from the parent container via \`postMessage\` (\`poli-theme\`) or \`localStorage\` (\`poli-dark-mode\`).
+
+---
+
+## Biomedical Material Standards
+
+All starter jewellery references adhere strictly to established biomedical specifications:
+- **ASTM F-136**: Standard Specification for Wrought Titanium-6Aluminum-4Vanadium ELI for Surgical Implant Applications.
+- **ASTM F-138**: Standard Specification for Wrought 18Chromium-14Nickel-2.5Molybdenum Stainless Steel for Surgical Implants.
+- **EN 1811**: Reference test method for release of nickel from all post assemblies inserted into pierced parts of the human body.
+- **ISO 10993**: Biological evaluation of medical devices.
+- **EU REACH Annex XVII**: Nickel release restrictions.
+
+---
+
+## Privacy & Data Sovereignty
+
+All calculations and entered rates remain strictly in the local browser session. No data is transmitted to remote servers.
+
+---
+
+## Documentation
+
+- [Studio User Guide](docs/en/USER-GUIDE.md)
+- [Technical Documentation](docs/en/TECHNICAL-DOCS.md)
+- [Contributing Guide](docs/en/CONTRIBUTING.md)
+
+---
+
+## License
+
+Published under the MIT License by Poli International.
+`,"USER-GUIDE.md":`# Studio Pricing Benchmark: User Guide (V2)
+
+## Overview
+
+The Studio Pricing Benchmark lets a tattoo or piercing studio owner place their own prices against typical price ranges in nine markets, and settle on the numbers they want to charge. It shows ranges, never a "correct" price, and it gives no advice on what you should charge.
+
+Everything runs in your browser. Nothing you enter is sent anywhere.
+
+## 1. Choose a Region
+
+Pick one of nine markets: UK (national average), London / South East England, US (national average), Western Europe, Australia, Central & Eastern Europe, Canada, South America, and South East Asia. Prices switch to that region's currency.
+
+Each region shows a short coverage note, explaining what the region's figures represent, and a **Jewellery Inclusions** note, explaining whether piercing prices typically include the starter jewellery.
+
+## 2. Where the Figures Come From
+
+Every row carries a confidence label:
+
+- **INDICATIVE**: an editorial estimate compiled by Poli International from publicly listed prices. It is not survey data and has not been independently verified.
+- **GAP**: no reliable figure exists, so the row is left blank rather than guessed.
+
+Each row also has a short basis note describing what kind of price it is. Figures were last reviewed in September 2026. Premium specialists and fine-line artists routinely price above these ranges.
+
+## 3. Compare Your Service Prices
+
+The table lists tattoo and piercing services, from a small tattoo and a full day's sitting to lobe, nostril, helix, navel and septum piercings, each with its low-to-high range.
+
+1. Type your own price for any service in **Your Price**.
+2. Click **Compare My Prices**.
+3. Each service is placed as **Below Market** (under the range), **Market Rate** (within it) or **Premium** (above it). A service with no data shows **Data Gap**. A summary counts how many of your services fall in each position.
+
+**Clear All Rates** empties every price you entered.
+
+## 4. Your Rates
+
+Enter the four numbers that define your studio:
+
+- **Hourly rate**
+- **Minimum charge**
+- **Shop minimum**
+- **Deposit percentage**
+
+Choose a **studio tier**: Apprentice, Resident Artist, Established Artist, or Specialist / Guest Artist. The tier only adds a description of that kind of artist; it does not change any figure.
+
+The panel shows whether your hourly rate and your shop minimum sit below, within or above the region's range.
+
+## 5. What-If Rate Calculator
+
+Move the slider from **-20%** to **+30%** to adjust your hourly rate, and set the length of a typical booking in hours (2 by default). The calculator shows:
+
+- the adjusted hourly rate
+- the price of that booking
+- the deposit due on it, at your deposit percentage
+
+It is arithmetic on your own numbers only. It does not predict what the market will do.
+
+## 6. Your Numbers (Settings Handoff)
+
+A plain-text block lists your hourly rate, minimum charge, shop minimum, deposit percentage and tier, ready to copy into your booking system or studio settings with the **Copy** button. It is labelled as your decision, not a recommendation from the tool. A field you have left blank shows a dash, never a default figure.
+
+## 7. Printable Rate Card
+
+Print a one-page Studio Rate Card (A4 or US Letter) from your own numbers and service prices, dated today. The card carries only your figures, not the regional ranges.
+
+## 8. Visual Comparison Chart
+
+After you compare, a bar chart plots your price for each service beside the range's low and high values. Filter it to **All Procedures**, **Tattoo Only** or **Piercing Only**.
+
+## 9. Export CSV
+
+**Export CSV** downloads the full comparison for a spreadsheet: region, service, currency, range, confidence, basis note, jewellery policy, your price and its position.
+
+## 10. Saving, Languages and Embedding
+
+- Your prices and rates are saved in your own browser, so they are still there next time. Clearing your browser's site data removes them.
+- The interface is available in English, French, German, Spanish, Italian, Dutch and Portuguese.
+- The **Embed** tab gives a code snippet to place the tool on your own website.
+
+## 11. Important Notice
+
+This tool compares prices. It is not financial or business advice, and the ranges are editorial estimates, not a survey. Prices vary widely with experience, location, style and demand.
+`,"TECHNICAL-DOCS.md":`# Technical Documentation (English)
+
+## Architecture & System Design
+
+The **Studio Pricing Benchmark** is engineered as an offline-first, client-rendered web application with zero external runtime dependencies.
+
+### Technical Stack
+- **Framework**: React 18+ with TypeScript & Vite
+- **Styling**: Tailwind CSS with tokenized CSS custom properties (\`--surface\`, \`--text\`, \`--border\`, \`--primary\`)
+- **Accessibility**: WCAG AA contrast ratio compliance (≥ 4.5:1) in both light and dark themes
+- **Standalone Export**: Self-contained vanilla JS widget with zero external network dependencies
+
+---
+
+## Internationalization Architecture
+
+The system supports **7 European & International Languages**:
+- English (\`en\`)
+- German (\`de\`)
+- French (\`fr\`)
+- Spanish (\`es\`)
+- Italian (\`it\`)
+- Portuguese (\`pt\`)
+- Dutch (\`nl\`)
+
+### Synchronization Rule
+Every language dictionary maintains an identical key set (currently 285 keys). The dictionary is bundled synchronously in \`src/i18n.ts\` and \`public/i18n.js\` ensuring that components mount with fully resolved strings. Both React state and DOM \`data-i18n\` attributes are updated synchronously upon language selection.
+
+---
+
+## Data Schemas
+
+\`\`\`typescript
+export type RegionId = 'uk' | 'london' | 'us' | 'eu' | 'au' | 'cee' | 'ca' | 'sa' | 'sea';
+
+export type ConfidenceMarker = 'INDICATIVE' | 'GAP';
+
+export interface BenchmarkRow {
+  id: string;
+  category: 'tattoo' | 'piercing';
+  nameKey: string;
+  subKey: string;
+  min: number | null;
+  max: number | null;
+  currency: string;
+  confidence: ConfidenceMarker;
+  basisKey: string;
+}
+
+export interface RegionMetadata {
+  id: RegionId;
+  nameKey: string;
+  currency: string;
+  currencyCode: string;
+  coverageNoteKey: string;
+  jewelleryPolicyKey: string;
+}
+\`\`\`
+
+---
+
+## Embedding & Iframe Communication
+
+The tool can be embedded in third-party host sites using an \`<iframe>\`. The embedded widget listens for theme change events:
+
+\`\`\`javascript
+window.addEventListener('message', function(event) {
+  if (event.data && event.data.type === 'poli-theme') {
+    document.documentElement.classList.toggle('dark', event.data.theme === 'dark');
+  }
+});
+\`\`\`
+
+---
+
+## Privacy & Security
+
+- Zero third-party network requests.
+- Content Security Policy: \`script-src 'self'\`.
+- In-memory data evaluation: user entered rates are never transmitted to any server.
+`,"CONTRIBUTING.md":`# Contributing Guide (English)
+
+Thank you for contributing to the **Studio Pricing Benchmark** by Poli International.
+
+## Contribution Guidelines
+
+### 1. Data Integrity & Rate Submissions
+- When submitting price updates for existing or new regions, supply verifiable evidence: studio price lists, published rate cards, or regional trade associations.
+- Never submit guessed or fabricated pricing. If reliable data is not available, mark as data gap.
+- All piercing references must clearly specify whether starter jewellery is included or separate.
+
+### 2. Standards Compliance
+- Cite only recognized standards by exact designation:
+  - **ASTM F-136**
+  - **ASTM F-138**
+  - **EN 1811**
+  - **ISO 10993**
+  - **EU REACH Annex XVII**
+- Never invent certifying bodies or credentials.
+
+### 3. Internationalization (i18n) Rules
+- When adding a new key, it MUST be added to all 7 languages simultaneously:
+  - English (\`en\`)
+  - German (\`de\`)
+  - French (\`fr\`)
+  - Spanish (\`es\`)
+  - Italian (\`it\`)
+  - Portuguese (\`pt\`)
+  - Dutch (\`nl\`)
+- Ensure all token placeholders match across languages (\`{count}\`, \`{total}\`).
+
+### 4. Zero External Dependencies
+- Do not add remote external script links, remote fonts, or analytics scripts.
+- Ensure all CSS custom properties maintain WCAG AA contrast (≥ 4.5:1) in both themes.
+`},de:{"README.md":`# Studio-Preise Benchmark (Deutsch)
+
+> Professional reference utility published by **Poli International** for tattoo artists, body piercers, and studio owners. Available in 7 languages.
+
+**[Languages: EN | DE | FR | ES | IT | PT | NL]** &bull; **[Network: Zero External Requests]** &bull; **[License: MIT]**
+
+---
+
+## Language Editions / Traductions / Übersetzungen / Traducciones / Traduzioni / Vertalingen
+
+- [English (en)](docs/en/README.md)
+- [Deutsch (de)](docs/de/README.md)
+- [Français (fr)](docs/fr/README.md)
+- [Español (es)](docs/es/README.md)
+- [Italiano (it)](docs/it/README.md)
+- [Português (pt)](docs/pt/README.md)
+- [Nederlands (nl)](docs/nl/README.md)
+
+---
+
+## Overview
+
+The **Studio Pricing Benchmark** is a zero-network-request, offline-capable reference tool engineered for commercial tattoo and body piercing studios. It allows studio owners and artists to systematically benchmark their rate cards across **nine global geographic markets**:
+
+1. **UK (National Average)**: Rates outside Greater London across England, Scotland, and Wales.
+2. **London / SE England**: Metropolitan commercial studios reflecting higher fixed operating overheads.
+3. **United States (National Average)**: Average across urban and suburban commercial studios.
+4. **Western Europe**: Metropolitan studios across France, Germany, Netherlands, Belgium, and Austria in EUR (€).
+5. **Australia**: State capital cities (Sydney, Melbourne, Brisbane) and regional studios in AUD (A$).
+6. **Central & Eastern Europe**: Urban studios in Poland, Czechia, Hungary, and Romania indexed in EUR (€).
+7. **Canada** : Urban studios in Ontario, British Columbia, and Quebec in CAD (C$).
+8. **South America**: Data rooted in custom studios in São Paulo, Rio de Janeiro (Brazil), and Buenos Aires (Argentina) in BRL (R$).
+9. **South East Asia**: Professional studio hubs in Thailand (Bangkok, Phuket, Chiang Mai) and Bali (Indonesia) in THB (฿).
+
+---
+
+## Key Features
+
+- **10 Core Industry Procedures**: 5 tattoo categories (Small, Half-Day, Full-Day, Hourly, Minimum) and 5 piercing categories (Lobe Pair, Nostril, Helix, Navel, Septum).
+- **Explicit Confidence Indicators**:
+  - \`[INDICATIVE]\`: Drawn directly from publicly listed studio price menus.
+  - \`[INDICATIVE]\`: Derived from regional cost of living and published trade reports.
+  - \`[GAP / NO DATA]\`: Intentionally left blank where reliable standardized listings do not exist.
+- **Starter Jewellery Policies**: Clear documentation of regional norms (e.g. UK/EU/AU/SEA inclusion vs. US/Canada separate charging).
+- **Interactive Price Evaluator**: Enter your studio's rates to analyze alignment (Below Market, Market Rate, Premium).
+- **Offline-First & Zero Network Requests**: Zero external scripts, remote fonts, or telemetry. Operates entirely in client memory.
+- **7 Fully Localized Languages**: EN, DE, FR, ES, IT, PT, NL with 100% key parity.
+
+---
+
+## Embedding in Studio Websites
+
+Embed the self-contained widget into your studio website or booking portal:
+
+\`\`\`html
+<iframe
+  src="/tools/studio-pricing-benchmark/index.html"
+  width="100%"
+  height="850"
+  frameborder="0"
+  style="border-radius:12px; border:1px solid var(--border); overflow:hidden;"
+  title="Studio Pricing Benchmark">
+</iframe>
+\`\`\`
+
+The iframe automatically detects dark/light theme changes from the parent container via \`postMessage\` (\`poli-theme\`) or \`localStorage\` (\`poli-dark-mode\`).
+
+---
+
+## Biomedical Material Standards
+
+All starter jewellery references adhere strictly to established biomedical specifications:
+- **ASTM F-136**: Standard Specification for Wrought Titanium-6Aluminum-4Vanadium ELI for Surgical Implant Applications.
+- **ASTM F-138**: Standard Specification for Wrought 18Chromium-14Nickel-2.5Molybdenum Stainless Steel for Surgical Implants.
+- **EN 1811**: Reference test method for release of nickel from all post assemblies inserted into pierced parts of the human body.
+- **ISO 10993**: Biological evaluation of medical devices.
+- **EU REACH Annex XVII**: Nickel release restrictions.
+
+---
+
+## Privacy & Data Sovereignty
+
+All calculations and entered rates remain strictly in the local browser session. No data is transmitted to remote servers.
+
+---
+
+## Documentation
+
+- [Studio User Guide](docs/de/USER-GUIDE.md)
+- [Technical Documentation](docs/de/TECHNICAL-DOCS.md)
+- [Contributing Guide](docs/de/CONTRIBUTING.md)
+
+---
+
+## License
+
+Published under the MIT License by Poli International.
+`,"USER-GUIDE.md":`# Studio Pricing Benchmark: User Guide (V2)
+
+## Overview
+
+The Studio Pricing Benchmark lets a tattoo or piercing studio owner place their own prices against typical price ranges in nine markets, and settle on the numbers they want to charge. It shows ranges, never a "correct" price, and it gives no advice on what you should charge.
+
+Everything runs in your browser. Nothing you enter is sent anywhere.
+
+## 1. Choose a Region
+
+Pick one of nine markets: UK (national average), London / South East England, US (national average), Western Europe, Australia, Central & Eastern Europe, Canada, South America, and South East Asia. Prices switch to that region's currency.
+
+Each region shows a short coverage note, explaining what the region's figures represent, and a **Jewellery Inclusions** note, explaining whether piercing prices typically include the starter jewellery.
+
+## 2. Where the Figures Come From
+
+Every row carries a confidence label:
+
+- **INDICATIVE**: an editorial estimate compiled by Poli International from publicly listed prices. It is not survey data and has not been independently verified.
+- **GAP**: no reliable figure exists, so the row is left blank rather than guessed.
+
+Each row also has a short basis note describing what kind of price it is. Figures were last reviewed in September 2026. Premium specialists and fine-line artists routinely price above these ranges.
+
+## 3. Compare Your Service Prices
+
+The table lists tattoo and piercing services, from a small tattoo and a full day's sitting to lobe, nostril, helix, navel and septum piercings, each with its low-to-high range.
+
+1. Type your own price for any service in **Your Price**.
+2. Click **Compare My Prices**.
+3. Each service is placed as **Below Market** (under the range), **Market Rate** (within it) or **Premium** (above it). A service with no data shows **Data Gap**. A summary counts how many of your services fall in each position.
+
+**Clear All Rates** empties every price you entered.
+
+## 4. Your Rates
+
+Enter the four numbers that define your studio:
+
+- **Hourly rate**
+- **Minimum charge**
+- **Shop minimum**
+- **Deposit percentage**
+
+Choose a **studio tier**: Apprentice, Resident Artist, Established Artist, or Specialist / Guest Artist. The tier only adds a description of that kind of artist; it does not change any figure.
+
+The panel shows whether your hourly rate and your shop minimum sit below, within or above the region's range.
+
+## 5. What-If Rate Calculator
+
+Move the slider from **-20%** to **+30%** to adjust your hourly rate, and set the length of a typical booking in hours (2 by default). The calculator shows:
+
+- the adjusted hourly rate
+- the price of that booking
+- the deposit due on it, at your deposit percentage
+
+It is arithmetic on your own numbers only. It does not predict what the market will do.
+
+## 6. Your Numbers (Settings Handoff)
+
+A plain-text block lists your hourly rate, minimum charge, shop minimum, deposit percentage and tier, ready to copy into your booking system or studio settings with the **Copy** button. It is labelled as your decision, not a recommendation from the tool. A field you have left blank shows a dash, never a default figure.
+
+## 7. Printable Rate Card
+
+Print a one-page Studio Rate Card (A4 or US Letter) from your own numbers and service prices, dated today. The card carries only your figures, not the regional ranges.
+
+## 8. Visual Comparison Chart
+
+After you compare, a bar chart plots your price for each service beside the range's low and high values. Filter it to **All Procedures**, **Tattoo Only** or **Piercing Only**.
+
+## 9. Export CSV
+
+**Export CSV** downloads the full comparison for a spreadsheet: region, service, currency, range, confidence, basis note, jewellery policy, your price and its position.
+
+## 10. Saving, Languages and Embedding
+
+- Your prices and rates are saved in your own browser, so they are still there next time. Clearing your browser's site data removes them.
+- The interface is available in English, French, German, Spanish, Italian, Dutch and Portuguese.
+- The **Embed** tab gives a code snippet to place the tool on your own website.
+
+## 11. Important Notice
+
+This tool compares prices. It is not financial or business advice, and the ranges are editorial estimates, not a survey. Prices vary widely with experience, location, style and demand.
+`,"TECHNICAL-DOCS.md":`# Technische Dokumentation (Deutsch)
+
+## Architecture & System Design
+
+The **Studio Pricing Benchmark** is engineered as an offline-first, client-rendered web application with zero external runtime dependencies.
+
+### Technical Stack
+- **Framework**: React 18+ with TypeScript & Vite
+- **Styling**: Tailwind CSS with tokenized CSS custom properties (\`--surface\`, \`--text\`, \`--border\`, \`--primary\`)
+- **Accessibility**: WCAG AA contrast ratio compliance (≥ 4.5:1) in both light and dark themes
+- **Standalone Export**: Self-contained vanilla JS widget with zero external network dependencies
+
+---
+
+## Internationalization Architecture
+
+The system supports **7 European & International Languages**:
+- English (\`en\`)
+- German (\`de\`)
+- French (\`fr\`)
+- Spanish (\`es\`)
+- Italian (\`it\`)
+- Portuguese (\`pt\`)
+- Dutch (\`nl\`)
+
+### Synchronization Rule
+Every language dictionary maintains an identical key set (currently 285 keys). The dictionary is bundled synchronously in \`src/i18n.ts\` and \`public/i18n.js\` ensuring that components mount with fully resolved strings. Both React state and DOM \`data-i18n\` attributes are updated synchronously upon language selection.
+
+---
+
+## Data Schemas
+
+\`\`\`typescript
+export type RegionId = 'uk' | 'london' | 'us' | 'eu' | 'au' | 'cee' | 'ca' | 'sa' | 'sea';
+
+export type ConfidenceMarker = 'INDICATIVE' | 'GAP';
+
+export interface BenchmarkRow {
+  id: string;
+  category: 'tattoo' | 'piercing';
+  nameKey: string;
+  subKey: string;
+  min: number | null;
+  max: number | null;
+  currency: string;
+  confidence: ConfidenceMarker;
+  basisKey: string;
+}
+
+export interface RegionMetadata {
+  id: RegionId;
+  nameKey: string;
+  currency: string;
+  currencyCode: string;
+  coverageNoteKey: string;
+  jewelleryPolicyKey: string;
+}
+\`\`\`
+
+---
+
+## Embedding & Iframe Communication
+
+The tool can be embedded in third-party host sites using an \`<iframe>\`. The embedded widget listens for theme change events:
+
+\`\`\`javascript
+window.addEventListener('message', function(event) {
+  if (event.data && event.data.type === 'poli-theme') {
+    document.documentElement.classList.toggle('dark', event.data.theme === 'dark');
+  }
+});
+\`\`\`
+
+---
+
+## Privacy & Security
+
+- Zero third-party network requests.
+- Content Security Policy: \`script-src 'self'\`.
+- In-memory data evaluation: user entered rates are never transmitted to any server.
+`,"CONTRIBUTING.md":`# Leitfaden für Mitwirkende (Deutsch)
+
+Thank you for contributing to the **Studio Pricing Benchmark** by Poli International.
+
+## Contribution Guidelines
+
+### 1. Data Integrity & Rate Submissions
+- When submitting price updates for existing or new regions, supply verifiable evidence: studio price lists, published rate cards, or regional trade associations.
+- Never submit guessed or fabricated pricing. If reliable data is not available, mark as data gap.
+- All piercing references must clearly specify whether starter jewellery is included or separate.
+
+### 2. Standards Compliance
+- Cite only recognized standards by exact designation:
+  - **ASTM F-136**
+  - **ASTM F-138**
+  - **EN 1811**
+  - **ISO 10993**
+  - **EU REACH Annex XVII**
+- Never invent certifying bodies or credentials.
+
+### 3. Internationalization (i18n) Rules
+- When adding a new key, it MUST be added to all 7 languages simultaneously:
+  - English (\`en\`)
+  - German (\`de\`)
+  - French (\`fr\`)
+  - Spanish (\`es\`)
+  - Italian (\`it\`)
+  - Portuguese (\`pt\`)
+  - Dutch (\`nl\`)
+- Ensure all token placeholders match across languages (\`{count}\`, \`{total}\`).
+
+### 4. Zero External Dependencies
+- Do not add remote external script links, remote fonts, or analytics scripts.
+- Ensure all CSS custom properties maintain WCAG AA contrast (≥ 4.5:1) in both themes.
+`},fr:{"README.md":`# Baromètre des Tarifs de Studio (Français)
+
+> Professional reference utility published by **Poli International** for tattoo artists, body piercers, and studio owners. Available in 7 languages.
+
+**[Languages: EN | DE | FR | ES | IT | PT | NL]** &bull; **[Network: Zero External Requests]** &bull; **[License: MIT]**
+
+---
+
+## Language Editions / Traductions / Übersetzungen / Traducciones / Traduzioni / Vertalingen
+
+- [English (en)](docs/en/README.md)
+- [Deutsch (de)](docs/de/README.md)
+- [Français (fr)](docs/fr/README.md)
+- [Español (es)](docs/es/README.md)
+- [Italiano (it)](docs/it/README.md)
+- [Português (pt)](docs/pt/README.md)
+- [Nederlands (nl)](docs/nl/README.md)
+
+---
+
+## Overview
+
+The **Studio Pricing Benchmark** is a zero-network-request, offline-capable reference tool engineered for commercial tattoo and body piercing studios. It allows studio owners and artists to systematically benchmark their rate cards across **nine global geographic markets**:
+
+1. **UK (National Average)**: Rates outside Greater London across England, Scotland, and Wales.
+2. **London / SE England**: Metropolitan commercial studios reflecting higher fixed operating overheads.
+3. **United States (National Average)**: Average across urban and suburban commercial studios.
+4. **Western Europe**: Metropolitan studios across France, Germany, Netherlands, Belgium, and Austria in EUR (€).
+5. **Australia**: State capital cities (Sydney, Melbourne, Brisbane) and regional studios in AUD (A$).
+6. **Central & Eastern Europe**: Urban studios in Poland, Czechia, Hungary, and Romania indexed in EUR (€).
+7. **Canada** : Urban studios in Ontario, British Columbia, and Quebec in CAD (C$).
+8. **South America**: Data rooted in custom studios in São Paulo, Rio de Janeiro (Brazil), and Buenos Aires (Argentina) in BRL (R$).
+9. **South East Asia**: Professional studio hubs in Thailand (Bangkok, Phuket, Chiang Mai) and Bali (Indonesia) in THB (฿).
+
+---
+
+## Key Features
+
+- **10 Core Industry Procedures**: 5 tattoo categories (Small, Half-Day, Full-Day, Hourly, Minimum) and 5 piercing categories (Lobe Pair, Nostril, Helix, Navel, Septum).
+- **Explicit Confidence Indicators**:
+  - \`[INDICATIVE]\`: Drawn directly from publicly listed studio price menus.
+  - \`[INDICATIVE]\`: Derived from regional cost of living and published trade reports.
+  - \`[GAP / NO DATA]\`: Intentionally left blank where reliable standardized listings do not exist.
+- **Starter Jewellery Policies**: Clear documentation of regional norms (e.g. UK/EU/AU/SEA inclusion vs. US/Canada separate charging).
+- **Interactive Price Evaluator**: Enter your studio's rates to analyze alignment (Below Market, Market Rate, Premium).
+- **Offline-First & Zero Network Requests**: Zero external scripts, remote fonts, or telemetry. Operates entirely in client memory.
+- **7 Fully Localized Languages**: EN, DE, FR, ES, IT, PT, NL with 100% key parity.
+
+---
+
+## Embedding in Studio Websites
+
+Embed the self-contained widget into your studio website or booking portal:
+
+\`\`\`html
+<iframe
+  src="/tools/studio-pricing-benchmark/index.html"
+  width="100%"
+  height="850"
+  frameborder="0"
+  style="border-radius:12px; border:1px solid var(--border); overflow:hidden;"
+  title="Studio Pricing Benchmark">
+</iframe>
+\`\`\`
+
+The iframe automatically detects dark/light theme changes from the parent container via \`postMessage\` (\`poli-theme\`) or \`localStorage\` (\`poli-dark-mode\`).
+
+---
+
+## Biomedical Material Standards
+
+All starter jewellery references adhere strictly to established biomedical specifications:
+- **ASTM F-136**: Standard Specification for Wrought Titanium-6Aluminum-4Vanadium ELI for Surgical Implant Applications.
+- **ASTM F-138**: Standard Specification for Wrought 18Chromium-14Nickel-2.5Molybdenum Stainless Steel for Surgical Implants.
+- **EN 1811**: Reference test method for release of nickel from all post assemblies inserted into pierced parts of the human body.
+- **ISO 10993**: Biological evaluation of medical devices.
+- **EU REACH Annex XVII**: Nickel release restrictions.
+
+---
+
+## Privacy & Data Sovereignty
+
+All calculations and entered rates remain strictly in the local browser session. No data is transmitted to remote servers.
+
+---
+
+## Documentation
+
+- [Studio User Guide](docs/fr/USER-GUIDE.md)
+- [Technical Documentation](docs/fr/TECHNICAL-DOCS.md)
+- [Contributing Guide](docs/fr/CONTRIBUTING.md)
+
+---
+
+## License
+
+Published under the MIT License by Poli International.
+`,"USER-GUIDE.md":`# Studio Pricing Benchmark: User Guide (V2)
+
+## Overview
+
+The Studio Pricing Benchmark lets a tattoo or piercing studio owner place their own prices against typical price ranges in nine markets, and settle on the numbers they want to charge. It shows ranges, never a "correct" price, and it gives no advice on what you should charge.
+
+Everything runs in your browser. Nothing you enter is sent anywhere.
+
+## 1. Choose a Region
+
+Pick one of nine markets: UK (national average), London / South East England, US (national average), Western Europe, Australia, Central & Eastern Europe, Canada, South America, and South East Asia. Prices switch to that region's currency.
+
+Each region shows a short coverage note, explaining what the region's figures represent, and a **Jewellery Inclusions** note, explaining whether piercing prices typically include the starter jewellery.
+
+## 2. Where the Figures Come From
+
+Every row carries a confidence label:
+
+- **INDICATIVE**: an editorial estimate compiled by Poli International from publicly listed prices. It is not survey data and has not been independently verified.
+- **GAP**: no reliable figure exists, so the row is left blank rather than guessed.
+
+Each row also has a short basis note describing what kind of price it is. Figures were last reviewed in September 2026. Premium specialists and fine-line artists routinely price above these ranges.
+
+## 3. Compare Your Service Prices
+
+The table lists tattoo and piercing services, from a small tattoo and a full day's sitting to lobe, nostril, helix, navel and septum piercings, each with its low-to-high range.
+
+1. Type your own price for any service in **Your Price**.
+2. Click **Compare My Prices**.
+3. Each service is placed as **Below Market** (under the range), **Market Rate** (within it) or **Premium** (above it). A service with no data shows **Data Gap**. A summary counts how many of your services fall in each position.
+
+**Clear All Rates** empties every price you entered.
+
+## 4. Your Rates
+
+Enter the four numbers that define your studio:
+
+- **Hourly rate**
+- **Minimum charge**
+- **Shop minimum**
+- **Deposit percentage**
+
+Choose a **studio tier**: Apprentice, Resident Artist, Established Artist, or Specialist / Guest Artist. The tier only adds a description of that kind of artist; it does not change any figure.
+
+The panel shows whether your hourly rate and your shop minimum sit below, within or above the region's range.
+
+## 5. What-If Rate Calculator
+
+Move the slider from **-20%** to **+30%** to adjust your hourly rate, and set the length of a typical booking in hours (2 by default). The calculator shows:
+
+- the adjusted hourly rate
+- the price of that booking
+- the deposit due on it, at your deposit percentage
+
+It is arithmetic on your own numbers only. It does not predict what the market will do.
+
+## 6. Your Numbers (Settings Handoff)
+
+A plain-text block lists your hourly rate, minimum charge, shop minimum, deposit percentage and tier, ready to copy into your booking system or studio settings with the **Copy** button. It is labelled as your decision, not a recommendation from the tool. A field you have left blank shows a dash, never a default figure.
+
+## 7. Printable Rate Card
+
+Print a one-page Studio Rate Card (A4 or US Letter) from your own numbers and service prices, dated today. The card carries only your figures, not the regional ranges.
+
+## 8. Visual Comparison Chart
+
+After you compare, a bar chart plots your price for each service beside the range's low and high values. Filter it to **All Procedures**, **Tattoo Only** or **Piercing Only**.
+
+## 9. Export CSV
+
+**Export CSV** downloads the full comparison for a spreadsheet: region, service, currency, range, confidence, basis note, jewellery policy, your price and its position.
+
+## 10. Saving, Languages and Embedding
+
+- Your prices and rates are saved in your own browser, so they are still there next time. Clearing your browser's site data removes them.
+- The interface is available in English, French, German, Spanish, Italian, Dutch and Portuguese.
+- The **Embed** tab gives a code snippet to place the tool on your own website.
+
+## 11. Important Notice
+
+This tool compares prices. It is not financial or business advice, and the ranges are editorial estimates, not a survey. Prices vary widely with experience, location, style and demand.
+`,"TECHNICAL-DOCS.md":`# Documentation Technique (Français)
+
+## Architecture & System Design
+
+The **Studio Pricing Benchmark** is engineered as an offline-first, client-rendered web application with zero external runtime dependencies.
+
+### Technical Stack
+- **Framework**: React 18+ with TypeScript & Vite
+- **Styling**: Tailwind CSS with tokenized CSS custom properties (\`--surface\`, \`--text\`, \`--border\`, \`--primary\`)
+- **Accessibility**: WCAG AA contrast ratio compliance (≥ 4.5:1) in both light and dark themes
+- **Standalone Export**: Self-contained vanilla JS widget with zero external network dependencies
+
+---
+
+## Internationalization Architecture
+
+The system supports **7 European & International Languages**:
+- English (\`en\`)
+- German (\`de\`)
+- French (\`fr\`)
+- Spanish (\`es\`)
+- Italian (\`it\`)
+- Portuguese (\`pt\`)
+- Dutch (\`nl\`)
+
+### Synchronization Rule
+Every language dictionary maintains an identical key set (currently 285 keys). The dictionary is bundled synchronously in \`src/i18n.ts\` and \`public/i18n.js\` ensuring that components mount with fully resolved strings. Both React state and DOM \`data-i18n\` attributes are updated synchronously upon language selection.
+
+---
+
+## Data Schemas
+
+\`\`\`typescript
+export type RegionId = 'uk' | 'london' | 'us' | 'eu' | 'au' | 'cee' | 'ca' | 'sa' | 'sea';
+
+export type ConfidenceMarker = 'INDICATIVE' | 'GAP';
+
+export interface BenchmarkRow {
+  id: string;
+  category: 'tattoo' | 'piercing';
+  nameKey: string;
+  subKey: string;
+  min: number | null;
+  max: number | null;
+  currency: string;
+  confidence: ConfidenceMarker;
+  basisKey: string;
+}
+
+export interface RegionMetadata {
+  id: RegionId;
+  nameKey: string;
+  currency: string;
+  currencyCode: string;
+  coverageNoteKey: string;
+  jewelleryPolicyKey: string;
+}
+\`\`\`
+
+---
+
+## Embedding & Iframe Communication
+
+The tool can be embedded in third-party host sites using an \`<iframe>\`. The embedded widget listens for theme change events:
+
+\`\`\`javascript
+window.addEventListener('message', function(event) {
+  if (event.data && event.data.type === 'poli-theme') {
+    document.documentElement.classList.toggle('dark', event.data.theme === 'dark');
+  }
+});
+\`\`\`
+
+---
+
+## Privacy & Security
+
+- Zero third-party network requests.
+- Content Security Policy: \`script-src 'self'\`.
+- In-memory data evaluation: user entered rates are never transmitted to any server.
+`,"CONTRIBUTING.md":`# Guide de Contribution (Français)
+
+Thank you for contributing to the **Studio Pricing Benchmark** by Poli International.
+
+## Contribution Guidelines
+
+### 1. Data Integrity & Rate Submissions
+- When submitting price updates for existing or new regions, supply verifiable evidence: studio price lists, published rate cards, or regional trade associations.
+- Never submit guessed or fabricated pricing. If reliable data is not available, mark as data gap.
+- All piercing references must clearly specify whether starter jewellery is included or separate.
+
+### 2. Standards Compliance
+- Cite only recognized standards by exact designation:
+  - **ASTM F-136**
+  - **ASTM F-138**
+  - **EN 1811**
+  - **ISO 10993**
+  - **EU REACH Annex XVII**
+- Never invent certifying bodies or credentials.
+
+### 3. Internationalization (i18n) Rules
+- When adding a new key, it MUST be added to all 7 languages simultaneously:
+  - English (\`en\`)
+  - German (\`de\`)
+  - French (\`fr\`)
+  - Spanish (\`es\`)
+  - Italian (\`it\`)
+  - Portuguese (\`pt\`)
+  - Dutch (\`nl\`)
+- Ensure all token placeholders match across languages (\`{count}\`, \`{total}\`).
+
+### 4. Zero External Dependencies
+- Do not add remote external script links, remote fonts, or analytics scripts.
+- Ensure all CSS custom properties maintain WCAG AA contrast (≥ 4.5:1) in both themes.
+`},es:{"README.md":`# Punto de Referencia de Precios de Estudio (Español)
+
+> Professional reference utility published by **Poli International** for tattoo artists, body piercers, and studio owners. Available in 7 languages.
+
+**[Languages: EN | DE | FR | ES | IT | PT | NL]** &bull; **[Network: Zero External Requests]** &bull; **[License: MIT]**
+
+---
+
+## Language Editions / Traductions / Übersetzungen / Traducciones / Traduzioni / Vertalingen
+
+- [English (en)](docs/en/README.md)
+- [Deutsch (de)](docs/de/README.md)
+- [Français (fr)](docs/fr/README.md)
+- [Español (es)](docs/es/README.md)
+- [Italiano (it)](docs/it/README.md)
+- [Português (pt)](docs/pt/README.md)
+- [Nederlands (nl)](docs/nl/README.md)
+
+---
+
+## Overview
+
+The **Studio Pricing Benchmark** is a zero-network-request, offline-capable reference tool engineered for commercial tattoo and body piercing studios. It allows studio owners and artists to systematically benchmark their rate cards across **nine global geographic markets**:
+
+1. **UK (National Average)**: Rates outside Greater London across England, Scotland, and Wales.
+2. **London / SE England**: Metropolitan commercial studios reflecting higher fixed operating overheads.
+3. **United States (National Average)**: Average across urban and suburban commercial studios.
+4. **Western Europe**: Metropolitan studios across France, Germany, Netherlands, Belgium, and Austria in EUR (€).
+5. **Australia**: State capital cities (Sydney, Melbourne, Brisbane) and regional studios in AUD (A$).
+6. **Central & Eastern Europe**: Urban studios in Poland, Czechia, Hungary, and Romania indexed in EUR (€).
+7. **Canada** : Urban studios in Ontario, British Columbia, and Quebec in CAD (C$).
+8. **South America**: Data rooted in custom studios in São Paulo, Rio de Janeiro (Brazil), and Buenos Aires (Argentina) in BRL (R$).
+9. **South East Asia**: Professional studio hubs in Thailand (Bangkok, Phuket, Chiang Mai) and Bali (Indonesia) in THB (฿).
+
+---
+
+## Key Features
+
+- **10 Core Industry Procedures**: 5 tattoo categories (Small, Half-Day, Full-Day, Hourly, Minimum) and 5 piercing categories (Lobe Pair, Nostril, Helix, Navel, Septum).
+- **Explicit Confidence Indicators**:
+  - \`[INDICATIVE]\`: Drawn directly from publicly listed studio price menus.
+  - \`[INDICATIVE]\`: Derived from regional cost of living and published trade reports.
+  - \`[GAP / NO DATA]\`: Intentionally left blank where reliable standardized listings do not exist.
+- **Starter Jewellery Policies**: Clear documentation of regional norms (e.g. UK/EU/AU/SEA inclusion vs. US/Canada separate charging).
+- **Interactive Price Evaluator**: Enter your studio's rates to analyze alignment (Below Market, Market Rate, Premium).
+- **Offline-First & Zero Network Requests**: Zero external scripts, remote fonts, or telemetry. Operates entirely in client memory.
+- **7 Fully Localized Languages**: EN, DE, FR, ES, IT, PT, NL with 100% key parity.
+
+---
+
+## Embedding in Studio Websites
+
+Embed the self-contained widget into your studio website or booking portal:
+
+\`\`\`html
+<iframe
+  src="/tools/studio-pricing-benchmark/index.html"
+  width="100%"
+  height="850"
+  frameborder="0"
+  style="border-radius:12px; border:1px solid var(--border); overflow:hidden;"
+  title="Studio Pricing Benchmark">
+</iframe>
+\`\`\`
+
+The iframe automatically detects dark/light theme changes from the parent container via \`postMessage\` (\`poli-theme\`) or \`localStorage\` (\`poli-dark-mode\`).
+
+---
+
+## Biomedical Material Standards
+
+All starter jewellery references adhere strictly to established biomedical specifications:
+- **ASTM F-136**: Standard Specification for Wrought Titanium-6Aluminum-4Vanadium ELI for Surgical Implant Applications.
+- **ASTM F-138**: Standard Specification for Wrought 18Chromium-14Nickel-2.5Molybdenum Stainless Steel for Surgical Implants.
+- **EN 1811**: Reference test method for release of nickel from all post assemblies inserted into pierced parts of the human body.
+- **ISO 10993**: Biological evaluation of medical devices.
+- **EU REACH Annex XVII**: Nickel release restrictions.
+
+---
+
+## Privacy & Data Sovereignty
+
+All calculations and entered rates remain strictly in the local browser session. No data is transmitted to remote servers.
+
+---
+
+## Documentation
+
+- [Studio User Guide](docs/es/USER-GUIDE.md)
+- [Technical Documentation](docs/es/TECHNICAL-DOCS.md)
+- [Contributing Guide](docs/es/CONTRIBUTING.md)
+
+---
+
+## License
+
+Published under the MIT License by Poli International.
+`,"USER-GUIDE.md":`# Studio Pricing Benchmark: User Guide (V2)
+
+## Overview
+
+The Studio Pricing Benchmark lets a tattoo or piercing studio owner place their own prices against typical price ranges in nine markets, and settle on the numbers they want to charge. It shows ranges, never a "correct" price, and it gives no advice on what you should charge.
+
+Everything runs in your browser. Nothing you enter is sent anywhere.
+
+## 1. Choose a Region
+
+Pick one of nine markets: UK (national average), London / South East England, US (national average), Western Europe, Australia, Central & Eastern Europe, Canada, South America, and South East Asia. Prices switch to that region's currency.
+
+Each region shows a short coverage note, explaining what the region's figures represent, and a **Jewellery Inclusions** note, explaining whether piercing prices typically include the starter jewellery.
+
+## 2. Where the Figures Come From
+
+Every row carries a confidence label:
+
+- **INDICATIVE**: an editorial estimate compiled by Poli International from publicly listed prices. It is not survey data and has not been independently verified.
+- **GAP**: no reliable figure exists, so the row is left blank rather than guessed.
+
+Each row also has a short basis note describing what kind of price it is. Figures were last reviewed in September 2026. Premium specialists and fine-line artists routinely price above these ranges.
+
+## 3. Compare Your Service Prices
+
+The table lists tattoo and piercing services, from a small tattoo and a full day's sitting to lobe, nostril, helix, navel and septum piercings, each with its low-to-high range.
+
+1. Type your own price for any service in **Your Price**.
+2. Click **Compare My Prices**.
+3. Each service is placed as **Below Market** (under the range), **Market Rate** (within it) or **Premium** (above it). A service with no data shows **Data Gap**. A summary counts how many of your services fall in each position.
+
+**Clear All Rates** empties every price you entered.
+
+## 4. Your Rates
+
+Enter the four numbers that define your studio:
+
+- **Hourly rate**
+- **Minimum charge**
+- **Shop minimum**
+- **Deposit percentage**
+
+Choose a **studio tier**: Apprentice, Resident Artist, Established Artist, or Specialist / Guest Artist. The tier only adds a description of that kind of artist; it does not change any figure.
+
+The panel shows whether your hourly rate and your shop minimum sit below, within or above the region's range.
+
+## 5. What-If Rate Calculator
+
+Move the slider from **-20%** to **+30%** to adjust your hourly rate, and set the length of a typical booking in hours (2 by default). The calculator shows:
+
+- the adjusted hourly rate
+- the price of that booking
+- the deposit due on it, at your deposit percentage
+
+It is arithmetic on your own numbers only. It does not predict what the market will do.
+
+## 6. Your Numbers (Settings Handoff)
+
+A plain-text block lists your hourly rate, minimum charge, shop minimum, deposit percentage and tier, ready to copy into your booking system or studio settings with the **Copy** button. It is labelled as your decision, not a recommendation from the tool. A field you have left blank shows a dash, never a default figure.
+
+## 7. Printable Rate Card
+
+Print a one-page Studio Rate Card (A4 or US Letter) from your own numbers and service prices, dated today. The card carries only your figures, not the regional ranges.
+
+## 8. Visual Comparison Chart
+
+After you compare, a bar chart plots your price for each service beside the range's low and high values. Filter it to **All Procedures**, **Tattoo Only** or **Piercing Only**.
+
+## 9. Export CSV
+
+**Export CSV** downloads the full comparison for a spreadsheet: region, service, currency, range, confidence, basis note, jewellery policy, your price and its position.
+
+## 10. Saving, Languages and Embedding
+
+- Your prices and rates are saved in your own browser, so they are still there next time. Clearing your browser's site data removes them.
+- The interface is available in English, French, German, Spanish, Italian, Dutch and Portuguese.
+- The **Embed** tab gives a code snippet to place the tool on your own website.
+
+## 11. Important Notice
+
+This tool compares prices. It is not financial or business advice, and the ranges are editorial estimates, not a survey. Prices vary widely with experience, location, style and demand.
+`,"TECHNICAL-DOCS.md":`# Documentación Técnica (Español)
+
+## Architecture & System Design
+
+The **Studio Pricing Benchmark** is engineered as an offline-first, client-rendered web application with zero external runtime dependencies.
+
+### Technical Stack
+- **Framework**: React 18+ with TypeScript & Vite
+- **Styling**: Tailwind CSS with tokenized CSS custom properties (\`--surface\`, \`--text\`, \`--border\`, \`--primary\`)
+- **Accessibility**: WCAG AA contrast ratio compliance (≥ 4.5:1) in both light and dark themes
+- **Standalone Export**: Self-contained vanilla JS widget with zero external network dependencies
+
+---
+
+## Internationalization Architecture
+
+The system supports **7 European & International Languages**:
+- English (\`en\`)
+- German (\`de\`)
+- French (\`fr\`)
+- Spanish (\`es\`)
+- Italian (\`it\`)
+- Portuguese (\`pt\`)
+- Dutch (\`nl\`)
+
+### Synchronization Rule
+Every language dictionary maintains an identical key set (currently 285 keys). The dictionary is bundled synchronously in \`src/i18n.ts\` and \`public/i18n.js\` ensuring that components mount with fully resolved strings. Both React state and DOM \`data-i18n\` attributes are updated synchronously upon language selection.
+
+---
+
+## Data Schemas
+
+\`\`\`typescript
+export type RegionId = 'uk' | 'london' | 'us' | 'eu' | 'au' | 'cee' | 'ca' | 'sa' | 'sea';
+
+export type ConfidenceMarker = 'INDICATIVE' | 'GAP';
+
+export interface BenchmarkRow {
+  id: string;
+  category: 'tattoo' | 'piercing';
+  nameKey: string;
+  subKey: string;
+  min: number | null;
+  max: number | null;
+  currency: string;
+  confidence: ConfidenceMarker;
+  basisKey: string;
+}
+
+export interface RegionMetadata {
+  id: RegionId;
+  nameKey: string;
+  currency: string;
+  currencyCode: string;
+  coverageNoteKey: string;
+  jewelleryPolicyKey: string;
+}
+\`\`\`
+
+---
+
+## Embedding & Iframe Communication
+
+The tool can be embedded in third-party host sites using an \`<iframe>\`. The embedded widget listens for theme change events:
+
+\`\`\`javascript
+window.addEventListener('message', function(event) {
+  if (event.data && event.data.type === 'poli-theme') {
+    document.documentElement.classList.toggle('dark', event.data.theme === 'dark');
+  }
+});
+\`\`\`
+
+---
+
+## Privacy & Security
+
+- Zero third-party network requests.
+- Content Security Policy: \`script-src 'self'\`.
+- In-memory data evaluation: user entered rates are never transmitted to any server.
+`,"CONTRIBUTING.md":`# Guía para Contribuidores (Español)
+
+Thank you for contributing to the **Studio Pricing Benchmark** by Poli International.
+
+## Contribution Guidelines
+
+### 1. Data Integrity & Rate Submissions
+- When submitting price updates for existing or new regions, supply verifiable evidence: studio price lists, published rate cards, or regional trade associations.
+- Never submit guessed or fabricated pricing. If reliable data is not available, mark as data gap.
+- All piercing references must clearly specify whether starter jewellery is included or separate.
+
+### 2. Standards Compliance
+- Cite only recognized standards by exact designation:
+  - **ASTM F-136**
+  - **ASTM F-138**
+  - **EN 1811**
+  - **ISO 10993**
+  - **EU REACH Annex XVII**
+- Never invent certifying bodies or credentials.
+
+### 3. Internationalization (i18n) Rules
+- When adding a new key, it MUST be added to all 7 languages simultaneously:
+  - English (\`en\`)
+  - German (\`de\`)
+  - French (\`fr\`)
+  - Spanish (\`es\`)
+  - Italian (\`it\`)
+  - Portuguese (\`pt\`)
+  - Dutch (\`nl\`)
+- Ensure all token placeholders match across languages (\`{count}\`, \`{total}\`).
+
+### 4. Zero External Dependencies
+- Do not add remote external script links, remote fonts, or analytics scripts.
+- Ensure all CSS custom properties maintain WCAG AA contrast (≥ 4.5:1) in both themes.
+`},it:{"README.md":`# Parametro di Riferimento Prezzi Studio (Italiano)
+
+> Professional reference utility published by **Poli International** for tattoo artists, body piercers, and studio owners. Available in 7 languages.
+
+**[Languages: EN | DE | FR | ES | IT | PT | NL]** &bull; **[Network: Zero External Requests]** &bull; **[License: MIT]**
+
+---
+
+## Language Editions / Traductions / Übersetzungen / Traducciones / Traduzioni / Vertalingen
+
+- [English (en)](docs/en/README.md)
+- [Deutsch (de)](docs/de/README.md)
+- [Français (fr)](docs/fr/README.md)
+- [Español (es)](docs/es/README.md)
+- [Italiano (it)](docs/it/README.md)
+- [Português (pt)](docs/pt/README.md)
+- [Nederlands (nl)](docs/nl/README.md)
+
+---
+
+## Overview
+
+The **Studio Pricing Benchmark** is a zero-network-request, offline-capable reference tool engineered for commercial tattoo and body piercing studios. It allows studio owners and artists to systematically benchmark their rate cards across **nine global geographic markets**:
+
+1. **UK (National Average)**: Rates outside Greater London across England, Scotland, and Wales.
+2. **London / SE England**: Metropolitan commercial studios reflecting higher fixed operating overheads.
+3. **United States (National Average)**: Average across urban and suburban commercial studios.
+4. **Western Europe**: Metropolitan studios across France, Germany, Netherlands, Belgium, and Austria in EUR (€).
+5. **Australia**: State capital cities (Sydney, Melbourne, Brisbane) and regional studios in AUD (A$).
+6. **Central & Eastern Europe**: Urban studios in Poland, Czechia, Hungary, and Romania indexed in EUR (€).
+7. **Canada** : Urban studios in Ontario, British Columbia, and Quebec in CAD (C$).
+8. **South America**: Data rooted in custom studios in São Paulo, Rio de Janeiro (Brazil), and Buenos Aires (Argentina) in BRL (R$).
+9. **South East Asia**: Professional studio hubs in Thailand (Bangkok, Phuket, Chiang Mai) and Bali (Indonesia) in THB (฿).
+
+---
+
+## Key Features
+
+- **10 Core Industry Procedures**: 5 tattoo categories (Small, Half-Day, Full-Day, Hourly, Minimum) and 5 piercing categories (Lobe Pair, Nostril, Helix, Navel, Septum).
+- **Explicit Confidence Indicators**:
+  - \`[INDICATIVE]\`: Drawn directly from publicly listed studio price menus.
+  - \`[INDICATIVE]\`: Derived from regional cost of living and published trade reports.
+  - \`[GAP / NO DATA]\`: Intentionally left blank where reliable standardized listings do not exist.
+- **Starter Jewellery Policies**: Clear documentation of regional norms (e.g. UK/EU/AU/SEA inclusion vs. US/Canada separate charging).
+- **Interactive Price Evaluator**: Enter your studio's rates to analyze alignment (Below Market, Market Rate, Premium).
+- **Offline-First & Zero Network Requests**: Zero external scripts, remote fonts, or telemetry. Operates entirely in client memory.
+- **7 Fully Localized Languages**: EN, DE, FR, ES, IT, PT, NL with 100% key parity.
+
+---
+
+## Embedding in Studio Websites
+
+Embed the self-contained widget into your studio website or booking portal:
+
+\`\`\`html
+<iframe
+  src="/tools/studio-pricing-benchmark/index.html"
+  width="100%"
+  height="850"
+  frameborder="0"
+  style="border-radius:12px; border:1px solid var(--border); overflow:hidden;"
+  title="Studio Pricing Benchmark">
+</iframe>
+\`\`\`
+
+The iframe automatically detects dark/light theme changes from the parent container via \`postMessage\` (\`poli-theme\`) or \`localStorage\` (\`poli-dark-mode\`).
+
+---
+
+## Biomedical Material Standards
+
+All starter jewellery references adhere strictly to established biomedical specifications:
+- **ASTM F-136**: Standard Specification for Wrought Titanium-6Aluminum-4Vanadium ELI for Surgical Implant Applications.
+- **ASTM F-138**: Standard Specification for Wrought 18Chromium-14Nickel-2.5Molybdenum Stainless Steel for Surgical Implants.
+- **EN 1811**: Reference test method for release of nickel from all post assemblies inserted into pierced parts of the human body.
+- **ISO 10993**: Biological evaluation of medical devices.
+- **EU REACH Annex XVII**: Nickel release restrictions.
+
+---
+
+## Privacy & Data Sovereignty
+
+All calculations and entered rates remain strictly in the local browser session. No data is transmitted to remote servers.
+
+---
+
+## Documentation
+
+- [Studio User Guide](docs/it/USER-GUIDE.md)
+- [Technical Documentation](docs/it/TECHNICAL-DOCS.md)
+- [Contributing Guide](docs/it/CONTRIBUTING.md)
+
+---
+
+## License
+
+Published under the MIT License by Poli International.
+`,"USER-GUIDE.md":`# Studio Pricing Benchmark: User Guide (V2)
+
+## Overview
+
+The Studio Pricing Benchmark lets a tattoo or piercing studio owner place their own prices against typical price ranges in nine markets, and settle on the numbers they want to charge. It shows ranges, never a "correct" price, and it gives no advice on what you should charge.
+
+Everything runs in your browser. Nothing you enter is sent anywhere.
+
+## 1. Choose a Region
+
+Pick one of nine markets: UK (national average), London / South East England, US (national average), Western Europe, Australia, Central & Eastern Europe, Canada, South America, and South East Asia. Prices switch to that region's currency.
+
+Each region shows a short coverage note, explaining what the region's figures represent, and a **Jewellery Inclusions** note, explaining whether piercing prices typically include the starter jewellery.
+
+## 2. Where the Figures Come From
+
+Every row carries a confidence label:
+
+- **INDICATIVE**: an editorial estimate compiled by Poli International from publicly listed prices. It is not survey data and has not been independently verified.
+- **GAP**: no reliable figure exists, so the row is left blank rather than guessed.
+
+Each row also has a short basis note describing what kind of price it is. Figures were last reviewed in September 2026. Premium specialists and fine-line artists routinely price above these ranges.
+
+## 3. Compare Your Service Prices
+
+The table lists tattoo and piercing services, from a small tattoo and a full day's sitting to lobe, nostril, helix, navel and septum piercings, each with its low-to-high range.
+
+1. Type your own price for any service in **Your Price**.
+2. Click **Compare My Prices**.
+3. Each service is placed as **Below Market** (under the range), **Market Rate** (within it) or **Premium** (above it). A service with no data shows **Data Gap**. A summary counts how many of your services fall in each position.
+
+**Clear All Rates** empties every price you entered.
+
+## 4. Your Rates
+
+Enter the four numbers that define your studio:
+
+- **Hourly rate**
+- **Minimum charge**
+- **Shop minimum**
+- **Deposit percentage**
+
+Choose a **studio tier**: Apprentice, Resident Artist, Established Artist, or Specialist / Guest Artist. The tier only adds a description of that kind of artist; it does not change any figure.
+
+The panel shows whether your hourly rate and your shop minimum sit below, within or above the region's range.
+
+## 5. What-If Rate Calculator
+
+Move the slider from **-20%** to **+30%** to adjust your hourly rate, and set the length of a typical booking in hours (2 by default). The calculator shows:
+
+- the adjusted hourly rate
+- the price of that booking
+- the deposit due on it, at your deposit percentage
+
+It is arithmetic on your own numbers only. It does not predict what the market will do.
+
+## 6. Your Numbers (Settings Handoff)
+
+A plain-text block lists your hourly rate, minimum charge, shop minimum, deposit percentage and tier, ready to copy into your booking system or studio settings with the **Copy** button. It is labelled as your decision, not a recommendation from the tool. A field you have left blank shows a dash, never a default figure.
+
+## 7. Printable Rate Card
+
+Print a one-page Studio Rate Card (A4 or US Letter) from your own numbers and service prices, dated today. The card carries only your figures, not the regional ranges.
+
+## 8. Visual Comparison Chart
+
+After you compare, a bar chart plots your price for each service beside the range's low and high values. Filter it to **All Procedures**, **Tattoo Only** or **Piercing Only**.
+
+## 9. Export CSV
+
+**Export CSV** downloads the full comparison for a spreadsheet: region, service, currency, range, confidence, basis note, jewellery policy, your price and its position.
+
+## 10. Saving, Languages and Embedding
+
+- Your prices and rates are saved in your own browser, so they are still there next time. Clearing your browser's site data removes them.
+- The interface is available in English, French, German, Spanish, Italian, Dutch and Portuguese.
+- The **Embed** tab gives a code snippet to place the tool on your own website.
+
+## 11. Important Notice
+
+This tool compares prices. It is not financial or business advice, and the ranges are editorial estimates, not a survey. Prices vary widely with experience, location, style and demand.
+`,"TECHNICAL-DOCS.md":`# Documentazione Tecnica (Italiano)
+
+## Architecture & System Design
+
+The **Studio Pricing Benchmark** is engineered as an offline-first, client-rendered web application with zero external runtime dependencies.
+
+### Technical Stack
+- **Framework**: React 18+ with TypeScript & Vite
+- **Styling**: Tailwind CSS with tokenized CSS custom properties (\`--surface\`, \`--text\`, \`--border\`, \`--primary\`)
+- **Accessibility**: WCAG AA contrast ratio compliance (≥ 4.5:1) in both light and dark themes
+- **Standalone Export**: Self-contained vanilla JS widget with zero external network dependencies
+
+---
+
+## Internationalization Architecture
+
+The system supports **7 European & International Languages**:
+- English (\`en\`)
+- German (\`de\`)
+- French (\`fr\`)
+- Spanish (\`es\`)
+- Italian (\`it\`)
+- Portuguese (\`pt\`)
+- Dutch (\`nl\`)
+
+### Synchronization Rule
+Every language dictionary maintains an identical key set (currently 285 keys). The dictionary is bundled synchronously in \`src/i18n.ts\` and \`public/i18n.js\` ensuring that components mount with fully resolved strings. Both React state and DOM \`data-i18n\` attributes are updated synchronously upon language selection.
+
+---
+
+## Data Schemas
+
+\`\`\`typescript
+export type RegionId = 'uk' | 'london' | 'us' | 'eu' | 'au' | 'cee' | 'ca' | 'sa' | 'sea';
+
+export type ConfidenceMarker = 'INDICATIVE' | 'GAP';
+
+export interface BenchmarkRow {
+  id: string;
+  category: 'tattoo' | 'piercing';
+  nameKey: string;
+  subKey: string;
+  min: number | null;
+  max: number | null;
+  currency: string;
+  confidence: ConfidenceMarker;
+  basisKey: string;
+}
+
+export interface RegionMetadata {
+  id: RegionId;
+  nameKey: string;
+  currency: string;
+  currencyCode: string;
+  coverageNoteKey: string;
+  jewelleryPolicyKey: string;
+}
+\`\`\`
+
+---
+
+## Embedding & Iframe Communication
+
+The tool can be embedded in third-party host sites using an \`<iframe>\`. The embedded widget listens for theme change events:
+
+\`\`\`javascript
+window.addEventListener('message', function(event) {
+  if (event.data && event.data.type === 'poli-theme') {
+    document.documentElement.classList.toggle('dark', event.data.theme === 'dark');
+  }
+});
+\`\`\`
+
+---
+
+## Privacy & Security
+
+- Zero third-party network requests.
+- Content Security Policy: \`script-src 'self'\`.
+- In-memory data evaluation: user entered rates are never transmitted to any server.
+`,"CONTRIBUTING.md":`# Guida ai Contributi (Italiano)
+
+Thank you for contributing to the **Studio Pricing Benchmark** by Poli International.
+
+## Contribution Guidelines
+
+### 1. Data Integrity & Rate Submissions
+- When submitting price updates for existing or new regions, supply verifiable evidence: studio price lists, published rate cards, or regional trade associations.
+- Never submit guessed or fabricated pricing. If reliable data is not available, mark as data gap.
+- All piercing references must clearly specify whether starter jewellery is included or separate.
+
+### 2. Standards Compliance
+- Cite only recognized standards by exact designation:
+  - **ASTM F-136**
+  - **ASTM F-138**
+  - **EN 1811**
+  - **ISO 10993**
+  - **EU REACH Annex XVII**
+- Never invent certifying bodies or credentials.
+
+### 3. Internationalization (i18n) Rules
+- When adding a new key, it MUST be added to all 7 languages simultaneously:
+  - English (\`en\`)
+  - German (\`de\`)
+  - French (\`fr\`)
+  - Spanish (\`es\`)
+  - Italian (\`it\`)
+  - Portuguese (\`pt\`)
+  - Dutch (\`nl\`)
+- Ensure all token placeholders match across languages (\`{count}\`, \`{total}\`).
+
+### 4. Zero External Dependencies
+- Do not add remote external script links, remote fonts, or analytics scripts.
+- Ensure all CSS custom properties maintain WCAG AA contrast (≥ 4.5:1) in both themes.
+`},pt:{"README.md":`# Parâmetro de Preços de Estúdio (Português)
+
+> Professional reference utility published by **Poli International** for tattoo artists, body piercers, and studio owners. Available in 7 languages.
+
+**[Languages: EN | DE | FR | ES | IT | PT | NL]** &bull; **[Network: Zero External Requests]** &bull; **[License: MIT]**
+
+---
+
+## Language Editions / Traductions / Übersetzungen / Traducciones / Traduzioni / Vertalingen
+
+- [English (en)](docs/en/README.md)
+- [Deutsch (de)](docs/de/README.md)
+- [Français (fr)](docs/fr/README.md)
+- [Español (es)](docs/es/README.md)
+- [Italiano (it)](docs/it/README.md)
+- [Português (pt)](docs/pt/README.md)
+- [Nederlands (nl)](docs/nl/README.md)
+
+---
+
+## Overview
+
+The **Studio Pricing Benchmark** is a zero-network-request, offline-capable reference tool engineered for commercial tattoo and body piercing studios. It allows studio owners and artists to systematically benchmark their rate cards across **nine global geographic markets**:
+
+1. **UK (National Average)**: Rates outside Greater London across England, Scotland, and Wales.
+2. **London / SE England**: Metropolitan commercial studios reflecting higher fixed operating overheads.
+3. **United States (National Average)**: Average across urban and suburban commercial studios.
+4. **Western Europe**: Metropolitan studios across France, Germany, Netherlands, Belgium, and Austria in EUR (€).
+5. **Australia**: State capital cities (Sydney, Melbourne, Brisbane) and regional studios in AUD (A$).
+6. **Central & Eastern Europe**: Urban studios in Poland, Czechia, Hungary, and Romania indexed in EUR (€).
+7. **Canada** : Urban studios in Ontario, British Columbia, and Quebec in CAD (C$).
+8. **South America**: Data rooted in custom studios in São Paulo, Rio de Janeiro (Brazil), and Buenos Aires (Argentina) in BRL (R$).
+9. **South East Asia**: Professional studio hubs in Thailand (Bangkok, Phuket, Chiang Mai) and Bali (Indonesia) in THB (฿).
+
+---
+
+## Key Features
+
+- **10 Core Industry Procedures**: 5 tattoo categories (Small, Half-Day, Full-Day, Hourly, Minimum) and 5 piercing categories (Lobe Pair, Nostril, Helix, Navel, Septum).
+- **Explicit Confidence Indicators**:
+  - \`[INDICATIVE]\`: Drawn directly from publicly listed studio price menus.
+  - \`[INDICATIVE]\`: Derived from regional cost of living and published trade reports.
+  - \`[GAP / NO DATA]\`: Intentionally left blank where reliable standardized listings do not exist.
+- **Starter Jewellery Policies**: Clear documentation of regional norms (e.g. UK/EU/AU/SEA inclusion vs. US/Canada separate charging).
+- **Interactive Price Evaluator**: Enter your studio's rates to analyze alignment (Below Market, Market Rate, Premium).
+- **Offline-First & Zero Network Requests**: Zero external scripts, remote fonts, or telemetry. Operates entirely in client memory.
+- **7 Fully Localized Languages**: EN, DE, FR, ES, IT, PT, NL with 100% key parity.
+
+---
+
+## Embedding in Studio Websites
+
+Embed the self-contained widget into your studio website or booking portal:
+
+\`\`\`html
+<iframe
+  src="/tools/studio-pricing-benchmark/index.html"
+  width="100%"
+  height="850"
+  frameborder="0"
+  style="border-radius:12px; border:1px solid var(--border); overflow:hidden;"
+  title="Studio Pricing Benchmark">
+</iframe>
+\`\`\`
+
+The iframe automatically detects dark/light theme changes from the parent container via \`postMessage\` (\`poli-theme\`) or \`localStorage\` (\`poli-dark-mode\`).
+
+---
+
+## Biomedical Material Standards
+
+All starter jewellery references adhere strictly to established biomedical specifications:
+- **ASTM F-136**: Standard Specification for Wrought Titanium-6Aluminum-4Vanadium ELI for Surgical Implant Applications.
+- **ASTM F-138**: Standard Specification for Wrought 18Chromium-14Nickel-2.5Molybdenum Stainless Steel for Surgical Implants.
+- **EN 1811**: Reference test method for release of nickel from all post assemblies inserted into pierced parts of the human body.
+- **ISO 10993**: Biological evaluation of medical devices.
+- **EU REACH Annex XVII**: Nickel release restrictions.
+
+---
+
+## Privacy & Data Sovereignty
+
+All calculations and entered rates remain strictly in the local browser session. No data is transmitted to remote servers.
+
+---
+
+## Documentation
+
+- [Studio User Guide](docs/pt/USER-GUIDE.md)
+- [Technical Documentation](docs/pt/TECHNICAL-DOCS.md)
+- [Contributing Guide](docs/pt/CONTRIBUTING.md)
+
+---
+
+## License
+
+Published under the MIT License by Poli International.
+`,"USER-GUIDE.md":`# Studio Pricing Benchmark: User Guide (V2)
+
+## Overview
+
+The Studio Pricing Benchmark lets a tattoo or piercing studio owner place their own prices against typical price ranges in nine markets, and settle on the numbers they want to charge. It shows ranges, never a "correct" price, and it gives no advice on what you should charge.
+
+Everything runs in your browser. Nothing you enter is sent anywhere.
+
+## 1. Choose a Region
+
+Pick one of nine markets: UK (national average), London / South East England, US (national average), Western Europe, Australia, Central & Eastern Europe, Canada, South America, and South East Asia. Prices switch to that region's currency.
+
+Each region shows a short coverage note, explaining what the region's figures represent, and a **Jewellery Inclusions** note, explaining whether piercing prices typically include the starter jewellery.
+
+## 2. Where the Figures Come From
+
+Every row carries a confidence label:
+
+- **INDICATIVE**: an editorial estimate compiled by Poli International from publicly listed prices. It is not survey data and has not been independently verified.
+- **GAP**: no reliable figure exists, so the row is left blank rather than guessed.
+
+Each row also has a short basis note describing what kind of price it is. Figures were last reviewed in September 2026. Premium specialists and fine-line artists routinely price above these ranges.
+
+## 3. Compare Your Service Prices
+
+The table lists tattoo and piercing services, from a small tattoo and a full day's sitting to lobe, nostril, helix, navel and septum piercings, each with its low-to-high range.
+
+1. Type your own price for any service in **Your Price**.
+2. Click **Compare My Prices**.
+3. Each service is placed as **Below Market** (under the range), **Market Rate** (within it) or **Premium** (above it). A service with no data shows **Data Gap**. A summary counts how many of your services fall in each position.
+
+**Clear All Rates** empties every price you entered.
+
+## 4. Your Rates
+
+Enter the four numbers that define your studio:
+
+- **Hourly rate**
+- **Minimum charge**
+- **Shop minimum**
+- **Deposit percentage**
+
+Choose a **studio tier**: Apprentice, Resident Artist, Established Artist, or Specialist / Guest Artist. The tier only adds a description of that kind of artist; it does not change any figure.
+
+The panel shows whether your hourly rate and your shop minimum sit below, within or above the region's range.
+
+## 5. What-If Rate Calculator
+
+Move the slider from **-20%** to **+30%** to adjust your hourly rate, and set the length of a typical booking in hours (2 by default). The calculator shows:
+
+- the adjusted hourly rate
+- the price of that booking
+- the deposit due on it, at your deposit percentage
+
+It is arithmetic on your own numbers only. It does not predict what the market will do.
+
+## 6. Your Numbers (Settings Handoff)
+
+A plain-text block lists your hourly rate, minimum charge, shop minimum, deposit percentage and tier, ready to copy into your booking system or studio settings with the **Copy** button. It is labelled as your decision, not a recommendation from the tool. A field you have left blank shows a dash, never a default figure.
+
+## 7. Printable Rate Card
+
+Print a one-page Studio Rate Card (A4 or US Letter) from your own numbers and service prices, dated today. The card carries only your figures, not the regional ranges.
+
+## 8. Visual Comparison Chart
+
+After you compare, a bar chart plots your price for each service beside the range's low and high values. Filter it to **All Procedures**, **Tattoo Only** or **Piercing Only**.
+
+## 9. Export CSV
+
+**Export CSV** downloads the full comparison for a spreadsheet: region, service, currency, range, confidence, basis note, jewellery policy, your price and its position.
+
+## 10. Saving, Languages and Embedding
+
+- Your prices and rates are saved in your own browser, so they are still there next time. Clearing your browser's site data removes them.
+- The interface is available in English, French, German, Spanish, Italian, Dutch and Portuguese.
+- The **Embed** tab gives a code snippet to place the tool on your own website.
+
+## 11. Important Notice
+
+This tool compares prices. It is not financial or business advice, and the ranges are editorial estimates, not a survey. Prices vary widely with experience, location, style and demand.
+`,"TECHNICAL-DOCS.md":`# Documentação Técnica (Português)
+
+## Architecture & System Design
+
+The **Studio Pricing Benchmark** is engineered as an offline-first, client-rendered web application with zero external runtime dependencies.
+
+### Technical Stack
+- **Framework**: React 18+ with TypeScript & Vite
+- **Styling**: Tailwind CSS with tokenized CSS custom properties (\`--surface\`, \`--text\`, \`--border\`, \`--primary\`)
+- **Accessibility**: WCAG AA contrast ratio compliance (≥ 4.5:1) in both light and dark themes
+- **Standalone Export**: Self-contained vanilla JS widget with zero external network dependencies
+
+---
+
+## Internationalization Architecture
+
+The system supports **7 European & International Languages**:
+- English (\`en\`)
+- German (\`de\`)
+- French (\`fr\`)
+- Spanish (\`es\`)
+- Italian (\`it\`)
+- Portuguese (\`pt\`)
+- Dutch (\`nl\`)
+
+### Synchronization Rule
+Every language dictionary maintains an identical key set (currently 285 keys). The dictionary is bundled synchronously in \`src/i18n.ts\` and \`public/i18n.js\` ensuring that components mount with fully resolved strings. Both React state and DOM \`data-i18n\` attributes are updated synchronously upon language selection.
+
+---
+
+## Data Schemas
+
+\`\`\`typescript
+export type RegionId = 'uk' | 'london' | 'us' | 'eu' | 'au' | 'cee' | 'ca' | 'sa' | 'sea';
+
+export type ConfidenceMarker = 'INDICATIVE' | 'GAP';
+
+export interface BenchmarkRow {
+  id: string;
+  category: 'tattoo' | 'piercing';
+  nameKey: string;
+  subKey: string;
+  min: number | null;
+  max: number | null;
+  currency: string;
+  confidence: ConfidenceMarker;
+  basisKey: string;
+}
+
+export interface RegionMetadata {
+  id: RegionId;
+  nameKey: string;
+  currency: string;
+  currencyCode: string;
+  coverageNoteKey: string;
+  jewelleryPolicyKey: string;
+}
+\`\`\`
+
+---
+
+## Embedding & Iframe Communication
+
+The tool can be embedded in third-party host sites using an \`<iframe>\`. The embedded widget listens for theme change events:
+
+\`\`\`javascript
+window.addEventListener('message', function(event) {
+  if (event.data && event.data.type === 'poli-theme') {
+    document.documentElement.classList.toggle('dark', event.data.theme === 'dark');
+  }
+});
+\`\`\`
+
+---
+
+## Privacy & Security
+
+- Zero third-party network requests.
+- Content Security Policy: \`script-src 'self'\`.
+- In-memory data evaluation: user entered rates are never transmitted to any server.
+`,"CONTRIBUTING.md":`# Guia para Contribuidores (Português)
+
+Thank you for contributing to the **Studio Pricing Benchmark** by Poli International.
+
+## Contribution Guidelines
+
+### 1. Data Integrity & Rate Submissions
+- When submitting price updates for existing or new regions, supply verifiable evidence: studio price lists, published rate cards, or regional trade associations.
+- Never submit guessed or fabricated pricing. If reliable data is not available, mark as data gap.
+- All piercing references must clearly specify whether starter jewellery is included or separate.
+
+### 2. Standards Compliance
+- Cite only recognized standards by exact designation:
+  - **ASTM F-136**
+  - **ASTM F-138**
+  - **EN 1811**
+  - **ISO 10993**
+  - **EU REACH Annex XVII**
+- Never invent certifying bodies or credentials.
+
+### 3. Internationalization (i18n) Rules
+- When adding a new key, it MUST be added to all 7 languages simultaneously:
+  - English (\`en\`)
+  - German (\`de\`)
+  - French (\`fr\`)
+  - Spanish (\`es\`)
+  - Italian (\`it\`)
+  - Portuguese (\`pt\`)
+  - Dutch (\`nl\`)
+- Ensure all token placeholders match across languages (\`{count}\`, \`{total}\`).
+
+### 4. Zero External Dependencies
+- Do not add remote external script links, remote fonts, or analytics scripts.
+- Ensure all CSS custom properties maintain WCAG AA contrast (≥ 4.5:1) in both themes.
+`},nl:{"README.md":`# Studio Prijsbenchmark (Nederlands)
+
+> Professional reference utility published by **Poli International** for tattoo artists, body piercers, and studio owners. Available in 7 languages.
+
+**[Languages: EN | DE | FR | ES | IT | PT | NL]** &bull; **[Network: Zero External Requests]** &bull; **[License: MIT]**
+
+---
+
+## Language Editions / Traductions / Übersetzungen / Traducciones / Traduzioni / Vertalingen
+
+- [English (en)](docs/en/README.md)
+- [Deutsch (de)](docs/de/README.md)
+- [Français (fr)](docs/fr/README.md)
+- [Español (es)](docs/es/README.md)
+- [Italiano (it)](docs/it/README.md)
+- [Português (pt)](docs/pt/README.md)
+- [Nederlands (nl)](docs/nl/README.md)
+
+---
+
+## Overview
+
+The **Studio Pricing Benchmark** is a zero-network-request, offline-capable reference tool engineered for commercial tattoo and body piercing studios. It allows studio owners and artists to systematically benchmark their rate cards across **nine global geographic markets**:
+
+1. **UK (National Average)**: Rates outside Greater London across England, Scotland, and Wales.
+2. **London / SE England**: Metropolitan commercial studios reflecting higher fixed operating overheads.
+3. **United States (National Average)**: Average across urban and suburban commercial studios.
+4. **Western Europe**: Metropolitan studios across France, Germany, Netherlands, Belgium, and Austria in EUR (€).
+5. **Australia**: State capital cities (Sydney, Melbourne, Brisbane) and regional studios in AUD (A$).
+6. **Central & Eastern Europe**: Urban studios in Poland, Czechia, Hungary, and Romania indexed in EUR (€).
+7. **Canada** : Urban studios in Ontario, British Columbia, and Quebec in CAD (C$).
+8. **South America**: Data rooted in custom studios in São Paulo, Rio de Janeiro (Brazil), and Buenos Aires (Argentina) in BRL (R$).
+9. **South East Asia**: Professional studio hubs in Thailand (Bangkok, Phuket, Chiang Mai) and Bali (Indonesia) in THB (฿).
+
+---
+
+## Key Features
+
+- **10 Core Industry Procedures**: 5 tattoo categories (Small, Half-Day, Full-Day, Hourly, Minimum) and 5 piercing categories (Lobe Pair, Nostril, Helix, Navel, Septum).
+- **Explicit Confidence Indicators**:
+  - \`[INDICATIVE]\`: Drawn directly from publicly listed studio price menus.
+  - \`[INDICATIVE]\`: Derived from regional cost of living and published trade reports.
+  - \`[GAP / NO DATA]\`: Intentionally left blank where reliable standardized listings do not exist.
+- **Starter Jewellery Policies**: Clear documentation of regional norms (e.g. UK/EU/AU/SEA inclusion vs. US/Canada separate charging).
+- **Interactive Price Evaluator**: Enter your studio's rates to analyze alignment (Below Market, Market Rate, Premium).
+- **Offline-First & Zero Network Requests**: Zero external scripts, remote fonts, or telemetry. Operates entirely in client memory.
+- **7 Fully Localized Languages**: EN, DE, FR, ES, IT, PT, NL with 100% key parity.
+
+---
+
+## Embedding in Studio Websites
+
+Embed the self-contained widget into your studio website or booking portal:
+
+\`\`\`html
+<iframe
+  src="/tools/studio-pricing-benchmark/index.html"
+  width="100%"
+  height="850"
+  frameborder="0"
+  style="border-radius:12px; border:1px solid var(--border); overflow:hidden;"
+  title="Studio Pricing Benchmark">
+</iframe>
+\`\`\`
+
+The iframe automatically detects dark/light theme changes from the parent container via \`postMessage\` (\`poli-theme\`) or \`localStorage\` (\`poli-dark-mode\`).
+
+---
+
+## Biomedical Material Standards
+
+All starter jewellery references adhere strictly to established biomedical specifications:
+- **ASTM F-136**: Standard Specification for Wrought Titanium-6Aluminum-4Vanadium ELI for Surgical Implant Applications.
+- **ASTM F-138**: Standard Specification for Wrought 18Chromium-14Nickel-2.5Molybdenum Stainless Steel for Surgical Implants.
+- **EN 1811**: Reference test method for release of nickel from all post assemblies inserted into pierced parts of the human body.
+- **ISO 10993**: Biological evaluation of medical devices.
+- **EU REACH Annex XVII**: Nickel release restrictions.
+
+---
+
+## Privacy & Data Sovereignty
+
+All calculations and entered rates remain strictly in the local browser session. No data is transmitted to remote servers.
+
+---
+
+## Documentation
+
+- [Studio User Guide](docs/nl/USER-GUIDE.md)
+- [Technical Documentation](docs/nl/TECHNICAL-DOCS.md)
+- [Contributing Guide](docs/nl/CONTRIBUTING.md)
+
+---
+
+## License
+
+Published under the MIT License by Poli International.
+`,"USER-GUIDE.md":`# Studio Pricing Benchmark: User Guide (V2)
+
+## Overview
+
+The Studio Pricing Benchmark lets a tattoo or piercing studio owner place their own prices against typical price ranges in nine markets, and settle on the numbers they want to charge. It shows ranges, never a "correct" price, and it gives no advice on what you should charge.
+
+Everything runs in your browser. Nothing you enter is sent anywhere.
+
+## 1. Choose a Region
+
+Pick one of nine markets: UK (national average), London / South East England, US (national average), Western Europe, Australia, Central & Eastern Europe, Canada, South America, and South East Asia. Prices switch to that region's currency.
+
+Each region shows a short coverage note, explaining what the region's figures represent, and a **Jewellery Inclusions** note, explaining whether piercing prices typically include the starter jewellery.
+
+## 2. Where the Figures Come From
+
+Every row carries a confidence label:
+
+- **INDICATIVE**: an editorial estimate compiled by Poli International from publicly listed prices. It is not survey data and has not been independently verified.
+- **GAP**: no reliable figure exists, so the row is left blank rather than guessed.
+
+Each row also has a short basis note describing what kind of price it is. Figures were last reviewed in September 2026. Premium specialists and fine-line artists routinely price above these ranges.
+
+## 3. Compare Your Service Prices
+
+The table lists tattoo and piercing services, from a small tattoo and a full day's sitting to lobe, nostril, helix, navel and septum piercings, each with its low-to-high range.
+
+1. Type your own price for any service in **Your Price**.
+2. Click **Compare My Prices**.
+3. Each service is placed as **Below Market** (under the range), **Market Rate** (within it) or **Premium** (above it). A service with no data shows **Data Gap**. A summary counts how many of your services fall in each position.
+
+**Clear All Rates** empties every price you entered.
+
+## 4. Your Rates
+
+Enter the four numbers that define your studio:
+
+- **Hourly rate**
+- **Minimum charge**
+- **Shop minimum**
+- **Deposit percentage**
+
+Choose a **studio tier**: Apprentice, Resident Artist, Established Artist, or Specialist / Guest Artist. The tier only adds a description of that kind of artist; it does not change any figure.
+
+The panel shows whether your hourly rate and your shop minimum sit below, within or above the region's range.
+
+## 5. What-If Rate Calculator
+
+Move the slider from **-20%** to **+30%** to adjust your hourly rate, and set the length of a typical booking in hours (2 by default). The calculator shows:
+
+- the adjusted hourly rate
+- the price of that booking
+- the deposit due on it, at your deposit percentage
+
+It is arithmetic on your own numbers only. It does not predict what the market will do.
+
+## 6. Your Numbers (Settings Handoff)
+
+A plain-text block lists your hourly rate, minimum charge, shop minimum, deposit percentage and tier, ready to copy into your booking system or studio settings with the **Copy** button. It is labelled as your decision, not a recommendation from the tool. A field you have left blank shows a dash, never a default figure.
+
+## 7. Printable Rate Card
+
+Print a one-page Studio Rate Card (A4 or US Letter) from your own numbers and service prices, dated today. The card carries only your figures, not the regional ranges.
+
+## 8. Visual Comparison Chart
+
+After you compare, a bar chart plots your price for each service beside the range's low and high values. Filter it to **All Procedures**, **Tattoo Only** or **Piercing Only**.
+
+## 9. Export CSV
+
+**Export CSV** downloads the full comparison for a spreadsheet: region, service, currency, range, confidence, basis note, jewellery policy, your price and its position.
+
+## 10. Saving, Languages and Embedding
+
+- Your prices and rates are saved in your own browser, so they are still there next time. Clearing your browser's site data removes them.
+- The interface is available in English, French, German, Spanish, Italian, Dutch and Portuguese.
+- The **Embed** tab gives a code snippet to place the tool on your own website.
+
+## 11. Important Notice
+
+This tool compares prices. It is not financial or business advice, and the ranges are editorial estimates, not a survey. Prices vary widely with experience, location, style and demand.
+`,"TECHNICAL-DOCS.md":`# Technische Documentatie (Nederlands)
+
+## Architecture & System Design
+
+The **Studio Pricing Benchmark** is engineered as an offline-first, client-rendered web application with zero external runtime dependencies.
+
+### Technical Stack
+- **Framework**: React 18+ with TypeScript & Vite
+- **Styling**: Tailwind CSS with tokenized CSS custom properties (\`--surface\`, \`--text\`, \`--border\`, \`--primary\`)
+- **Accessibility**: WCAG AA contrast ratio compliance (≥ 4.5:1) in both light and dark themes
+- **Standalone Export**: Self-contained vanilla JS widget with zero external network dependencies
+
+---
+
+## Internationalization Architecture
+
+The system supports **7 European & International Languages**:
+- English (\`en\`)
+- German (\`de\`)
+- French (\`fr\`)
+- Spanish (\`es\`)
+- Italian (\`it\`)
+- Portuguese (\`pt\`)
+- Dutch (\`nl\`)
+
+### Synchronization Rule
+Every language dictionary maintains an identical key set (currently 285 keys). The dictionary is bundled synchronously in \`src/i18n.ts\` and \`public/i18n.js\` ensuring that components mount with fully resolved strings. Both React state and DOM \`data-i18n\` attributes are updated synchronously upon language selection.
+
+---
+
+## Data Schemas
+
+\`\`\`typescript
+export type RegionId = 'uk' | 'london' | 'us' | 'eu' | 'au' | 'cee' | 'ca' | 'sa' | 'sea';
+
+export type ConfidenceMarker = 'INDICATIVE' | 'GAP';
+
+export interface BenchmarkRow {
+  id: string;
+  category: 'tattoo' | 'piercing';
+  nameKey: string;
+  subKey: string;
+  min: number | null;
+  max: number | null;
+  currency: string;
+  confidence: ConfidenceMarker;
+  basisKey: string;
+}
+
+export interface RegionMetadata {
+  id: RegionId;
+  nameKey: string;
+  currency: string;
+  currencyCode: string;
+  coverageNoteKey: string;
+  jewelleryPolicyKey: string;
+}
+\`\`\`
+
+---
+
+## Embedding & Iframe Communication
+
+The tool can be embedded in third-party host sites using an \`<iframe>\`. The embedded widget listens for theme change events:
+
+\`\`\`javascript
+window.addEventListener('message', function(event) {
+  if (event.data && event.data.type === 'poli-theme') {
+    document.documentElement.classList.toggle('dark', event.data.theme === 'dark');
+  }
+});
+\`\`\`
+
+---
+
+## Privacy & Security
+
+- Zero third-party network requests.
+- Content Security Policy: \`script-src 'self'\`.
+- In-memory data evaluation: user entered rates are never transmitted to any server.
+`,"CONTRIBUTING.md":`# Bijdragersgids (Nederlands)
+
+Thank you for contributing to the **Studio Pricing Benchmark** by Poli International.
+
+## Contribution Guidelines
+
+### 1. Data Integrity & Rate Submissions
+- When submitting price updates for existing or new regions, supply verifiable evidence: studio price lists, published rate cards, or regional trade associations.
+- Never submit guessed or fabricated pricing. If reliable data is not available, mark as data gap.
+- All piercing references must clearly specify whether starter jewellery is included or separate.
+
+### 2. Standards Compliance
+- Cite only recognized standards by exact designation:
+  - **ASTM F-136**
+  - **ASTM F-138**
+  - **EN 1811**
+  - **ISO 10993**
+  - **EU REACH Annex XVII**
+- Never invent certifying bodies or credentials.
+
+### 3. Internationalization (i18n) Rules
+- When adding a new key, it MUST be added to all 7 languages simultaneously:
+  - English (\`en\`)
+  - German (\`de\`)
+  - French (\`fr\`)
+  - Spanish (\`es\`)
+  - Italian (\`it\`)
+  - Portuguese (\`pt\`)
+  - Dutch (\`nl\`)
+- Ensure all token placeholders match across languages (\`{count}\`, \`{total}\`).
+
+### 4. Zero External Dependencies
+- Do not add remote external script links, remote fonts, or analytics scripts.
+- Ensure all CSS custom properties maintain WCAG AA contrast (≥ 4.5:1) in both themes.
+`}},de=({currentLanguage:i})=>{var T;const l=i||K(),[t,n]=u.useState("TECHNICAL-DOCS.md"),[c,m]=u.useState("rendered"),[p,w]=u.useState(!1),r=((T=q[l])==null?void 0:T[t])||q.en[t]||"",S=()=>{navigator.clipboard.writeText(r).then(()=>{w(!0),setTimeout(()=>w(!1),2e3)}).catch(()=>{const h=document.createElement("textarea");h.value=r,document.body.appendChild(h),h.select(),document.execCommand("copy"),document.body.removeChild(h),w(!0),setTimeout(()=>w(!1),2e3)})},g=()=>{const h=new Blob([r],{type:"text/markdown;charset=utf-8;"}),x=URL.createObjectURL(h),y=document.createElement("a");y.href=x,y.setAttribute("download",`${l}-${t}`),document.body.appendChild(y),y.click(),document.body.removeChild(y),URL.revokeObjectURL(x)};return e.jsxs("div",{className:"bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6 md:p-10 shadow-lg max-w-4xl mx-auto space-y-8 text-sm leading-relaxed text-[var(--text)]",children:[e.jsxs("header",{className:"border-b border-[var(--border)] pb-6",children:[e.jsx("div",{className:"flex flex-col sm:flex-row sm:items-center justify-between gap-4",children:e.jsxs("div",{children:[e.jsxs("div",{className:"inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-3",children:[a("docs.badge")," • ",l.toUpperCase()]}),e.jsx("h2",{className:"text-2xl md:text-3xl font-extrabold text-[var(--text-heading)] mb-2",children:a("docs.title")}),e.jsx("p",{className:"text-xs md:text-sm text-[var(--muted)]",children:a("docs.subtitle")})]})}),e.jsxs("div",{className:"mt-6 pt-4 border-t border-[var(--border)] flex flex-wrap items-center justify-between gap-3",children:[e.jsxs("div",{className:"flex items-center gap-2",children:[e.jsx("label",{htmlFor:"doc-file-select",className:"text-xs font-semibold text-[var(--muted)]",children:a("docs.file_selector")}),e.jsxs("select",{id:"doc-file-select",value:t,onChange:h=>n(h.target.value),className:"bg-[var(--surface-elevated)] border border-[var(--border)] text-[var(--text-heading)] rounded-lg px-3 py-1.5 text-xs font-semibold focus:outline-none focus:border-[var(--primary)] transition-colors cursor-pointer",children:[e.jsx("option",{value:"TECHNICAL-DOCS.md",children:a("docs.file_tech")}),e.jsx("option",{value:"USER-GUIDE.md",children:a("docs.file_user")}),e.jsx("option",{value:"README.md",children:a("docs.file_readme")}),e.jsx("option",{value:"CONTRIBUTING.md",children:a("docs.file_contrib")})]})]}),e.jsxs("div",{className:"flex items-center gap-2",children:[e.jsxs("div",{className:"bg-[var(--surface-elevated)] p-1 rounded-lg border border-[var(--border)] flex items-center",children:[e.jsx("button",{onClick:()=>m("rendered"),className:`px-2.5 py-1 rounded-md text-xs font-semibold transition-colors cursor-pointer ${c==="rendered"?"bg-blue-600 text-white shadow-xs":"text-[var(--muted)] hover:text-[var(--text)]"}`,children:a("docs.view_rendered")}),e.jsx("button",{onClick:()=>m("markdown"),className:`px-2.5 py-1 rounded-md text-xs font-semibold transition-colors cursor-pointer ${c==="markdown"?"bg-blue-600 text-white shadow-xs":"text-[var(--muted)] hover:text-[var(--text)]"}`,children:a("docs.view_markdown")})]}),e.jsxs("button",{onClick:S,className:"bg-[var(--surface-elevated)] hover:bg-[var(--border)] text-[var(--text)] text-xs font-semibold px-2.5 py-1.5 rounded-lg border border-[var(--border)] transition-colors cursor-pointer inline-flex items-center gap-1.5",title:a("docs.copied_md"),children:[e.jsx("span",{children:p?"✅":"📋"}),e.jsx("span",{children:a(p?"common.copied":"common.copy")})]}),e.jsxs("button",{onClick:g,className:"bg-[var(--surface-elevated)] hover:bg-[var(--border)] text-[var(--text)] text-xs font-semibold px-2.5 py-1.5 rounded-lg border border-[var(--border)] transition-colors cursor-pointer inline-flex items-center gap-1.5",children:[e.jsx("span",{children:"💾"}),e.jsx("span",{children:a("common.download")})]})]})]})]}),c==="markdown"&&e.jsxs("div",{className:"space-y-3",children:[e.jsxs("div",{className:"flex items-center justify-between text-xs text-[var(--muted)]",children:[e.jsxs("span",{className:"font-mono",children:["docs/",l,"/",t]}),e.jsxs("span",{children:[r.length.toLocaleString()," bytes • UTF-8"]})]}),e.jsx("div",{className:"relative",children:e.jsx("pre",{className:"w-full max-h-[600px] overflow-y-auto bg-[var(--code-bg)] text-[var(--code-text)] border border-[var(--code-border)] rounded-lg p-4 font-mono text-xs leading-relaxed whitespace-pre-wrap select-text",children:r})})]}),c==="rendered"&&e.jsxs("div",{className:"space-y-8",children:[e.jsxs("section",{className:"space-y-3",children:[e.jsxs("h3",{className:"text-lg font-bold text-[var(--text-heading)] border-b border-[var(--border)] pb-2",children:["1. ",a("docs.sec_overview")]}),e.jsx("p",{className:"text-[var(--text)] leading-relaxed",children:a("docs.sec_overview_body")}),e.jsxs("ul",{className:"list-disc pl-5 space-y-1.5 text-xs text-[var(--muted)]",children:[e.jsxs("li",{children:[e.jsxs("strong",{children:[a("docs.feature_zero_net").split(":")[0],":"]})," ",a("docs.feature_zero_net").split(":")[1]]}),e.jsxs("li",{children:[e.jsxs("strong",{children:[a("docs.feature_theme").split(":")[0],":"]})," ",a("docs.feature_theme").split(":")[1]]}),e.jsxs("li",{children:[e.jsxs("strong",{children:[a("docs.feature_a11y").split(":")[0],":"]})," ",a("docs.feature_a11y").split(":")[1]]})]})]}),e.jsxs("section",{className:"space-y-3",children:[e.jsxs("h3",{className:"text-lg font-bold text-[var(--text-heading)] border-b border-[var(--border)] pb-2",children:["2. ",a("docs.sec_methodology")]}),e.jsx("p",{className:"text-[var(--text)] leading-relaxed",children:a("docs.sec_methodology_body")}),e.jsxs("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-4 pt-2",children:[e.jsxs("div",{className:"bg-[var(--surface-elevated)] p-4 rounded-lg border border-dashed border-amber-500/40",children:[e.jsx("span",{className:"inline-block px-2 py-0.5 rounded text-[10px] font-mono font-bold tracking-wider uppercase border border-dashed border-amber-500 text-amber-400 bg-amber-500/10 mb-2",children:"[INDICATIVE]"}),e.jsx("p",{className:"text-xs text-[var(--muted)] leading-relaxed",children:a("docs.conf_ind_desc")})]}),e.jsxs("div",{className:"bg-[var(--surface-elevated)] p-4 rounded-lg border border-dotted border-[var(--border)]",children:[e.jsx("span",{className:"inline-block px-2 py-0.5 rounded text-[10px] font-mono font-bold tracking-wider uppercase border border-dotted border-[var(--border)] text-[var(--muted)] bg-[var(--surface)] mb-2",children:"[GAP]"}),e.jsx("p",{className:"text-xs text-[var(--muted)] leading-relaxed",children:a("docs.conf_gap_desc")})]})]})]}),e.jsxs("section",{className:"space-y-3",children:[e.jsxs("h3",{className:"text-lg font-bold text-[var(--text-heading)] border-b border-[var(--border)] pb-2",children:["3. ",a("docs.sec_regions")]}),e.jsx("p",{className:"text-[var(--text)] leading-relaxed",children:a("docs.sec_regions_body")}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"w-full text-xs text-left border-collapse mt-2",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-[var(--surface-elevated)] text-[var(--text-heading)] border-b border-[var(--border)]",children:[e.jsx("th",{className:"p-2.5 font-bold",children:a("docs.th_region_code")}),e.jsx("th",{className:"p-2.5 font-bold",children:a("docs.th_territory")}),e.jsx("th",{className:"p-2.5 font-bold",children:a("docs.th_currency")}),e.jsx("th",{className:"p-2.5 font-bold",children:a("docs.th_scope_basis")})]})}),e.jsxs("tbody",{className:"divide-y divide-[var(--border)] text-[var(--muted)]",children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-mono text-[var(--text)]",children:"uk"}),e.jsx("td",{className:"p-2.5",children:a("region.uk.name")}),e.jsx("td",{className:"p-2.5",children:"GBP (£)"}),e.jsx("td",{className:"p-2.5",children:a("docs.scope_uk")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-mono text-[var(--text)]",children:"london"}),e.jsx("td",{className:"p-2.5",children:a("region.london.name")}),e.jsx("td",{className:"p-2.5",children:"GBP (£)"}),e.jsx("td",{className:"p-2.5",children:a("docs.scope_london")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-mono text-[var(--text)]",children:"us"}),e.jsx("td",{className:"p-2.5",children:a("region.us.name")}),e.jsx("td",{className:"p-2.5",children:"USD ($)"}),e.jsx("td",{className:"p-2.5",children:a("docs.scope_us")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-mono text-[var(--text)]",children:"eu"}),e.jsx("td",{className:"p-2.5",children:a("region.eu.name")}),e.jsx("td",{className:"p-2.5",children:"EUR (€)"}),e.jsx("td",{className:"p-2.5",children:a("docs.scope_eu")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-mono text-[var(--text)]",children:"au"}),e.jsx("td",{className:"p-2.5",children:a("region.au.name")}),e.jsx("td",{className:"p-2.5",children:"AUD (A$)"}),e.jsx("td",{className:"p-2.5",children:a("docs.scope_au")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-mono text-[var(--text)]",children:"cee"}),e.jsx("td",{className:"p-2.5",children:a("region.cee.name")}),e.jsx("td",{className:"p-2.5",children:"EUR (€)"}),e.jsx("td",{className:"p-2.5",children:a("docs.scope_cee")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-mono text-[var(--text)]",children:"ca"}),e.jsx("td",{className:"p-2.5",children:a("region.ca.name")}),e.jsx("td",{className:"p-2.5",children:"CAD (C$)"}),e.jsx("td",{className:"p-2.5",children:a("docs.scope_ca")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-mono text-[var(--text)]",children:"sa"}),e.jsx("td",{className:"p-2.5",children:a("region.sa.name")}),e.jsx("td",{className:"p-2.5",children:"BRL (R$)"}),e.jsx("td",{className:"p-2.5",children:a("docs.scope_sa")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-mono text-[var(--text)]",children:"sea"}),e.jsx("td",{className:"p-2.5",children:a("region.sea.name")}),e.jsx("td",{className:"p-2.5",children:"THB (฿)"}),e.jsx("td",{className:"p-2.5",children:a("docs.scope_sea")})]})]})]})})]}),e.jsxs("section",{className:"space-y-3",children:[e.jsxs("h3",{className:"text-lg font-bold text-[var(--text-heading)] border-b border-[var(--border)] pb-2",children:["4. ",a("docs.sec_jewellery")]}),e.jsx("p",{className:"text-[var(--text)] leading-relaxed",children:a("docs.sec_jewellery_body")}),e.jsx("div",{className:"overflow-x-auto",children:e.jsxs("table",{className:"w-full text-xs text-left border-collapse mt-2",children:[e.jsx("thead",{children:e.jsxs("tr",{className:"bg-[var(--surface-elevated)] text-[var(--text-heading)] border-b border-[var(--border)]",children:[e.jsx("th",{className:"p-2.5 font-bold",children:a("docs.th_territory")}),e.jsx("th",{className:"p-2.5 font-bold",children:a("docs.th_jewellery_policy")}),e.jsx("th",{className:"p-2.5 font-bold",children:a("docs.th_material_standard")})]})}),e.jsxs("tbody",{className:"divide-y divide-[var(--border)] text-[var(--muted)]",children:[e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-medium text-[var(--text)]",children:a("region.uk.name")}),e.jsx("td",{className:"p-2.5 text-emerald-400 font-medium",children:a("docs.jewellery_inc_proc")}),e.jsx("td",{className:"p-2.5",children:a("docs.jewellery_mat_titanium")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-medium text-[var(--text)]",children:a("region.london.name")}),e.jsx("td",{className:"p-2.5 text-emerald-400 font-medium",children:a("docs.jewellery_inc_proc")}),e.jsx("td",{className:"p-2.5",children:a("docs.jewellery_mat_titanium")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-medium text-[var(--text)]",children:a("region.us.name")}),e.jsx("td",{className:"p-2.5 text-amber-400 font-medium",children:a("docs.jewellery_sep_charged")}),e.jsx("td",{className:"p-2.5",children:a("docs.jewellery_mat_client")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-medium text-[var(--text)]",children:a("region.eu.name")}),e.jsx("td",{className:"p-2.5 text-emerald-400 font-medium",children:a("docs.jewellery_std_included")}),e.jsx("td",{className:"p-2.5",children:a("docs.jewellery_mat_eu")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-medium text-[var(--text)]",children:a("region.au.name")}),e.jsx("td",{className:"p-2.5 text-emerald-400 font-medium",children:a("docs.jewellery_mat_au_inc")}),e.jsx("td",{className:"p-2.5",children:a("docs.jewellery_mat_au_std")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-medium text-[var(--text)]",children:a("region.cee.name")}),e.jsx("td",{className:"p-2.5 text-emerald-400 font-medium",children:a("docs.jewellery_mat_cee_inc")}),e.jsx("td",{className:"p-2.5",children:a("docs.jewellery_mat_cee_std")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-medium text-[var(--text)]",children:a("region.ca.name")}),e.jsx("td",{className:"p-2.5 text-amber-400 font-medium",children:a("docs.jewellery_mat_ca_sep")}),e.jsx("td",{className:"p-2.5",children:a("docs.jewellery_mat_ca_std")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-medium text-[var(--text)]",children:a("region.sa.name")}),e.jsx("td",{className:"p-2.5 text-emerald-400 font-medium",children:a("docs.jewellery_mat_sa_inc")}),e.jsx("td",{className:"p-2.5",children:a("docs.jewellery_mat_sa_std")})]}),e.jsxs("tr",{children:[e.jsx("td",{className:"p-2.5 font-medium text-[var(--text)]",children:a("region.sea.name")}),e.jsx("td",{className:"p-2.5 text-emerald-400 font-medium",children:a("docs.jewellery_mat_sea_inc")}),e.jsx("td",{className:"p-2.5",children:a("docs.jewellery_mat_sea_std")})]})]})]})})]}),e.jsxs("section",{className:"space-y-3",children:[e.jsxs("h3",{className:"text-lg font-bold text-[var(--text-heading)] border-b border-[var(--border)] pb-2",children:["5. ",a("docs.sec_standards_title")]}),e.jsx("p",{className:"text-[var(--text)] leading-relaxed",children:a("docs.sec_standards_body")}),e.jsxs("ul",{className:"list-disc pl-5 space-y-1.5 text-xs text-[var(--muted)]",children:[e.jsx("li",{children:a("docs.std_astm_f136")}),e.jsx("li",{children:a("docs.std_astm_f138")}),e.jsx("li",{children:a("docs.std_iso_10993")}),e.jsx("li",{children:a("docs.std_en_1811")}),e.jsx("li",{children:a("docs.std_eu_reach")})]})]}),e.jsxs("section",{className:"space-y-3",children:[e.jsxs("h3",{className:"text-lg font-bold text-[var(--text-heading)] border-b border-[var(--border)] pb-2",children:["6. ",a("docs.sec_sovereignty_title")]}),e.jsx("p",{className:"text-xs text-[var(--muted)] leading-relaxed",children:a("docs.sec_sovereignty_body")})]})]})]})},ue=()=>{const[i,l]=u.useState(!1),t='<iframe src="https://poliinternational.com/tools/studio-pricing-benchmark/index.html" width="100%" height="850" frameborder="0" style="border-radius:12px; border:1px solid var(--border); overflow:hidden;" title="Studio Pricing Benchmark"></iframe>',n=()=>{navigator.clipboard.writeText(t).then(()=>{l(!0),setTimeout(()=>l(!1),2e3)}).catch(()=>{const c=document.createElement("textarea");c.value=t,document.body.appendChild(c),c.select(),document.execCommand("copy"),document.body.removeChild(c),l(!0),setTimeout(()=>l(!1),2e3)})};return e.jsxs("div",{className:"bg-[var(--surface)] border border-[var(--border)] rounded-xl p-6 md:p-10 shadow-lg max-w-4xl mx-auto space-y-6 text-sm leading-relaxed text-[var(--text)]",children:[e.jsxs("header",{className:"border-b border-[var(--border)] pb-4",children:[e.jsx("div",{className:"inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-3",children:"Integration Guide"}),e.jsx("h2",{className:"text-2xl font-extrabold text-[var(--text-heading)] mb-2",children:a("embed.title")}),e.jsx("p",{className:"text-xs md:text-sm text-[var(--muted)]",children:a("embed.subtitle")})]}),e.jsxs("div",{className:"space-y-4",children:[e.jsx("p",{className:"text-xs text-[var(--muted)] leading-relaxed",children:a("embed.instructions")}),e.jsx("div",{className:"relative",children:e.jsx("textarea",{readOnly:!0,value:t,className:"w-full h-32 bg-[var(--code-bg)] text-[var(--code-text)] border border-[var(--code-border)] rounded-lg p-4 font-mono text-xs focus:outline-none resize-none leading-relaxed select-all"})}),e.jsx("div",{children:e.jsxs("button",{onClick:n,className:"bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-5 py-2.5 rounded-lg transition-colors cursor-pointer inline-flex items-center gap-2 shadow-sm",children:[e.jsx("span",{children:i?"✅":"📋"}),e.jsx("span",{children:a(i?"embed.copied":"embed.copy_btn")})]})})]}),e.jsxs("div",{className:"bg-[var(--surface-elevated)] p-4 rounded-lg border border-[var(--border)] text-xs text-[var(--muted)] space-y-2",children:[e.jsx("strong",{className:"text-[var(--text-heading)] block",children:"Integration Notes:"}),e.jsx("p",{children:"• The embedded iframe automatically inherits the host website's dark or light theme via standard postMessage events or data-theme attributes."}),e.jsx("p",{children:"• Requires zero third-party scripts or API keys to function."})]})]})},me=({currentLanguage:i,onLanguageChange:l})=>e.jsxs("div",{className:"relative inline-flex items-center",children:[e.jsx("label",{htmlFor:"header-lang-switcher",className:"sr-only","data-i18n":"lang.switcher_label",children:a("lang.switcher_label")}),e.jsxs("div",{className:"flex items-center gap-1.5 bg-[var(--surface-elevated)] border border-[var(--border)] rounded-lg px-2.5 py-1.5 text-xs text-[var(--text)] transition-colors hover:border-[var(--primary)] focus-within:border-[var(--primary)]",children:[e.jsx("span",{className:"text-sm","aria-hidden":"true",children:"🌐"}),e.jsx("select",{id:"header-lang-switcher",value:i,onChange:t=>l(t.target.value),className:"bg-transparent text-[var(--text-heading)] font-medium text-xs focus:outline-none cursor-pointer pr-1","aria-label":a("lang.switcher_label"),children:te.map(t=>e.jsxs("option",{value:t.code,className:"bg-[var(--surface)] text-[var(--text)] py-1",children:[t.flag," ",t.label," (",t.code.toUpperCase(),")"]},t.code))})]})]}),pe=()=>{const[i,l]=u.useState("uk"),[t,n]=u.useState("benchmark"),[c,m]=u.useState(K());u.useEffect(()=>{F(c)},[c]);const p=r=>{re(r),m(r),F(r)},w=()=>{window.print()};return e.jsxs("div",{className:"min-h-screen bg-[var(--bg)] text-[var(--text)] font-sans antialiased flex flex-col",children:[e.jsx("header",{className:"border-b border-[var(--border)] bg-[var(--surface)] sticky top-0 z-30 shadow-sm print:hidden",children:e.jsxs("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4",children:[e.jsxs("div",{className:"flex items-center gap-3",children:[e.jsx("span",{className:"text-xl",role:"img","aria-label":"chart",children:"📊"}),e.jsxs("div",{children:[e.jsx("h1",{className:"text-base sm:text-lg font-extrabold tracking-tight text-[var(--text-heading)]",children:a("app.title")}),e.jsxs("p",{className:"text-[11px] text-[var(--muted)] hidden sm:block",children:["Poli International • ",a("app.badge")]})]})]}),e.jsxs("nav",{className:"flex items-center gap-1 sm:gap-2 bg-[var(--surface-elevated)] p-1 rounded-lg border border-[var(--border)]",children:[e.jsxs("button",{onClick:()=>n("benchmark"),className:`px-3 py-1.5 rounded-md text-xs font-semibold transition-colors cursor-pointer ${t==="benchmark"?"bg-blue-600 text-white shadow-xs":"text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--surface)]"}`,children:["📊 ",a("app.nav_benchmark")]}),e.jsxs("button",{onClick:()=>n("docs"),className:`px-3 py-1.5 rounded-md text-xs font-semibold transition-colors cursor-pointer ${t==="docs"?"bg-blue-600 text-white shadow-xs":"text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--surface)]"}`,children:["📖 ",a("app.nav_docs")]}),e.jsxs("button",{onClick:()=>n("embed"),className:`px-3 py-1.5 rounded-md text-xs font-semibold transition-colors cursor-pointer ${t==="embed"?"bg-blue-600 text-white shadow-xs":"text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--surface)]"}`,children:["⚡ ",a("app.nav_embed")]})]}),e.jsxs("div",{className:"flex items-center gap-2 sm:gap-3",children:[e.jsx(me,{currentLanguage:c,onLanguageChange:p}),e.jsxs("button",{onClick:w,className:"hidden md:inline-flex bg-[var(--surface-elevated)] hover:bg-[var(--border)] text-[var(--muted)] hover:text-[var(--text)] text-xs font-semibold px-3 py-1.5 rounded-lg border border-[var(--border)] transition-colors cursor-pointer items-center gap-1.5",children:[e.jsx("span",{children:"🖨️"}),e.jsx("span",{children:a("app.print")})]})]})]})}),e.jsxs("main",{className:"flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8",children:[t==="benchmark"&&e.jsxs("div",{className:"mb-6 text-center max-w-3xl mx-auto print:mb-4",children:[e.jsxs("div",{className:"inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-2",children:["💷 ",a("app.badge")]}),e.jsx("h2",{className:"text-2xl sm:text-3xl font-extrabold text-[var(--text-heading)] tracking-tight",children:a("app.title")}),e.jsx("p",{className:"mt-2 text-xs sm:text-sm text-[var(--muted)] leading-relaxed",children:a("app.subtitle")})]}),t==="benchmark"&&e.jsx(ce,{selectedRegion:i,onSelectRegion:l,currentLanguage:c}),t==="docs"&&e.jsx(de,{currentLanguage:c}),t==="embed"&&e.jsx(ue,{})]}),e.jsx("footer",{className:"border-t border-[var(--border)] bg-[var(--surface)] mt-auto py-6 print:hidden",children:e.jsxs("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[var(--muted)]",children:[e.jsxs("div",{className:"flex items-center gap-2",children:[e.jsx("span",{className:"font-semibold text-[var(--text)]",children:a("app.title")}),e.jsx("span",{children:"•"}),e.jsx("span",{children:"Poli International"})]}),e.jsx("div",{className:"flex items-center gap-4",children:e.jsx("a",{href:"https://poliinternational.com/tools/studio-pricing-benchmark/index.html",target:"_blank",rel:"noopener noreferrer",className:"text-blue-400 hover:underline font-medium",children:a("app.open_standalone")})})]})})]})};Y.createRoot(document.getElementById("root")).render(e.jsx(u.StrictMode,{children:e.jsx(pe,{})}));
