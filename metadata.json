@@ -1,0 +1,6 @@
+{
+  "name": "Studio Pricing Benchmark",
+  "description": "Professional tattoo and piercing studio pricing benchmark reference tool. Compare studio rates against industry reference ranges across nine global markets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
