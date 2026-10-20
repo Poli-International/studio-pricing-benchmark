@@ -1,5 +1,5 @@
 // Types for Studio Pricing Benchmark
-export type SupportedLanguage = 'en' | 'de' | 'fr' | 'es' | 'it' | 'pt' | 'nl';
+export type SupportedLanguage = 'en' | 'de' | 'fr' | 'es' | 'it' | 'pt' | 'nl' | 'th';
 export type Language = SupportedLanguage;
 
 export type RegionId = 'uk' | 'london' | 'us' | 'eu' | 'au' | 'cee' | 'ca' | 'sa' | 'sea';
