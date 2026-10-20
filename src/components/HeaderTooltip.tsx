@@ -47,7 +47,8 @@ export const HeaderTooltip: React.FC<HeaderTooltipProps> = ({ id, title, childre
         aria-describedby={isOpen ? `tooltip-content-${id}` : undefined}
         onClick={(e) => {
           e.stopPropagation();
-          setIsOpen(!isOpen);
+          // Hover already opened it: a toggle here closed it again on the same click (CRM v1.0.4 fix, #115)
+          setIsOpen(true);
         }}
         onMouseEnter={() => setIsOpen(true)}
         className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-[var(--surface)] text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--surface-elevated)] border border-[var(--border)] text-[10px] font-bold transition-colors cursor-pointer focus:outline-none focus:ring-1 focus:ring-[var(--primary)]"
