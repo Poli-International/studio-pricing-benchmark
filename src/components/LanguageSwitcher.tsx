@@ -1,6 +1,7 @@
 import React from 'react';
 import { SupportedLanguage, SUPPORTED_LANGUAGES, t } from '../i18n';
 
+import { Globe as IcGlobe } from 'lucide-react';
 interface LanguageSwitcherProps {
   currentLanguage: SupportedLanguage;
   onLanguageChange: (lang: SupportedLanguage) => void;
@@ -20,7 +21,7 @@ export const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         {t('lang.switcher_label')}
       </label>
       <div className="flex items-center gap-1.5 bg-[var(--surface-elevated)] border border-[var(--border)] rounded-lg px-2.5 py-1.5 text-xs text-[var(--text)] transition-colors hover:border-[var(--primary)] focus-within:border-[var(--primary)]">
-        <span className="text-sm" aria-hidden="true">🌐</span>
+        <IcGlobe size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />
         <select
           id="header-lang-switcher"
           value={currentLanguage}

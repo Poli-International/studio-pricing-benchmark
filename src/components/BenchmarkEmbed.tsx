@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { t } from '../i18n';
 
+import { Check as IcCheck, ClipboardList as IcClipboardList } from 'lucide-react';
 export const BenchmarkEmbed: React.FC = () => {
   const [copied, setCopied] = useState(false);
 
@@ -55,7 +56,7 @@ export const BenchmarkEmbed: React.FC = () => {
             onClick={handleCopy}
             className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-5 py-2.5 rounded-lg transition-colors cursor-pointer inline-flex items-center gap-2 shadow-sm"
           >
-            <span>{copied ? '✅' : '📋'}</span>
+            <span>{copied ? <IcCheck size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} /> : <IcClipboardList size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />}</span>
             <span>{copied ? t('embed.copied') : t('embed.copy_btn')}</span>
           </button>
         </div>

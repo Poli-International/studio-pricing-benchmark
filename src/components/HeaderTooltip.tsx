@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
+import { ClipboardList as IcClipboardList, Info as IcInfo, X as IcX } from 'lucide-react';
 export interface HeaderTooltipProps {
   id: string;
   title: string;
@@ -53,7 +54,7 @@ export const HeaderTooltip: React.FC<HeaderTooltipProps> = ({ id, title, childre
         onMouseEnter={() => setIsOpen(true)}
         className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-[var(--surface)] text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--surface-elevated)] border border-[var(--border)] text-[10px] font-bold transition-colors cursor-pointer focus:outline-none focus:ring-1 focus:ring-[var(--primary)]"
       >
-        ℹ️
+        <IcInfo size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} /> 
       </button>
 
       {isOpen && (
@@ -64,7 +65,7 @@ export const HeaderTooltip: React.FC<HeaderTooltipProps> = ({ id, title, childre
         >
           <div className="flex items-center justify-between pb-2 mb-2 border-b border-[var(--border)]">
             <h4 className="font-bold text-[var(--text-heading)] text-xs flex items-center gap-1.5">
-              <span>📋</span>
+              <IcClipboardList size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />
               <span>{title}</span>
             </h4>
             <button
@@ -73,7 +74,7 @@ export const HeaderTooltip: React.FC<HeaderTooltipProps> = ({ id, title, childre
               className="text-[var(--muted)] hover:text-[var(--text)] text-xs p-1 rounded hover:bg-[var(--surface)] cursor-pointer"
               aria-label="Close tooltip"
             >
-              ✕
+              <IcX size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} /> 
             </button>
           </div>
           <div className="space-y-2 text-[11px] leading-relaxed text-[var(--muted)]">

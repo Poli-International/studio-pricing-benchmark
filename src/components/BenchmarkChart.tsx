@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BenchmarkRow } from '../types';
 import { t } from '../i18n';
 
+import { Lightbulb as IcLightbulb, TrendingUp as IcTrendingUp } from 'lucide-react';
 interface BenchmarkChartProps {
   rows: BenchmarkRow[];
   userPrices: Record<string, string>;
@@ -85,7 +86,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[var(--border)] mb-4">
         <div>
           <h4 className="text-sm font-bold text-[var(--text-heading)] flex items-center gap-2">
-            <span>📈</span>
+            <IcTrendingUp size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />
             <span>{t('chart.title')}</span>
           </h4>
           <p className="text-xs text-[var(--muted)] mt-0.5">
@@ -188,9 +189,7 @@ export const BenchmarkChart: React.FC<BenchmarkChartProps> = ({
       {/* Notice if user has not entered prices yet */}
       {!hasAnyUserPrices && (
         <div className="mb-4 bg-[var(--surface)] border border-[var(--border)] rounded-lg p-3 text-xs text-[var(--muted)] flex items-center gap-2">
-          <span className="text-base" role="img" aria-label="info">
-            💡
-          </span>
+          <IcLightbulb size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />
           <span>{t('chart.empty_notice')}</span>
         </div>
       )}
