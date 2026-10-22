@@ -2914,14 +2914,14 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
 export type SupportedLanguage = Language;
 
 export const SUPPORTED_LANGUAGES: { code: SupportedLanguage; label: string; flag: string }[] = [
-  { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
-  { code: 'fr', label: 'Français', flag: '🇫🇷' },
-  { code: 'es', label: 'Español', flag: '🇪🇸' },
-  { code: 'it', label: 'Italiano', flag: '🇮🇹' },
-  { code: 'pt', label: 'Português', flag: '🇵🇹' },
-  { code: 'nl', label: 'Nederlands', flag: '🇳🇱' },
-  { code: 'th', label: 'ไทย', flag: '🇹🇭' }
+  { code: 'en', label: 'English', flag: '' },
+  { code: 'de', label: 'Deutsch', flag: '' },
+  { code: 'fr', label: 'Français', flag: '' },
+  { code: 'es', label: 'Español', flag: '' },
+  { code: 'it', label: 'Italiano', flag: '' },
+  { code: 'pt', label: 'Português', flag: '' },
+  { code: 'nl', label: 'Nederlands', flag: '' },
+  { code: 'th', label: 'ไทย', flag: '' }
 ];
 
 let currentLang: SupportedLanguage = 'en';

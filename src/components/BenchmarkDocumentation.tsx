@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { getLanguage, t, SupportedLanguage } from '../i18n';
 import { DOCS_BUNDLE, DocFileType } from '../data/docsContent';
 
+import { Check as IcCheck, ClipboardList as IcClipboardList, Save as IcSave } from 'lucide-react';
 interface BenchmarkDocumentationProps {
   currentLanguage?: SupportedLanguage;
 }
@@ -110,7 +111,7 @@ export const BenchmarkDocumentation: React.FC<BenchmarkDocumentationProps> = ({
               className="bg-[var(--surface-elevated)] hover:bg-[var(--border)] text-[var(--text)] text-xs font-semibold px-2.5 py-1.5 rounded-lg border border-[var(--border)] transition-colors cursor-pointer inline-flex items-center gap-1.5"
               title={t('docs.copied_md')}
             >
-              <span>{copied ? '✅' : '📋'}</span>
+              <span>{copied ? <IcCheck size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} /> : <IcClipboardList size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />}</span>
               <span>{copied ? t('common.copied') : t('common.copy')}</span>
             </button>
 
@@ -118,7 +119,7 @@ export const BenchmarkDocumentation: React.FC<BenchmarkDocumentationProps> = ({
               onClick={handleDownload}
               className="bg-[var(--surface-elevated)] hover:bg-[var(--border)] text-[var(--text)] text-xs font-semibold px-2.5 py-1.5 rounded-lg border border-[var(--border)] transition-colors cursor-pointer inline-flex items-center gap-1.5"
             >
-              <span>💾</span>
+              <IcSave size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />
               <span>{t('common.download')}</span>
             </button>
           </div>

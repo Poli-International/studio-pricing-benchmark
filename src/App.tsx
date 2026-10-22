@@ -6,6 +6,7 @@ import { LanguageSwitcher } from './components/LanguageSwitcher';
 import { RegionId } from './types';
 import { t, SupportedLanguage, getLanguage, setLanguage, applyI18n } from './i18n';
 
+import { Banknote as IcBanknote, BookOpen as IcBookOpen, ChartColumn as IcChartColumn, Printer as IcPrinter, Zap as IcZap } from 'lucide-react';
 type ActiveTab = 'benchmark' | 'docs' | 'embed';
 
 export const App: React.FC = () => {
@@ -33,7 +34,7 @@ export const App: React.FC = () => {
       <header className="border-b border-[var(--border)] bg-[var(--surface)] sticky top-0 z-30 shadow-sm print:hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <span className="text-xl" role="img" aria-label="chart">📊</span>
+            <IcChartColumn size={20} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />
             <div>
               <h1 className="text-base sm:text-lg font-extrabold tracking-tight text-[var(--text-heading)]">
                 {t('app.title')}
@@ -54,7 +55,7 @@ export const App: React.FC = () => {
                   : 'text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--surface)]'
               }`}
             >
-              📊 {t('app.nav_benchmark')}
+              <IcChartColumn size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} /> {t('app.nav_benchmark')}
             </button>
             <button
               onClick={() => setActiveTab('docs')}
@@ -64,7 +65,7 @@ export const App: React.FC = () => {
                   : 'text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--surface)]'
               }`}
             >
-              📖 {t('app.nav_docs')}
+              <IcBookOpen size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} /> {t('app.nav_docs')}
             </button>
             <button
               onClick={() => setActiveTab('embed')}
@@ -74,7 +75,7 @@ export const App: React.FC = () => {
                   : 'text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--surface)]'
               }`}
             >
-              ⚡ {t('app.nav_embed')}
+              <IcZap size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} /> {t('app.nav_embed')}
             </button>
           </nav>
 
@@ -89,7 +90,7 @@ export const App: React.FC = () => {
               onClick={handlePrint}
               className="hidden md:inline-flex bg-[var(--surface-elevated)] hover:bg-[var(--border)] text-[var(--muted)] hover:text-[var(--text)] text-xs font-semibold px-3 py-1.5 rounded-lg border border-[var(--border)] transition-colors cursor-pointer items-center gap-1.5"
             >
-              <span>🖨️</span>
+              <IcPrinter size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />
               <span>{t('app.print')}</span>
             </button>
           </div>
@@ -102,7 +103,7 @@ export const App: React.FC = () => {
         {activeTab === 'benchmark' && (
           <div className="mb-6 text-center max-w-3xl mx-auto print:mb-4">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-2">
-              💷 {t('app.badge')}
+              <IcBanknote size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} /> {t('app.badge')}
             </div>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[var(--text-heading)] tracking-tight">
               {t('app.title')}

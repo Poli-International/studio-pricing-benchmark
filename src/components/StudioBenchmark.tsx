@@ -7,6 +7,7 @@ import { BenchmarkChart } from './BenchmarkChart';
 import { StudioRatesPanel } from './StudioRatesPanel';
 import { useStudioPricing } from '../hooks/useStudioPricing';
 
+import { ChartColumn as IcChartColumn, Check as IcCheck, Download as IcDownload, Save as IcSave } from 'lucide-react';
 interface StudioBenchmarkProps {
   selectedRegion: RegionId;
   onSelectRegion: (id: RegionId) => void;
@@ -118,7 +119,7 @@ export const StudioBenchmark: React.FC<StudioBenchmarkProps> = ({
             </p>
             {evaluatedCount > 0 && (
               <div className="text-[11px] text-emerald-400 font-medium flex items-center gap-1.5 mt-2" aria-live="polite">
-                <span aria-hidden="true">💾</span>
+                <IcSave size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />
                 <span>{t('calc.saved_notice')}</span>
               </div>
             )}
@@ -132,7 +133,7 @@ export const StudioBenchmark: React.FC<StudioBenchmarkProps> = ({
               title={t('csv.btn_export')}
               aria-label={t('csv.btn_export')}
             >
-              <span aria-hidden="true">📥</span>
+              <IcDownload size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />
               <span>{t('csv.btn_export')}</span>
             </button>
             <button
@@ -161,7 +162,7 @@ export const StudioBenchmark: React.FC<StudioBenchmarkProps> = ({
         {/* Export Success Notification Banner */}
         {exportSuccess && (
           <div className="bg-emerald-500/15 border-b border-emerald-500/30 px-6 py-2.5 text-xs text-emerald-400 font-medium flex items-center gap-2" role="status" aria-live="polite">
-            <span aria-hidden="true">✅</span>
+            <IcCheck size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />
             <span>{t('csv.export_success')}</span>
           </div>
         )}
@@ -247,7 +248,7 @@ export const StudioBenchmark: React.FC<StudioBenchmarkProps> = ({
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[var(--border)]">
             <div>
               <h3 className="text-base font-extrabold text-[var(--text-heading)] flex items-center gap-2">
-                <span aria-hidden="true">📊</span>
+                <IcChartColumn size={16} aria-hidden="true" style={{ display: 'inline-block', verticalAlign: '-0.15em', flexShrink: 0 }} />
                 <span>{t('calc.results_heading')}</span>
               </h3>
               <p className="text-xs text-[var(--muted)] mt-0.5 leading-relaxed">
